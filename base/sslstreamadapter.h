@@ -14,8 +14,8 @@
 #include <string>
 #include <vector>
 
-#include "webrtc/base/stream.h"
-#include "webrtc/base/sslidentity.h"
+#include "base/stream.h"
+#include "base/sslidentity.h"
 
 namespace rtc {
 

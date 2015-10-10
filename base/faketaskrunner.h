@@ -13,8 +13,8 @@
 #ifndef WEBRTC_BASE_FAKETASKRUNNER_H_
 #define WEBRTC_BASE_FAKETASKRUNNER_H_
 
-#include "webrtc/base/taskparent.h"
-#include "webrtc/base/taskrunner.h"
+#include "base/taskparent.h"
+#include "base/taskrunner.h"
 
 namespace rtc {
 

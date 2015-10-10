@@ -8,15 +8,15 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/common.h"
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/messagehandler.h"
-#include "webrtc/base/messagequeue.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/sharedexclusivelock.h"
-#include "webrtc/base/thread.h"
-#include "webrtc/base/timeutils.h"
-#include "webrtc/test/testsupport/gtest_disable.h"
+#include "base/common.h"
+#include "base/gunit.h"
+#include "base/messagehandler.h"
+#include "base/messagequeue.h"
+#include "base/scoped_ptr.h"
+#include "base/sharedexclusivelock.h"
+#include "base/thread.h"
+#include "base/timeutils.h"
+#include "test/testsupport/gtest_disable.h"
 
 namespace rtc {
 
@@ -132,7 +132,7 @@ class SharedExclusiveLockTest
   int value_;
 };
 
-// Flaky: https://code.google.com/p/webrtc/issues/detail?id=3318
+// Flaky: https://code.google.com/p/issues/detail?id=3318
 TEST_F(SharedExclusiveLockTest, TestSharedShared) {
   int value0, value1;
   bool done0, done1;

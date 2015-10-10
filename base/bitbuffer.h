@@ -14,7 +14,7 @@
 #include <stdint.h>  // For integer types.
 #include <stddef.h>  // For size_t.
 
-#include "webrtc/base/constructormagic.h"
+#include "base/constructormagic.h"
 
 namespace rtc {
 

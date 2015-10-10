@@ -8,15 +8,15 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/socket_unittest.h"
+#include "base/socket_unittest.h"
 
-#include "webrtc/base/asyncudpsocket.h"
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/nethelpers.h"
-#include "webrtc/base/socketserver.h"
-#include "webrtc/base/testclient.h"
-#include "webrtc/base/testutils.h"
-#include "webrtc/base/thread.h"
+#include "base/asyncudpsocket.h"
+#include "base/gunit.h"
+#include "base/nethelpers.h"
+#include "base/socketserver.h"
+#include "base/testclient.h"
+#include "base/testutils.h"
+#include "base/thread.h"
 
 namespace rtc {
 

@@ -11,9 +11,9 @@
 #ifndef WEBRTC_AUDIO_DEVICE_AUDIO_DEVICE_WAVE_WIN_H
 #define WEBRTC_AUDIO_DEVICE_AUDIO_DEVICE_WAVE_WIN_H
 
-#include "webrtc/modules/audio_device/audio_device_generic.h"
-#include "webrtc/modules/audio_device/win/audio_mixer_manager_win.h"
-#include "webrtc/system_wrappers/interface/thread_wrapper.h"
+#include "audio_device/audio_device_generic.h"
+#include "audio_device/win/audio_mixer_manager_win.h"
+#include "system_wrappers/interface/thread_wrapper.h"
 
 #pragma comment( lib, "winmm.lib" )
 

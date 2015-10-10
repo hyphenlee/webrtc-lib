@@ -8,14 +8,14 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_device/android/audio_manager.h"
-#include "webrtc/modules/audio_device/android/audio_track_jni.h"
+#include "audio_device/android/audio_manager.h"
+#include "audio_device/android/audio_track_jni.h"
 
 #include <android/log.h>
 
-#include "webrtc/base/arraysize.h"
-#include "webrtc/base/checks.h"
-#include "webrtc/base/format_macros.h"
+#include "base/arraysize.h"
+#include "base/checks.h"
+#include "base/format_macros.h"
 
 #define TAG "AudioTrackJni"
 #define ALOGV(...) __android_log_print(ANDROID_LOG_VERBOSE, TAG, __VA_ARGS__)
@@ -85,7 +85,7 @@ AudioTrackJni::AudioTrackJni(AudioManager* audio_manager)
       {"nativeGetPlayoutData", "(IJ)V",
       reinterpret_cast<void*>(&webrtc::AudioTrackJni::GetPlayoutData)}};
   j_native_registration_ = j_environment_->RegisterNatives(
-      "org/webrtc/voiceengine/WebRtcAudioTrack",
+      "org/voiceengine/WebRtcAudioTrack",
       native_methods, arraysize(native_methods));
   j_audio_track_.reset(new JavaAudioTrack(
       j_native_registration_.get(),

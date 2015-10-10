@@ -8,7 +8,7 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_processing/rms_level.h"
+#include "audio_processing/rms_level.h"
 
 #include <assert.h>
 #include <math.h>

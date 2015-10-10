@@ -10,9 +10,9 @@
 
 // Unittest for registry access API
 
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/common.h"
-#include "webrtc/base/win32regkey.h"
+#include "base/gunit.h"
+#include "base/common.h"
+#include "base/win32regkey.h"
 
 namespace rtc {
 

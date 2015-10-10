@@ -8,11 +8,11 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_processing/transient/file_utils.h"
+#include "audio_processing/transient/file_utils.h"
 
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/system_wrappers/interface/file_wrapper.h"
-#include "webrtc/typedefs.h"
+#include "base/scoped_ptr.h"
+#include "system_wrappers/interface/file_wrapper.h"
+#include "typedefs.h"
 
 namespace webrtc {
 

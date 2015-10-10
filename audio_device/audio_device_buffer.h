@@ -11,9 +11,9 @@
 #ifndef WEBRTC_AUDIO_DEVICE_AUDIO_DEVICE_BUFFER_H
 #define WEBRTC_AUDIO_DEVICE_AUDIO_DEVICE_BUFFER_H
 
-#include "webrtc/modules/audio_device/include/audio_device.h"
-#include "webrtc/system_wrappers/interface/file_wrapper.h"
-#include "webrtc/typedefs.h"
+#include "audio_device/include/audio_device.h"
+#include "system_wrappers/interface/file_wrapper.h"
+#include "typedefs.h"
 
 namespace webrtc {
 class CriticalSectionWrapper;

@@ -12,10 +12,10 @@
 #define WEBRTC_BASE_TASK_H__
 
 #include <string>
-#include "webrtc/base/basictypes.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/sigslot.h"
-#include "webrtc/base/taskparent.h"
+#include "base/basictypes.h"
+#include "base/scoped_ptr.h"
+#include "base/sigslot.h"
+#include "base/taskparent.h"
 
 /////////////////////////////////////////////////////////////////////
 //

@@ -1,0 +1,10 @@
+/Users/lihaifeng/work/audio-module/build/audio_device/main.build/Debug/AudioDevice.build/Objects-normal/x86_64/audio_device_buffer.o
+/Users/lihaifeng/work/audio-module/build/audio_device/main.build/Debug/AudioDevice.build/Objects-normal/x86_64/audio_device_generic.o
+/Users/lihaifeng/work/audio-module/build/audio_device/main.build/Debug/AudioDevice.build/Objects-normal/x86_64/audio_device_impl.o
+/Users/lihaifeng/work/audio-module/build/audio_device/main.build/Debug/AudioDevice.build/Objects-normal/x86_64/audio_device_dummy.o
+/Users/lihaifeng/work/audio-module/build/audio_device/main.build/Debug/AudioDevice.build/Objects-normal/x86_64/file_audio_device.o
+/Users/lihaifeng/work/audio-module/build/audio_device/main.build/Debug/AudioDevice.build/Objects-normal/x86_64/file_audio_device_factory.o
+/Users/lihaifeng/work/audio-module/build/audio_device/main.build/Debug/AudioDevice.build/Objects-normal/x86_64/fine_audio_buffer.o
+/Users/lihaifeng/work/audio-module/build/audio_device/main.build/Debug/AudioDevice.build/Objects-normal/x86_64/audio_device_mac.o
+/Users/lihaifeng/work/audio-module/build/audio_device/main.build/Debug/AudioDevice.build/Objects-normal/x86_64/audio_mixer_manager_mac.o
+/Users/lihaifeng/work/audio-module/build/audio_device/main.build/Debug/AudioDevice.build/Objects-normal/x86_64/pa_ringbuffer.o

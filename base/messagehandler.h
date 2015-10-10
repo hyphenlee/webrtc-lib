@@ -11,8 +11,8 @@
 #ifndef WEBRTC_BASE_MESSAGEHANDLER_H_
 #define WEBRTC_BASE_MESSAGEHANDLER_H_
 
-#include "webrtc/base/constructormagic.h"
-#include "webrtc/base/scoped_ptr.h"
+#include "base/constructormagic.h"
+#include "base/scoped_ptr.h"
 
 namespace rtc {
 

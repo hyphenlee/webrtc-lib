@@ -29,8 +29,8 @@
       'target_name': 'rtc_base_approved',
       'type': 'static_library',
       'sources': [
-        '../overrides/webrtc/base/basictypes.h',
-        '../overrides/webrtc/base/constructormagic.h',
+        '../overrides/base/basictypes.h',
+        '../overrides/base/constructormagic.h',
         'atomicops.h',
         'basictypes.h',
         'bitbuffer.cc',
@@ -96,8 +96,8 @@
           ],
         }, {
           'sources!': [
-            '../overrides/webrtc/base/basictypes.h',
-            '../overrides/webrtc/base/constructormagic.h',
+            '../overrides/base/basictypes.h',
+            '../overrides/base/constructormagic.h',
           ],
         }],
       ],
@@ -345,9 +345,9 @@
         'worker.h',
         'x11windowpicker.cc',
         'x11windowpicker.h',
-        '../overrides/webrtc/base/logging.cc',
-        '../overrides/webrtc/base/logging.h',
-        '../overrides/webrtc/base/win32socketinit.cc',
+        '../overrides/base/logging.cc',
+        '../overrides/base/logging.h',
+        '../overrides/base/win32socketinit.cc',
       ],
       # TODO(henrike): issue 3307, make rtc_base build without disabling
       # these flags.
@@ -488,9 +488,9 @@
             }],
           ],
           'sources!': [
-            '../overrides/webrtc/base/win32socketinit.cc',
-            '../overrides/webrtc/base/logging.cc',
-            '../overrides/webrtc/base/logging.h',
+            '../overrides/base/win32socketinit.cc',
+            '../overrides/base/logging.cc',
+            '../overrides/base/logging.h',
           ],
         }],
         ['use_openssl==1', {

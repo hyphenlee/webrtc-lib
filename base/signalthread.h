@@ -13,9 +13,9 @@
 
 #include <string>
 
-#include "webrtc/base/constructormagic.h"
-#include "webrtc/base/sigslot.h"
-#include "webrtc/base/thread.h"
+#include "base/constructormagic.h"
+#include "base/sigslot.h"
+#include "base/thread.h"
 
 namespace rtc {
 

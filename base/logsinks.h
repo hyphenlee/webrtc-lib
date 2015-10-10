@@ -13,10 +13,10 @@
 
 #include <string>
 
-#include "webrtc/base/constructormagic.h"
-#include "webrtc/base/filerotatingstream.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/scoped_ptr.h"
+#include "base/constructormagic.h"
+#include "base/filerotatingstream.h"
+#include "base/logging.h"
+#include "base/scoped_ptr.h"
 
 namespace rtc {
 

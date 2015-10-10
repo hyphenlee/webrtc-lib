@@ -13,7 +13,7 @@
 #ifndef WEBRTC_BASE_MACCOCOASOCKETSERVER_H_
 #define WEBRTC_BASE_MACCOCOASOCKETSERVER_H_
 
-#include "webrtc/base/macsocketserver.h"
+#include "base/macsocketserver.h"
 
 #ifdef __OBJC__
 @class NSTimer, MacCocoaSocketServerHelperRtc;

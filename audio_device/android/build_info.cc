@@ -8,16 +8,16 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_device/android/build_info.h"
+#include "audio_device/android/build_info.h"
 
-#include "webrtc/modules/utility/interface/helpers_android.h"
+#include "utility/interface/helpers_android.h"
 
 namespace webrtc {
 
 BuildInfo::BuildInfo()
     : j_environment_(JVM::GetInstance()->environment()),
       j_build_info_(JVM::GetInstance()->GetClass(
-          "org/webrtc/voiceengine/BuildInfo")) {
+          "org/voiceengine/BuildInfo")) {
 }
 
 std::string BuildInfo::GetStringFromJava(const char* name) {

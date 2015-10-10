@@ -8,8 +8,8 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/messagehandler.h"
-#include "webrtc/base/messagequeue.h"
+#include "base/messagehandler.h"
+#include "base/messagequeue.h"
 
 namespace rtc {
 

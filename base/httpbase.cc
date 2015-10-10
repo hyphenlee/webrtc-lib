@@ -10,17 +10,17 @@
 
 
 #if defined(WEBRTC_WIN)
-#include "webrtc/base/win32.h"
+#include "base/win32.h"
 #else  // !WEBRTC_WIN
 #define SEC_E_CERT_EXPIRED (-2146893016)
 #endif  // !WEBRTC_WIN
 
-#include "webrtc/base/common.h"
-#include "webrtc/base/httpbase.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/socket.h"
-#include "webrtc/base/stringutils.h"
-#include "webrtc/base/thread.h"
+#include "base/common.h"
+#include "base/httpbase.h"
+#include "base/logging.h"
+#include "base/socket.h"
+#include "base/stringutils.h"
+#include "base/thread.h"
 
 namespace rtc {
 

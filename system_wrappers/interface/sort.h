@@ -13,8 +13,8 @@
 #ifndef WEBRTC_SYSTEM_WRAPPERS_INTERFACE_SORT_H_
 #define WEBRTC_SYSTEM_WRAPPERS_INTERFACE_SORT_H_
 
-#include "webrtc/common_types.h"
-#include "webrtc/typedefs.h"
+#include "common_types.h"
+#include "typedefs.h"
 
 namespace webrtc {
 

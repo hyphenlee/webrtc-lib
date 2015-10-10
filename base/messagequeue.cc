@@ -14,14 +14,14 @@
 
 #include <algorithm>
 
-#include "webrtc/base/common.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/messagequeue.h"
+#include "base/common.h"
+#include "base/logging.h"
+#include "base/messagequeue.h"
 #if defined(__native_client__)
-#include "webrtc/base/nullsocketserver.h"
+#include "base/nullsocketserver.h"
 typedef rtc::NullSocketServer DefaultSocketServer;
 #else
-#include "webrtc/base/physicalsocketserver.h"
+#include "base/physicalsocketserver.h"
 typedef rtc::PhysicalSocketServer DefaultSocketServer;
 #endif
 

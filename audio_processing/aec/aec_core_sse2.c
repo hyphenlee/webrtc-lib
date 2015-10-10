@@ -16,10 +16,10 @@
 #include <math.h>
 #include <string.h>  // memset
 
-#include "webrtc/common_audio/signal_processing/include/signal_processing_library.h"
-#include "webrtc/modules/audio_processing/aec/aec_common.h"
-#include "webrtc/modules/audio_processing/aec/aec_core_internal.h"
-#include "webrtc/modules/audio_processing/aec/aec_rdft.h"
+#include "common_audio/signal_processing/include/signal_processing_library.h"
+#include "audio_processing/aec/aec_common.h"
+#include "audio_processing/aec/aec_core_internal.h"
+#include "audio_processing/aec/aec_rdft.h"
 
 __inline static float MulRe(float aRe, float aIm, float bRe, float bIm) {
   return aRe * bRe - aIm * bIm;

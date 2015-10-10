@@ -8,9 +8,9 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/criticalsection.h"
+#include "base/criticalsection.h"
 
-#include "webrtc/base/checks.h"
+#include "base/checks.h"
 
 namespace rtc {
 

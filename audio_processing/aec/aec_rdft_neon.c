@@ -15,7 +15,7 @@
  */
 
 
-#include "webrtc/modules/audio_processing/aec/aec_rdft.h"
+#include "audio_processing/aec/aec_rdft.h"
 
 #include <arm_neon.h>
 

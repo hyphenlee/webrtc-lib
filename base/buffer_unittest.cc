@@ -8,8 +8,8 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/buffer.h"
-#include "webrtc/base/gunit.h"
+#include "base/buffer.h"
+#include "base/gunit.h"
 
 #include <algorithm>  // std::swap (pre-C++11)
 #include <utility>  // std::swap (C++11 and later)

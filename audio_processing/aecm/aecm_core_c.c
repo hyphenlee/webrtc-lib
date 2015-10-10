@@ -8,19 +8,19 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_processing/aecm/aecm_core.h"
+#include "audio_processing/aecm/aecm_core.h"
 
 #include <assert.h>
 #include <stddef.h>
 #include <stdlib.h>
 
-#include "webrtc/common_audio/ring_buffer.h"
-#include "webrtc/common_audio/signal_processing/include/real_fft.h"
-#include "webrtc/modules/audio_processing/aecm/include/echo_control_mobile.h"
-#include "webrtc/modules/audio_processing/utility/delay_estimator_wrapper.h"
-#include "webrtc/system_wrappers/interface/compile_assert_c.h"
-#include "webrtc/system_wrappers/interface/cpu_features_wrapper.h"
-#include "webrtc/typedefs.h"
+#include "common_audio/ring_buffer.h"
+#include "common_audio/signal_processing/include/real_fft.h"
+#include "audio_processing/aecm/include/echo_control_mobile.h"
+#include "audio_processing/utility/delay_estimator_wrapper.h"
+#include "system_wrappers/interface/compile_assert_c.h"
+#include "system_wrappers/interface/cpu_features_wrapper.h"
+#include "typedefs.h"
 
 // Square root of Hanning window in Q14.
 #if defined(WEBRTC_DETECT_NEON) || defined(WEBRTC_HAS_NEON)

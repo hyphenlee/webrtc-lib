@@ -8,15 +8,15 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_processing/utility/delay_estimator_wrapper.h"
+#include "audio_processing/utility/delay_estimator_wrapper.h"
 
 #include <assert.h>
 #include <stdlib.h>
 #include <string.h>
 
-#include "webrtc/modules/audio_processing/utility/delay_estimator.h"
-#include "webrtc/modules/audio_processing/utility/delay_estimator_internal.h"
-#include "webrtc/system_wrappers/interface/compile_assert_c.h"
+#include "audio_processing/utility/delay_estimator.h"
+#include "audio_processing/utility/delay_estimator_internal.h"
+#include "system_wrappers/interface/compile_assert_c.h"
 
 // Only bit |kBandFirst| through bit |kBandLast| are processed and
 // |kBandFirst| - |kBandLast| must be < 32.

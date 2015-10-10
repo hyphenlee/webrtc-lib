@@ -11,8 +11,8 @@
 #ifndef WEBRTC_AUDIO_DEVICE_AUDIO_DEVICE_GENERIC_H
 #define WEBRTC_AUDIO_DEVICE_AUDIO_DEVICE_GENERIC_H
 
-#include "webrtc/modules/audio_device/audio_device_buffer.h"
-#include "webrtc/modules/audio_device/include/audio_device.h"
+#include "audio_device/audio_device_buffer.h"
+#include "audio_device/include/audio_device.h"
 
 namespace webrtc {
 

@@ -12,8 +12,8 @@
 
 #include <CoreFoundation/CoreFoundation.h>
 
-#include "webrtc/base/logging.h"
-#include "webrtc/base/macconversion.h"
+#include "base/logging.h"
+#include "base/macconversion.h"
 
 bool p_convertHostCFStringRefToCPPString(
   const CFStringRef cfstr, std::string& cppstr) {

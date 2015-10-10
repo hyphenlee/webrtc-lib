@@ -10,7 +10,7 @@
 #ifndef WEBRTC_BASE_SHA1_H_
 #define WEBRTC_BASE_SHA1_H_
 
-#include "webrtc/base/basictypes.h"
+#include "base/basictypes.h"
 
 namespace rtc {
 

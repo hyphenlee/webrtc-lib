@@ -8,10 +8,10 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/thread.h"
-#include "webrtc/base/maccocoasocketserver.h"
+#include "base/gunit.h"
+#include "base/scoped_ptr.h"
+#include "base/thread.h"
+#include "base/maccocoasocketserver.h"
 
 namespace rtc {
 

@@ -11,7 +11,7 @@
 #ifndef WEBRTC_MODULES_AUDIO_PROCESSING_VAD_VAD_CIRCULAR_BUFFER_H_
 #define WEBRTC_MODULES_AUDIO_PROCESSING_VAD_VAD_CIRCULAR_BUFFER_H_
 
-#include "webrtc/base/scoped_ptr.h"
+#include "base/scoped_ptr.h"
 
 namespace webrtc {
 

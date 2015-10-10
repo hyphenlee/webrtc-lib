@@ -18,10 +18,10 @@
 #include <complex>
 #include <vector>
 
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/common_audio/lapped_transform.h"
-#include "webrtc/common_audio/channel_buffer.h"
-#include "webrtc/modules/audio_processing/intelligibility/intelligibility_utils.h"
+#include "base/scoped_ptr.h"
+#include "common_audio/lapped_transform.h"
+#include "common_audio/channel_buffer.h"
+#include "audio_processing/intelligibility/intelligibility_utils.h"
 
 namespace webrtc {
 
@@ -95,8 +95,8 @@ class IntelligibilityEnhancer {
     AudioSource source_;
   };
   friend class TransformCallback;
-  FRIEND_TEST_ALL_PREFIXES(IntelligibilityEnhancerTest, TestErbCreation);
-  FRIEND_TEST_ALL_PREFIXES(IntelligibilityEnhancerTest, TestSolveForGains);
+  /* FRIEND_TEST_ALL_PREFIXES(IntelligibilityEnhancerTest, TestErbCreation); */
+  /* FRIEND_TEST_ALL_PREFIXES(IntelligibilityEnhancerTest, TestSolveForGains); */
 
   // Sends streams to ProcessClearBlock or ProcessNoiseBlock based on source.
   void DispatchAudio(AudioSource source,

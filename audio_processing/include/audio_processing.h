@@ -15,10 +15,10 @@
 #include <stdio.h>  // FILE
 #include <vector>
 
-#include "webrtc/base/platform_file.h"
-#include "webrtc/common.h"
-#include "webrtc/modules/audio_processing/beamformer/array_util.h"
-#include "webrtc/typedefs.h"
+#include "base/platform_file.h"
+#include "common.h"
+#include "audio_processing/beamformer/array_util.h"
+#include "typedefs.h"
 
 struct AecCore;
 

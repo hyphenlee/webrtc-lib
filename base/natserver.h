@@ -14,12 +14,12 @@
 #include <map>
 #include <set>
 
-#include "webrtc/base/asyncudpsocket.h"
-#include "webrtc/base/socketaddresspair.h"
-#include "webrtc/base/thread.h"
-#include "webrtc/base/socketfactory.h"
-#include "webrtc/base/nattypes.h"
-#include "webrtc/base/proxyserver.h"
+#include "base/asyncudpsocket.h"
+#include "base/socketaddresspair.h"
+#include "base/thread.h"
+#include "base/socketfactory.h"
+#include "base/nattypes.h"
+#include "base/proxyserver.h"
 
 namespace rtc {
 

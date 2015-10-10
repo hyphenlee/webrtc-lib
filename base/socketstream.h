@@ -11,9 +11,9 @@
 #ifndef WEBRTC_BASE_SOCKETSTREAM_H_
 #define WEBRTC_BASE_SOCKETSTREAM_H_
 
-#include "webrtc/base/asyncsocket.h"
-#include "webrtc/base/common.h"
-#include "webrtc/base/stream.h"
+#include "base/asyncsocket.h"
+#include "base/common.h"
+#include "base/stream.h"
 
 namespace rtc {
 

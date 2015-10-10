@@ -13,10 +13,10 @@
 
 #include <vector>
 
-#include "webrtc/base/asyncfile.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/socketserver.h"
-#include "webrtc/base/criticalsection.h"
+#include "base/asyncfile.h"
+#include "base/scoped_ptr.h"
+#include "base/socketserver.h"
+#include "base/criticalsection.h"
 
 #if defined(WEBRTC_POSIX)
 typedef int SOCKET;

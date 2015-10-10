@@ -13,17 +13,17 @@
 #include <vector>
 
 #if defined(WEBRTC_WIN)
-#include "webrtc/base/win32.h"
+#include "base/win32.h"
 #endif
 
-#include "webrtc/base/cpumonitor.h"
-#include "webrtc/base/flags.h"
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/thread.h"
-#include "webrtc/base/timeutils.h"
-#include "webrtc/base/timing.h"
-#include "webrtc/test/testsupport/gtest_disable.h"
+#include "base/cpumonitor.h"
+#include "base/flags.h"
+#include "base/gunit.h"
+#include "base/scoped_ptr.h"
+#include "base/thread.h"
+#include "base/timeutils.h"
+#include "base/timing.h"
+#include "test/testsupport/gtest_disable.h"
 
 namespace rtc {
 

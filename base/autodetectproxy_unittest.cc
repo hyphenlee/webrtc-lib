@@ -8,11 +8,11 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/autodetectproxy.h"
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/httpcommon.h"
-#include "webrtc/base/httpcommon-inl.h"
-#include "webrtc/test/testsupport/gtest_disable.h"
+#include "base/autodetectproxy.h"
+#include "base/gunit.h"
+#include "base/httpcommon.h"
+#include "base/httpcommon-inl.h"
+#include "test/testsupport/gtest_disable.h"
 
 namespace rtc {
 

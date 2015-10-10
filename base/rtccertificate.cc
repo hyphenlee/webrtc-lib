@@ -8,10 +8,10 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/rtccertificate.h"
+#include "base/rtccertificate.h"
 
-#include "webrtc/base/checks.h"
-#include "webrtc/base/timeutils.h"
+#include "base/checks.h"
+#include "base/timeutils.h"
 
 namespace rtc {
 

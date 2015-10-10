@@ -14,11 +14,11 @@
 #include <crtdbg.h>
 #endif
 
-#include "webrtc/base/flags.h"
-#include "webrtc/base/fileutils.h"
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/ssladapter.h"
+#include "base/flags.h"
+#include "base/fileutils.h"
+#include "base/gunit.h"
+#include "base/logging.h"
+#include "base/ssladapter.h"
 
 DEFINE_bool(help, false, "prints this message");
 DEFINE_string(log, "", "logging options to use");

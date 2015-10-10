@@ -11,10 +11,10 @@
 #ifndef WEBRTC_BASE_REFERENCECOUNTEDSINGLETONFACTORY_H_
 #define WEBRTC_BASE_REFERENCECOUNTEDSINGLETONFACTORY_H_
 
-#include "webrtc/base/common.h"
-#include "webrtc/base/criticalsection.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/scoped_ptr.h"
+#include "base/common.h"
+#include "base/criticalsection.h"
+#include "base/logging.h"
+#include "base/scoped_ptr.h"
 
 namespace rtc {
 

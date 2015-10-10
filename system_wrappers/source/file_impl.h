@@ -13,8 +13,8 @@
 
 #include <stdio.h>
 
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/system_wrappers/interface/file_wrapper.h"
+#include "base/scoped_ptr.h"
+#include "system_wrappers/interface/file_wrapper.h"
 
 namespace webrtc {
 

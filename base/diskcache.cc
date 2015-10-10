@@ -11,17 +11,17 @@
 #include <time.h>
 
 #if defined(WEBRTC_WIN)
-#include "webrtc/base/win32.h"
+#include "base/win32.h"
 #endif
 
 #include <algorithm>
-#include "webrtc/base/common.h"
-#include "webrtc/base/diskcache.h"
-#include "webrtc/base/fileutils.h"
-#include "webrtc/base/pathutils.h"
-#include "webrtc/base/stream.h"
-#include "webrtc/base/stringencode.h"
-#include "webrtc/base/stringutils.h"
+#include "base/common.h"
+#include "base/diskcache.h"
+#include "base/fileutils.h"
+#include "base/pathutils.h"
+#include "base/stream.h"
+#include "base/stringencode.h"
+#include "base/stringutils.h"
 
 #ifdef _DEBUG
 #define TRANSPARENT_CACHE_NAMES 1

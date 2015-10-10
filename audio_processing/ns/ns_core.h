@@ -11,7 +11,7 @@
 #ifndef WEBRTC_MODULES_AUDIO_PROCESSING_NS_NS_CORE_H_
 #define WEBRTC_MODULES_AUDIO_PROCESSING_NS_NS_CORE_H_
 
-#include "webrtc/modules/audio_processing/ns/defines.h"
+#include "audio_processing/ns/defines.h"
 
 typedef struct NSParaExtract_ {
   // Bin size of histogram.

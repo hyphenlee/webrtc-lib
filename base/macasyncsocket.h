@@ -18,8 +18,8 @@
 
 #include <CoreFoundation/CoreFoundation.h>
 
-#include "webrtc/base/asyncsocket.h"
-#include "webrtc/base/nethelpers.h"
+#include "base/asyncsocket.h"
+#include "base/nethelpers.h"
 
 namespace rtc {
 

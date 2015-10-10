@@ -21,7 +21,7 @@
 #include "config.h"  // NOLINT
 #endif
 
-#include "webrtc/base/constructormagic.h"
+#include "base/constructormagic.h"
 
 #if !defined(INT_TYPES_DEFINED)
 #define INT_TYPES_DEFINED

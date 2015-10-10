@@ -210,7 +210,7 @@ source_set("audio_processing") {
 
   if (is_clang) {
     # Suppress warnings from Chrome's Clang plugins.
-    # See http://code.google.com/p/webrtc/issues/detail?id=163 for details.
+    # See http://code.google.com/p/issues/detail?id=163 for details.
     configs -= [ "//build/config/clang:find_bad_constructs" ]
   }
 
@@ -227,7 +227,7 @@ if (rtc_enable_protobuf) {
       "debug.proto",
     ]
 
-    proto_out_dir = "webrtc/audio_processing"
+    proto_out_dir = "audio_processing"
   }
 }
 
@@ -259,7 +259,7 @@ if (rtc_build_with_neon) {
     if (current_cpu != "arm64") {
       # Enable compilation for the NEON instruction set. This is needed
       # since //build/config/arm.gni only enables NEON for iOS, not Android.
-      # This provides the same functionality as webrtc/build/arm_neon.gypi.
+      # This provides the same functionality as build/arm_neon.gypi.
       configs -= [ "//build/config/compiler:compiler_arm_fpu" ]
       cflags = [ "-mfpu=neon" ]
     }

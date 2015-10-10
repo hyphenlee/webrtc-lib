@@ -13,7 +13,7 @@
 // part of the Boost C++ library collection. Otherwise, the C standard library's
 // qsort() will be used.
 
-#include "webrtc/system_wrappers/interface/sort.h"
+#include "system_wrappers/interface/sort.h"
 
 #include <assert.h>
 #include <string.h>  // memcpy
@@ -27,7 +27,7 @@
 #include <vector>
 
 // TODO(ajm) upgrade to spreadsort v2.
-#include "webrtc/system_wrappers/source/spreadsortlib/spreadsort.hpp"
+#include "system_wrappers/source/spreadsortlib/spreadsort.hpp"
 #endif
 
 #ifdef NO_STL

@@ -13,7 +13,7 @@
 
 #include <cstdlib>
 
-#include "webrtc/typedefs.h"
+#include "typedefs.h"
 
 // Provides a set of static methods to perform dyadic decimations.
 

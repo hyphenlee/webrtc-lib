@@ -30,10 +30,10 @@
 #include "net/third_party/nss/ssl/ssl.h"
 #endif
 
-#include "webrtc/base/common.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/sslidentity.h"
+#include "base/common.h"
+#include "base/logging.h"
+#include "base/scoped_ptr.h"
+#include "base/sslidentity.h"
 
 namespace rtc {
 

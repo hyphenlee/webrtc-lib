@@ -13,10 +13,10 @@
 #include <cstdlib>
 #include <vector>
 
-#include "webrtc/modules/audio_processing/transient/transient_detector.h"
-#include "webrtc/modules/audio_processing/transient/file_utils.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/system_wrappers/interface/file_wrapper.h"
+#include "audio_processing/transient/transient_detector.h"
+#include "audio_processing/transient/file_utils.h"
+#include "base/scoped_ptr.h"
+#include "system_wrappers/interface/file_wrapper.h"
 
 using rtc::scoped_ptr;
 using webrtc::FileWrapper;

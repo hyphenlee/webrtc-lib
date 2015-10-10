@@ -18,18 +18,18 @@
 #include <algorithm>
 #include <string>
 
-#include "webrtc/base/basictypes.h"
-#include "webrtc/base/common.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/messagequeue.h"
-#include "webrtc/base/stream.h"
-#include "webrtc/base/stringencode.h"
-#include "webrtc/base/stringutils.h"
-#include "webrtc/base/thread.h"
-#include "webrtc/base/timeutils.h"
+#include "base/basictypes.h"
+#include "base/common.h"
+#include "base/logging.h"
+#include "base/messagequeue.h"
+#include "base/stream.h"
+#include "base/stringencode.h"
+#include "base/stringutils.h"
+#include "base/thread.h"
+#include "base/timeutils.h"
 
 #if defined(WEBRTC_WIN)
-#include "webrtc/base/win32.h"
+#include "base/win32.h"
 #define fileno _fileno
 #endif
 

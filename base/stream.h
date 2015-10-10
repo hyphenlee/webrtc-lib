@@ -13,14 +13,14 @@
 
 #include <stdio.h>
 
-#include "webrtc/base/basictypes.h"
-#include "webrtc/base/buffer.h"
-#include "webrtc/base/criticalsection.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/messagehandler.h"
-#include "webrtc/base/messagequeue.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/sigslot.h"
+#include "base/basictypes.h"
+#include "base/buffer.h"
+#include "base/criticalsection.h"
+#include "base/logging.h"
+#include "base/messagehandler.h"
+#include "base/messagequeue.h"
+#include "base/scoped_ptr.h"
+#include "base/sigslot.h"
 
 namespace rtc {
 

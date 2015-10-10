@@ -12,10 +12,10 @@
 #define WEBRTC_BASE_PROXYSERVER_H_
 
 #include <list>
-#include "webrtc/base/asyncsocket.h"
-#include "webrtc/base/socketadapters.h"
-#include "webrtc/base/socketaddress.h"
-#include "webrtc/base/stream.h"
+#include "base/asyncsocket.h"
+#include "base/socketadapters.h"
+#include "base/socketaddress.h"
+#include "base/stream.h"
 
 namespace rtc {
 

@@ -16,15 +16,17 @@
 #include <string>
 #include <vector>
 
-#if defined(WEBRTC_POSIX)
+
 #include <pthread.h>
+#if defined(WEBRTC_POSIX)
+
 #endif
-#include "webrtc/base/constructormagic.h"
-#include "webrtc/base/event.h"
-#include "webrtc/base/messagequeue.h"
+#include "base/constructormagic.h"
+#include "base/event.h"
+#include "base/messagequeue.h"
 
 #if defined(WEBRTC_WIN)
-#include "webrtc/base/win32.h"
+#include "base/win32.h"
 #endif
 
 namespace rtc {

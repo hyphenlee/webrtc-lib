@@ -8,7 +8,7 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/systeminfo.h"
+#include "base/systeminfo.h"
 
 #if defined(WEBRTC_WIN)
 #include <winsock2.h>
@@ -27,9 +27,9 @@
 #include <sys/sysctl.h>
 #endif
 
-#include "webrtc/base/common.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/stringutils.h"
+#include "base/common.h"
+#include "base/logging.h"
+#include "base/stringutils.h"
 
 namespace rtc {
 

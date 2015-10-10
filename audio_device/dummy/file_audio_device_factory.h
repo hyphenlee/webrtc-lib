@@ -11,7 +11,7 @@
 #ifndef WEBRTC_AUDIO_DEVICE_FILE_AUDIO_DEVICE_FACTORY_H
 #define WEBRTC_AUDIO_DEVICE_FILE_AUDIO_DEVICE_FACTORY_H
 
-#include "webrtc/common_types.h"
+#include "common_types.h"
 
 namespace webrtc {
 

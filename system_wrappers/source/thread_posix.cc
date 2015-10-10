@@ -8,7 +8,7 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/system_wrappers/source/thread_posix.h"
+#include "system_wrappers/source/thread_posix.h"
 
 #include <algorithm>
 
@@ -20,12 +20,12 @@
 #include <sys/types.h>
 #endif
 
-#include "webrtc/base/checks.h"
-#include "webrtc/base/platform_thread.h"
-#include "webrtc/system_wrappers/interface/critical_section_wrapper.h"
-#include "webrtc/system_wrappers/interface/event_wrapper.h"
-#include "webrtc/system_wrappers/interface/sleep.h"
-#include "webrtc/system_wrappers/interface/trace.h"
+#include "base/checks.h"
+#include "base/platform_thread.h"
+#include "system_wrappers/interface/critical_section_wrapper.h"
+#include "system_wrappers/interface/event_wrapper.h"
+#include "system_wrappers/interface/sleep.h"
+#include "system_wrappers/interface/trace.h"
 
 namespace webrtc {
 namespace {

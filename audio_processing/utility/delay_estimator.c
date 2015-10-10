@@ -8,7 +8,7 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_processing/utility/delay_estimator.h"
+#include "audio_processing/utility/delay_estimator.h"
 
 #include <assert.h>
 #include <stdlib.h>

@@ -8,7 +8,7 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/win32.h"
+#include "base/win32.h"
 #include <shellapi.h>
 #include <shlobj.h>
 #include <tchar.h>
@@ -16,14 +16,14 @@
 #include <time.h>
 #include <algorithm>
 
-#include "webrtc/base/common.h"
-#include "webrtc/base/diskcache.h"
-#include "webrtc/base/pathutils.h"
-#include "webrtc/base/stream.h"
-#include "webrtc/base/stringencode.h"
-#include "webrtc/base/stringutils.h"
+#include "base/common.h"
+#include "base/diskcache.h"
+#include "base/pathutils.h"
+#include "base/stream.h"
+#include "base/stringencode.h"
+#include "base/stringutils.h"
 
-#include "webrtc/base/diskcache_win32.h"
+#include "base/diskcache_win32.h"
 
 namespace rtc {
 

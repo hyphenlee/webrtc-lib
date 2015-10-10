@@ -13,7 +13,7 @@
 
 #include <string>
 
-#include "webrtc/common_types.h"
+#include "common_types.h"
 
 // Macros for allowing WebRTC clients (e.g. Chrome) to gather and aggregate
 // statistics.

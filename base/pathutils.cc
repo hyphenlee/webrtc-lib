@@ -9,18 +9,18 @@
  */
 
 #if defined(WEBRTC_WIN)
-#include "webrtc/base/win32.h"
+#include "base/win32.h"
 #include <shellapi.h>
 #include <shlobj.h>
 #include <tchar.h>
 #endif  // WEBRTC_WIN 
 
-#include "webrtc/base/common.h"
-#include "webrtc/base/fileutils.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/pathutils.h"
-#include "webrtc/base/stringutils.h"
-#include "webrtc/base/urlencode.h"
+#include "base/common.h"
+#include "base/fileutils.h"
+#include "base/logging.h"
+#include "base/pathutils.h"
+#include "base/stringutils.h"
+#include "base/urlencode.h"
 
 namespace rtc {
 

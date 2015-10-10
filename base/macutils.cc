@@ -10,11 +10,11 @@
 
 #include <sstream>
 
-#include "webrtc/base/common.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/macutils.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/stringutils.h"
+#include "base/common.h"
+#include "base/logging.h"
+#include "base/macutils.h"
+#include "base/scoped_ptr.h"
+#include "base/stringutils.h"
 
 namespace rtc {
 

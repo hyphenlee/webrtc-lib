@@ -8,11 +8,11 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/common_audio/signal_processing/include/signal_processing_library.h"
-#include "webrtc/modules/audio_device/audio_device_config.h"
-#include "webrtc/modules/audio_device/audio_device_impl.h"
-#include "webrtc/system_wrappers/interface/ref_count.h"
-#include "webrtc/system_wrappers/interface/tick_util.h"
+#include "common_audio/signal_processing/include/signal_processing_library.h"
+#include "audio_device/audio_device_config.h"
+#include "audio_device/audio_device_impl.h"
+#include "system_wrappers/interface/ref_count.h"
+#include "system_wrappers/interface/tick_util.h"
 
 #include <assert.h>
 #include <string.h>
@@ -24,11 +24,11 @@
  #endif
 #elif defined(WEBRTC_ANDROID)
 #include <stdlib.h>
-#include "webrtc/modules/audio_device/android/audio_device_template.h"
-#include "webrtc/modules/audio_device/android/audio_manager.h"
-#include "webrtc/modules/audio_device/android/audio_record_jni.h"
-#include "webrtc/modules/audio_device/android/audio_track_jni.h"
-#include "webrtc/modules/audio_device/android/opensles_player.h"
+#include "audio_device/android/audio_device_template.h"
+#include "audio_device/android/audio_manager.h"
+#include "audio_device/android/audio_record_jni.h"
+#include "audio_device/android/audio_track_jni.h"
+#include "audio_device/android/opensles_player.h"
 #elif defined(WEBRTC_LINUX)
  #if defined(LINUX_ALSA)
    #include "audio_device_alsa_linux.h"
@@ -43,13 +43,13 @@
 #endif
 
 #if defined(WEBRTC_DUMMY_FILE_DEVICES)
-#include "webrtc/modules/audio_device/dummy/file_audio_device_factory.h"
+#include "audio_device/dummy/file_audio_device_factory.h"
 #endif
 
-#include "webrtc/modules/audio_device/dummy/audio_device_dummy.h"
-#include "webrtc/modules/audio_device/dummy/file_audio_device.h"
-#include "webrtc/system_wrappers/interface/critical_section_wrapper.h"
-#include "webrtc/system_wrappers/interface/trace.h"
+#include "audio_device/dummy/audio_device_dummy.h"
+#include "audio_device/dummy/file_audio_device.h"
+#include "system_wrappers/interface/critical_section_wrapper.h"
+#include "system_wrappers/interface/trace.h"
 
 #define CHECK_INITIALIZED()         \
 {                                   \

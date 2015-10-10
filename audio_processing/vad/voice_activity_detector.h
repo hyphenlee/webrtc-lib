@@ -13,12 +13,12 @@
 
 #include <vector>
 
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/common_audio/resampler/include/resampler.h"
-#include "webrtc/modules/audio_processing/vad/vad_audio_proc.h"
-#include "webrtc/modules/audio_processing/vad/common.h"
-#include "webrtc/modules/audio_processing/vad/pitch_based_vad.h"
-#include "webrtc/modules/audio_processing/vad/standalone_vad.h"
+#include "base/scoped_ptr.h"
+#include "common_audio/resampler/include/resampler.h"
+#include "audio_processing/vad/vad_audio_proc.h"
+#include "audio_processing/vad/common.h"
+#include "audio_processing/vad/pitch_based_vad.h"
+#include "audio_processing/vad/standalone_vad.h"
 
 namespace webrtc {
 

@@ -16,8 +16,8 @@
 #include <string>
 #include <vector>
 
-#include "webrtc/base/linked_ptr.h"
-#include "webrtc/base/scoped_ptr.h"
+#include "base/linked_ptr.h"
+#include "base/scoped_ptr.h"
 
 namespace rtc {
 

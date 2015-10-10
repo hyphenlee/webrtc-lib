@@ -16,8 +16,8 @@
 #include <deque>
 #include <map>
 
-#include "webrtc/base/messagequeue.h"
-#include "webrtc/base/socketserver.h"
+#include "base/messagequeue.h"
+#include "base/socketserver.h"
 
 namespace rtc {
 

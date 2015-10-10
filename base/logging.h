@@ -54,9 +54,9 @@
 #include <sstream>
 #include <string>
 #include <utility>
-#include "webrtc/base/basictypes.h"
-#include "webrtc/base/criticalsection.h"
-#include "webrtc/base/thread_annotations.h"
+#include "base/basictypes.h"
+#include "base/criticalsection.h"
+#include "base/thread_annotations.h"
 
 namespace rtc {
 

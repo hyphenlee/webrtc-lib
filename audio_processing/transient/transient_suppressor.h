@@ -14,9 +14,9 @@
 #include <deque>
 #include <set>
 
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/test/testsupport/gtest_prod_util.h"
-#include "webrtc/typedefs.h"
+#include "base/scoped_ptr.h"
+//#include "test/testsupport/gtest_prod_util.h"
+#include "typedefs.h"
 
 namespace webrtc {
 
@@ -59,8 +59,8 @@ class TransientSuppressor {
                bool key_pressed);
 
  private:
-  FRIEND_TEST_ALL_PREFIXES(TransientSuppressorTest,
-                           TypingDetectionLogicWorksAsExpectedForMono);
+  //  FRIEND_TEST_ALL_PREFIXES(TransientSuppressorTest,
+  //                       TypingDetectionLogicWorksAsExpectedForMono);
   void Suppress(float* in_ptr, float* spectral_mean, float* out_ptr);
 
   void UpdateKeypress(bool key_pressed);

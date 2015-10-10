@@ -13,9 +13,9 @@
 
 #if defined(WEBRTC_WIN)
 
-#include "webrtc/base/win32.h"
-#include "webrtc/base/basictypes.h"
-#include "webrtc/base/IPAddress.h"
+#include "base/win32.h"
+#include "base/basictypes.h"
+#include "base/IPAddress.h"
 
 namespace rtc {
 

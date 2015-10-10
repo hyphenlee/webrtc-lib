@@ -10,7 +10,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "webrtc/base/scoped_autorelease_pool.h"
+#import "base/scoped_autorelease_pool.h"
 
 namespace rtc {
 

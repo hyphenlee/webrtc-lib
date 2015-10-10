@@ -11,8 +11,8 @@
 #ifndef WEBRTC_BASE_SSLADAPTER_H_
 #define WEBRTC_BASE_SSLADAPTER_H_
 
-#include "webrtc/base/asyncsocket.h"
-#include "webrtc/base/sslstreamadapter.h"
+#include "base/asyncsocket.h"
+#include "base/sslstreamadapter.h"
 
 namespace rtc {
 

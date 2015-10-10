@@ -8,9 +8,9 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/stringutils.h"
-#include "webrtc/base/common.h"
+#include "base/gunit.h"
+#include "base/stringutils.h"
+#include "base/common.h"
 
 namespace rtc {
 

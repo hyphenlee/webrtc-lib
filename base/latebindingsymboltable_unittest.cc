@@ -12,8 +12,8 @@
 #include <math.h>
 #endif
 
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/latebindingsymboltable.h"
+#include "base/gunit.h"
+#include "base/latebindingsymboltable.h"
 
 namespace rtc {
 
@@ -27,12 +27,12 @@ namespace rtc {
 
 #define LATE_BINDING_SYMBOL_TABLE_CLASS_NAME LIBM_SYMBOLS_CLASS_NAME
 #define LATE_BINDING_SYMBOL_TABLE_SYMBOLS_LIST LIBM_SYMBOLS_LIST
-#include "webrtc/base/latebindingsymboltable.h.def"
+#include "base/latebindingsymboltable.h.def"
 
 #define LATE_BINDING_SYMBOL_TABLE_CLASS_NAME LIBM_SYMBOLS_CLASS_NAME
 #define LATE_BINDING_SYMBOL_TABLE_SYMBOLS_LIST LIBM_SYMBOLS_LIST
 #define LATE_BINDING_SYMBOL_TABLE_DLL_NAME "libm.so.6"
-#include "webrtc/base/latebindingsymboltable.cc.def"
+#include "base/latebindingsymboltable.cc.def"
 
 TEST(LateBindingSymbolTable, libm) {
   LibmTestSymbolTable table;

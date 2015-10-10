@@ -10,9 +10,9 @@
 
 #ifdef HAVE_DBUS_GLIB
 
-#include "webrtc/base/dbus.h"
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/thread.h"
+#include "base/dbus.h"
+#include "base/gunit.h"
+#include "base/thread.h"
 
 namespace rtc {
 

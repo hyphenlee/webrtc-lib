@@ -16,8 +16,8 @@
 #include <map>
 #include <vector>
 
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/stream.h"
+#include "base/scoped_ptr.h"
+#include "base/stream.h"
 
 namespace rtc {
 

@@ -12,7 +12,7 @@
 #include "config.h"
 #endif
 
-#include "webrtc/base/network.h"
+#include "base/network.h"
 
 #if defined(WEBRTC_POSIX)
 // linux/if.h can't be included at the same time as the posix sys/if.h, and
@@ -31,7 +31,7 @@
 #include <errno.h>
 
 #if defined(WEBRTC_ANDROID)
-#include "webrtc/base/ifaddrs-android.h"
+#include "base/ifaddrs-android.h"
 #elif !defined(__native_client__)
 #include <ifaddrs.h>
 #endif
@@ -39,7 +39,7 @@
 #endif  // WEBRTC_POSIX
 
 #if defined(WEBRTC_WIN)
-#include "webrtc/base/win32.h"
+#include "base/win32.h"
 #include <Iphlpapi.h>
 #endif
 
@@ -47,12 +47,12 @@
 
 #include <algorithm>
 
-#include "webrtc/base/logging.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/socket.h"  // includes something that makes windows happy
-#include "webrtc/base/stream.h"
-#include "webrtc/base/stringencode.h"
-#include "webrtc/base/thread.h"
+#include "base/logging.h"
+#include "base/scoped_ptr.h"
+#include "base/socket.h"  // includes something that makes windows happy
+#include "base/stream.h"
+#include "base/stringencode.h"
+#include "base/thread.h"
 
 namespace rtc {
 namespace {

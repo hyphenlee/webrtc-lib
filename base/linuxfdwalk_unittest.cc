@@ -11,8 +11,8 @@
 #include <set>
 #include <sstream>
 
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/linuxfdwalk.h"
+#include "base/gunit.h"
+#include "base/linuxfdwalk.h"
 
 #include <sys/types.h>
 #include <sys/stat.h>

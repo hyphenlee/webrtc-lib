@@ -1,0 +1,30 @@
+dependencies: \
+  /Users/lihaifeng/work/audio-module/audio_device/audio_device_impl.cc \
+  /Users/lihaifeng/work/audio-module/common_audio/signal_processing/include/signal_processing_library.h \
+  /Users/lihaifeng/work/audio-module/typedefs.h \
+  /Users/lihaifeng/work/audio-module/common_audio/signal_processing/include/spl_inl.h \
+  /Users/lihaifeng/work/audio-module/audio_device/audio_device_config.h \
+  /Users/lihaifeng/work/audio-module/audio_device/audio_device_impl.h \
+  /Users/lihaifeng/work/audio-module/base/checks.h \
+  /Users/lihaifeng/work/audio-module/base/scoped_ptr.h \
+  /Users/lihaifeng/work/audio-module/base/constructormagic.h \
+  /Users/lihaifeng/work/audio-module/base/template_util.h \
+  /Users/lihaifeng/work/audio-module/audio_device/audio_device_buffer.h \
+  /Users/lihaifeng/work/audio-module/audio_device/include/audio_device.h \
+  /Users/lihaifeng/work/audio-module/audio_device/include/audio_device_defines.h \
+  /Users/lihaifeng/work/audio-module/interface/module.h \
+  /Users/lihaifeng/work/audio-module/system_wrappers/interface/file_wrapper.h \
+  /Users/lihaifeng/work/audio-module/common_types.h \
+  /Users/lihaifeng/work/audio-module/system_wrappers/interface/ref_count.h \
+  /Users/lihaifeng/work/audio-module/system_wrappers/interface/atomic32.h \
+  /Users/lihaifeng/work/audio-module/system_wrappers/interface/tick_util.h \
+  /Users/lihaifeng/work/audio-module/audio_device/mac/audio_device_mac.h \
+  /Users/lihaifeng/work/audio-module/base/thread_annotations.h \
+  /Users/lihaifeng/work/audio-module/audio_device/audio_device_generic.h \
+  /Users/lihaifeng/work/audio-module/audio_device/mac/audio_mixer_manager_mac.h \
+  /Users/lihaifeng/work/audio-module/system_wrappers/interface/critical_section_wrapper.h \
+  /Users/lihaifeng/work/audio-module/audio_device/dummy/audio_device_dummy.h \
+  /Users/lihaifeng/work/audio-module/audio_device/dummy/file_audio_device.h \
+  /Users/lihaifeng/work/audio-module/system_wrappers/interface/clock.h \
+  /Users/lihaifeng/work/audio-module/system_wrappers/interface/rw_lock_wrapper.h \
+  /Users/lihaifeng/work/audio-module/system_wrappers/interface/trace.h

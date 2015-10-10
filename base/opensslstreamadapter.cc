@@ -14,7 +14,7 @@
 
 #if HAVE_OPENSSL_SSL_H
 
-#include "webrtc/base/opensslstreamadapter.h"
+#include "base/opensslstreamadapter.h"
 
 #include <openssl/bio.h>
 #include <openssl/crypto.h>
@@ -25,16 +25,16 @@
 
 #include <vector>
 
-#include "webrtc/base/common.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/safe_conversions.h"
-#include "webrtc/base/stream.h"
-#include "webrtc/base/openssl.h"
-#include "webrtc/base/openssladapter.h"
-#include "webrtc/base/openssldigest.h"
-#include "webrtc/base/opensslidentity.h"
-#include "webrtc/base/stringutils.h"
-#include "webrtc/base/thread.h"
+#include "base/common.h"
+#include "base/logging.h"
+#include "base/safe_conversions.h"
+#include "base/stream.h"
+#include "base/openssl.h"
+#include "base/openssladapter.h"
+#include "base/openssldigest.h"
+#include "base/opensslidentity.h"
+#include "base/stringutils.h"
+#include "base/thread.h"
 
 namespace rtc {
 

@@ -11,7 +11,7 @@
 #ifndef WEBRTC_MODULES_AUDIO_PROCESSING_AEC_MAIN_SOURCE_AEC_RDFT_H_
 #define WEBRTC_MODULES_AUDIO_PROCESSING_AEC_MAIN_SOURCE_AEC_RDFT_H_
 
-#include "webrtc/modules/audio_processing/aec/aec_common.h"
+#include "audio_processing/aec/aec_common.h"
 
 // These intrinsics were unavailable before VS 2008.
 // TODO(andrew): move to a common file.

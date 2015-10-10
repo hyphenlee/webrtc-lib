@@ -25,8 +25,8 @@
 #include <mmsystem.h>
 #endif
 
-#include "webrtc/base/checks.h"
-#include "webrtc/base/timeutils.h"
+#include "base/checks.h"
+#include "base/timeutils.h"
 
 #define EFFICIENT_IMPLEMENTATION 1
 

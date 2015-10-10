@@ -12,14 +12,14 @@
 #define WEBRTC_BASE_WIN32SOCKETSERVER_H_
 
 #if defined(WEBRTC_WIN)
-#include "webrtc/base/asyncsocket.h"
-#include "webrtc/base/criticalsection.h"
-#include "webrtc/base/messagequeue.h"
-#include "webrtc/base/socketserver.h"
-#include "webrtc/base/socketfactory.h"
-#include "webrtc/base/socket.h"
-#include "webrtc/base/thread.h"
-#include "webrtc/base/win32window.h"
+#include "base/asyncsocket.h"
+#include "base/criticalsection.h"
+#include "base/messagequeue.h"
+#include "base/socketserver.h"
+#include "base/socketfactory.h"
+#include "base/socket.h"
+#include "base/thread.h"
+#include "base/win32window.h"
 
 namespace rtc {
 

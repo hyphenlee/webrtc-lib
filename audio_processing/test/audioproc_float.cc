@@ -13,15 +13,15 @@
 #include <string>
 
 #include "gflags/gflags.h"
-#include "webrtc/base/checks.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/common_audio/channel_buffer.h"
-#include "webrtc/common_audio/wav_file.h"
-#include "webrtc/modules/audio_processing/include/audio_processing.h"
-#include "webrtc/modules/audio_processing/test/protobuf_utils.h"
-#include "webrtc/modules/audio_processing/test/test_utils.h"
-#include "webrtc/system_wrappers/interface/tick_util.h"
-#include "webrtc/test/testsupport/trace_to_stderr.h"
+#include "base/checks.h"
+#include "base/scoped_ptr.h"
+#include "common_audio/channel_buffer.h"
+#include "common_audio/wav_file.h"
+#include "audio_processing/include/audio_processing.h"
+#include "audio_processing/test/protobuf_utils.h"
+#include "audio_processing/test/test_utils.h"
+#include "system_wrappers/interface/tick_util.h"
+#include "test/testsupport/trace_to_stderr.h"
 
 DEFINE_string(dump, "", "The name of the debug dump file to read from.");
 DEFINE_string(i, "", "The name of the input file to read from.");

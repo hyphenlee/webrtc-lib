@@ -7,12 +7,12 @@
  *  in the file PATENTS.  All contributing project authors may
  *  be found in the AUTHORS file in the root of the source tree.
  */
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/common.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/win32window.h"
-#include "webrtc/base/win32windowpicker.h"
-#include "webrtc/base/windowpicker.h"
+#include "base/gunit.h"
+#include "base/common.h"
+#include "base/logging.h"
+#include "base/win32window.h"
+#include "base/win32windowpicker.h"
+#include "base/windowpicker.h"
 
 #if !defined(WEBRTC_WIN)
 #error Only for Windows

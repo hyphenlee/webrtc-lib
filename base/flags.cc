@@ -14,11 +14,11 @@
 
 
 #if defined(WEBRTC_WIN)
-#include "webrtc/base/win32.h"
+#include "base/win32.h"
 #include <shellapi.h>
 #endif
 
-#include "webrtc/base/flags.h"
+#include "base/flags.h"
 
 namespace rtc {
 // -----------------------------------------------------------------------------

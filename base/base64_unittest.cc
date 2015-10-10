@@ -8,14 +8,14 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/common.h"
-#include "webrtc/base/base64.h"
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/stringutils.h"
-#include "webrtc/base/stream.h"
+#include "base/common.h"
+#include "base/base64.h"
+#include "base/gunit.h"
+#include "base/logging.h"
+#include "base/stringutils.h"
+#include "base/stream.h"
 
-#include "webrtc/base/testbase64.h"
+#include "base/testbase64.h"
 
 using namespace std;
 using namespace rtc;

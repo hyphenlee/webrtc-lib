@@ -25,12 +25,12 @@
 #include "nss.h"
 #include "secmodt.h"
 
-#include "webrtc/base/buffer.h"
-#include "webrtc/base/criticalsection.h"
-#include "webrtc/base/nssidentity.h"
-#include "webrtc/base/ssladapter.h"
-#include "webrtc/base/sslstreamadapter.h"
-#include "webrtc/base/sslstreamadapterhelper.h"
+#include "base/buffer.h"
+#include "base/criticalsection.h"
+#include "base/nssidentity.h"
+#include "base/ssladapter.h"
+#include "base/sslstreamadapter.h"
+#include "base/sslstreamadapterhelper.h"
 
 namespace rtc {
 

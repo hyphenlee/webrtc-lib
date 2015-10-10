@@ -8,13 +8,13 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_processing/audio_processing_impl.h"
+#include "audio_processing/audio_processing_impl.h"
 
 #include "testing/gmock/include/gmock/gmock.h"
 #include "testing/gtest/include/gtest/gtest.h"
-#include "webrtc/config.h"
-#include "webrtc/modules/audio_processing/test/test_utils.h"
-#include "webrtc/modules/interface/module_common_types.h"
+#include "config.h"
+#include "audio_processing/test/test_utils.h"
+#include "interface/module_common_types.h"
 
 using ::testing::Invoke;
 using ::testing::Return;

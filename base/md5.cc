@@ -18,12 +18,12 @@
 // Changes from original C code:
 // Ported to C++, type casting, Google code style.
 
-#include "webrtc/base/md5.h"
+#include "base/md5.h"
 
 // TODO: Avoid memcmpy - hash directly from memory.
 #include <string.h>  // for memcpy().
 
-#include "webrtc/base/byteorder.h"  // for ARCH_CPU_LITTLE_ENDIAN.
+#include "base/byteorder.h"  // for ARCH_CPU_LITTLE_ENDIAN.
 
 namespace rtc {
 

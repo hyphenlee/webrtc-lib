@@ -10,11 +10,11 @@
 
 #include <algorithm>
 
-#include "webrtc/base/taskparent.h"
+#include "base/taskparent.h"
 
-#include "webrtc/base/common.h"
-#include "webrtc/base/task.h"
-#include "webrtc/base/taskrunner.h"
+#include "base/common.h"
+#include "base/task.h"
+#include "base/taskrunner.h"
 
 namespace rtc {
 

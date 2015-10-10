@@ -13,8 +13,8 @@
 
 #include <algorithm>
 
-#include "webrtc/system_wrappers/interface/sort.h"
-#include "webrtc/system_wrappers/interface/tick_util.h"
+#include "system_wrappers/interface/sort.h"
+#include "system_wrappers/interface/tick_util.h"
 
 // Excellent work polluting the global namespace Visual Studio...
 #undef max

@@ -8,12 +8,12 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/logsinks.h"
+#include "base/logsinks.h"
 
 #include <iostream>
 #include <string>
 
-#include "webrtc/base/checks.h"
+#include "base/checks.h"
 
 namespace rtc {
 

@@ -12,15 +12,15 @@
 #define WEBRTC_BASE_WINDOWPICKERFACTORY_H_
 
 #if defined(WEBRTC_WIN)
-#include "webrtc/base/win32windowpicker.h"
+#include "base/win32windowpicker.h"
 #elif defined(WEBRTC_MAC) && !defined(WEBRTC_IOS)
-#include "webrtc/base/macutils.h"
-#include "webrtc/base/macwindowpicker.h"
+#include "base/macutils.h"
+#include "base/macwindowpicker.h"
 #elif defined(WEBRTC_LINUX) && !defined(WEBRTC_ANDROID) && defined(HAVE_X11)
-#include "webrtc/base/x11windowpicker.h"
+#include "base/x11windowpicker.h"
 #endif
 
-#include "webrtc/base/windowpicker.h"
+#include "base/windowpicker.h"
 
 namespace rtc {
 

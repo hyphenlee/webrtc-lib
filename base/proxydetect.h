@@ -11,7 +11,7 @@
 #ifndef _PROXYDETECT_H_
 #define _PROXYDETECT_H_
 
-#include "webrtc/base/proxyinfo.h"
+#include "base/proxyinfo.h"
 
 #ifdef HAVE_CONFIG_H
 #include "config.h"

@@ -11,14 +11,14 @@
 #ifndef WEBRTC_BASE_HTTPCLIENT_H__
 #define WEBRTC_BASE_HTTPCLIENT_H__
 
-#include "webrtc/base/common.h"
-#include "webrtc/base/httpbase.h"
-#include "webrtc/base/nethelpers.h"
-#include "webrtc/base/proxyinfo.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/sigslot.h"
-#include "webrtc/base/socketaddress.h"
-#include "webrtc/base/socketpool.h"
+#include "base/common.h"
+#include "base/httpbase.h"
+#include "base/nethelpers.h"
+#include "base/proxyinfo.h"
+#include "base/scoped_ptr.h"
+#include "base/sigslot.h"
+#include "base/socketaddress.h"
+#include "base/socketpool.h"
 
 namespace rtc {
 

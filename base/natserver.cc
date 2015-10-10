@@ -8,10 +8,10 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/natsocketfactory.h"
-#include "webrtc/base/natserver.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/socketadapters.h"
+#include "base/natsocketfactory.h"
+#include "base/natserver.h"
+#include "base/logging.h"
+#include "base/socketadapters.h"
 
 namespace rtc {
 

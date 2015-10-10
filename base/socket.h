@@ -22,12 +22,12 @@
 #endif
 
 #if defined(WEBRTC_WIN)
-#include "webrtc/base/win32.h"
+#include "base/win32.h"
 #endif
 
-#include "webrtc/base/basictypes.h"
-#include "webrtc/base/constructormagic.h"
-#include "webrtc/base/socketaddress.h"
+#include "base/basictypes.h"
+#include "base/constructormagic.h"
+#include "base/socketaddress.h"
 
 // Rather than converting errors into a private namespace,
 // Reuse the POSIX socket api errors. Note this depends on

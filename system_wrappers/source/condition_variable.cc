@@ -8,15 +8,15 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/system_wrappers/interface/condition_variable_wrapper.h"
+#include "system_wrappers/interface/condition_variable_wrapper.h"
 
 #if defined(_WIN32)
 #include <windows.h>
-#include "webrtc/system_wrappers/source/condition_variable_event_win.h"
-#include "webrtc/system_wrappers/source/condition_variable_native_win.h"
+#include "system_wrappers/source/condition_variable_event_win.h"
+#include "system_wrappers/source/condition_variable_native_win.h"
 #elif defined(WEBRTC_LINUX) || defined(WEBRTC_MAC)
 #include <pthread.h>
-#include "webrtc/system_wrappers/source/condition_variable_posix.h"
+#include "system_wrappers/source/condition_variable_posix.h"
 #endif
 
 namespace webrtc {

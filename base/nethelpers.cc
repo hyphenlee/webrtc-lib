@@ -8,17 +8,17 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/nethelpers.h"
+#include "base/nethelpers.h"
 
 #if defined(WEBRTC_WIN)
 #include <ws2spi.h>
 #include <ws2tcpip.h>
-#include "webrtc/base/win32.h"
+#include "base/win32.h"
 #endif
 
-#include "webrtc/base/byteorder.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/signalthread.h"
+#include "base/byteorder.h"
+#include "base/logging.h"
+#include "base/signalthread.h"
 
 namespace rtc {
 

@@ -10,7 +10,7 @@
 
 #include <assert.h>
 
-#include "webrtc/base/nattypes.h"
+#include "base/nattypes.h"
 
 namespace rtc {
 

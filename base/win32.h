@@ -38,8 +38,8 @@ typedef struct _TOKEN_MANDATORY_LABEL {
 
 #include <string>
 
-#include "webrtc/base/stringutils.h"
-#include "webrtc/base/basictypes.h"
+#include "base/stringutils.h"
+#include "base/basictypes.h"
 
 namespace rtc {
 

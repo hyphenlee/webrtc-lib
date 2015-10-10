@@ -11,9 +11,9 @@
 #ifndef WEBRTC_BASE_SHAREDEXCLUSIVELOCK_H_
 #define WEBRTC_BASE_SHAREDEXCLUSIVELOCK_H_
 
-#include "webrtc/base/constructormagic.h"
-#include "webrtc/base/criticalsection.h"
-#include "webrtc/base/event.h"
+#include "base/constructormagic.h"
+#include "base/criticalsection.h"
+#include "base/event.h"
 
 namespace rtc {
 

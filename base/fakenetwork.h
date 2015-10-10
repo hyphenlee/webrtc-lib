@@ -14,11 +14,11 @@
 #include <string>
 #include <vector>
 
-#include "webrtc/base/network.h"
-#include "webrtc/base/messagehandler.h"
-#include "webrtc/base/socketaddress.h"
-#include "webrtc/base/stringencode.h"
-#include "webrtc/base/thread.h"
+#include "base/network.h"
+#include "base/messagehandler.h"
+#include "base/socketaddress.h"
+#include "base/stringencode.h"
+#include "base/thread.h"
 
 namespace rtc {
 

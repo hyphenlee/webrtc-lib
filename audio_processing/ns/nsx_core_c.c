@@ -10,9 +10,9 @@
 
 #include <assert.h>
 
-#include "webrtc/modules/audio_processing/ns/include/noise_suppression_x.h"
-#include "webrtc/modules/audio_processing/ns/nsx_core.h"
-#include "webrtc/modules/audio_processing/ns/nsx_defines.h"
+#include "audio_processing/ns/include/noise_suppression_x.h"
+#include "audio_processing/ns/nsx_core.h"
+#include "audio_processing/ns/nsx_defines.h"
 
 static const int16_t kIndicatorTable[17] = {
   0, 2017, 3809, 5227, 6258, 6963, 7424, 7718,

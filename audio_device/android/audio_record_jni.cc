@@ -8,14 +8,14 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_device/android/audio_record_jni.h"
+#include "audio_device/android/audio_record_jni.h"
 
 #include <android/log.h>
 
-#include "webrtc/base/arraysize.h"
-#include "webrtc/base/checks.h"
-#include "webrtc/base/format_macros.h"
-#include "webrtc/modules/audio_device/android/audio_common.h"
+#include "base/arraysize.h"
+#include "base/checks.h"
+#include "base/format_macros.h"
+#include "audio_device/android/audio_common.h"
 
 #define TAG "AudioRecordJni"
 #define ALOGV(...) __android_log_print(ANDROID_LOG_VERBOSE, TAG, __VA_ARGS__)
@@ -81,7 +81,7 @@ AudioRecordJni::AudioRecordJni(AudioManager* audio_manager)
       {"nativeDataIsRecorded", "(IJ)V",
       reinterpret_cast<void*>(&webrtc::AudioRecordJni::DataIsRecorded)}};
   j_native_registration_ = j_environment_->RegisterNatives(
-      "org/webrtc/voiceengine/WebRtcAudioRecord",
+      "org/voiceengine/WebRtcAudioRecord",
       native_methods, arraysize(native_methods));
   j_audio_record_.reset(new JavaAudioRecord(
       j_native_registration_.get(),

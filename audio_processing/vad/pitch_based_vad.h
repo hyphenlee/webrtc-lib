@@ -11,10 +11,10 @@
 #ifndef WEBRTC_MODULES_AUDIO_PROCESSING_VAD_PITCH_BASED_VAD_H_
 #define WEBRTC_MODULES_AUDIO_PROCESSING_VAD_PITCH_BASED_VAD_H_
 
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/modules/audio_processing/vad/common.h"
-#include "webrtc/modules/audio_processing/vad/gmm.h"
-#include "webrtc/typedefs.h"
+#include "base/scoped_ptr.h"
+#include "audio_processing/vad/common.h"
+#include "audio_processing/vad/gmm.h"
+#include "typedefs.h"
 
 namespace webrtc {
 

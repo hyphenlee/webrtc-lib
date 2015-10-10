@@ -11,9 +11,9 @@
 #ifndef WEBRTC_MODULES_AUDIO_PROCESSING_VAD_VAD_AUDIO_PROC_H_
 #define WEBRTC_MODULES_AUDIO_PROCESSING_VAD_VAD_AUDIO_PROC_H_
 
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/modules/audio_processing/vad/common.h"
-#include "webrtc/typedefs.h"
+#include "base/scoped_ptr.h"
+#include "audio_processing/vad/common.h"
+#include "typedefs.h"
 
 namespace webrtc {
 

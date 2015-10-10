@@ -8,7 +8,7 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/socketaddress.h"
+#include "base/socketaddress.h"
 
 #if defined(WEBRTC_POSIX)
 #include <sys/types.h>
@@ -27,13 +27,13 @@
 
 #include <sstream>
 
-#include "webrtc/base/byteorder.h"
-#include "webrtc/base/common.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/nethelpers.h"
+#include "base/byteorder.h"
+#include "base/common.h"
+#include "base/logging.h"
+#include "base/nethelpers.h"
 
 #if defined(WEBRTC_WIN)
-#include "webrtc/base/win32.h"
+#include "base/win32.h"
 #endif
 
 namespace rtc {

@@ -15,7 +15,7 @@
 #include <string>
 #include <vector>
 
-#include "webrtc/base/checks.h"
+#include "base/checks.h"
 
 namespace rtc {
 

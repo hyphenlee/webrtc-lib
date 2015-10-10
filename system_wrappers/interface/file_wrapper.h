@@ -14,8 +14,8 @@
 #include <stddef.h>
 #include <stdio.h>
 
-#include "webrtc/common_types.h"
-#include "webrtc/typedefs.h"
+#include "common_types.h"
+#include "typedefs.h"
 
 // Implementation of an InStream and OutStream that can read (exclusive) or
 // write from/to a file.

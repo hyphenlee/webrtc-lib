@@ -7,13 +7,13 @@
  *  in the file PATENTS.  All contributing project authors may
  *  be found in the AUTHORS file in the root of the source tree.
  */
-#import "webrtc/base/maccocoasocketserver.h"
+#import "base/maccocoasocketserver.h"
 
 #import <Foundation/Foundation.h>
 #import <AppKit/AppKit.h>
 #include <assert.h>
 
-#include "webrtc/base/scoped_autorelease_pool.h"
+#include "base/scoped_autorelease_pool.h"
 
 // MacCocoaSocketServerHelperRtc serves as a delegate to NSMachPort or a target for
 // a timeout.

@@ -17,19 +17,19 @@
 
 #include "testing/gmock/include/gmock/gmock.h"
 #include "testing/gtest/include/gtest/gtest.h"
-#include "webrtc/base/arraysize.h"
-#include "webrtc/base/criticalsection.h"
-#include "webrtc/base/format_macros.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/scoped_ref_ptr.h"
-#include "webrtc/modules/audio_device/audio_device_impl.h"
-#include "webrtc/modules/audio_device/include/audio_device.h"
-#include "webrtc/modules/audio_device/ios/audio_device_ios.h"
-#include "webrtc/system_wrappers/interface/clock.h"
-#include "webrtc/system_wrappers/interface/event_wrapper.h"
-#include "webrtc/system_wrappers/interface/sleep.h"
-#include "webrtc/test/testsupport/fileutils.h"
+#include "base/arraysize.h"
+#include "base/criticalsection.h"
+#include "base/format_macros.h"
+#include "base/logging.h"
+#include "base/scoped_ptr.h"
+#include "base/scoped_ref_ptr.h"
+#include "audio_device/audio_device_impl.h"
+#include "audio_device/include/audio_device.h"
+#include "audio_device/ios/audio_device_ios.h"
+#include "system_wrappers/interface/clock.h"
+#include "system_wrappers/interface/event_wrapper.h"
+#include "system_wrappers/interface/sleep.h"
+#include "test/testsupport/fileutils.h"
 
 using std::cout;
 using std::endl;
@@ -489,7 +489,7 @@ class AudioDeviceTest : public ::testing::Test {
   AudioDeviceTest() : test_is_done_(EventWrapper::Create()) {
     old_sev_ = rtc::LogMessage::GetLogToDebug();
     // Set suitable logging level here. Change to rtc::LS_INFO for more verbose
-    // output. See webrtc/base/logging.h for complete list of options.
+    // output. See base/logging.h for complete list of options.
     rtc::LogMessage::LogToDebug(rtc::LS_INFO);
     // Add extra logging fields here (timestamps and thread id).
     // rtc::LogMessage::LogTimestamps();

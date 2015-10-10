@@ -18,15 +18,15 @@
 #include <queue>
 #include <vector>
 
-#include "webrtc/base/basictypes.h"
-#include "webrtc/base/constructormagic.h"
-#include "webrtc/base/criticalsection.h"
-#include "webrtc/base/messagehandler.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/scoped_ref_ptr.h"
-#include "webrtc/base/sigslot.h"
-#include "webrtc/base/socketserver.h"
-#include "webrtc/base/timeutils.h"
+#include "base/basictypes.h"
+#include "base/constructormagic.h"
+#include "base/criticalsection.h"
+#include "base/messagehandler.h"
+#include "base/scoped_ptr.h"
+#include "base/scoped_ref_ptr.h"
+#include "base/sigslot.h"
+#include "base/socketserver.h"
+#include "base/timeutils.h"
 
 namespace rtc {
 

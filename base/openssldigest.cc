@@ -10,10 +10,10 @@
 
 #if HAVE_OPENSSL_SSL_H
 
-#include "webrtc/base/openssldigest.h"
+#include "base/openssldigest.h"
 
-#include "webrtc/base/common.h"
-#include "webrtc/base/openssl.h"
+#include "base/common.h"
+#include "base/openssl.h"
 
 namespace rtc {
 

@@ -16,9 +16,9 @@
 #include <stdio.h>
 #endif
 
-#include "webrtc/modules/audio_processing/agc/legacy/digital_agc.h"
-#include "webrtc/modules/audio_processing/agc/legacy/gain_control.h"
-#include "webrtc/typedefs.h"
+#include "audio_processing/agc/legacy/digital_agc.h"
+#include "audio_processing/agc/legacy/gain_control.h"
+#include "typedefs.h"
 
 /* Analog Automatic Gain Control variables:
  * Constant declarations (inner limits inside which no changes are done)

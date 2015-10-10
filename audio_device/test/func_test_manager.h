@@ -14,11 +14,11 @@
 #include <list>
 #include <string>
 
-#include "webrtc/common_audio/resampler/include/resampler.h"
-#include "webrtc/modules/audio_device/include/audio_device.h"
-#include "webrtc/modules/audio_device/test/audio_device_test_defines.h"
-#include "webrtc/system_wrappers/interface/file_wrapper.h"
-#include "webrtc/typedefs.h"
+#include "common_audio/resampler/include/resampler.h"
+#include "audio_device/include/audio_device.h"
+#include "audio_device/test/audio_device_test_defines.h"
+#include "system_wrappers/interface/file_wrapper.h"
+#include "typedefs.h"
 
 
 #define ADM_AUDIO_LAYER AudioDeviceModule::kPlatformDefaultAudio

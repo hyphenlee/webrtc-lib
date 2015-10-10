@@ -11,8 +11,8 @@
 #ifndef WEBRTC_BASE_BANDWIDTHSMOOTHER_H_
 #define WEBRTC_BASE_BANDWIDTHSMOOTHER_H_
 
-#include "webrtc/base/rollingaccumulator.h"
-#include "webrtc/base/timeutils.h"
+#include "base/rollingaccumulator.h"
+#include "base/timeutils.h"
 
 namespace rtc {
 

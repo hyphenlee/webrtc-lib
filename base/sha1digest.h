@@ -11,8 +11,8 @@
 #ifndef WEBRTC_BASE_SHA1DIGEST_H_
 #define WEBRTC_BASE_SHA1DIGEST_H_
 
-#include "webrtc/base/messagedigest.h"
-#include "webrtc/base/sha1.h"
+#include "base/messagedigest.h"
+#include "base/sha1.h"
 
 namespace rtc {
 

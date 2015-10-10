@@ -8,14 +8,14 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/sslfingerprint.h"
+#include "base/sslfingerprint.h"
 
 #include <ctype.h>
 #include <string>
 
-#include "webrtc/base/helpers.h"
-#include "webrtc/base/messagedigest.h"
-#include "webrtc/base/stringencode.h"
+#include "base/helpers.h"
+#include "base/messagedigest.h"
+#include "base/stringencode.h"
 
 namespace rtc {
 

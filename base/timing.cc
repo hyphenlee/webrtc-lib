@@ -8,8 +8,8 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/timing.h"
-#include "webrtc/base/timeutils.h"
+#include "base/timing.h"
+#include "base/timeutils.h"
 
 #if defined(WEBRTC_POSIX)
 #include <errno.h>
@@ -21,7 +21,7 @@
 #endif
 #elif defined(WEBRTC_WIN)
 #include <sys/timeb.h>
-#include "webrtc/base/win32.h"
+#include "base/win32.h"
 #endif
 
 namespace rtc {

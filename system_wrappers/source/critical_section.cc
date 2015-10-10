@@ -10,9 +10,9 @@
 
 #if defined(_WIN32)
 #include <windows.h>
-#include "webrtc/system_wrappers/source/critical_section_win.h"
+#include "system_wrappers/source/critical_section_win.h"
 #else
-#include "webrtc/system_wrappers/source/critical_section_posix.h"
+#include "system_wrappers/source/critical_section_posix.h"
 #endif
 
 namespace webrtc {

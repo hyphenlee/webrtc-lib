@@ -8,10 +8,10 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/proxydetect.h"
+#include "base/proxydetect.h"
 
 #if defined(WEBRTC_WIN)
-#include "webrtc/base/win32.h"
+#include "base/win32.h"
 #include <shlobj.h>
 #endif  // WEBRTC_WIN
 
@@ -34,11 +34,11 @@
 
 #include <map>
 
-#include "webrtc/base/fileutils.h"
-#include "webrtc/base/httpcommon.h"
-#include "webrtc/base/httpcommon-inl.h"
-#include "webrtc/base/pathutils.h"
-#include "webrtc/base/stringutils.h"
+#include "base/fileutils.h"
+#include "base/httpcommon.h"
+#include "base/httpcommon-inl.h"
+#include "base/pathutils.h"
+#include "base/stringutils.h"
 
 #if defined(WEBRTC_WIN)
 #define _TRY_WINHTTP 1

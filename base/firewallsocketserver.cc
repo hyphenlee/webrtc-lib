@@ -8,14 +8,14 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/firewallsocketserver.h"
+#include "base/firewallsocketserver.h"
 
 #include <assert.h>
 
 #include <algorithm>
 
-#include "webrtc/base/asyncsocket.h"
-#include "webrtc/base/logging.h"
+#include "base/asyncsocket.h"
+#include "base/logging.h"
 
 namespace rtc {
 

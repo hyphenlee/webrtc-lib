@@ -18,7 +18,7 @@
 // to the originating signal using the 'repeat' method.  When the repeated
 // signal fires, the repeater will also fire.
 
-#include "webrtc/base/sigslot.h"
+#include "base/sigslot.h"
 
 namespace sigslot {
 

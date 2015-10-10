@@ -16,8 +16,8 @@
 #import <Foundation/NSProcessInfo.h>
 #include <string.h>
 
-#include "webrtc/base/common.h"
-#include "webrtc/base/pathutils.h"
+#include "base/common.h"
+#include "base/pathutils.h"
 
 // Return a new[]'d |char*| copy of the UTF8 representation of |s|.
 // Caller owns the returned memory and must use delete[] on it.

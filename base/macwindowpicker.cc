@@ -7,14 +7,14 @@
  *  in the file PATENTS.  All contributing project authors may
  *  be found in the AUTHORS file in the root of the source tree.
  */
-#include "webrtc/base/macwindowpicker.h"
+#include "base/macwindowpicker.h"
 
 #include <ApplicationServices/ApplicationServices.h>
 #include <CoreFoundation/CoreFoundation.h>
 #include <dlfcn.h>
 
-#include "webrtc/base/logging.h"
-#include "webrtc/base/macutils.h"
+#include "base/logging.h"
+#include "base/macutils.h"
 
 namespace rtc {
 
@@ -47,7 +47,7 @@ MacWindowPicker::~MacWindowPicker() {
 bool MacWindowPicker::Init() {
   // TODO: If this class grows to use more dynamically functions
   // from the CoreGraphics framework, consider using
-  // webrtc/base/latebindingsymboltable.h.
+  // base/latebindingsymboltable.h.
   lib_handle_ = dlopen(kCoreGraphicsName, RTLD_NOW);
   if (lib_handle_ == NULL) {
     LOG(LS_ERROR) << "Could not load CoreGraphics";

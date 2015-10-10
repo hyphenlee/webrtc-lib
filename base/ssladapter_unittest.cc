@@ -10,14 +10,14 @@
 
 #include <string>
 
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/ipaddress.h"
-#include "webrtc/base/socketstream.h"
-#include "webrtc/base/ssladapter.h"
-#include "webrtc/base/sslstreamadapter.h"
-#include "webrtc/base/sslidentity.h"
-#include "webrtc/base/stream.h"
-#include "webrtc/base/virtualsocketserver.h"
+#include "base/gunit.h"
+#include "base/ipaddress.h"
+#include "base/socketstream.h"
+#include "base/ssladapter.h"
+#include "base/sslstreamadapter.h"
+#include "base/sslidentity.h"
+#include "base/stream.h"
+#include "base/virtualsocketserver.h"
 
 static const int kTimeout = 5000;
 

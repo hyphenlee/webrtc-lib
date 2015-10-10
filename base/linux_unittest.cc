@@ -9,10 +9,10 @@
  */
 
 #include <stdio.h>
-#include "webrtc/base/linux.h"
-#include "webrtc/base/fileutils.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/gunit.h"
+#include "base/linux.h"
+#include "base/fileutils.h"
+#include "base/logging.h"
+#include "base/gunit.h"
 
 namespace rtc {
 

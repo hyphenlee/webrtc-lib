@@ -23,8 +23,8 @@
 #include <string>
 #include <vector>
 
-#include "webrtc/base/basictypes.h"
-#include "webrtc/base/win32.h"
+#include "base/basictypes.h"
+#include "base/win32.h"
 
 namespace rtc {
 

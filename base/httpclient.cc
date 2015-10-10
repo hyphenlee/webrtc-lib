@@ -10,18 +10,18 @@
 
 #include <time.h>
 #include <algorithm>
-#include "webrtc/base/asyncsocket.h"
-#include "webrtc/base/common.h"
-#include "webrtc/base/diskcache.h"
-#include "webrtc/base/httpclient.h"
-#include "webrtc/base/httpcommon-inl.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/pathutils.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/socketstream.h"
-#include "webrtc/base/stringencode.h"
-#include "webrtc/base/stringutils.h"
-#include "webrtc/base/thread.h"
+#include "base/asyncsocket.h"
+#include "base/common.h"
+#include "base/diskcache.h"
+#include "base/httpclient.h"
+#include "base/httpcommon-inl.h"
+#include "base/logging.h"
+#include "base/pathutils.h"
+#include "base/scoped_ptr.h"
+#include "base/socketstream.h"
+#include "base/stringencode.h"
+#include "base/stringutils.h"
+#include "base/thread.h"
 
 namespace rtc {
 

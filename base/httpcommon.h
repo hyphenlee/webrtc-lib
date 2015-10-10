@@ -14,11 +14,11 @@
 #include <map>
 #include <string>
 #include <vector>
-#include "webrtc/base/basictypes.h"
-#include "webrtc/base/common.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/stringutils.h"
-#include "webrtc/base/stream.h"
+#include "base/basictypes.h"
+#include "base/common.h"
+#include "base/scoped_ptr.h"
+#include "base/stringutils.h"
+#include "base/stream.h"
 
 namespace rtc {
 

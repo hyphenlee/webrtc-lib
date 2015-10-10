@@ -8,11 +8,11 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/platform_thread.h"
+#include "base/platform_thread.h"
 
 #include <string.h>
 
-#include "webrtc/base/checks.h"
+#include "base/checks.h"
 
 #if defined(WEBRTC_LINUX)
 #include <sys/prctl.h>

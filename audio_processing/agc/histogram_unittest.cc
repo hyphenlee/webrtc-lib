@@ -10,14 +10,14 @@
 
 // Use CreateHistUnittestFile.m to generate the input file.
 
-#include "webrtc/modules/audio_processing/agc/histogram.h"
+#include "audio_processing/agc/histogram.h"
 
 #include <stdio.h>
 #include <cmath>
 
 #include "gtest/gtest.h"
-#include "webrtc/test/testsupport/fileutils.h"
-#include "webrtc/modules/audio_processing/agc/utility.h"
+#include "test/testsupport/fileutils.h"
+#include "audio_processing/agc/utility.h"
 
 namespace webrtc {
 

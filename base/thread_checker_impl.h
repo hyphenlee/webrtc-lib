@@ -13,8 +13,8 @@
 #ifndef WEBRTC_BASE_THREAD_CHECKER_IMPL_H_
 #define WEBRTC_BASE_THREAD_CHECKER_IMPL_H_
 
-#include "webrtc/base/criticalsection.h"
-#include "webrtc/base/platform_thread.h"
+#include "base/criticalsection.h"
+#include "base/platform_thread.h"
 
 namespace rtc {
 

@@ -8,13 +8,13 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_processing/vad/standalone_vad.h"
+#include "audio_processing/vad/standalone_vad.h"
 
 #include <assert.h>
 
-#include "webrtc/modules/interface/module_common_types.h"
-#include "webrtc/modules/utility/interface/audio_frame_operations.h"
-#include "webrtc/typedefs.h"
+#include "interface/module_common_types.h"
+#include "utility/interface/audio_frame_operations.h"
+#include "typedefs.h"
 
 namespace webrtc {
 

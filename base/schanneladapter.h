@@ -12,8 +12,8 @@
 #define WEBRTC_BASE_SCHANNELADAPTER_H__
 
 #include <string>
-#include "webrtc/base/ssladapter.h"
-#include "webrtc/base/messagequeue.h"
+#include "base/ssladapter.h"
+#include "base/messagequeue.h"
 struct _SecBufferDesc;
 
 namespace rtc {

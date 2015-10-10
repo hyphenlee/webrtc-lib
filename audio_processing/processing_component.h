@@ -13,7 +13,7 @@
 
 #include <vector>
 
-#include "webrtc/common.h"
+#include "common.h"
 
 namespace webrtc {
 

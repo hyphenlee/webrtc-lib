@@ -8,12 +8,12 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/profiler.h"
+#include "base/profiler.h"
 
 #include <math.h>
 #include <algorithm>
 
-#include "webrtc/base/timeutils.h"
+#include "base/timeutils.h"
 
 namespace {
 

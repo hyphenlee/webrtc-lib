@@ -11,8 +11,8 @@
 #ifndef WEBRTC_BASE_WORKER_H_
 #define WEBRTC_BASE_WORKER_H_
 
-#include "webrtc/base/constructormagic.h"
-#include "webrtc/base/messagehandler.h"
+#include "base/constructormagic.h"
+#include "base/messagehandler.h"
 
 namespace rtc {
 

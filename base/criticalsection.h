@@ -11,9 +11,9 @@
 #ifndef WEBRTC_BASE_CRITICALSECTION_H_
 #define WEBRTC_BASE_CRITICALSECTION_H_
 
-#include "webrtc/base/atomicops.h"
-#include "webrtc/base/constructormagic.h"
-#include "webrtc/base/thread_annotations.h"
+#include "base/atomicops.h"
+#include "base/constructormagic.h"
+#include "base/thread_annotations.h"
 
 #if defined(WEBRTC_WIN)
 // Include winsock2.h before including <windows.h> to maintain consistency with
@@ -25,8 +25,9 @@
 #include <sal.h>  // must come after windows headers.
 #endif  // defined(WEBRTC_WIN)
 
-#if defined(WEBRTC_POSIX)
 #include <pthread.h>
+#if defined(WEBRTC_POSIX)
+
 #endif
 
 #if (!defined(NDEBUG) || defined(DCHECK_ALWAYS_ON))

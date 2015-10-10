@@ -10,10 +10,10 @@
 
 // Borrowed from Chromium's src/base/memory/scoped_vector_unittest.cc
 
-#include "webrtc/system_wrappers/interface/scoped_vector.h"
+#include "system_wrappers/interface/scoped_vector.h"
 
 #include "testing/gtest/include/gtest/gtest.h"
-#include "webrtc/base/scoped_ptr.h"
+#include "base/scoped_ptr.h"
 
 namespace webrtc {
 namespace {

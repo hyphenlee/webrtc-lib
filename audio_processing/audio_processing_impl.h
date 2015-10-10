@@ -15,9 +15,9 @@
 #include <string>
 #include <vector>
 
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/thread_annotations.h"
-#include "webrtc/modules/audio_processing/include/audio_processing.h"
+#include "base/scoped_ptr.h"
+#include "base/thread_annotations.h"
+#include "audio_processing/include/audio_processing.h"
 
 namespace webrtc {
 

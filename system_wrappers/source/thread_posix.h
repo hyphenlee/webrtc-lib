@@ -11,10 +11,10 @@
 #ifndef WEBRTC_SYSTEM_WRAPPERS_SOURCE_THREAD_POSIX_H_
 #define WEBRTC_SYSTEM_WRAPPERS_SOURCE_THREAD_POSIX_H_
 
-#include "webrtc/base/event.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/thread_checker.h"
-#include "webrtc/system_wrappers/interface/thread_wrapper.h"
+#include "base/event.h"
+#include "base/scoped_ptr.h"
+#include "base/thread_checker.h"
+#include "system_wrappers/interface/thread_wrapper.h"
 
 #include <pthread.h>
 

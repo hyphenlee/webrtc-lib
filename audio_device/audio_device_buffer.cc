@@ -8,16 +8,16 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_device/audio_device_buffer.h"
+#include "audio_device/audio_device_buffer.h"
 
 #include <assert.h>
 #include <string.h>
 
-#include "webrtc/base/format_macros.h"
-#include "webrtc/modules/audio_device/audio_device_config.h"
-#include "webrtc/system_wrappers/interface/critical_section_wrapper.h"
-#include "webrtc/system_wrappers/interface/logging.h"
-#include "webrtc/system_wrappers/interface/trace.h"
+#include "base/format_macros.h"
+#include "audio_device/audio_device_config.h"
+#include "system_wrappers/interface/critical_section_wrapper.h"
+#include "system_wrappers/interface/logging.h"
+#include "system_wrappers/interface/trace.h"
 
 namespace webrtc {
 
@@ -460,7 +460,7 @@ int32_t AudioDeviceBuffer::DeliverRecordedData()
     int32_t res(0);
     uint32_t newMicLevel(0);
     uint32_t totalDelayMS = _playDelayMS +_recDelayMS;
-
+    printf("call recorded data is available from deliver recorded data");
     res = _ptrCbAudioTransport->RecordedDataIsAvailable(&_recBuffer[0],
                                                         _recSamples,
                                                         _recBytesPerSample,

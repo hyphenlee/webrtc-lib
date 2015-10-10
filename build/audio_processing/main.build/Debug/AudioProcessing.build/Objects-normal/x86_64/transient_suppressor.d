@@ -1,0 +1,19 @@
+dependencies: \
+  /Users/lihaifeng/work/audio-module/audio_processing/transient/transient_suppressor.cc \
+  /Users/lihaifeng/work/audio-module/audio_processing/transient/transient_suppressor.h \
+  /Users/lihaifeng/work/audio-module/base/scoped_ptr.h \
+  /Users/lihaifeng/work/audio-module/base/constructormagic.h \
+  /Users/lihaifeng/work/audio-module/base/template_util.h \
+  /Users/lihaifeng/work/audio-module/typedefs.h \
+  /Users/lihaifeng/work/audio-module/common_audio/fft4g.h \
+  /Users/lihaifeng/work/audio-module/common_audio/include/audio_util.h \
+  /Users/lihaifeng/work/audio-module/base/checks.h \
+  /Users/lihaifeng/work/audio-module/common_audio/signal_processing/include/signal_processing_library.h \
+  /Users/lihaifeng/work/audio-module/common_audio/signal_processing/include/spl_inl.h \
+  /Users/lihaifeng/work/audio-module/audio_processing/transient/common.h \
+  /Users/lihaifeng/work/audio-module/audio_processing/transient/transient_detector.h \
+  /Users/lihaifeng/work/audio-module/audio_processing/transient/moving_moments.h \
+  /Users/lihaifeng/work/audio-module/audio_processing/transient/wpd_tree.h \
+  /Users/lihaifeng/work/audio-module/audio_processing/transient/wpd_node.h \
+  /Users/lihaifeng/work/audio-module/audio_processing/ns/windows_private.h \
+  /Users/lihaifeng/work/audio-module/system_wrappers/interface/logging.h

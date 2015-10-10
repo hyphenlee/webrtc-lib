@@ -8,16 +8,16 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/win32.h"
+#include "base/win32.h"
 
 #include <winsock2.h>
 #include <ws2tcpip.h>
 #include <algorithm>
 
-#include "webrtc/base/basictypes.h"
-#include "webrtc/base/byteorder.h"
-#include "webrtc/base/common.h"
-#include "webrtc/base/logging.h"
+#include "base/basictypes.h"
+#include "base/byteorder.h"
+#include "base/common.h"
+#include "base/logging.h"
 
 namespace rtc {
 

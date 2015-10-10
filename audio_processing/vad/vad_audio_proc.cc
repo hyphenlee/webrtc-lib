@@ -8,29 +8,31 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_processing/vad/vad_audio_proc.h"
+#include "audio_processing/vad/vad_audio_proc.h"
 
 #include <math.h>
 #include <stdio.h>
 
-#include "webrtc/common_audio/fft4g.h"
-#include "webrtc/modules/audio_processing/vad/vad_audio_proc_internal.h"
-#include "webrtc/modules/audio_processing/vad/pitch_internal.h"
-#include "webrtc/modules/audio_processing/vad/pole_zero_filter.h"
+#include "common_audio/fft4g.h"
+#include "audio_processing/vad/vad_audio_proc_internal.h"
+#include "audio_processing/vad/pitch_internal.h"
+#include "audio_processing/vad/pole_zero_filter.h"
 extern "C" {
-#include "webrtc/modules/audio_coding/codecs/isac/main/source/codec.h"
-#include "webrtc/modules/audio_coding/codecs/isac/main/source/lpc_analysis.h"
-#include "webrtc/modules/audio_coding/codecs/isac/main/source/pitch_estimator.h"
-#include "webrtc/modules/audio_coding/codecs/isac/main/source/structs.h"
+// #include "audio_coding/codecs/isac/main/source/codec.h"
+// #include "audio_coding/codecs/isac/main/source/lpc_analysis.h"
+// #include "audio_coding/codecs/isac/main/source/pitch_estimator.h"
+// #include "audio_coding/codecs/isac/main/source/structs.h"
 }
-#include "webrtc/modules/interface/module_common_types.h"
+#include "interface/module_common_types.h"
 
 namespace webrtc {
 
 // The following structures are declared anonymous in iSAC's structs.h. To
 // forward declare them, we use this derived class trick.
-struct VadAudioProc::PitchAnalysisStruct : public ::PitchAnalysisStruct {};
-struct VadAudioProc::PreFiltBankstr : public ::PreFiltBankstr {};
+// struct VadAudioProc::PitchAnalysisStruct : public ::PitchAnalysisStruct {};
+// struct VadAudioProc::PreFiltBankstr : public ::PreFiltBankstr {};
+struct VadAudioProc::PitchAnalysisStruct {};
+struct VadAudioProc::PreFiltBankstr  {};
 
 static const float kFrequencyResolution =
     kSampleRateHz / static_cast<float>(VadAudioProc::kDftSize);
@@ -62,8 +64,8 @@ VadAudioProc::VadAudioProc()
   // TODO(turajs): Need to initialize high-pass filter.
 
   // Initialize iSAC components.
-  WebRtcIsac_InitPreFilterbank(pre_filter_handle_.get());
-  WebRtcIsac_InitPitchAnalysis(pitch_analysis_handle_.get());
+  // WebRtcIsac_InitPreFilterbank(pre_filter_handle_.get());
+  // WebRtcIsac_InitPitchAnalysis(pitch_analysis_handle_.get());
 }
 
 VadAudioProc::~VadAudioProc() {
@@ -128,8 +130,8 @@ void VadAudioProc::SubframeCorrelation(double* corr,
   for (size_t n = 0; n < kNumSubframeSamples + kNumPastSignalSamples; n++)
     windowed_audio[n] = audio_buffer_[buffer_index++] * kLpcAnalWin[n];
 
-  WebRtcIsac_AutoCorr(corr, windowed_audio,
-                      kNumSubframeSamples + kNumPastSignalSamples, kLpcOrder);
+  // WebRtcIsac_AutoCorr(corr, windowed_audio,
+  //                     kNumSubframeSamples + kNumPastSignalSamples, kLpcOrder);
 }
 
 // Compute |kNum10msSubframes| sets of LPC coefficients, one per 10 ms input.
@@ -148,7 +150,7 @@ void VadAudioProc::GetLpcPolynomials(double* lpc, size_t length_lpc) {
     for (size_t k = 0; k < kLpcOrder + 1; k++) {
       corr[k] *= kCorrWeight[k];
     }
-    WebRtcIsac_LevDurb(&lpc[offset_lpc], reflec_coeff, corr, kLpcOrder);
+    // WebRtcIsac_LevDurb(&lpc[offset_lpc], reflec_coeff, corr, kLpcOrder);
   }
 }
 
@@ -248,11 +250,11 @@ void VadAudioProc::PitchAnalysis(double* log_pitch_gains,
                                     kNumLookaheadSamples];
 
   // Split signal to lower and upper bands
-  WebRtcIsac_SplitAndFilterFloat(&audio_buffer_[kNumPastSignalSamples], lower,
-                                 upper, lower_lookahead, upper_lookahead,
-                                 pre_filter_handle_.get());
-  WebRtcIsac_PitchAnalysis(lower_lookahead, lower_lookahead_pre_filter,
-                           pitch_analysis_handle_.get(), lags, gains);
+  // WebRtcIsac_SplitAndFilterFloat(&audio_buffer_[kNumPastSignalSamples], lower,
+  //                                upper, lower_lookahead, upper_lookahead,
+  //                                pre_filter_handle_.get());
+  // WebRtcIsac_PitchAnalysis(lower_lookahead, lower_lookahead_pre_filter,
+  //                          pitch_analysis_handle_.get(), lags, gains);
 
   // Lags are computed on lower-band signal with sampling rate half of the
   // input signal.

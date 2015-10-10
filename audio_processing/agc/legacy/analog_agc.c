@@ -17,7 +17,7 @@
  *
  */
 
-#include "webrtc/modules/audio_processing/agc/legacy/analog_agc.h"
+#include "audio_processing/agc/legacy/analog_agc.h"
 
 #include <assert.h>
 #include <stdlib.h>

@@ -11,8 +11,8 @@
 #include <complex>
 
 #include "testing/gtest/include/gtest/gtest.h"
-#include "webrtc/modules/audio_processing/beamformer/matrix.h"
-#include "webrtc/modules/audio_processing/beamformer/matrix_test_helpers.h"
+#include "audio_processing/beamformer/matrix.h"
+#include "audio_processing/beamformer/matrix_test_helpers.h"
 
 namespace webrtc {
 

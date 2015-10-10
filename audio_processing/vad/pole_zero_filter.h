@@ -13,7 +13,7 @@
 
 #include <cstddef>
 
-#include "webrtc/typedefs.h"
+#include "typedefs.h"
 
 namespace webrtc {
 

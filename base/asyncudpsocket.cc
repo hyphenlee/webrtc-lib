@@ -8,8 +8,8 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/asyncudpsocket.h"
-#include "webrtc/base/logging.h"
+#include "base/asyncudpsocket.h"
+#include "base/logging.h"
 
 namespace rtc {
 

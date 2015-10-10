@@ -17,8 +17,8 @@
 
 #include <stddef.h>
 
-#include "webrtc/base/constructormagic.h"
-#include "webrtc/common_types.h"
+#include "base/constructormagic.h"
+#include "common_types.h"
 
 namespace webrtc {
 

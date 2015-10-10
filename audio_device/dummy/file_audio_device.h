@@ -15,10 +15,10 @@
 
 #include <string>
 
-#include "webrtc/modules/audio_device/audio_device_generic.h"
-#include "webrtc/system_wrappers/interface/critical_section_wrapper.h"
-#include "webrtc/system_wrappers/interface/file_wrapper.h"
-#include "webrtc/system_wrappers/interface/clock.h"
+#include "audio_device/audio_device_generic.h"
+#include "system_wrappers/interface/critical_section_wrapper.h"
+#include "system_wrappers/interface/file_wrapper.h"
+#include "system_wrappers/interface/clock.h"
 
 namespace webrtc {
 class EventWrapper;

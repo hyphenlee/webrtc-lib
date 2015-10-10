@@ -32,7 +32,7 @@
 
 #include <string>
 
-#include "webrtc/base/basictypes.h"
+#include "base/basictypes.h"
 
 ///////////////////////////////////////////////////////////////////////////////
 // Generic string/memory utilities
@@ -107,7 +107,7 @@ inline wchar_t tolowercase(wchar_t c) {
 
 #endif  // WEBRTC_WIN 
 
-#if defined(WEBRTC_POSIX)
+
 
 inline int _stricmp(const char* s1, const char* s2) {
   return strcasecmp(s1, s2);
@@ -115,7 +115,7 @@ inline int _stricmp(const char* s1, const char* s2) {
 inline int _strnicmp(const char* s1, const char* s2, size_t n) {
   return strncasecmp(s1, s2, n);
 }
-
+#if defined(WEBRTC_POSIX)
 #endif // WEBRTC_POSIX
 
 ///////////////////////////////////////////////////////////////////////////////

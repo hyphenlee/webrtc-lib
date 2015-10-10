@@ -12,7 +12,7 @@
 #define WEBRTC_BASE_RATETRACKER_H_
 
 #include <stdlib.h>
-#include "webrtc/base/basictypes.h"
+#include "base/basictypes.h"
 
 namespace rtc {
 

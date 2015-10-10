@@ -11,11 +11,11 @@
 #ifndef WEBRTC_BASE_ASYNCINVOKER_H_
 #define WEBRTC_BASE_ASYNCINVOKER_H_
 
-#include "webrtc/base/asyncinvoker-inl.h"
-#include "webrtc/base/bind.h"
-#include "webrtc/base/sigslot.h"
-#include "webrtc/base/scopedptrcollection.h"
-#include "webrtc/base/thread.h"
+#include "base/asyncinvoker-inl.h"
+#include "base/bind.h"
+#include "base/sigslot.h"
+#include "base/scopedptrcollection.h"
+#include "base/thread.h"
 
 namespace rtc {
 

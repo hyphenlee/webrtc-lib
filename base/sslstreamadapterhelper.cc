@@ -15,11 +15,11 @@
 #include "config.h"
 #endif  // HAVE_CONFIG_H
 
-#include "webrtc/base/sslstreamadapterhelper.h"
+#include "base/sslstreamadapterhelper.h"
 
-#include "webrtc/base/common.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/stream.h"
+#include "base/common.h"
+#include "base/logging.h"
+#include "base/stream.h"
 
 namespace rtc {
 

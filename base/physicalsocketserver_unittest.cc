@@ -11,14 +11,14 @@
 #include <signal.h>
 #include <stdarg.h>
 
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/physicalsocketserver.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/socket_unittest.h"
-#include "webrtc/base/testutils.h"
-#include "webrtc/base/thread.h"
-#include "webrtc/test/testsupport/gtest_disable.h"
+#include "base/gunit.h"
+#include "base/logging.h"
+#include "base/physicalsocketserver.h"
+#include "base/scoped_ptr.h"
+#include "base/socket_unittest.h"
+#include "base/testutils.h"
+#include "base/thread.h"
+#include "test/testsupport/gtest_disable.h"
 
 namespace rtc {
 
@@ -210,7 +210,7 @@ TEST_F(PhysicalSocketTest, MAYBE_TestUdpIPv6) {
 }
 
 // Disable for TSan v2, see
-// https://code.google.com/p/webrtc/issues/detail?id=3498 for details.
+// https://code.google.com/p/issues/detail?id=3498 for details.
 #if !defined(THREAD_SANITIZER)
 
 TEST_F(PhysicalSocketTest, TestUdpReadyToSendIPv4) {

@@ -15,8 +15,8 @@
 
 #include <vector>
 
-#include "webrtc/base/checks.h"
-#include "webrtc/system_wrappers/interface/stl_util.h"
+#include "base/checks.h"
+#include "system_wrappers/interface/stl_util.h"
 
 namespace webrtc {
 

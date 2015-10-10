@@ -26,7 +26,7 @@
 #include <android/log.h>  // NOLINT
 #endif
 
-#include "webrtc/base/checks.h"
+#include "base/checks.h"
 
 #if defined(_MSC_VER)
 // Warning C4722: destructor never returns, potential memory leak.

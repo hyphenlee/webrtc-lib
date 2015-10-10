@@ -12,8 +12,8 @@
 #define WEBRTC_BASE_TESTCLIENT_H_
 
 #include <vector>
-#include "webrtc/base/asyncudpsocket.h"
-#include "webrtc/base/criticalsection.h"
+#include "base/asyncudpsocket.h"
+#include "base/criticalsection.h"
 
 namespace rtc {
 

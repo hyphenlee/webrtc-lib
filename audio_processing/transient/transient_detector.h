@@ -13,9 +13,9 @@
 
 #include <deque>
 
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/modules/audio_processing/transient/moving_moments.h"
-#include "webrtc/modules/audio_processing/transient/wpd_tree.h"
+#include "base/scoped_ptr.h"
+#include "audio_processing/transient/moving_moments.h"
+#include "audio_processing/transient/wpd_tree.h"
 
 namespace webrtc {
 

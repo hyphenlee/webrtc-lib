@@ -13,9 +13,9 @@
 
 #include <windows.h>
 
-#include "webrtc/system_wrappers/interface/event_wrapper.h"
+#include "system_wrappers/interface/event_wrapper.h"
 
-#include "webrtc/typedefs.h"
+#include "typedefs.h"
 
 namespace webrtc {
 

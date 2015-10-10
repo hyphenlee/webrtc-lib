@@ -11,8 +11,8 @@
 #ifndef WEBRTC_BASE_MD5DIGEST_H_
 #define WEBRTC_BASE_MD5DIGEST_H_
 
-#include "webrtc/base/md5.h"
-#include "webrtc/base/messagedigest.h"
+#include "base/md5.h"
+#include "base/messagedigest.h"
 
 namespace rtc {
 

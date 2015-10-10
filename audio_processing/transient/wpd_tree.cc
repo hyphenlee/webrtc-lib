@@ -8,15 +8,15 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_processing/transient/wpd_tree.h"
+#include "audio_processing/transient/wpd_tree.h"
 
 #include <assert.h>
 #include <math.h>
 #include <string.h>
 
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/modules/audio_processing/transient/dyadic_decimator.h"
-#include "webrtc/modules/audio_processing/transient/wpd_node.h"
+#include "base/scoped_ptr.h"
+#include "audio_processing/transient/dyadic_decimator.h"
+#include "audio_processing/transient/wpd_node.h"
 
 namespace webrtc {
 

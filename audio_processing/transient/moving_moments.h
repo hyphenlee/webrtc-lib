@@ -13,7 +13,7 @@
 
 #include <queue>
 
-#include "webrtc/base/scoped_ptr.h"
+#include "base/scoped_ptr.h"
 
 namespace webrtc {
 

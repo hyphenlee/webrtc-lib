@@ -26,16 +26,16 @@
 
 #include <algorithm>
 
-#include "webrtc/base/bytebuffer.h"
-#include "webrtc/base/common.h"
-#include "webrtc/base/httpcommon.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/socketadapters.h"
-#include "webrtc/base/stringencode.h"
-#include "webrtc/base/stringutils.h"
+#include "base/bytebuffer.h"
+#include "base/common.h"
+#include "base/httpcommon.h"
+#include "base/logging.h"
+#include "base/socketadapters.h"
+#include "base/stringencode.h"
+#include "base/stringutils.h"
 
 #if defined(WEBRTC_WIN)
-#include "webrtc/base/sec_buffer.h"
+#include "base/sec_buffer.h"
 #endif  // WEBRTC_WIN 
 
 namespace rtc {

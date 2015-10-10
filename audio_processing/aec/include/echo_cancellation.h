@@ -13,7 +13,7 @@
 
 #include <stddef.h>
 
-#include "webrtc/typedefs.h"
+#include "typedefs.h"
 
 // Errors
 #define AEC_UNSPECIFIED_ERROR 12000

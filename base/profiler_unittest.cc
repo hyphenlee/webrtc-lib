@@ -8,9 +8,9 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/profiler.h"
-#include "webrtc/base/thread.h"
+#include "base/gunit.h"
+#include "base/profiler.h"
+#include "base/thread.h"
 
 namespace {
 

@@ -16,11 +16,11 @@
 #include <stdio.h>
 
 #include "gflags/gflags.h"
-#include "webrtc/audio_processing/debug.pb.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/modules/audio_processing/test/protobuf_utils.h"
-#include "webrtc/modules/audio_processing/test/test_utils.h"
-#include "webrtc/typedefs.h"
+#include "audio_processing/debug.pb.h"
+#include "base/scoped_ptr.h"
+#include "audio_processing/test/protobuf_utils.h"
+#include "audio_processing/test/test_utils.h"
+#include "typedefs.h"
 
 // TODO(andrew): unpack more of the data.
 DEFINE_string(input_file, "input", "The name of the input stream file.");

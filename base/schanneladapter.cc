@@ -8,7 +8,7 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/win32.h"
+#include "base/win32.h"
 #define SECURITY_WIN32
 #include <security.h>
 #include <schannel.h>
@@ -17,11 +17,11 @@
 #include <iomanip>
 #include <vector>
 
-#include "webrtc/base/common.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/schanneladapter.h"
-#include "webrtc/base/sec_buffer.h"
-#include "webrtc/base/thread.h"
+#include "base/common.h"
+#include "base/logging.h"
+#include "base/schanneladapter.h"
+#include "base/sec_buffer.h"
+#include "base/thread.h"
 
 namespace rtc {
 

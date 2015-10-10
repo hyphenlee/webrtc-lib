@@ -17,8 +17,8 @@
 #include <algorithm>
 #include <vector>
 
-#include "webrtc/base/basictypes.h"
-#include "webrtc/base/constructormagic.h"
+#include "base/basictypes.h"
+#include "base/constructormagic.h"
 
 namespace rtc {
 

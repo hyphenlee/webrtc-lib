@@ -11,11 +11,11 @@
 #ifndef WEBRTC_MODULES_AUDIO_PROCESSING_AEC_AEC_CORE_INTERNAL_H_
 #define WEBRTC_MODULES_AUDIO_PROCESSING_AEC_AEC_CORE_INTERNAL_H_
 
-#include "webrtc/common_audio/ring_buffer.h"
-#include "webrtc/common_audio/wav_file.h"
-#include "webrtc/modules/audio_processing/aec/aec_common.h"
-#include "webrtc/modules/audio_processing/aec/aec_core.h"
-#include "webrtc/typedefs.h"
+#include "common_audio/ring_buffer.h"
+#include "common_audio/wav_file.h"
+#include "audio_processing/aec/aec_common.h"
+#include "audio_processing/aec/aec_core.h"
+#include "typedefs.h"
 
 // Number of partitions for the extended filter mode. The first one is an enum
 // to be used in array declarations, as it represents the maximum filter length.

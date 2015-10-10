@@ -15,16 +15,16 @@
 //  http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6882788
 //
 
-#include "webrtc/modules/audio_processing/intelligibility/intelligibility_enhancer.h"
+#include "audio_processing/intelligibility/intelligibility_enhancer.h"
 
 #include <math.h>
 #include <stdlib.h>
 #include <algorithm>
 #include <numeric>
 
-#include "webrtc/base/checks.h"
-#include "webrtc/common_audio/include/audio_util.h"
-#include "webrtc/common_audio/window_generator.h"
+#include "base/checks.h"
+#include "common_audio/include/audio_util.h"
+#include "common_audio/window_generator.h"
 
 namespace webrtc {
 

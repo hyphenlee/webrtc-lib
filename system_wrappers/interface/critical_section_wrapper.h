@@ -14,8 +14,8 @@
 // If the critical section is heavily contended it may be beneficial to use
 // read/write locks instead.
 
-#include "webrtc/base/thread_annotations.h"
-#include "webrtc/common_types.h"
+#include "base/thread_annotations.h"
+#include "common_types.h"
 
 namespace webrtc {
 class LOCKABLE CriticalSectionWrapper {

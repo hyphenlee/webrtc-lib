@@ -8,8 +8,8 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/checks.h"
-#include "webrtc/base/stringutils.h"
+#include "base/checks.h"
+#include "base/stringutils.h"
 
 namespace rtc {
 

@@ -12,14 +12,14 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "webrtc/modules/audio_device/test/audio_device_test_defines.h"
+#include "audio_device/test/audio_device_test_defines.h"
 
 #include "testing/gtest/include/gtest/gtest.h"
-#include "webrtc/test/testsupport/fileutils.h"
+#include "test/testsupport/fileutils.h"
 
-#include "webrtc/modules/audio_device/audio_device_config.h"
-#include "webrtc/modules/audio_device/audio_device_impl.h"
-#include "webrtc/system_wrappers/interface/sleep.h"
+#include "audio_device/audio_device_config.h"
+#include "audio_device/audio_device_impl.h"
+#include "system_wrappers/interface/sleep.h"
 
 // Helper functions
 #if defined(ANDROID)

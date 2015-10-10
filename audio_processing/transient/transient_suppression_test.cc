@@ -8,7 +8,7 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_processing/transient/transient_suppressor.h"
+#include "audio_processing/transient/transient_suppressor.h"
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -16,12 +16,12 @@
 
 #include "gflags/gflags.h"
 #include "testing/gtest/include/gtest/gtest.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/common_audio/include/audio_util.h"
-#include "webrtc/modules/audio_processing/agc/agc.h"
-#include "webrtc/modules/interface/module_common_types.h"
-#include "webrtc/test/testsupport/fileutils.h"
-#include "webrtc/typedefs.h"
+#include "base/scoped_ptr.h"
+#include "common_audio/include/audio_util.h"
+#include "audio_processing/agc/agc.h"
+#include "interface/module_common_types.h"
+#include "test/testsupport/fileutils.h"
+#include "typedefs.h"
 
 DEFINE_string(in_file_name, "", "PCM file that contains the signal.");
 DEFINE_string(detection_file_name,

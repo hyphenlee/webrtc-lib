@@ -8,12 +8,12 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/arraysize.h"
-#include "webrtc/base/checks.h"
-#include "webrtc/base/filerotatingstream.h"
-#include "webrtc/base/fileutils.h"
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/pathutils.h"
+#include "base/arraysize.h"
+#include "base/checks.h"
+#include "base/filerotatingstream.h"
+#include "base/fileutils.h"
+#include "base/gunit.h"
+#include "base/pathutils.h"
 
 namespace rtc {
 

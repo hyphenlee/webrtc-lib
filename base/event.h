@@ -11,15 +11,16 @@
 #ifndef WEBRTC_BASE_EVENT_H__
 #define WEBRTC_BASE_EVENT_H__
 
-#if defined(WEBRTC_WIN)
-#include "webrtc/base/win32.h"  // NOLINT: consider this a system header.
-#elif defined(WEBRTC_POSIX)
 #include <pthread.h>
-#else
-#error "Must define either WEBRTC_WIN or WEBRTC_POSIX."
-#endif
+/* #if defined(WEBRTC_WIN) */
+/* #include "base/win32.h"  // NOLINT: consider this a system header. */
+/* #elif defined(WEBRTC_POSIX) */
+/* #include <pthread.h> */
+/* #else */
+/* #error "Must define either WEBRTC_WIN or WEBRTC_POSIX." */
+/* #endif */
 
-#include "webrtc/base/basictypes.h"
+#include "base/basictypes.h"
 
 namespace rtc {
 

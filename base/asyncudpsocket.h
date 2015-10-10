@@ -11,9 +11,9 @@
 #ifndef WEBRTC_BASE_ASYNCUDPSOCKET_H_
 #define WEBRTC_BASE_ASYNCUDPSOCKET_H_
 
-#include "webrtc/base/asyncpacketsocket.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/socketfactory.h"
+#include "base/asyncpacketsocket.h"
+#include "base/scoped_ptr.h"
+#include "base/socketfactory.h"
 
 namespace rtc {
 

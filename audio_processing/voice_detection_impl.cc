@@ -8,13 +8,13 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_processing/voice_detection_impl.h"
+#include "audio_processing/voice_detection_impl.h"
 
 #include <assert.h>
 
-#include "webrtc/common_audio/vad/include/webrtc_vad.h"
-#include "webrtc/modules/audio_processing/audio_buffer.h"
-#include "webrtc/system_wrappers/interface/critical_section_wrapper.h"
+#include "common_audio/vad/include/webrtc_vad.h"
+#include "audio_processing/audio_buffer.h"
+#include "system_wrappers/interface/critical_section_wrapper.h"
 
 namespace webrtc {
 

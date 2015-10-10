@@ -11,7 +11,7 @@
 #ifndef WEBRTC_BASE_DISKCACHEWIN32_H__
 #define WEBRTC_BASE_DISKCACHEWIN32_H__
 
-#include "webrtc/base/diskcache.h"
+#include "base/diskcache.h"
 
 namespace rtc {
 

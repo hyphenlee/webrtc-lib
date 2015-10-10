@@ -13,7 +13,7 @@
 
 #if defined(WEBRTC_WIN)
 
-#include "webrtc/base/win32.h"
+#include "base/win32.h"
 
 namespace rtc {
 

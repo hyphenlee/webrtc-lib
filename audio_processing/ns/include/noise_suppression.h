@@ -13,7 +13,7 @@
 
 #include <stddef.h>
 
-#include "webrtc/typedefs.h"
+#include "typedefs.h"
 
 typedef struct NsHandleT NsHandle;
 

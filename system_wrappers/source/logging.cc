@@ -8,14 +8,14 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/system_wrappers/interface/logging.h"
+#include "system_wrappers/interface/logging.h"
 
 #include <string.h>
 
 #include <sstream>
 
-#include "webrtc/common_types.h"
-#include "webrtc/system_wrappers/interface/trace.h"
+#include "common_types.h"
+#include "system_wrappers/interface/trace.h"
 
 namespace webrtc {
 namespace {

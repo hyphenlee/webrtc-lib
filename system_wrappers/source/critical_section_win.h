@@ -12,8 +12,8 @@
 #define WEBRTC_SYSTEM_WRAPPERS_SOURCE_CRITICAL_SECTION_WIN_H_
 
 #include <windows.h>
-#include "webrtc/system_wrappers/interface/critical_section_wrapper.h"
-#include "webrtc/typedefs.h"
+#include "system_wrappers/interface/critical_section_wrapper.h"
+#include "typedefs.h"
 
 namespace webrtc {
 

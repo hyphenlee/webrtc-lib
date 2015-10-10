@@ -10,12 +10,12 @@
 
 #include <string>
 
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/helpers.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/pathutils.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/multipart.h"
+#include "base/gunit.h"
+#include "base/helpers.h"
+#include "base/logging.h"
+#include "base/pathutils.h"
+#include "base/scoped_ptr.h"
+#include "base/multipart.h"
 
 namespace rtc {
 

@@ -12,8 +12,8 @@
 #include "config.h"
 #endif  // HAVE_CONFIG_H
 
-#include "webrtc/base/sslstreamadapter.h"
-#include "webrtc/base/sslconfig.h"
+#include "base/sslstreamadapter.h"
+#include "base/sslconfig.h"
 
 #if SSL_USE_SCHANNEL
 
@@ -21,11 +21,11 @@
 // done.
 #elif SSL_USE_OPENSSL  // && !SSL_USE_SCHANNEL
 
-#include "webrtc/base/opensslstreamadapter.h"
+#include "base/opensslstreamadapter.h"
 
 #elif SSL_USE_NSS      // && !SSL_USE_SCHANNEL && !SSL_USE_OPENSSL
 
-#include "webrtc/base/nssstreamadapter.h"
+#include "base/nssstreamadapter.h"
 
 #endif  // !SSL_USE_OPENSSL && !SSL_USE_SCHANNEL && !SSL_USE_NSS
 
@@ -34,15 +34,9 @@
 namespace rtc {
 
 SSLStreamAdapter* SSLStreamAdapter::Create(StreamInterface* stream) {
-#if SSL_USE_SCHANNEL
+
   return NULL;
-#elif SSL_USE_OPENSSL  // !SSL_USE_SCHANNEL
-  return new OpenSSLStreamAdapter(stream);
-#elif SSL_USE_NSS     //  !SSL_USE_SCHANNEL && !SSL_USE_OPENSSL
-  return new NSSStreamAdapter(stream);
-#else  // !SSL_USE_SCHANNEL && !SSL_USE_OPENSSL && !SSL_USE_NSS
-  return NULL;
-#endif
+
 }
 
 bool SSLStreamAdapter::GetSslCipher(std::string* cipher) {
@@ -78,31 +72,39 @@ std::string SSLStreamAdapter::GetDefaultSslCipher(SSLProtocolVersion version,
 }
 #elif SSL_USE_OPENSSL
 bool SSLStreamAdapter::HaveDtls() {
-  return OpenSSLStreamAdapter::HaveDtls();
+  // return OpenSSLStreamAdapter::HaveDtls();
+  return false;
 }
 bool SSLStreamAdapter::HaveDtlsSrtp() {
-  return OpenSSLStreamAdapter::HaveDtlsSrtp();
+  // return OpenSSLStreamAdapter::HaveDtlsSrtp();
+  return false;
 }
 bool SSLStreamAdapter::HaveExporter() {
-  return OpenSSLStreamAdapter::HaveExporter();
+  // return OpenSSLStreamAdapter::HaveExporter();
+  return false;
 }
 std::string SSLStreamAdapter::GetDefaultSslCipher(SSLProtocolVersion version,
                                                   KeyType key_type) {
-  return OpenSSLStreamAdapter::GetDefaultSslCipher(version, key_type);
+  // return OpenSSLStreamAdapter::GetDefaultSslCipher(version, key_type);
+  return std::string("");
 }
 #elif SSL_USE_NSS
 bool SSLStreamAdapter::HaveDtls() {
-  return NSSStreamAdapter::HaveDtls();
+  // return NSSStreamAdapter::HaveDtls();
+  return false;
 }
 bool SSLStreamAdapter::HaveDtlsSrtp() {
   return NSSStreamAdapter::HaveDtlsSrtp();
+  return false;
 }
 bool SSLStreamAdapter::HaveExporter() {
-  return NSSStreamAdapter::HaveExporter();
+  // return NSSStreamAdapter::HaveExporter();
+  return false;
 }
 std::string SSLStreamAdapter::GetDefaultSslCipher(SSLProtocolVersion version,
                                                   KeyType key_type) {
-  return NSSStreamAdapter::GetDefaultSslCipher(version, key_type);
+  // return NSSStreamAdapter::GetDefaultSslCipher(version, key_type);
+  return std::string("");
 }
 #endif  // !SSL_USE_SCHANNEL && !SSL_USE_OPENSSL && !SSL_USE_NSS
 

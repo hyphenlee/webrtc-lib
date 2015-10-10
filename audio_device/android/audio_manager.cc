@@ -8,15 +8,15 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_device/android/audio_manager.h"
+#include "audio_device/android/audio_manager.h"
 
 #include <android/log.h>
 
-#include "webrtc/base/arraysize.h"
-#include "webrtc/base/checks.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/modules/audio_device/android/audio_common.h"
-#include "webrtc/modules/utility/interface/helpers_android.h"
+#include "base/arraysize.h"
+#include "base/checks.h"
+#include "base/scoped_ptr.h"
+#include "audio_device/android/audio_common.h"
+#include "utility/interface/helpers_android.h"
 
 #define TAG "AudioManager"
 #define ALOGV(...) __android_log_print(ANDROID_LOG_VERBOSE, TAG, __VA_ARGS__)
@@ -77,7 +77,7 @@ AudioManager::AudioManager()
        "(IIZZIIJ)V",
        reinterpret_cast<void*>(&webrtc::AudioManager::CacheAudioParameters)}};
   j_native_registration_ = j_environment_->RegisterNatives(
-      "org/webrtc/voiceengine/WebRtcAudioManager",
+      "org/voiceengine/WebRtcAudioManager",
       native_methods, arraysize(native_methods));
   j_audio_manager_.reset(new JavaAudioManager(
       j_native_registration_.get(),

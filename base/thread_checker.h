@@ -28,7 +28,7 @@
 #define ENABLE_THREAD_CHECKER 0
 #endif
 
-#include "webrtc/base/thread_checker_impl.h"
+#include "base/thread_checker_impl.h"
 
 namespace rtc {
 

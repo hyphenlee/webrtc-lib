@@ -13,7 +13,7 @@
 // However, in debugging, failure in these APIs are logged.
 // TODO(henrike): add logging when pthread synchronization APIs are failing.
 
-#include "webrtc/system_wrappers/source/critical_section_posix.h"
+#include "system_wrappers/source/critical_section_posix.h"
 
 namespace webrtc {
 

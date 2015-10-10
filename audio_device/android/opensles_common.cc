@@ -8,11 +8,11 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_device/android/opensles_common.h"
+#include "audio_device/android/opensles_common.h"
 
 #include <assert.h>
 
-#include "webrtc/modules/audio_device/android/audio_common.h"
+#include "audio_device/android/audio_common.h"
 
 using webrtc::kNumChannels;
 

@@ -13,9 +13,9 @@
 
 #include <deque>
 #include <list>
-#include "webrtc/base/logging.h"
-#include "webrtc/base/sigslot.h"
-#include "webrtc/base/socketaddress.h"
+#include "base/logging.h"
+#include "base/sigslot.h"
+#include "base/socketaddress.h"
 
 namespace rtc {
 

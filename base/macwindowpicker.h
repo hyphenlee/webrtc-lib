@@ -10,7 +10,7 @@
 #ifndef WEBRTC_BASE_MACWINDOWPICKER_H_
 #define WEBRTC_BASE_MACWINDOWPICKER_H_
 
-#include "webrtc/base/windowpicker.h"
+#include "base/windowpicker.h"
 
 namespace rtc {
 

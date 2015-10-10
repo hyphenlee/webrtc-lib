@@ -13,11 +13,11 @@
 
 #include <string>
 
-#include "webrtc/base/constructormagic.h"
-#include "webrtc/base/cryptstring.h"
-#include "webrtc/base/proxydetect.h"
-#include "webrtc/base/proxyinfo.h"
-#include "webrtc/base/signalthread.h"
+#include "base/constructormagic.h"
+#include "base/cryptstring.h"
+#include "base/proxydetect.h"
+#include "base/proxyinfo.h"
+#include "base/signalthread.h"
 
 namespace rtc {
 

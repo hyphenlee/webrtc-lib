@@ -13,7 +13,7 @@
 
 #include <string.h>
 
-#include "webrtc/base/common.h"
+#include "base/common.h"
 
 namespace rtc {
 

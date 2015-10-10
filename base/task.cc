@@ -8,9 +8,9 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/task.h"
-#include "webrtc/base/common.h"
-#include "webrtc/base/taskrunner.h"
+#include "base/task.h"
+#include "base/common.h"
+#include "base/taskrunner.h"
 
 namespace rtc {
 

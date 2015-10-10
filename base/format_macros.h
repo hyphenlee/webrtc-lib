@@ -24,7 +24,7 @@
 //   printf("xyz: %" PRIuS, size);
 // The "u" in the macro corresponds to %u, and S is for "size".
 
-#include "webrtc/typedefs.h"
+#include "typedefs.h"
 
 #if defined(WEBRTC_POSIX)
 

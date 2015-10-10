@@ -23,8 +23,8 @@
 #endif  // WEBRTC_MAC && !defined(WEBRTC_IOS)
 
 #include <algorithm>
-#include "webrtc/base/common.h"
-#include "webrtc/base/logging.h"
+#include "base/common.h"
+#include "base/logging.h"
 
 //////////////////////////////////////////////////////////////////////
 // Assertions

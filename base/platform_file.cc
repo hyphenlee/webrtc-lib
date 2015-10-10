@@ -8,7 +8,7 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/platform_file.h"
+#include "base/platform_file.h"
 
 #if defined(WEBRTC_WIN)
 #include <io.h>

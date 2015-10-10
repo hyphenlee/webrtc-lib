@@ -10,12 +10,12 @@
 
 #ifdef HAVE_DBUS_GLIB
 
-#include "webrtc/base/dbus.h"
+#include "base/dbus.h"
 
 #include <glib.h>
 
-#include "webrtc/base/logging.h"
-#include "webrtc/base/thread.h"
+#include "base/logging.h"
+#include "base/thread.h"
 
 namespace rtc {
 

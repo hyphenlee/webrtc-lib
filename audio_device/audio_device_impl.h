@@ -13,10 +13,10 @@
 
 #if defined(WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE)
 
-#include "webrtc/base/checks.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/modules/audio_device/audio_device_buffer.h"
-#include "webrtc/modules/audio_device/include/audio_device.h"
+#include "base/checks.h"
+#include "base/scoped_ptr.h"
+#include "audio_device/audio_device_buffer.h"
+#include "audio_device/include/audio_device.h"
 
 namespace webrtc {
 

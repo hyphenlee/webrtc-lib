@@ -10,15 +10,15 @@
 
 #include <assert.h>
 
-#include "webrtc/base/pathutils.h"
-#include "webrtc/base/fileutils.h"
-#include "webrtc/base/stringutils.h"
-#include "webrtc/base/stream.h"
+#include "base/pathutils.h"
+#include "base/fileutils.h"
+#include "base/stringutils.h"
+#include "base/stream.h"
 
 #if defined(WEBRTC_WIN)
-#include "webrtc/base/win32filesystem.h"
+#include "base/win32filesystem.h"
 #else
-#include "webrtc/base/unixfilesystem.h"
+#include "base/unixfilesystem.h"
 #endif
 
 #if !defined(WEBRTC_WIN)

@@ -8,7 +8,7 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/socketstream.h"
+#include "base/socketstream.h"
 
 namespace rtc {
 

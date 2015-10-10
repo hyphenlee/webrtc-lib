@@ -22,7 +22,7 @@
 #ifndef WEBRTC_BASE_MD5_H_
 #define WEBRTC_BASE_MD5_H_
 
-#include "webrtc/base/basictypes.h"
+#include "base/basictypes.h"
 
 namespace rtc {
 

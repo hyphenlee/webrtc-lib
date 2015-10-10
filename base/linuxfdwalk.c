@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "webrtc/base/linuxfdwalk.h"
+#include "base/linuxfdwalk.h"
 
 // Parses a file descriptor number in base 10, requiring the strict format used
 // in /proc/*/fd. Returns the value, or -1 if not a valid string.

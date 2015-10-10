@@ -8,17 +8,17 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_processing/vad/pitch_based_vad.h"
+#include "audio_processing/vad/pitch_based_vad.h"
 
 #include <assert.h>
 #include <math.h>
 #include <string.h>
 
-#include "webrtc/modules/audio_processing/vad/vad_circular_buffer.h"
-#include "webrtc/modules/audio_processing/vad/common.h"
-#include "webrtc/modules/audio_processing/vad/noise_gmm_tables.h"
-#include "webrtc/modules/audio_processing/vad/voice_gmm_tables.h"
-#include "webrtc/modules/interface/module_common_types.h"
+#include "audio_processing/vad/vad_circular_buffer.h"
+#include "audio_processing/vad/common.h"
+#include "audio_processing/vad/noise_gmm_tables.h"
+#include "audio_processing/vad/voice_gmm_tables.h"
+#include "interface/module_common_types.h"
 
 namespace webrtc {
 

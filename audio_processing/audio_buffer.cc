@@ -8,13 +8,13 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_processing/audio_buffer.h"
+#include "audio_processing/audio_buffer.h"
 
-#include "webrtc/common_audio/include/audio_util.h"
-#include "webrtc/common_audio/resampler/push_sinc_resampler.h"
-#include "webrtc/common_audio/signal_processing/include/signal_processing_library.h"
-#include "webrtc/common_audio/channel_buffer.h"
-#include "webrtc/modules/audio_processing/common.h"
+#include "common_audio/include/audio_util.h"
+#include "common_audio/resampler/push_sinc_resampler.h"
+#include "common_audio/signal_processing/include/signal_processing_library.h"
+#include "common_audio/channel_buffer.h"
+#include "audio_processing/common.h"
 
 namespace webrtc {
 namespace {

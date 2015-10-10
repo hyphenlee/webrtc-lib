@@ -25,8 +25,8 @@
 
 #include <assert.h>
 
-#include "webrtc/base/checks.h"
-#include "webrtc/base/common.h"
+#include "base/checks.h"
+#include "base/common.h"
 
 namespace rtc {
 

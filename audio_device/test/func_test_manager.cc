@@ -20,12 +20,12 @@
 #endif
 
 #include "testing/gtest/include/gtest/gtest.h"
-#include "webrtc/modules/audio_device/test/func_test_manager.h"
-#include "webrtc/system_wrappers/interface/sleep.h"
-#include "webrtc/test/testsupport/fileutils.h"
+#include "audio_device/test/func_test_manager.h"
+#include "system_wrappers/interface/sleep.h"
+#include "test/testsupport/fileutils.h"
 
-#include "webrtc/modules/audio_device/audio_device_config.h"
-#include "webrtc/modules/audio_device/audio_device_impl.h"
+#include "audio_device/audio_device_config.h"
+#include "audio_device/audio_device_impl.h"
 
 #ifndef __GNUC__
 // Disable warning message ('sprintf': name was marked as #pragma deprecated)

@@ -11,8 +11,8 @@
 #ifndef WEBRTC_MODULES_AUDIO_DEVICE_FINE_AUDIO_BUFFER_H_
 #define WEBRTC_MODULES_AUDIO_DEVICE_FINE_AUDIO_BUFFER_H_
 
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/typedefs.h"
+#include "base/scoped_ptr.h"
+#include "typedefs.h"
 
 namespace webrtc {
 

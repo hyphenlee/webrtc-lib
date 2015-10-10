@@ -13,8 +13,8 @@
 
 #include <pthread.h>
 
-#include "webrtc/system_wrappers/interface/condition_variable_wrapper.h"
-#include "webrtc/typedefs.h"
+#include "system_wrappers/interface/condition_variable_wrapper.h"
+#include "typedefs.h"
 
 namespace webrtc {
 

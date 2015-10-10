@@ -11,7 +11,7 @@
 #ifndef WEBRTC_BASE_TRANSFORMADAPTER_H__
 #define WEBRTC_BASE_TRANSFORMADAPTER_H__
 
-#include "webrtc/base/stream.h"
+#include "base/stream.h"
 
 namespace rtc {
 ///////////////////////////////////////////////////////////////////////////////

@@ -8,10 +8,10 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/signalthread.h"
-#include "webrtc/base/thread.h"
-#include "webrtc/test/testsupport/gtest_disable.h"
+#include "base/gunit.h"
+#include "base/signalthread.h"
+#include "base/thread.h"
+#include "test/testsupport/gtest_disable.h"
 
 using namespace rtc;
 

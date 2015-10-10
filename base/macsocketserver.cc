@@ -9,13 +9,13 @@
  */
 
 
-#include "webrtc/base/macsocketserver.h"
+#include "base/macsocketserver.h"
 
-#include "webrtc/base/common.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/macasyncsocket.h"
-#include "webrtc/base/macutils.h"
-#include "webrtc/base/thread.h"
+#include "base/common.h"
+#include "base/logging.h"
+#include "base/macasyncsocket.h"
+#include "base/macutils.h"
+#include "base/thread.h"
 
 namespace rtc {
 
@@ -333,13 +333,13 @@ MacCarbonAppSocketServer::~MacCarbonAppSocketServer() {
 
 OSStatus MacCarbonAppSocketServer::WakeUpEventHandler(
     EventHandlerCallRef next, EventRef event, void *data) {
-  QuitApplicationEventLoop();
+  // QuitApplicationEventLoop();
   return noErr;
 }
 
 void MacCarbonAppSocketServer::TimerHandler(
     EventLoopTimerRef timer, void *data) {
-  QuitApplicationEventLoop();
+  // QuitApplicationEventLoop();
 }
 
 bool MacCarbonAppSocketServer::Wait(int cms, bool process_io) {
@@ -360,7 +360,7 @@ bool MacCarbonAppSocketServer::Wait(int cms, bool process_io) {
     // we disable each one's callbacks.
     EnableSocketCallbacks(false);
   }
-  RunApplicationEventLoop();
+  // RunApplicationEventLoop();
   if (!process_io) {
     // Reenable them.  Hopefully this won't cause spurious callbacks or
     // missing ones while they were disabled.

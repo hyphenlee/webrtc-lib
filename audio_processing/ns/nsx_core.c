@@ -8,16 +8,16 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_processing/ns/include/noise_suppression_x.h"
+#include "audio_processing/ns/include/noise_suppression_x.h"
 
 #include <assert.h>
 #include <math.h>
 #include <stdlib.h>
 #include <string.h>
 
-#include "webrtc/common_audio/signal_processing/include/real_fft.h"
-#include "webrtc/modules/audio_processing/ns/nsx_core.h"
-#include "webrtc/system_wrappers/interface/cpu_features_wrapper.h"
+#include "common_audio/signal_processing/include/real_fft.h"
+#include "audio_processing/ns/nsx_core.h"
+#include "system_wrappers/interface/cpu_features_wrapper.h"
 
 #if (defined WEBRTC_DETECT_NEON || defined WEBRTC_HAS_NEON)
 /* Tables are defined in ARM assembly files. */

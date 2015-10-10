@@ -8,18 +8,18 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/win32filesystem.h"
+#include "base/win32filesystem.h"
 
-#include "webrtc/base/win32.h"
+#include "base/win32.h"
 #include <shellapi.h>
 #include <shlobj.h>
 #include <tchar.h>
 
-#include "webrtc/base/fileutils.h"
-#include "webrtc/base/pathutils.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/stream.h"
-#include "webrtc/base/stringutils.h"
+#include "base/fileutils.h"
+#include "base/pathutils.h"
+#include "base/scoped_ptr.h"
+#include "base/stream.h"
+#include "base/stringutils.h"
 
 // In several places in this file, we test the integrity level of the process
 // before calling GetLongPathName. We do this because calling GetLongPathName

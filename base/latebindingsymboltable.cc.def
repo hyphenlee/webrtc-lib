@@ -30,7 +30,7 @@
 // #define LATE_BINDING_SYMBOL_TABLE_CLASS_NAME MY_CLASS_NAME
 // #define LATE_BINDING_SYMBOL_TABLE_SYMBOLS_LIST MY_SYMBOLS_LIST
 // #define LATE_BINDING_SYMBOL_TABLE_DLL_NAME "libdll.so.n"
-// #include "webrtc/base/latebindingsymboltable.cc.def"
+// #include "base/latebindingsymboltable.cc.def"
 //
 // }
 

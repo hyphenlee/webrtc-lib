@@ -18,10 +18,10 @@
 #include <CoreFoundation/CoreFoundation.h>
 #include <fcntl.h>
 
-#include "webrtc/base/macasyncsocket.h"
+#include "base/macasyncsocket.h"
 
-#include "webrtc/base/logging.h"
-#include "webrtc/base/macsocketserver.h"
+#include "base/logging.h"
+#include "base/macsocketserver.h"
 
 namespace rtc {
 

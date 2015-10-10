@@ -11,8 +11,8 @@
 #ifndef WEBRTC_BASE_SSLSOCKETFACTORY_H__
 #define WEBRTC_BASE_SSLSOCKETFACTORY_H__
 
-#include "webrtc/base/proxyinfo.h"
-#include "webrtc/base/socketserver.h"
+#include "base/proxyinfo.h"
+#include "base/socketserver.h"
 
 namespace rtc {
 

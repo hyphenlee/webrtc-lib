@@ -8,13 +8,13 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/autodetectproxy.h"
-#include "webrtc/base/httpcommon.h"
-#include "webrtc/base/httpcommon-inl.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/socketadapters.h"
-#include "webrtc/base/ssladapter.h"
-#include "webrtc/base/sslsocketfactory.h"
+#include "base/autodetectproxy.h"
+#include "base/httpcommon.h"
+#include "base/httpcommon-inl.h"
+#include "base/scoped_ptr.h"
+#include "base/socketadapters.h"
+#include "base/ssladapter.h"
+#include "base/sslsocketfactory.h"
 
 namespace rtc {
 

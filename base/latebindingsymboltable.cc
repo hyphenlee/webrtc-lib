@@ -8,13 +8,13 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/latebindingsymboltable.h"
+#include "base/latebindingsymboltable.h"
 
 #if defined(WEBRTC_POSIX)
 #include <dlfcn.h>
 #endif
 
-#include "webrtc/base/logging.h"
+#include "base/logging.h"
 
 namespace rtc {
 

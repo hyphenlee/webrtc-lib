@@ -8,15 +8,15 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_processing/vad/pole_zero_filter.h"
+#include "audio_processing/vad/pole_zero_filter.h"
 
 #include <math.h>
 #include <stdio.h>
 
 #include "testing/gtest/include/gtest/gtest.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/modules/audio_processing/vad/vad_audio_proc_internal.h"
-#include "webrtc/test/testsupport/fileutils.h"
+#include "base/scoped_ptr.h"
+#include "audio_processing/vad/vad_audio_proc_internal.h"
+#include "test/testsupport/fileutils.h"
 
 namespace webrtc {
 

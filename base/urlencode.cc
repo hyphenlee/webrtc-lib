@@ -8,10 +8,10 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/urlencode.h"
+#include "base/urlencode.h"
 
-#include "webrtc/base/common.h"
-#include "webrtc/base/stringutils.h"
+#include "base/common.h"
+#include "base/stringutils.h"
 
 static int HexPairValue(const char * code) {
   int value = 0;

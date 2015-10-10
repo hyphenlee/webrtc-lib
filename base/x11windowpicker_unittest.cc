@@ -8,11 +8,11 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/x11windowpicker.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/testutils.h"
-#include "webrtc/base/windowpicker.h"
+#include "base/gunit.h"
+#include "base/x11windowpicker.h"
+#include "base/logging.h"
+#include "base/testutils.h"
+#include "base/windowpicker.h"
 
 #if !defined(WEBRTC_LINUX) || defined(WEBRTC_ANDROID)
 #error Only for Linux

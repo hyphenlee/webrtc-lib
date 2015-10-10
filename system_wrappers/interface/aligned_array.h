@@ -11,8 +11,8 @@
 #ifndef WEBRTC_SYSTEM_WRAPPERS_INTERFACE_ALIGNED_ARRAY_
 #define WEBRTC_SYSTEM_WRAPPERS_INTERFACE_ALIGNED_ARRAY_
 
-#include "webrtc/base/checks.h"
-#include "webrtc/system_wrappers/interface/aligned_malloc.h"
+#include "base/checks.h"
+#include "system_wrappers/interface/aligned_malloc.h"
 
 namespace webrtc {
 

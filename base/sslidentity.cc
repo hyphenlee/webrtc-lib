@@ -13,23 +13,23 @@
 #include "config.h"
 #endif  // HAVE_CONFIG_H
 
-#include "webrtc/base/sslidentity.h"
+#include "base/sslidentity.h"
 
 #include <string>
 
-#include "webrtc/base/base64.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/sslconfig.h"
+#include "base/base64.h"
+#include "base/logging.h"
+#include "base/sslconfig.h"
 
 #if SSL_USE_SCHANNEL
 
 #elif SSL_USE_OPENSSL  // !SSL_USE_SCHANNEL
 
-#include "webrtc/base/opensslidentity.h"
+#include "base/opensslidentity.h"
 
 #elif SSL_USE_NSS  // !SSL_USE_SCHANNEL && !SSL_USE_OPENSSL
 
-#include "webrtc/base/nssidentity.h"
+#include "base/nssidentity.h"
 
 #endif  // SSL_USE_SCHANNEL
 
@@ -126,41 +126,49 @@ SSLIdentity* SSLIdentity::FromPEMStrings(const std::string& private_key,
 #elif SSL_USE_OPENSSL  // !SSL_USE_SCHANNEL
 
 SSLCertificate* SSLCertificate::FromPEMString(const std::string& pem_string) {
-  return OpenSSLCertificate::FromPEMString(pem_string);
+  // return OpenSSLCertificate::FromPEMString(pem_string);
+  return NULL;
 }
 
 SSLIdentity* SSLIdentity::Generate(const std::string& common_name,
                                    KeyType key_type) {
-  return OpenSSLIdentity::Generate(common_name, key_type);
+  // return OpenSSLIdentity::Generate(common_name, key_type);
+  return NULL;
 }
 
 SSLIdentity* SSLIdentity::GenerateForTest(const SSLIdentityParams& params) {
-  return OpenSSLIdentity::GenerateForTest(params);
+  // return OpenSSLIdentity::GenerateForTest(params);
+  return NULL;
 }
 
 SSLIdentity* SSLIdentity::FromPEMStrings(const std::string& private_key,
                                          const std::string& certificate) {
-  return OpenSSLIdentity::FromPEMStrings(private_key, certificate);
+  // return OpenSSLIdentity::FromPEMStrings(private_key, certificate);
+  return NULL;
 }
 
 #elif SSL_USE_NSS  // !SSL_USE_OPENSSL && !SSL_USE_SCHANNEL
 
 SSLCertificate* SSLCertificate::FromPEMString(const std::string& pem_string) {
-  return NSSCertificate::FromPEMString(pem_string);
+  // return NSSCertificate::FromPEMString(pem_string);
+  return NULL;
 }
 
 SSLIdentity* SSLIdentity::Generate(const std::string& common_name,
                                    KeyType key_type) {
-  return NSSIdentity::Generate(common_name, key_type);
+  // return NSSIdentity::Generate(common_name, key_type);
+  return NULL;
 }
 
 SSLIdentity* SSLIdentity::GenerateForTest(const SSLIdentityParams& params) {
-  return NSSIdentity::GenerateForTest(params);
+  // return NSSIdentity::GenerateForTest(params);
+  reutrn NULL;
 }
 
 SSLIdentity* SSLIdentity::FromPEMStrings(const std::string& private_key,
                                          const std::string& certificate) {
-  return NSSIdentity::FromPEMStrings(private_key, certificate);
+  // return NSSIdentity::FromPEMStrings(private_key, certificate);
+  return NULL;
 }
 
 #else  // !SSL_USE_OPENSSL && !SSL_USE_SCHANNEL && !SSL_USE_NSS

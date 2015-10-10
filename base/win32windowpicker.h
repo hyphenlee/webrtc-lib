@@ -10,8 +10,8 @@
 #ifndef WEBRTC_BASE_WIN32WINDOWPICKER_H_
 #define WEBRTC_BASE_WIN32WINDOWPICKER_H_
 
-#include "webrtc/base/win32.h"
-#include "webrtc/base/windowpicker.h"
+#include "base/win32.h"
+#include "base/windowpicker.h"
 
 namespace rtc {
 

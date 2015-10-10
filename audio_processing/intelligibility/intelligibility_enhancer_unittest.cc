@@ -18,10 +18,10 @@
 #include <vector>
 
 #include "testing/gtest/include/gtest/gtest.h"
-#include "webrtc/base/arraysize.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/common_audio/signal_processing/include/signal_processing_library.h"
-#include "webrtc/modules/audio_processing/intelligibility/intelligibility_enhancer.h"
+#include "base/arraysize.h"
+#include "base/scoped_ptr.h"
+#include "common_audio/signal_processing/include/signal_processing_library.h"
+#include "audio_processing/intelligibility/intelligibility_enhancer.h"
 
 namespace webrtc {
 

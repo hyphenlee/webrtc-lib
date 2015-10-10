@@ -16,11 +16,11 @@
 #include <string>
 #include <vector>
 
-#include "webrtc/base/basictypes.h"
-#include "webrtc/base/ipaddress.h"
-#include "webrtc/base/messagehandler.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/sigslot.h"
+#include "base/basictypes.h"
+#include "base/ipaddress.h"
+#include "base/messagehandler.h"
+#include "base/scoped_ptr.h"
+#include "base/sigslot.h"
 
 #if defined(WEBRTC_POSIX)
 struct ifaddrs;
@@ -190,7 +190,7 @@ class BasicNetworkManager : public NetworkManagerBase,
   // loopback interfaces. Set to kDefaultNetworkIgnoreMask by default.
   void set_network_ignore_mask(int network_ignore_mask) {
     // TODO(phoglund): implement support for other types than loopback.
-    // See https://code.google.com/p/webrtc/issues/detail?id=4288.
+    // See https://code.google.com/p/issues/detail?id=4288.
     // Then remove set_network_ignore_list.
     network_ignore_mask_ = network_ignore_mask;
   }

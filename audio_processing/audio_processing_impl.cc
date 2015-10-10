@@ -8,46 +8,46 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_processing/audio_processing_impl.h"
+#include "audio_processing/audio_processing_impl.h"
 
 #include <assert.h>
 #include <algorithm>
 
-#include "webrtc/base/checks.h"
-#include "webrtc/base/platform_file.h"
-#include "webrtc/common_audio/audio_converter.h"
-#include "webrtc/common_audio/channel_buffer.h"
-#include "webrtc/common_audio/include/audio_util.h"
-#include "webrtc/common_audio/signal_processing/include/signal_processing_library.h"
+#include "base/checks.h"
+#include "base/platform_file.h"
+#include "common_audio/audio_converter.h"
+#include "common_audio/channel_buffer.h"
+#include "common_audio/include/audio_util.h"
+#include "common_audio/signal_processing/include/signal_processing_library.h"
 extern "C" {
-#include "webrtc/modules/audio_processing/aec/aec_core.h"
+#include "audio_processing/aec/aec_core.h"
 }
-#include "webrtc/modules/audio_processing/agc/agc_manager_direct.h"
-#include "webrtc/modules/audio_processing/audio_buffer.h"
-#include "webrtc/modules/audio_processing/beamformer/nonlinear_beamformer.h"
-#include "webrtc/modules/audio_processing/common.h"
-#include "webrtc/modules/audio_processing/echo_cancellation_impl.h"
-#include "webrtc/modules/audio_processing/echo_control_mobile_impl.h"
-#include "webrtc/modules/audio_processing/gain_control_impl.h"
-#include "webrtc/modules/audio_processing/high_pass_filter_impl.h"
-#include "webrtc/modules/audio_processing/intelligibility/intelligibility_enhancer.h"
-#include "webrtc/modules/audio_processing/level_estimator_impl.h"
-#include "webrtc/modules/audio_processing/noise_suppression_impl.h"
-#include "webrtc/modules/audio_processing/processing_component.h"
-#include "webrtc/modules/audio_processing/transient/transient_suppressor.h"
-#include "webrtc/modules/audio_processing/voice_detection_impl.h"
-#include "webrtc/modules/interface/module_common_types.h"
-#include "webrtc/system_wrappers/interface/critical_section_wrapper.h"
-#include "webrtc/system_wrappers/interface/file_wrapper.h"
-#include "webrtc/system_wrappers/interface/logging.h"
-#include "webrtc/system_wrappers/interface/metrics.h"
+#include "audio_processing/agc/agc_manager_direct.h"
+#include "audio_processing/audio_buffer.h"
+#include "audio_processing/beamformer/nonlinear_beamformer.h"
+#include "audio_processing/common.h"
+#include "audio_processing/echo_cancellation_impl.h"
+#include "audio_processing/echo_control_mobile_impl.h"
+#include "audio_processing/gain_control_impl.h"
+#include "audio_processing/high_pass_filter_impl.h"
+#include "audio_processing/intelligibility/intelligibility_enhancer.h"
+#include "audio_processing/level_estimator_impl.h"
+#include "audio_processing/noise_suppression_impl.h"
+#include "audio_processing/processing_component.h"
+#include "audio_processing/transient/transient_suppressor.h"
+#include "audio_processing/voice_detection_impl.h"
+#include "interface/module_common_types.h"
+#include "system_wrappers/interface/critical_section_wrapper.h"
+#include "system_wrappers/interface/file_wrapper.h"
+#include "system_wrappers/interface/logging.h"
+#include "system_wrappers/interface/metrics.h"
 
 #ifdef WEBRTC_AUDIOPROC_DEBUG_DUMP
 // Files generated at build-time by the protobuf compiler.
 #ifdef WEBRTC_ANDROID_PLATFORM_BUILD
-#include "external/webrtc/webrtc/modules/audio_processing/debug.pb.h"
+#include "external/audio_processing/debug.pb.h"
 #else
-#include "webrtc/audio_processing/debug.pb.h"
+#include "audio_processing/debug.pb.h"
 #endif
 #endif  // WEBRTC_AUDIOPROC_DEBUG_DUMP
 

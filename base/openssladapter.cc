@@ -10,14 +10,14 @@
 
 #if HAVE_OPENSSL_SSL_H
 
-#include "webrtc/base/openssladapter.h"
+#include "base/openssladapter.h"
 
 #if defined(WEBRTC_POSIX)
 #include <unistd.h>
 #endif
 
 // Must be included first before openssl headers.
-#include "webrtc/base/win32.h"  // NOLINT
+#include "base/win32.h"  // NOLINT
 
 #include <openssl/bio.h>
 #include <openssl/crypto.h>
@@ -31,13 +31,13 @@
 #include "config.h"
 #endif  // HAVE_CONFIG_H
 
-#include "webrtc/base/common.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/openssl.h"
-#include "webrtc/base/safe_conversions.h"
-#include "webrtc/base/sslroots.h"
-#include "webrtc/base/stringutils.h"
-#include "webrtc/base/thread.h"
+#include "base/common.h"
+#include "base/logging.h"
+#include "base/openssl.h"
+#include "base/safe_conversions.h"
+#include "base/sslroots.h"
+#include "base/stringutils.h"
+#include "base/thread.h"
 
 #ifndef OPENSSL_IS_BORINGSSL
 

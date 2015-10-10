@@ -8,7 +8,7 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_processing/transient/dyadic_decimator.h"
+#include "audio_processing/transient/dyadic_decimator.h"
 
 #include "testing/gtest/include/gtest/gtest.h"
 

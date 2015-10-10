@@ -12,13 +12,13 @@
  * The core AEC algorithm, which is presented with time-aligned signals.
  */
 
-#include "webrtc/modules/audio_processing/aec/aec_core.h"
+#include "audio_processing/aec/aec_core.h"
 
 #include <math.h>
 
-#include "webrtc/common_audio/signal_processing/include/signal_processing_library.h"
-#include "webrtc/modules/audio_processing/aec/aec_core_internal.h"
-#include "webrtc/modules/audio_processing/aec/aec_rdft.h"
+#include "common_audio/signal_processing/include/signal_processing_library.h"
+#include "audio_processing/aec/aec_core_internal.h"
+#include "audio_processing/aec/aec_rdft.h"
 
 static const int flagHbandCn = 1; // flag for adding comfort noise in H band
 extern const float WebRtcAec_weightCurve[65];

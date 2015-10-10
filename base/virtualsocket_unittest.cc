@@ -14,14 +14,14 @@
 #include <netinet/in.h>
 #endif
 
-#include "webrtc/base/logging.h"
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/testclient.h"
-#include "webrtc/base/testutils.h"
-#include "webrtc/base/thread.h"
-#include "webrtc/base/timeutils.h"
-#include "webrtc/base/virtualsocketserver.h"
-#include "webrtc/test/testsupport/gtest_disable.h"
+#include "base/logging.h"
+#include "base/gunit.h"
+#include "base/testclient.h"
+#include "base/testutils.h"
+#include "base/thread.h"
+#include "base/timeutils.h"
+#include "base/virtualsocketserver.h"
+#include "test/testsupport/gtest_disable.h"
 
 using namespace rtc;
 
@@ -898,7 +898,7 @@ TEST_F(VirtualSocketServerTest, delay_v4) {
   DelayTest(kIPv4AnyAddress);
 }
 
-// See: https://code.google.com/p/webrtc/issues/detail?id=2409
+// See: https://code.google.com/p/issues/detail?id=2409
 TEST_F(VirtualSocketServerTest, DISABLED_delay_v6) {
   DelayTest(kIPv6AnyAddress);
 }

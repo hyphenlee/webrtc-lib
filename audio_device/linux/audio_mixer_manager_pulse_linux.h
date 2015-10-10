@@ -11,11 +11,11 @@
 #ifndef WEBRTC_AUDIO_DEVICE_AUDIO_MIXER_MANAGER_PULSE_LINUX_H
 #define WEBRTC_AUDIO_DEVICE_AUDIO_MIXER_MANAGER_PULSE_LINUX_H
 
-#include "webrtc/modules/audio_device/include/audio_device.h"
-#include "webrtc/modules/audio_device/linux/pulseaudiosymboltable_linux.h"
-#include "webrtc/system_wrappers/interface/critical_section_wrapper.h"
-#include "webrtc/typedefs.h"
-#include "webrtc/base/thread_checker.h"
+#include "audio_device/include/audio_device.h"
+#include "audio_device/linux/pulseaudiosymboltable_linux.h"
+#include "system_wrappers/interface/critical_section_wrapper.h"
+#include "typedefs.h"
+#include "base/thread_checker.h"
 
 #include <pulse/pulseaudio.h>
 #include <stdint.h>

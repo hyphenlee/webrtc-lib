@@ -12,7 +12,7 @@
 #define WEBRTC_BASE_HTTPSERVER_H__
 
 #include <map>
-#include "webrtc/base/httpbase.h"
+#include "base/httpbase.h"
 
 namespace rtc {
 

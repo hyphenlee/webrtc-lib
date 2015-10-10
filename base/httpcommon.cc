@@ -21,15 +21,15 @@
 
 #include <algorithm>
 
-#include "webrtc/base/base64.h"
-#include "webrtc/base/common.h"
-#include "webrtc/base/cryptstring.h"
-#include "webrtc/base/httpcommon-inl.h"
-#include "webrtc/base/httpcommon.h"
-#include "webrtc/base/messagedigest.h"
-#include "webrtc/base/socketaddress.h"
-#include "webrtc/base/stringencode.h"
-#include "webrtc/base/stringutils.h"
+#include "base/base64.h"
+#include "base/common.h"
+#include "base/cryptstring.h"
+#include "base/httpcommon-inl.h"
+#include "base/httpcommon.h"
+#include "base/messagedigest.h"
+#include "base/socketaddress.h"
+#include "base/stringencode.h"
+#include "base/stringutils.h"
 
 namespace rtc {
 

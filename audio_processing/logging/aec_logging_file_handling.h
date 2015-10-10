@@ -13,8 +13,8 @@
 
 #include <stdio.h>
 
-#include "webrtc/common_audio/wav_file.h"
-#include "webrtc/typedefs.h"
+#include "common_audio/wav_file.h"
+#include "typedefs.h"
 
 #ifdef __cplusplus
 extern "C" {

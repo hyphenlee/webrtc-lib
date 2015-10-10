@@ -8,9 +8,9 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/httpserver.h"
-#include "webrtc/base/testutils.h"
+#include "base/gunit.h"
+#include "base/httpserver.h"
+#include "base/testutils.h"
 
 using namespace testing;
 

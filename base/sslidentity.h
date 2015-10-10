@@ -17,8 +17,8 @@
 #include <string>
 #include <vector>
 
-#include "webrtc/base/buffer.h"
-#include "webrtc/base/messagedigest.h"
+#include "base/buffer.h"
+#include "base/messagedigest.h"
 
 namespace rtc {
 

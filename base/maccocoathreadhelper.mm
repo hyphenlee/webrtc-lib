@@ -12,7 +12,7 @@
 #import <assert.h>
 #import <Foundation/Foundation.h>
 
-#import "webrtc/base/maccocoathreadhelper.h"
+#import "base/maccocoathreadhelper.h"
 
 namespace rtc {
 

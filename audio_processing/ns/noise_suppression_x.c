@@ -8,13 +8,13 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_processing/ns/include/noise_suppression_x.h"
+#include "audio_processing/ns/include/noise_suppression_x.h"
 
 #include <stdlib.h>
 
-#include "webrtc/common_audio/signal_processing/include/real_fft.h"
-#include "webrtc/modules/audio_processing/ns/nsx_core.h"
-#include "webrtc/modules/audio_processing/ns/nsx_defines.h"
+#include "common_audio/signal_processing/include/real_fft.h"
+#include "audio_processing/ns/nsx_core.h"
+#include "audio_processing/ns/nsx_defines.h"
 
 NsxHandle* WebRtcNsx_Create() {
   NoiseSuppressionFixedC* self = malloc(sizeof(NoiseSuppressionFixedC));

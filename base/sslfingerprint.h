@@ -13,9 +13,9 @@
 
 #include <string>
 
-#include "webrtc/base/basictypes.h"
-#include "webrtc/base/buffer.h"
-#include "webrtc/base/sslidentity.h"
+#include "base/basictypes.h"
+#include "base/buffer.h"
+#include "base/sslidentity.h"
 
 namespace rtc {
 

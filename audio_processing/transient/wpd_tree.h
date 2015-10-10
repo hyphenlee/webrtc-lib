@@ -11,8 +11,8 @@
 #ifndef WEBRTC_MODULES_AUDIO_PROCESSING_TRANSIENT_WPD_TREE_H_
 #define WEBRTC_MODULES_AUDIO_PROCESSING_TRANSIENT_WPD_TREE_H_
 
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/modules/audio_processing/transient/wpd_node.h"
+#include "base/scoped_ptr.h"
+#include "audio_processing/transient/wpd_node.h"
 
 namespace webrtc {
 

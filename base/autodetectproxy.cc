@@ -8,10 +8,10 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/autodetectproxy.h"
-#include "webrtc/base/httpcommon.h"
-#include "webrtc/base/httpcommon-inl.h"
-#include "webrtc/base/nethelpers.h"
+#include "base/autodetectproxy.h"
+#include "base/httpcommon.h"
+#include "base/httpcommon-inl.h"
+#include "base/nethelpers.h"
 
 namespace rtc {
 

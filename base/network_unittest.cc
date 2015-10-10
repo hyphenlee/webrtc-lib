@@ -8,7 +8,7 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/network.h"
+#include "base/network.h"
 
 #include <vector>
 #if defined(WEBRTC_POSIX)
@@ -16,12 +16,12 @@
 #if !defined(WEBRTC_ANDROID)
 #include <ifaddrs.h>
 #else
-#include "webrtc/base/ifaddrs-android.h"
+#include "base/ifaddrs-android.h"
 #endif
 #endif
-#include "webrtc/base/gunit.h"
+#include "base/gunit.h"
 #if defined(WEBRTC_WIN)
-#include "webrtc/base/logging.h"  // For LOG_GLE
+#include "base/logging.h"  // For LOG_GLE
 #endif
 
 namespace rtc {

@@ -8,12 +8,12 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_processing/level_estimator_impl.h"
+#include "audio_processing/level_estimator_impl.h"
 
-#include "webrtc/modules/audio_processing/audio_buffer.h"
-#include "webrtc/modules/audio_processing/include/audio_processing.h"
-#include "webrtc/modules/audio_processing/rms_level.h"
-#include "webrtc/system_wrappers/interface/critical_section_wrapper.h"
+#include "audio_processing/audio_buffer.h"
+#include "audio_processing/include/audio_processing.h"
+#include "audio_processing/rms_level.h"
+#include "system_wrappers/interface/critical_section_wrapper.h"
 
 namespace webrtc {
 

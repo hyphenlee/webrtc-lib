@@ -10,8 +10,8 @@
 
 #include <limits.h>
 
-#include "webrtc/base/bandwidthsmoother.h"
-#include "webrtc/base/gunit.h"
+#include "base/bandwidthsmoother.h"
+#include "base/gunit.h"
 
 namespace rtc {
 

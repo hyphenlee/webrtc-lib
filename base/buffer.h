@@ -15,7 +15,7 @@
 #include <cassert>
 #include <cstring>
 #include <utility>  // std::swap (C++11 and later)
-#include "webrtc/base/scoped_ptr.h"
+#include "base/scoped_ptr.h"
 
 namespace rtc {
 

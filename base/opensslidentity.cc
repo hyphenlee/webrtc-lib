@@ -10,10 +10,10 @@
 
 #if HAVE_OPENSSL_SSL_H
 
-#include "webrtc/base/opensslidentity.h"
+#include "base/opensslidentity.h"
 
 // Must be included first before openssl headers.
-#include "webrtc/base/win32.h"  // NOLINT
+#include "base/win32.h"  // NOLINT
 
 #include <openssl/bio.h>
 #include <openssl/err.h>
@@ -22,11 +22,11 @@
 #include <openssl/rsa.h>
 #include <openssl/crypto.h>
 
-#include "webrtc/base/checks.h"
-#include "webrtc/base/helpers.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/openssl.h"
-#include "webrtc/base/openssldigest.h"
+#include "base/checks.h"
+#include "base/helpers.h"
+#include "base/logging.h"
+#include "base/openssl.h"
+#include "base/openssldigest.h"
 
 namespace rtc {
 

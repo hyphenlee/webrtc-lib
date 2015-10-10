@@ -1,0 +1,28 @@
+dependencies: \
+  /Users/lihaifeng/work/audio-module/audio_processing/agc/agc_manager_direct.cc \
+  /Users/lihaifeng/work/audio-module/audio_processing/agc/agc_manager_direct.h \
+  /Users/lihaifeng/work/audio-module/base/scoped_ptr.h \
+  /Users/lihaifeng/work/audio-module/base/constructormagic.h \
+  /Users/lihaifeng/work/audio-module/base/template_util.h \
+  /Users/lihaifeng/work/audio-module/typedefs.h \
+  /Users/lihaifeng/work/audio-module/audio_processing/agc/agc.h \
+  /Users/lihaifeng/work/audio-module/audio_processing/vad/voice_activity_detector.h \
+  /Users/lihaifeng/work/audio-module/common_audio/resampler/include/resampler.h \
+  /Users/lihaifeng/work/audio-module/audio_processing/vad/vad_audio_proc.h \
+  /Users/lihaifeng/work/audio-module/audio_processing/vad/common.h \
+  /Users/lihaifeng/work/audio-module/audio_processing/vad/pitch_based_vad.h \
+  /Users/lihaifeng/work/audio-module/audio_processing/vad/gmm.h \
+  /Users/lihaifeng/work/audio-module/audio_processing/vad/standalone_vad.h \
+  /Users/lihaifeng/work/audio-module/common_audio/vad/include/webrtc_vad.h \
+  /Users/lihaifeng/work/audio-module/audio_processing/agc/gain_map_internal.h \
+  /Users/lihaifeng/work/audio-module/audio_processing/gain_control_impl.h \
+  /Users/lihaifeng/work/audio-module/audio_processing/include/audio_processing.h \
+  /Users/lihaifeng/work/audio-module/base/platform_file.h \
+  /Users/lihaifeng/work/audio-module/common.h \
+  /Users/lihaifeng/work/audio-module/base/basictypes.h \
+  /Users/lihaifeng/work/audio-module/audio_processing/beamformer/array_util.h \
+  /Users/lihaifeng/work/audio-module/audio_processing/processing_component.h \
+  /Users/lihaifeng/work/audio-module/audio_processing/common.h \
+  /Users/lihaifeng/work/audio-module/interface/module_common_types.h \
+  /Users/lihaifeng/work/audio-module/common_types.h \
+  /Users/lihaifeng/work/audio-module/system_wrappers/interface/logging.h

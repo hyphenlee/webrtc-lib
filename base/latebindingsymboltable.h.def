@@ -23,7 +23,7 @@
 //
 // #include <headerfordll.h>
 //
-// #include "webrtc/base/latebindingsymboltable.h"
+// #include "base/latebindingsymboltable.h"
 //
 // namespace foo {
 //
@@ -32,7 +32,7 @@
 //
 // #define LATE_BINDING_SYMBOL_TABLE_CLASS_NAME MY_CLASS_NAME
 // #define LATE_BINDING_SYMBOL_TABLE_SYMBOLS_LIST MY_SYMBOLS_LIST
-// #include "webrtc/base/latebindingsymboltable.h.def"
+// #include "base/latebindingsymboltable.h.def"
 //
 // }
 

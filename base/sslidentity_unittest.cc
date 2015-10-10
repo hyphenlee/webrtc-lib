@@ -10,9 +10,9 @@
 
 #include <string>
 
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/ssladapter.h"
-#include "webrtc/base/sslidentity.h"
+#include "base/gunit.h"
+#include "base/ssladapter.h"
+#include "base/sslidentity.h"
 
 using rtc::SSLIdentity;
 

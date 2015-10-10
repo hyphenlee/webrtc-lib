@@ -251,10 +251,26 @@ SET(BASE_SRC
   "macutils.h"
 
   )
-SET(LIBS
+SET(LIBS  "")
+message(${CMAKE_SYSTEM_NAME})
+if(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
+
+  # find_library(ssl_library
+  #   NAMES ssl
+  #   HINTS "/usr/local/Cellar/openssl/1.0.2d_1/lib/"
+  #   )
+  # find_library(ssl_library2
+  #   NAMES crypto
+  #   HINTS "/usr/local/Cellar/openssl/1.0.2d_1/lib/"
+  #   )
+
+  # INCLUDE_DIRECTORIES(
+  # "/usr/local/Cellar/openssl/1.0.2d_1/include/")
+  INCLUDE_DIRECTORIES( "/usr/local/Cellar/jsoncpp/0.10.5/include/jsoncpp/")
+  INCLUDE_DIRECTORIES( "${PROJECT_SOURCE_DIR}/common_audio/signal_processing/include/")
   
-  )
-if(CMAKE_SYSTEM_NAME EQUAL "Darwin")
+  # LINK_DIRECTORIES( "/usr/local/Cellar/openssl/1.0.2d_1/lib/")
+  message("start build for darwin system")
   set(LIBS ${LIBS}
     "Cocoa"
     "AppKit"
@@ -265,17 +281,26 @@ if(CMAKE_SYSTEM_NAME EQUAL "Darwin")
     "IOKit"
     "Security"
     "SystemConfiguration"
+    "ssl"
+    "crypto"
+    "jsoncpp"
     )
   set(LIBRARYS "")
+  # find_library(ssl_lib "ssl")
+  message("${ssl_lib}")
+  message(${LIBS})
   foreach(var ${LIBS})
-    FIND_LIBRARY(lib2 ${var})
+    message(item:${var})
+    FIND_LIBRARY(find${var} ${var})
+    message(full path:${find${var}})
     if(${lib2} MATCHES "NOTFOUND")
-      message(SEND_ERROR "library not not found:${var}")
+      message(error: "library not not found:${var}")
     else()
-      set(LIBRARYS ${LIBRARYS} ${lib2})
+      set(LIBRARYS ${LIBRARYS} ${find${var}})
     endif()
   endforeach()
-  message(STATUS "${LIBRARYS}")
+  # set(LIBRARYS ${LIBRARYS} ${ssl_library} ${ssl_library2})
+  message(librarys: "${LIBRARYS}")
   SET(BASE_SRC
     ${BASE_SRC}
     "macasyncsocket.cc"
@@ -287,5 +312,11 @@ if(CMAKE_SYSTEM_NAME EQUAL "Darwin")
     "macwindowpicker.cc"
     "macwindowpicker.h"
     )
+  ADD_DEFINITIONS(-DWEBRTC_POSIX)
+  ADD_DEFINITIONS(-DWEBRTC_MAC)
+  ADD_DEFINITIONS(-DSSL_USE_OPENSSL=1)
+  
 endif()
-add_library(BASE SHARED ${BASE_SRC})
+message(librarys:${LIBRARYS})
+ADD_LIBRARY(BASE ${BASE_SRC})
+TARGET_LINK_LIBRARIES(BASE ${LIBRARYS})

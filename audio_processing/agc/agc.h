@@ -11,9 +11,9 @@
 #ifndef WEBRTC_MODULES_AUDIO_PROCESSING_AGC_AGC_H_
 #define WEBRTC_MODULES_AUDIO_PROCESSING_AGC_AGC_H_
 
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/modules/audio_processing/vad/voice_activity_detector.h"
-#include "webrtc/typedefs.h"
+#include "base/scoped_ptr.h"
+#include "audio_processing/vad/voice_activity_detector.h"
+#include "typedefs.h"
 
 namespace webrtc {
 

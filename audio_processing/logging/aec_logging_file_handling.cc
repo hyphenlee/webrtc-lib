@@ -8,15 +8,15 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_processing/logging/aec_logging_file_handling.h"
+#include "audio_processing/logging/aec_logging_file_handling.h"
 
 #include <stdint.h>
 #include <stdio.h>
 
-#include "webrtc/base/checks.h"
-#include "webrtc/base/stringutils.h"
-#include "webrtc/common_audio/wav_file.h"
-#include "webrtc/typedefs.h"
+#include "base/checks.h"
+#include "base/stringutils.h"
+#include "common_audio/wav_file.h"
+#include "typedefs.h"
 
 #ifdef WEBRTC_AEC_DEBUG_DUMP
 void WebRtcAec_ReopenWav(const char* name,

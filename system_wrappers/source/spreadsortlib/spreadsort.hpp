@@ -19,7 +19,7 @@ Scott McMurray
 #include <algorithm>
 #include <cstring>
 #include <vector>
-#include "webrtc/system_wrappers/source/spreadsortlib/constants.hpp"
+#include "system_wrappers/source/spreadsortlib/constants.hpp"
 
 namespace boost {
   namespace detail {

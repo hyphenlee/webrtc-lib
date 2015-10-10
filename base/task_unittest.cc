@@ -17,17 +17,17 @@
 #include <iostream>
 
 #if defined(WEBRTC_WIN)
-#include "webrtc/base/win32.h"
+#include "base/win32.h"
 #endif  // WEBRTC_WIN
 
-#include "webrtc/base/common.h"
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/task.h"
-#include "webrtc/base/taskrunner.h"
-#include "webrtc/base/thread.h"
-#include "webrtc/base/timeutils.h"
-#include "webrtc/test/testsupport/gtest_disable.h"
+#include "base/common.h"
+#include "base/gunit.h"
+#include "base/logging.h"
+#include "base/task.h"
+#include "base/taskrunner.h"
+#include "base/thread.h"
+#include "base/timeutils.h"
+#include "test/testsupport/gtest_disable.h"
 
 namespace rtc {
 

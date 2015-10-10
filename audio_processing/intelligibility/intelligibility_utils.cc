@@ -12,7 +12,7 @@
 //  Implements helper functions and classes for intelligibility enhancement.
 //
 
-#include "webrtc/modules/audio_processing/intelligibility/intelligibility_utils.h"
+#include "audio_processing/intelligibility/intelligibility_utils.h"
 
 #include <math.h>
 #include <stdlib.h>

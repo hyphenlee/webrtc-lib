@@ -8,7 +8,7 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_processing/vad/pitch_based_vad.h"
+#include "audio_processing/vad/pitch_based_vad.h"
 
 #include <math.h>
 #include <stdio.h>
@@ -16,7 +16,7 @@
 #include <string>
 
 #include "testing/gtest/include/gtest/gtest.h"
-#include "webrtc/test/testsupport/fileutils.h"
+#include "test/testsupport/fileutils.h"
 
 namespace webrtc {
 

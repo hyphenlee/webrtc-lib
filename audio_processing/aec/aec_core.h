@@ -17,7 +17,7 @@
 
 #include <stddef.h>
 
-#include "webrtc/typedefs.h"
+#include "typedefs.h"
 
 #define FRAME_LEN 80
 #define PART_LEN 64               // Length of partition

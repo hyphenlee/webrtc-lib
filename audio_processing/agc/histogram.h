@@ -13,8 +13,8 @@
 
 #include <string.h>
 
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/typedefs.h"
+#include "base/scoped_ptr.h"
+#include "typedefs.h"
 
 namespace webrtc {
 

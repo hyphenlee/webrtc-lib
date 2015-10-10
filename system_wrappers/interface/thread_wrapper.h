@@ -20,9 +20,9 @@
 #include <windows.h>
 #endif
 
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/common_types.h"
-#include "webrtc/typedefs.h"
+#include "base/scoped_ptr.h"
+#include "common_types.h"
+#include "typedefs.h"
 
 namespace webrtc {
 

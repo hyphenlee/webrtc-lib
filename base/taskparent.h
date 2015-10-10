@@ -13,8 +13,8 @@
 
 #include <set>
 
-#include "webrtc/base/basictypes.h"
-#include "webrtc/base/scoped_ptr.h"
+#include "base/basictypes.h"
+#include "base/scoped_ptr.h"
 
 namespace rtc {
 

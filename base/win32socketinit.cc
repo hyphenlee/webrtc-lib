@@ -8,9 +8,9 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/win32socketinit.h"
+#include "base/win32socketinit.h"
 
-#include "webrtc/base/win32.h"
+#include "base/win32.h"
 
 namespace rtc {
 

@@ -11,12 +11,12 @@
 #ifndef _HTTPREQUEST_H_
 #define _HTTPREQUEST_H_
 
-#include "webrtc/base/httpclient.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/proxyinfo.h"
-#include "webrtc/base/socketserver.h"
-#include "webrtc/base/thread.h"
-#include "webrtc/base/sslsocketfactory.h"  // Deprecated include
+#include "base/httpclient.h"
+#include "base/logging.h"
+#include "base/proxyinfo.h"
+#include "base/socketserver.h"
+#include "base/thread.h"
+#include "base/sslsocketfactory.h"  // Deprecated include
 
 namespace rtc {
 

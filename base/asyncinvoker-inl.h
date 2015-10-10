@@ -11,14 +11,14 @@
 #ifndef WEBRTC_BASE_ASYNCINVOKER_INL_H_
 #define WEBRTC_BASE_ASYNCINVOKER_INL_H_
 
-#include "webrtc/base/bind.h"
-#include "webrtc/base/callback.h"
-#include "webrtc/base/criticalsection.h"
-#include "webrtc/base/messagehandler.h"
-#include "webrtc/base/refcount.h"
-#include "webrtc/base/scoped_ref_ptr.h"
-#include "webrtc/base/sigslot.h"
-#include "webrtc/base/thread.h"
+#include "base/bind.h"
+#include "base/callback.h"
+#include "base/criticalsection.h"
+#include "base/messagehandler.h"
+#include "base/refcount.h"
+#include "base/scoped_ref_ptr.h"
+#include "base/sigslot.h"
+#include "base/thread.h"
 
 namespace rtc {
 

@@ -22,13 +22,13 @@
 
 #include "gflags/gflags.h"
 #include "testing/gtest/include/gtest/gtest.h"
-#include "webrtc/base/checks.h"
-#include "webrtc/common_audio/real_fourier.h"
-#include "webrtc/common_audio/wav_file.h"
-#include "webrtc/modules/audio_processing/intelligibility/intelligibility_enhancer.h"
-#include "webrtc/modules/audio_processing/intelligibility/intelligibility_utils.h"
-#include "webrtc/system_wrappers/interface/critical_section_wrapper.h"
-#include "webrtc/test/testsupport/fileutils.h"
+#include "base/checks.h"
+#include "common_audio/real_fourier.h"
+#include "common_audio/wav_file.h"
+#include "audio_processing/intelligibility/intelligibility_enhancer.h"
+#include "audio_processing/intelligibility/intelligibility_utils.h"
+#include "system_wrappers/interface/critical_section_wrapper.h"
+#include "test/testsupport/fileutils.h"
 
 using std::complex;
 using webrtc::intelligibility::VarianceArray;

@@ -22,9 +22,9 @@
 #include <string>
 #include <vector>
 
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/system_wrappers/interface/thread_wrapper.h"
-#include "webrtc/typedefs.h"
+#include "base/scoped_ptr.h"
+#include "system_wrappers/interface/thread_wrapper.h"
+#include "typedefs.h"
 
 namespace webrtc {
 

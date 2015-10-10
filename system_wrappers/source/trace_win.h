@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include <windows.h>
 
-#include "webrtc/system_wrappers/source/trace_impl.h"
+#include "system_wrappers/source/trace_impl.h"
 
 namespace webrtc {
 

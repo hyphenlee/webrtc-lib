@@ -18,9 +18,9 @@
 #include <string>
 #include <vector>
 
-#include "webrtc/base/libdbusglibsymboltable.h"
-#include "webrtc/base/messagehandler.h"
-#include "webrtc/base/thread.h"
+#include "base/libdbusglibsymboltable.h"
+#include "base/messagehandler.h"
+#include "base/thread.h"
 
 namespace rtc {
 

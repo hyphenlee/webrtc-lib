@@ -11,9 +11,9 @@
 #ifndef WEBRTC_MODULES_AUDIO_PROCESSING_LEVEL_ESTIMATOR_IMPL_H_
 #define WEBRTC_MODULES_AUDIO_PROCESSING_LEVEL_ESTIMATOR_IMPL_H_
 
-#include "webrtc/modules/audio_processing/include/audio_processing.h"
-#include "webrtc/modules/audio_processing/processing_component.h"
-#include "webrtc/modules/audio_processing/rms_level.h"
+#include "audio_processing/include/audio_processing.h"
+#include "audio_processing/processing_component.h"
+#include "audio_processing/rms_level.h"
 
 namespace webrtc {
 

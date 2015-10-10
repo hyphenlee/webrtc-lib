@@ -13,7 +13,7 @@
 
 #include <SLES/OpenSLES.h>
 
-#include "webrtc/base/checks.h"
+#include "base/checks.h"
 
 namespace webrtc {
 

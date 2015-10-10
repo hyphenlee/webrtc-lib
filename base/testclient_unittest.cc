@@ -8,13 +8,13 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/nethelpers.h"
-#include "webrtc/base/physicalsocketserver.h"
-#include "webrtc/base/testclient.h"
-#include "webrtc/base/testechoserver.h"
-#include "webrtc/base/thread.h"
-#include "webrtc/test/testsupport/gtest_disable.h"
+#include "base/gunit.h"
+#include "base/nethelpers.h"
+#include "base/physicalsocketserver.h"
+#include "base/testclient.h"
+#include "base/testechoserver.h"
+#include "base/thread.h"
+#include "test/testsupport/gtest_disable.h"
 
 using namespace rtc;
 

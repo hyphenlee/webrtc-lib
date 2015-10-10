@@ -11,10 +11,10 @@
 #ifndef WEBRTC_BASE_ASYNCPACKETSOCKET_H_
 #define WEBRTC_BASE_ASYNCPACKETSOCKET_H_
 
-#include "webrtc/base/dscp.h"
-#include "webrtc/base/sigslot.h"
-#include "webrtc/base/socket.h"
-#include "webrtc/base/timeutils.h"
+#include "base/dscp.h"
+#include "base/sigslot.h"
+#include "base/socket.h"
+#include "base/timeutils.h"
 
 namespace rtc {
 

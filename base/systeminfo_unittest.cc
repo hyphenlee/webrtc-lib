@@ -8,9 +8,9 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/stringutils.h"
-#include "webrtc/base/systeminfo.h"
+#include "base/gunit.h"
+#include "base/stringutils.h"
+#include "base/systeminfo.h"
 
 #if defined(CPU_X86) || defined(CPU_ARM)
 TEST(SystemInfoTest, CpuVendorNonEmpty) {

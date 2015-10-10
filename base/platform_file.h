@@ -18,14 +18,14 @@
 #endif
 
 namespace rtc {
-
-#if defined(WEBRTC_WIN)
-typedef HANDLE PlatformFile;
-#elif defined(WEBRTC_POSIX)
 typedef int PlatformFile;
-#else
-#error Unsupported platform
-#endif
+/* #if defined(WEBRTC_WIN) */
+/* typedef HANDLE PlatformFile; */
+/* #elif defined(WEBRTC_POSIX) */
+
+/* #else */
+/* #error Unsupported platform */
+/* #endif */
 
 extern const PlatformFile kInvalidPlatformFileValue;
 

@@ -8,8 +8,8 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/macutils.h"
+#include "base/gunit.h"
+#include "base/macutils.h"
 
 TEST(MacUtilsTest, GetOsVersionName) {
   rtc::MacOSVersionName ver = rtc::GetOSVersionName();

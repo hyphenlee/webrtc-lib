@@ -8,8 +8,8 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_device/mac/audio_mixer_manager_mac.h"
-#include "webrtc/system_wrappers/interface/trace.h"
+#include "audio_device/mac/audio_mixer_manager_mac.h"
+#include "system_wrappers/interface/trace.h"
 
 #include <unistd.h>             // getpid()
 
@@ -1153,7 +1153,7 @@ void AudioMixerManagerMac::logCAMsg(const TraceLevel level,
 {
     assert(msg != NULL);
     assert(err != NULL);
-
+    printf("%s: %.4s",msg,err);
 #ifdef WEBRTC_ARCH_BIG_ENDIAN
     WEBRTC_TRACE(level, module, id, "%s: %.4s", msg, err);
 #else

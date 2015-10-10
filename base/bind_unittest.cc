@@ -8,10 +8,10 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/bind.h"
-#include "webrtc/base/gunit.h"
+#include "base/bind.h"
+#include "base/gunit.h"
 
-#include "webrtc/base/refcount.h"
+#include "base/refcount.h"
 
 namespace rtc {
 

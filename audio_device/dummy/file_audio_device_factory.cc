@@ -8,11 +8,11 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_device/dummy/file_audio_device_factory.h"
+#include "audio_device/dummy/file_audio_device_factory.h"
 
 #include <cstring>
 
-#include "webrtc/modules/audio_device/dummy/file_audio_device.h"
+#include "audio_device/dummy/file_audio_device.h"
 
 namespace webrtc {
 

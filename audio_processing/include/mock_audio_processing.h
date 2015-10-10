@@ -11,8 +11,8 @@
 #ifndef WEBRTC_MODULES_AUDIO_PROCESSING_INCLUDE_MOCK_AUDIO_PROCESSING_H_
 #define WEBRTC_MODULES_AUDIO_PROCESSING_INCLUDE_MOCK_AUDIO_PROCESSING_H_
 
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/modules/audio_processing/include/audio_processing.h"
+#include "base/scoped_ptr.h"
+#include "audio_processing/include/audio_processing.h"
 
 namespace webrtc {
 

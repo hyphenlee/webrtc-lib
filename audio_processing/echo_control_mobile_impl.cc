@@ -8,15 +8,15 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_processing/echo_control_mobile_impl.h"
+#include "audio_processing/echo_control_mobile_impl.h"
 
 #include <assert.h>
 #include <string.h>
 
-#include "webrtc/modules/audio_processing/aecm/include/echo_control_mobile.h"
-#include "webrtc/modules/audio_processing/audio_buffer.h"
-#include "webrtc/system_wrappers/interface/critical_section_wrapper.h"
-#include "webrtc/system_wrappers/interface/logging.h"
+#include "audio_processing/aecm/include/echo_control_mobile.h"
+#include "audio_processing/audio_buffer.h"
+#include "system_wrappers/interface/critical_section_wrapper.h"
+#include "system_wrappers/interface/logging.h"
 
 namespace webrtc {
 

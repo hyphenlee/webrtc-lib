@@ -8,16 +8,16 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/posix.h"
+#include "base/posix.h"
 
 #include <sys/wait.h>
 #include <errno.h>
 #include <unistd.h>
 
 #if defined(WEBRTC_LINUX) && !defined(WEBRTC_ANDROID)
-#include "webrtc/base/linuxfdwalk.h"
+#include "base/linuxfdwalk.h"
 #endif
-#include "webrtc/base/logging.h"
+#include "base/logging.h"
 
 namespace rtc {
 

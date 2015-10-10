@@ -13,9 +13,9 @@
 
 #include <complex>
 
-#include "webrtc/base/checks.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/modules/audio_processing/beamformer/matrix.h"
+#include "base/checks.h"
+#include "base/scoped_ptr.h"
+#include "audio_processing/beamformer/matrix.h"
 
 namespace webrtc {
 

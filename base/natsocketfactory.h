@@ -15,9 +15,9 @@
 #include <map>
 #include <set>
 
-#include "webrtc/base/natserver.h"
-#include "webrtc/base/socketaddress.h"
-#include "webrtc/base/socketserver.h"
+#include "base/natserver.h"
+#include "base/socketaddress.h"
+#include "base/socketserver.h"
 
 namespace rtc {
 

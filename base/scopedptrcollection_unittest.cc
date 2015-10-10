@@ -8,8 +8,8 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/scopedptrcollection.h"
-#include "webrtc/base/gunit.h"
+#include "base/scopedptrcollection.h"
+#include "base/gunit.h"
 
 namespace rtc {
 

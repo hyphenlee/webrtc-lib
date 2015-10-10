@@ -8,14 +8,14 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/asyncinvoker.h"
-#include "webrtc/base/asyncudpsocket.h"
-#include "webrtc/base/event.h"
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/physicalsocketserver.h"
-#include "webrtc/base/socketaddress.h"
-#include "webrtc/base/thread.h"
-#include "webrtc/test/testsupport/gtest_disable.h"
+#include "base/asyncinvoker.h"
+#include "base/asyncudpsocket.h"
+#include "base/event.h"
+#include "base/gunit.h"
+#include "base/physicalsocketserver.h"
+#include "base/socketaddress.h"
+#include "base/thread.h"
+#include "test/testsupport/gtest_disable.h"
 
 #if defined(WEBRTC_WIN)
 #include <comdef.h>  // NOLINT
@@ -155,7 +155,7 @@ struct FunctorC {
   }
 };
 
-// See: https://code.google.com/p/webrtc/issues/detail?id=2409
+// See: https://code.google.com/p/issues/detail?id=2409
 TEST(ThreadTest, DISABLED_Main) {
   const SocketAddress addr("127.0.0.1", 0);
 

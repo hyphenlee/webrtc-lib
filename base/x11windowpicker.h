@@ -11,9 +11,9 @@
 #ifndef WEBRTC_BASE_LINUXWINDOWPICKER_H_
 #define WEBRTC_BASE_LINUXWINDOWPICKER_H_
 
-#include "webrtc/base/basictypes.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/windowpicker.h"
+#include "base/basictypes.h"
+#include "base/scoped_ptr.h"
+#include "base/windowpicker.h"
 
 // Avoid include <X11/Xlib.h>.
 struct _XDisplay;

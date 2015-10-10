@@ -19,7 +19,7 @@
 #include <stdlib.h>
 #endif
 
-#include "webrtc/base/basictypes.h"
+#include "base/basictypes.h"
 
 namespace rtc {
 

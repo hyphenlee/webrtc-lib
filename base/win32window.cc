@@ -8,9 +8,9 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/common.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/win32window.h"
+#include "base/common.h"
+#include "base/logging.h"
+#include "base/win32window.h"
 
 namespace rtc {
 

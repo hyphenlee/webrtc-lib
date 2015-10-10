@@ -8,7 +8,7 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/thread.h"
+#include "base/thread.h"
 
 #ifndef __has_feature
 #define __has_feature(x) 0  // Compatibility with non-clang or LLVM compilers.
@@ -20,18 +20,18 @@
 #include <time.h>
 #endif
 
-#include "webrtc/base/common.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/platform_thread.h"
-#include "webrtc/base/stringutils.h"
-#include "webrtc/base/timeutils.h"
+#include "base/common.h"
+#include "base/logging.h"
+#include "base/platform_thread.h"
+#include "base/stringutils.h"
+#include "base/timeutils.h"
 
 #if !__has_feature(objc_arc) && (defined(WEBRTC_MAC))
-#include "webrtc/base/maccocoathreadhelper.h"
-#include "webrtc/base/scoped_autorelease_pool.h"
+#include "base/maccocoathreadhelper.h"
+#include "base/scoped_autorelease_pool.h"
 #endif
 
-#include "webrtc/base/trace_event.h"
+#include "base/trace_event.h"
 
 namespace rtc {
 

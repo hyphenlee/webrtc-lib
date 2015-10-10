@@ -8,8 +8,8 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_processing/aec/aec_rdft.h"
-#include "webrtc/typedefs.h"
+#include "audio_processing/aec/aec_rdft.h"
+#include "typedefs.h"
 
 static void bitrv2_128_mips(float* a) {
   // n is 128

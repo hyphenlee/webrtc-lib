@@ -37,12 +37,12 @@ static const char kLibjingle[] = "libjingle";
 #include <ostream>
 #include <vector>
 
-#include "webrtc/base/logging.h"
-#include "webrtc/base/platform_thread.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/stringencode.h"
-#include "webrtc/base/stringutils.h"
-#include "webrtc/base/timeutils.h"
+#include "base/logging.h"
+#include "base/platform_thread.h"
+#include "base/scoped_ptr.h"
+#include "base/stringencode.h"
+#include "base/stringutils.h"
+#include "base/timeutils.h"
 
 namespace rtc {
 namespace {

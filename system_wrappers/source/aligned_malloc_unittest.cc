@@ -8,7 +8,7 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/system_wrappers/interface/aligned_malloc.h"
+#include "system_wrappers/interface/aligned_malloc.h"
 
 #if _WIN32
 #include <windows.h>
@@ -17,8 +17,8 @@
 #endif
 
 #include "testing/gtest/include/gtest/gtest.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/typedefs.h"
+#include "base/scoped_ptr.h"
+#include "typedefs.h"
 
 namespace webrtc {
 

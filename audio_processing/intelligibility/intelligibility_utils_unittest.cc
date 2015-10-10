@@ -18,8 +18,8 @@
 #include <vector>
 
 #include "testing/gtest/include/gtest/gtest.h"
-#include "webrtc/base/arraysize.h"
-#include "webrtc/modules/audio_processing/intelligibility/intelligibility_utils.h"
+#include "base/arraysize.h"
+#include "audio_processing/intelligibility/intelligibility_utils.h"
 
 using std::complex;
 using std::vector;

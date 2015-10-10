@@ -16,7 +16,7 @@
 
 #if HAVE_NSS_SSL_H
 
-#include "webrtc/base/nssstreamadapter.h"
+#include "base/nssstreamadapter.h"
 
 #include "keyhi.h"
 #include "nspr.h"
@@ -34,9 +34,9 @@
 #include "net/third_party/nss/ssl/sslproto.h"
 #endif
 
-#include "webrtc/base/nssidentity.h"
-#include "webrtc/base/safe_conversions.h"
-#include "webrtc/base/thread.h"
+#include "base/nssidentity.h"
+#include "base/safe_conversions.h"
+#include "base/thread.h"
 
 namespace rtc {
 

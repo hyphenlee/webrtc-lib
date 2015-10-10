@@ -11,7 +11,8 @@
 /*
  * Contains the API functions for the AEC.
  */
-#include "webrtc/modules/audio_processing/aec/include/echo_cancellation.h"
+#include "audio_processing/aec/include/echo_cancellation.h"
+
 
 #include <math.h>
 #ifdef WEBRTC_AEC_DEBUG_DUMP
@@ -20,12 +21,12 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "webrtc/common_audio/ring_buffer.h"
-#include "webrtc/common_audio/signal_processing/include/signal_processing_library.h"
-#include "webrtc/modules/audio_processing/aec/aec_core.h"
-#include "webrtc/modules/audio_processing/aec/aec_resampler.h"
-#include "webrtc/modules/audio_processing/aec/echo_cancellation_internal.h"
-#include "webrtc/typedefs.h"
+#include "common_audio/ring_buffer.h"
+#include "common_audio/signal_processing/include/signal_processing_library.h"
+#include "audio_processing/aec/aec_core.h"
+#include "audio_processing/aec/aec_resampler.h"
+#include "audio_processing/aec/echo_cancellation_internal.h"
+#include "typedefs.h"
 
 // Measured delays [ms]
 // Device                Chrome  GTP
@@ -370,6 +371,7 @@ int32_t WebRtcAec_Process(void* aecInst,
 
   // This returns the value of aec->extended_filter_enabled.
   if (WebRtcAec_extended_filter_enabled(aecpc->aec)) {
+    printf("into extended\n");
     ProcessExtended(aecpc,
                     nearend,
                     num_bands,
@@ -378,6 +380,7 @@ int32_t WebRtcAec_Process(void* aecInst,
                     msInSndCardBuf,
                     skew);
   } else {
+    printf("into normal\n");
     if (ProcessNormal(aecpc,
                       nearend,
                       num_bands,
@@ -603,13 +606,14 @@ static int ProcessNormal(Aec* aecpc,
   // Limit resampling to doubling/halving of signal
   const float minSkewEst = -0.5f;
   const float maxSkewEst = 1.0f;
-
+  printf("max trust delay:%d",kMaxTrustedDelayMs);
   msInSndCardBuf =
       msInSndCardBuf > kMaxTrustedDelayMs ? kMaxTrustedDelayMs : msInSndCardBuf;
+  
   // TODO(andrew): we need to investigate if this +10 is really wanted.
   msInSndCardBuf += 10;
   aecpc->msInSndCardBuf = msInSndCardBuf;
-
+  printf("delay :%d",msInSndCardBuf);
   if (aecpc->skewMode == kAecTrue) {
     if (aecpc->skewFrCtr < 25) {
       aecpc->skewFrCtr++;
@@ -646,6 +650,7 @@ static int ProcessNormal(Aec* aecpc,
     for (i = 0; i < num_bands; ++i) {
       // Only needed if they don't already point to the same place.
       if (nearend[i] != out[i]) {
+        printf("out data %3.3f",nearend[i]);
         memcpy(out[i], nearend[i], sizeof(nearend[i][0]) * nrOfSamples);
       }
     }
@@ -722,6 +727,7 @@ static int ProcessNormal(Aec* aecpc,
   } else {
     // AEC is enabled.
     EstBufDelayNormal(aecpc);
+    printf("aec enabled\n");
 
     // Call the AEC.
     // TODO(bjornv): Re-structure such that we don't have to pass

@@ -13,10 +13,10 @@
 
 #include <vector>
 
-#include "webrtc/common_audio/lapped_transform.h"
-#include "webrtc/common_audio/channel_buffer.h"
-#include "webrtc/modules/audio_processing/beamformer/beamformer.h"
-#include "webrtc/modules/audio_processing/beamformer/complex_matrix.h"
+#include "common_audio/lapped_transform.h"
+#include "common_audio/channel_buffer.h"
+#include "audio_processing/beamformer/beamformer.h"
+#include "audio_processing/beamformer/complex_matrix.h"
 
 namespace webrtc {
 

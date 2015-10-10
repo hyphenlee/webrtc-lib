@@ -11,8 +11,8 @@
 #ifndef WEBRTC_MODULES_AUDIO_PROCESSING_TYPING_DETECTION_H_
 #define WEBRTC_MODULES_AUDIO_PROCESSING_TYPING_DETECTION_H_
 
-#include "webrtc/modules/interface/module_common_types.h"
-#include "webrtc/typedefs.h"
+#include "interface/module_common_types.h"
+#include "typedefs.h"
 
 namespace webrtc {
 

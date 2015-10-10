@@ -8,11 +8,11 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/transformadapter.h"
+#include "base/transformadapter.h"
 
 #include <string.h>
 
-#include "webrtc/base/common.h"
+#include "base/common.h"
 
 namespace rtc {
 

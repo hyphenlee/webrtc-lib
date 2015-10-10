@@ -11,12 +11,12 @@
 #include <set>
 #include <vector>
 
-#include "webrtc/base/criticalsection.h"
-#include "webrtc/base/event.h"
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/scopedptrcollection.h"
-#include "webrtc/base/thread.h"
-#include "webrtc/test/testsupport/gtest_disable.h"
+#include "base/criticalsection.h"
+#include "base/event.h"
+#include "base/gunit.h"
+#include "base/scopedptrcollection.h"
+#include "base/thread.h"
+#include "test/testsupport/gtest_disable.h"
 
 namespace rtc {
 

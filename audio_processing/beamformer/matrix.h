@@ -16,9 +16,9 @@
 #include <string>
 #include <vector>
 
-#include "webrtc/base/checks.h"
-#include "webrtc/base/constructormagic.h"
-#include "webrtc/base/scoped_ptr.h"
+#include "base/checks.h"
+#include "base/constructormagic.h"
+#include "base/scoped_ptr.h"
 
 namespace {
 

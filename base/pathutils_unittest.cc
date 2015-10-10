@@ -8,8 +8,8 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/pathutils.h"
-#include "webrtc/base/gunit.h"
+#include "base/pathutils.h"
+#include "base/gunit.h"
 
 TEST(Pathname, ReturnsDotForEmptyPathname) {
   const std::string kCWD =

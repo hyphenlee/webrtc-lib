@@ -12,10 +12,10 @@
 #define WEBRTC_BASE_TESTECHOSERVER_H_
 
 #include <list>
-#include "webrtc/base/asynctcpsocket.h"
-#include "webrtc/base/socketaddress.h"
-#include "webrtc/base/sigslot.h"
-#include "webrtc/base/thread.h"
+#include "base/asynctcpsocket.h"
+#include "base/socketaddress.h"
+#include "base/sigslot.h"
+#include "base/thread.h"
 
 namespace rtc {
 

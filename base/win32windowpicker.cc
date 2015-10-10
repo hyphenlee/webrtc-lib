@@ -7,13 +7,13 @@
  *  in the file PATENTS.  All contributing project authors may
  *  be found in the AUTHORS file in the root of the source tree.
  */
-#include "webrtc/base/win32windowpicker.h"
+#include "base/win32windowpicker.h"
 
 #include <string>
 #include <vector>
 
-#include "webrtc/base/common.h"
-#include "webrtc/base/logging.h"
+#include "base/common.h"
+#include "base/logging.h"
 
 namespace rtc {
 

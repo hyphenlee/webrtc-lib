@@ -7,11 +7,11 @@
  *  in the file PATENTS.  All contributing project authors may
  *  be found in the AUTHORS file in the root of the source tree.
  */
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/macutils.h"
-#include "webrtc/base/macwindowpicker.h"
-#include "webrtc/base/windowpicker.h"
+#include "base/gunit.h"
+#include "base/logging.h"
+#include "base/macutils.h"
+#include "base/macwindowpicker.h"
+#include "base/windowpicker.h"
 
 #if !defined(WEBRTC_MAC) || defined(WEBRTC_IOS)
 #error Only for WEBRTC_MAC && !WEBRTC_IOS

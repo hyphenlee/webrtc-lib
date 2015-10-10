@@ -10,12 +10,12 @@
 
 #include "testing/gtest/include/gtest/gtest.h"
 extern "C" {
-#include "webrtc/modules/audio_processing/aec/aec_core.h"
+#include "audio_processing/aec/aec_core.h"
 }
-#include "webrtc/modules/audio_processing/aec/echo_cancellation_internal.h"
-#include "webrtc/modules/audio_processing/aec/include/echo_cancellation.h"
-#include "webrtc/test/testsupport/gtest_disable.h"
-#include "webrtc/typedefs.h"
+#include "audio_processing/aec/echo_cancellation_internal.h"
+#include "audio_processing/aec/include/echo_cancellation.h"
+#include "test/testsupport/gtest_disable.h"
+#include "typedefs.h"
 
 namespace {
 

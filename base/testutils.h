@@ -25,15 +25,15 @@
 #include <algorithm>
 #include <map>
 #include <vector>
-#include "webrtc/base/asyncsocket.h"
-#include "webrtc/base/common.h"
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/nethelpers.h"
-#include "webrtc/base/pathutils.h"
-#include "webrtc/base/stream.h"
-#include "webrtc/base/stringencode.h"
-#include "webrtc/base/stringutils.h"
-#include "webrtc/base/thread.h"
+#include "base/asyncsocket.h"
+#include "base/common.h"
+#include "base/gunit.h"
+#include "base/nethelpers.h"
+#include "base/pathutils.h"
+#include "base/stream.h"
+#include "base/stringencode.h"
+#include "base/stringutils.h"
+#include "base/thread.h"
 
 namespace testing {
 

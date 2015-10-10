@@ -8,6 +8,6 @@
 
 // This file has moved.
 // TODO(tommi): Delete after removing dependencies and updating Chromium.
-#include "webrtc/base/trace_event.h"
+#include "base/trace_event.h"
 
 #endif  // WEBRTC_SYSTEM_WRAPPERS_INTERFACE_TRACE_EVENT_H_

@@ -11,8 +11,8 @@
 #ifndef WEBRTC_BASE_HTTPCOMMON_INL_H__
 #define WEBRTC_BASE_HTTPCOMMON_INL_H__
 
-#include "webrtc/base/common.h"
-#include "webrtc/base/httpcommon.h"
+#include "base/common.h"
+#include "base/httpcommon.h"
 
 namespace rtc {
 

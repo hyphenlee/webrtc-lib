@@ -10,17 +10,17 @@
 
 #include <string>
 
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/natserver.h"
-#include "webrtc/base/natsocketfactory.h"
-#include "webrtc/base/nethelpers.h"
-#include "webrtc/base/network.h"
-#include "webrtc/base/physicalsocketserver.h"
-#include "webrtc/base/testclient.h"
-#include "webrtc/base/asynctcpsocket.h"
-#include "webrtc/base/virtualsocketserver.h"
-#include "webrtc/test/testsupport/gtest_disable.h"
+#include "base/gunit.h"
+#include "base/logging.h"
+#include "base/natserver.h"
+#include "base/natsocketfactory.h"
+#include "base/nethelpers.h"
+#include "base/network.h"
+#include "base/physicalsocketserver.h"
+#include "base/testclient.h"
+#include "base/asynctcpsocket.h"
+#include "base/virtualsocketserver.h"
+#include "test/testsupport/gtest_disable.h"
 
 using namespace rtc;
 

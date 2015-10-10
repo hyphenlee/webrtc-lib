@@ -12,9 +12,9 @@
 #define WEBRTC_BASE_OPENSSLADAPTER_H__
 
 #include <string>
-#include "webrtc/base/messagehandler.h"
-#include "webrtc/base/messagequeue.h"
-#include "webrtc/base/ssladapter.h"
+#include "base/messagehandler.h"
+#include "base/messagequeue.h"
+#include "base/ssladapter.h"
 
 typedef struct ssl_st SSL;
 typedef struct ssl_ctx_st SSL_CTX;

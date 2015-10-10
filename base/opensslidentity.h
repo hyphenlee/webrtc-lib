@@ -16,9 +16,9 @@
 
 #include <string>
 
-#include "webrtc/base/common.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/sslidentity.h"
+#include "base/common.h"
+#include "base/scoped_ptr.h"
+#include "base/sslidentity.h"
 
 typedef struct ssl_ctx_st SSL_CTX;
 

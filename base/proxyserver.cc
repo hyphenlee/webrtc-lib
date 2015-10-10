@@ -8,10 +8,10 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/proxyserver.h"
+#include "base/proxyserver.h"
 
 #include <algorithm>
-#include "webrtc/base/socketfactory.h"
+#include "base/socketfactory.h"
 
 namespace rtc {
 

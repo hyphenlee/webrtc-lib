@@ -13,7 +13,7 @@
 
 #include <openssl/evp.h>
 
-#include "webrtc/base/messagedigest.h"
+#include "base/messagedigest.h"
 
 namespace rtc {
 

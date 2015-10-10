@@ -8,16 +8,16 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/httprequest.h"
+#include "base/httprequest.h"
 
-#include "webrtc/base/common.h"
-#include "webrtc/base/firewallsocketserver.h"
-#include "webrtc/base/httpclient.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/physicalsocketserver.h"
-#include "webrtc/base/socketadapters.h"
-#include "webrtc/base/socketpool.h"
-#include "webrtc/base/ssladapter.h"
+#include "base/common.h"
+#include "base/firewallsocketserver.h"
+#include "base/httpclient.h"
+#include "base/logging.h"
+#include "base/physicalsocketserver.h"
+#include "base/socketadapters.h"
+#include "base/socketpool.h"
+#include "base/ssladapter.h"
 
 using namespace rtc;
 

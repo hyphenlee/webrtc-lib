@@ -8,19 +8,19 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/winping.h"
+#include "base/winping.h"
 
 #include <assert.h>
 #include <Iphlpapi.h>
 
 #include <algorithm>
 
-#include "webrtc/base/byteorder.h"
-#include "webrtc/base/common.h"
-#include "webrtc/base/ipaddress.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/nethelpers.h"
-#include "webrtc/base/socketaddress.h"
+#include "base/byteorder.h"
+#include "base/common.h"
+#include "base/ipaddress.h"
+#include "base/logging.h"
+#include "base/nethelpers.h"
+#include "base/socketaddress.h"
 
 namespace rtc {
 

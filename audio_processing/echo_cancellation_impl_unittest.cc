@@ -9,12 +9,12 @@
  */
 
 #include "testing/gtest/include/gtest/gtest.h"
-#include "webrtc/base/scoped_ptr.h"
+#include "base/scoped_ptr.h"
 extern "C" {
-#include "webrtc/modules/audio_processing/aec/aec_core.h"
+#include "audio_processing/aec/aec_core.h"
 }
-#include "webrtc/modules/audio_processing/include/audio_processing.h"
-#include "webrtc/test/testsupport/gtest_disable.h"
+#include "audio_processing/include/audio_processing.h"
+#include "test/testsupport/gtest_disable.h"
 
 namespace webrtc {
 

@@ -17,12 +17,12 @@
 #include <string>
 #include <vector>
 
-#include "webrtc/base/constructormagic.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/common_audio/channel_buffer.h"
-#include "webrtc/common_audio/wav_file.h"
-#include "webrtc/modules/audio_processing/include/audio_processing.h"
-#include "webrtc/modules/interface/module_common_types.h"
+#include "base/constructormagic.h"
+#include "base/scoped_ptr.h"
+#include "common_audio/channel_buffer.h"
+#include "common_audio/wav_file.h"
+#include "audio_processing/include/audio_processing.h"
+#include "interface/module_common_types.h"
 
 namespace webrtc {
 

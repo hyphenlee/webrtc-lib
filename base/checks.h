@@ -14,7 +14,7 @@
 #include <sstream>
 #include <string>
 
-#include "webrtc/typedefs.h"
+#include "typedefs.h"
 
 // The macros here print a message to stderr and abort under various
 // conditions. All will accept additional stream messages. For example:

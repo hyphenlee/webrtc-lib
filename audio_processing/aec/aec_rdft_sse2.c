@@ -8,7 +8,7 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_processing/aec/aec_rdft.h"
+#include "audio_processing/aec/aec_rdft.h"
 
 #include <emmintrin.h>
 

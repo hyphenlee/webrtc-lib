@@ -8,12 +8,12 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_processing/agc/histogram.h"
+#include "audio_processing/agc/histogram.h"
 
 #include <cmath>
 #include <cstring>
 
-#include "webrtc/modules/interface/module_common_types.h"
+#include "interface/module_common_types.h"
 
 namespace webrtc {
 

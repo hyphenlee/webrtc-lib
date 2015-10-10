@@ -8,11 +8,11 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/socket_unittest.h"
-#include "webrtc/base/thread.h"
-#include "webrtc/base/macsocketserver.h"
+#include "base/gunit.h"
+#include "base/scoped_ptr.h"
+#include "base/socket_unittest.h"
+#include "base/thread.h"
+#include "base/macsocketserver.h"
 
 namespace rtc {
 
@@ -118,7 +118,7 @@ TEST_F(MacAsyncSocketTest, TestConnectWithDnsLookupIPv6) {
   SocketTest::TestConnectWithDnsLookupIPv6();
 }
 
-// BUG=https://code.google.com/p/webrtc/issues/detail?id=2272
+// BUG=https://code.google.com/p/issues/detail?id=2272
 TEST_F(MacAsyncSocketTest, DISABLED_TestConnectFailIPv4) {
   SocketTest::TestConnectFailIPv4();
 }

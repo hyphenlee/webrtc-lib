@@ -34,10 +34,10 @@
 #include <map>
 #include <string>
 
-#include "webrtc/base/basictypes.h"
-#include "webrtc/base/common.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/sharedexclusivelock.h"
+#include "base/basictypes.h"
+#include "base/common.h"
+#include "base/logging.h"
+#include "base/sharedexclusivelock.h"
 
 // Profiling could be switched via a build flag, but for now, it's always on.
 #ifndef ENABLE_PROFILING

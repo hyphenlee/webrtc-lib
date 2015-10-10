@@ -13,9 +13,9 @@
 
 #include <vector>
 
-#include "webrtc/base/basictypes.h"
-#include "webrtc/base/sigslot.h"
-#include "webrtc/base/taskparent.h"
+#include "base/basictypes.h"
+#include "base/sigslot.h"
+#include "base/taskparent.h"
 
 namespace rtc {
 class Task;

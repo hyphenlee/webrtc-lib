@@ -13,11 +13,11 @@
 
 #include <android/log.h>
 
-#include "webrtc/base/checks.h"
-#include "webrtc/base/thread_checker.h"
-#include "webrtc/modules/audio_device/android/audio_manager.h"
-#include "webrtc/modules/audio_device/audio_device_generic.h"
-#include "webrtc/system_wrappers/interface/trace.h"
+#include "base/checks.h"
+#include "base/thread_checker.h"
+#include "audio_device/android/audio_manager.h"
+#include "audio_device/audio_device_generic.h"
+#include "system_wrappers/interface/trace.h"
 
 #define TAG "AudioDeviceTemplate"
 #define ALOGW(...) __android_log_print(ANDROID_LOG_WARN, TAG, __VA_ARGS__)

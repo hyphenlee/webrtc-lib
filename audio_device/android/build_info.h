@@ -14,11 +14,11 @@
 #include <jni.h>
 #include <string>
 
-#include "webrtc/modules/utility/interface/jvm_android.h"
+#include "utility/interface/jvm_android.h"
 
 namespace webrtc {
 
-// Utility class used to query the Java class (org/webrtc/voiceengine/BuildInfo)
+// Utility class used to query the Java class (org/voiceengine/BuildInfo)
 // for device and Android build information.
 // The calling thread is attached to the JVM at construction if needed and a
 // valid Java environment object is also created.

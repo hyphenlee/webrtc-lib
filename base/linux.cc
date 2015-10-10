@@ -9,7 +9,7 @@
  */
 
 #if defined(WEBRTC_LINUX)
-#include "webrtc/base/linux.h"
+#include "base/linux.h"
 
 #include <ctype.h>
 
@@ -20,7 +20,7 @@
 #include <cstdio>
 #include <set>
 
-#include "webrtc/base/stringencode.h"
+#include "base/stringencode.h"
 
 namespace rtc {
 

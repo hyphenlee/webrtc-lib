@@ -9,15 +9,15 @@
  */
 
 #include <string>
-#include "webrtc/base/autodetectproxy.h"
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/httpserver.h"
-#include "webrtc/base/proxyserver.h"
-#include "webrtc/base/socketadapters.h"
-#include "webrtc/base/testclient.h"
-#include "webrtc/base/testechoserver.h"
-#include "webrtc/base/virtualsocketserver.h"
-#include "webrtc/test/testsupport/gtest_disable.h"
+#include "base/autodetectproxy.h"
+#include "base/gunit.h"
+#include "base/httpserver.h"
+#include "base/proxyserver.h"
+#include "base/socketadapters.h"
+#include "base/testclient.h"
+#include "base/testechoserver.h"
+#include "base/virtualsocketserver.h"
+#include "test/testsupport/gtest_disable.h"
 
 using rtc::Socket;
 using rtc::Thread;

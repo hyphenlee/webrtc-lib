@@ -13,7 +13,7 @@
 
 #include <stdio.h>
 
-#include "webrtc/modules/audio_processing/logging/aec_logging_file_handling.h"
+#include "audio_processing/logging/aec_logging_file_handling.h"
 
 // To enable AEC logging, invoke GYP with -Daec_debug_dump=1.
 #ifdef WEBRTC_AEC_DEBUG_DUMP

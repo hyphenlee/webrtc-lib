@@ -9,9 +9,9 @@
  */
 
 #include <algorithm>
-#include "webrtc/base/common.h"
-#include "webrtc/base/httpcommon.h"
-#include "webrtc/base/multipart.h"
+#include "base/common.h"
+#include "base/httpcommon.h"
+#include "base/multipart.h"
 
 namespace rtc {
 

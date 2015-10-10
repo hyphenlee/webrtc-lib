@@ -13,9 +13,9 @@
 
 #include <AudioUnit/AudioUnit.h>
 
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/thread_checker.h"
-#include "webrtc/modules/audio_device/audio_device_generic.h"
+#include "base/scoped_ptr.h"
+#include "base/thread_checker.h"
+#include "audio_device/audio_device_generic.h"
 
 namespace webrtc {
 

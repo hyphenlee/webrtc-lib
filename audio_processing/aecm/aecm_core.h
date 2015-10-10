@@ -13,10 +13,10 @@
 #ifndef WEBRTC_MODULES_AUDIO_PROCESSING_AECM_AECM_CORE_H_
 #define WEBRTC_MODULES_AUDIO_PROCESSING_AECM_AECM_CORE_H_
 
-#include "webrtc/common_audio/ring_buffer.h"
-#include "webrtc/common_audio/signal_processing/include/signal_processing_library.h"
-#include "webrtc/modules/audio_processing/aecm/aecm_defines.h"
-#include "webrtc/typedefs.h"
+#include "common_audio/ring_buffer.h"
+#include "common_audio/signal_processing/include/signal_processing_library.h"
+#include "audio_processing/aecm/aecm_defines.h"
+#include "typedefs.h"
 
 #ifdef _MSC_VER  // visual c++
 #define ALIGN8_BEG __declspec(align(8))

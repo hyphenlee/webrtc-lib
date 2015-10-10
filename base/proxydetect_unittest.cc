@@ -10,8 +10,8 @@
 
 #include <string>
 
-#include "webrtc/base/fileutils_mock.h"
-#include "webrtc/base/proxydetect.h"
+#include "base/fileutils_mock.h"
+#include "base/proxydetect.h"
 
 namespace rtc {
 

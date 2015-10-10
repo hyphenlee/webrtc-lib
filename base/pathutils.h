@@ -13,7 +13,7 @@
 
 #include <string>
 // Temporary, until deprecated helpers are removed.
-#include "webrtc/base/fileutils.h"
+#include "base/fileutils.h"
 
 namespace rtc {
 

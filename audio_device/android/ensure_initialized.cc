@@ -8,17 +8,17 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_device/android/ensure_initialized.h"
+#include "audio_device/android/ensure_initialized.h"
 
 #include <pthread.h>
 
 // Note: this dependency is dangerous since it reaches into Chromium's base.
 // There's a risk of e.g. macro clashes. This file may only be used in tests.
 #include "base/android/jni_android.h"
-#include "webrtc/base/checks.h"
-#include "webrtc/modules/audio_device/android/audio_record_jni.h"
-#include "webrtc/modules/audio_device/android/audio_track_jni.h"
-#include "webrtc/modules/utility/interface/jvm_android.h"
+#include "base/checks.h"
+#include "audio_device/android/audio_record_jni.h"
+#include "audio_device/android/audio_track_jni.h"
+#include "utility/interface/jvm_android.h"
 
 namespace webrtc {
 namespace audiodevicemodule {

@@ -8,7 +8,7 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/x11windowpicker.h"
+#include "base/x11windowpicker.h"
 
 #include <math.h>
 #include <string.h>
@@ -21,7 +21,7 @@
 #include <X11/extensions/Xrender.h>
 #include <X11/Xutil.h>
 
-#include "webrtc/base/logging.h"
+#include "base/logging.h"
 
 namespace rtc {
 

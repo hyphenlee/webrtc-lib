@@ -8,14 +8,14 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_processing/agc/agc.h"
+#include "audio_processing/agc/agc.h"
 
 #include "gmock/gmock.h"
 #include "gtest/gtest.h"
 
-#include "webrtc/modules/interface/module_common_types.h"
-#include "webrtc/test/testsupport/fileutils.h"
-#include "webrtc/tools/agc/test_utils.h"
+#include "interface/module_common_types.h"
+#include "test/testsupport/fileutils.h"
+#include "tools/agc/test_utils.h"
 
 using ::testing::_;
 using ::testing::AllOf;

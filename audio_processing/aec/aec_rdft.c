@@ -19,15 +19,15 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_processing/aec/aec_rdft.h"
+#include "audio_processing/aec/aec_rdft.h"
 
 #include <math.h>
 
-#include "webrtc/system_wrappers/interface/cpu_features_wrapper.h"
-#include "webrtc/typedefs.h"
+#include "system_wrappers/interface/cpu_features_wrapper.h"
+#include "typedefs.h"
 
 // These tables used to be computed at run-time. For example, refer to:
-// https://code.google.com/p/webrtc/source/browse/trunk/webrtc/modules/audio_processing/aec/aec_rdft.c?r=6564
+// https://code.google.com/p/source/browse/trunk/audio_processing/aec/aec_rdft.c?r=6564
 // to see the initialization code.
 const float rdft_w[64] = {
     1.0000000000f, 0.0000000000f, 0.7071067691f, 0.7071067691f,

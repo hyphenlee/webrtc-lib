@@ -14,8 +14,8 @@
 #include <string>
 #include <vector>
 
-#include "webrtc/base/sigslot.h"
-#include "webrtc/base/stream.h"
+#include "base/sigslot.h"
+#include "base/stream.h"
 
 namespace rtc {
 

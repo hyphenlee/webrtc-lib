@@ -8,7 +8,7 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/unixfilesystem.h"
+#include "base/unixfilesystem.h"
 
 #include <errno.h>
 #include <fcntl.h>
@@ -20,7 +20,7 @@
 #include <Carbon/Carbon.h>
 #include <IOKit/IOCFBundle.h>
 #include <sys/statvfs.h>
-#include "webrtc/base/macutils.h"
+#include "base/macutils.h"
 #endif  // WEBRTC_MAC && !defined(WEBRTC_IOS)
 
 #if defined(WEBRTC_POSIX) && !defined(WEBRTC_MAC) || defined(WEBRTC_IOS)
@@ -44,10 +44,10 @@
 #include <sys/syslimits.h>
 #endif
 
-#include "webrtc/base/fileutils.h"
-#include "webrtc/base/pathutils.h"
-#include "webrtc/base/stream.h"
-#include "webrtc/base/stringutils.h"
+#include "base/fileutils.h"
+#include "base/pathutils.h"
+#include "base/stream.h"
+#include "base/stringutils.h"
 
 #if defined(WEBRTC_IOS)
 // Defined in iosfilesystem.mm.  No header file to discourage use

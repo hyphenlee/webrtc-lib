@@ -8,7 +8,7 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/system_wrappers/source/event_timer_posix.h"
+#include "system_wrappers/source/event_timer_posix.h"
 
 #include <errno.h>
 #include <pthread.h>
@@ -18,7 +18,7 @@
 #include <sys/time.h>
 #include <unistd.h>
 
-#include "webrtc/base/checks.h"
+#include "base/checks.h"
 
 namespace webrtc {
 

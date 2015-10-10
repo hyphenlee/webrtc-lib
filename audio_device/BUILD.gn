@@ -154,7 +154,7 @@ source_set("audio_device") {
 
   if (is_clang) {
     # Suppress warnings from Chrome's Clang plugins.
-    # See http://code.google.com/p/webrtc/issues/detail?id=163 for details.
+    # See http://code.google.com/p/issues/detail?id=163 for details.
     configs -= [ "//build/config/clang:find_bad_constructs" ]
   }
 

@@ -11,11 +11,11 @@
 // Borrowed from Chromium's src/base/threading/thread_checker_unittest.cc.
 
 #include "testing/gtest/include/gtest/gtest.h"
-#include "webrtc/base/checks.h"
-#include "webrtc/base/thread.h"
-#include "webrtc/base/thread_checker.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/test/testsupport/gtest_disable.h"
+#include "base/checks.h"
+#include "base/thread.h"
+#include "base/thread_checker.h"
+#include "base/scoped_ptr.h"
+#include "test/testsupport/gtest_disable.h"
 
 // Duplicated from base/threading/thread_checker.h so that we can be
 // good citizens there and undef the macro.

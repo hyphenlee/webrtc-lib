@@ -8,17 +8,17 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/audio_processing/noise_suppression_impl.h"
+#include "audio_processing/noise_suppression_impl.h"
 
 #include <assert.h>
 
-#include "webrtc/modules/audio_processing/audio_buffer.h"
+#include "audio_processing/audio_buffer.h"
 #if defined(WEBRTC_NS_FLOAT)
-#include "webrtc/modules/audio_processing/ns/include/noise_suppression.h"
+#include "audio_processing/ns/include/noise_suppression.h"
 #elif defined(WEBRTC_NS_FIXED)
-#include "webrtc/modules/audio_processing/ns/include/noise_suppression_x.h"
+#include "audio_processing/ns/include/noise_suppression_x.h"
 #endif
-#include "webrtc/system_wrappers/interface/critical_section_wrapper.h"
+#include "system_wrappers/interface/critical_section_wrapper.h"
 
 
 namespace webrtc {

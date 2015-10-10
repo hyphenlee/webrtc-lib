@@ -39,15 +39,15 @@
 #include <algorithm>
 #include <map>
 
-#include "webrtc/base/basictypes.h"
-#include "webrtc/base/byteorder.h"
-#include "webrtc/base/common.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/base/nethelpers.h"
-#include "webrtc/base/physicalsocketserver.h"
-#include "webrtc/base/timeutils.h"
-#include "webrtc/base/winping.h"
-#include "webrtc/base/win32socketinit.h"
+#include "base/basictypes.h"
+#include "base/byteorder.h"
+#include "base/common.h"
+#include "base/logging.h"
+#include "base/nethelpers.h"
+#include "base/physicalsocketserver.h"
+#include "base/timeutils.h"
+#include "base/winping.h"
+#include "base/win32socketinit.h"
 
 // stm: this will tell us if we are on OSX
 #ifdef HAVE_CONFIG_H

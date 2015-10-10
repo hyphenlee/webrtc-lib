@@ -11,13 +11,13 @@
 #ifndef WEBRTC_MODULES_AUDIO_PROCESSING_AUDIO_BUFFER_H_
 #define WEBRTC_MODULES_AUDIO_PROCESSING_AUDIO_BUFFER_H_
 
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/common_audio/channel_buffer.h"
-#include "webrtc/modules/audio_processing/include/audio_processing.h"
-#include "webrtc/modules/audio_processing/splitting_filter.h"
-#include "webrtc/modules/interface/module_common_types.h"
-#include "webrtc/system_wrappers/interface/scoped_vector.h"
-#include "webrtc/typedefs.h"
+#include "base/scoped_ptr.h"
+#include "common_audio/channel_buffer.h"
+#include "audio_processing/include/audio_processing.h"
+#include "audio_processing/splitting_filter.h"
+#include "interface/module_common_types.h"
+#include "system_wrappers/interface/scoped_vector.h"
+#include "typedefs.h"
 
 namespace webrtc {
 

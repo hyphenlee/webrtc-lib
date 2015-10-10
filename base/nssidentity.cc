@@ -18,7 +18,7 @@
 
 #if HAVE_NSS_SSL_H
 
-#include "webrtc/base/nssidentity.h"
+#include "base/nssidentity.h"
 
 #include "cert.h"
 #include "cryptohi.h"
@@ -27,11 +27,11 @@
 #include "pk11pub.h"
 #include "sechash.h"
 
-#include "webrtc/base/logging.h"
-#include "webrtc/base/helpers.h"
-#include "webrtc/base/nssstreamadapter.h"
-#include "webrtc/base/safe_conversions.h"
-#include "webrtc/base/stringutils.h"
+#include "base/logging.h"
+#include "base/helpers.h"
+#include "base/nssstreamadapter.h"
+#include "base/safe_conversions.h"
+#include "base/stringutils.h"
 
 namespace rtc {
 

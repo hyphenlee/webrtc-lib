@@ -13,15 +13,15 @@
 #include <set>
 #include <string>
 
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/helpers.h"
-#include "webrtc/base/scoped_ptr.h"
-#include "webrtc/base/ssladapter.h"
-#include "webrtc/base/sslconfig.h"
-#include "webrtc/base/sslidentity.h"
-#include "webrtc/base/sslstreamadapter.h"
-#include "webrtc/base/stream.h"
-#include "webrtc/test/testsupport/gtest_disable.h"
+#include "base/gunit.h"
+#include "base/helpers.h"
+#include "base/scoped_ptr.h"
+#include "base/ssladapter.h"
+#include "base/sslconfig.h"
+#include "base/sslidentity.h"
+#include "base/sslstreamadapter.h"
+#include "base/stream.h"
+#include "test/testsupport/gtest_disable.h"
 
 using ::testing::WithParamInterface;
 using ::testing::Values;
@@ -790,7 +790,7 @@ TEST_P(SSLStreamAdapterTestDTLS, TestDTLSConnectWithLostFirstPacketDelay2s) {
 };
 
 // Test a handshake with small MTU
-// Disabled due to https://code.google.com/p/webrtc/issues/detail?id=3910
+// Disabled due to https://code.google.com/p/issues/detail?id=3910
 TEST_P(SSLStreamAdapterTestDTLS, DISABLED_TestDTLSConnectWithSmallMtu) {
   MAYBE_SKIP_TEST(HaveDtls);
   SetMtu(700);
@@ -799,14 +799,14 @@ TEST_P(SSLStreamAdapterTestDTLS, DISABLED_TestDTLSConnectWithSmallMtu) {
 };
 
 // Test transfer -- trivial
-// Disabled due to https://code.google.com/p/webrtc/issues/detail?id=5005
+// Disabled due to https://code.google.com/p/issues/detail?id=5005
 TEST_P(SSLStreamAdapterTestDTLS, DISABLED_TestDTLSTransfer) {
   MAYBE_SKIP_TEST(HaveDtls);
   TestHandshake();
   TestTransfer(100);
 };
 
-// Disabled due to https://code.google.com/p/webrtc/issues/detail?id=5005
+// Disabled due to https://code.google.com/p/issues/detail?id=5005
 TEST_P(SSLStreamAdapterTestDTLS, DISABLED_TestDTLSTransferWithLoss) {
   MAYBE_SKIP_TEST(HaveDtls);
   TestHandshake();
@@ -814,7 +814,7 @@ TEST_P(SSLStreamAdapterTestDTLS, DISABLED_TestDTLSTransferWithLoss) {
   TestTransfer(100);
 };
 
-// Disabled due to https://code.google.com/p/webrtc/issues/detail?id=5005
+// Disabled due to https://code.google.com/p/issues/detail?id=5005
 TEST_P(SSLStreamAdapterTestDTLS, DISABLED_TestDTLSTransferWithDamage) {
   MAYBE_SKIP_TEST(HaveDtls);
   SetDamage();  // Must be called first because first packet

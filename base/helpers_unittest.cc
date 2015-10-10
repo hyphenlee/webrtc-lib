@@ -10,9 +10,9 @@
 
 #include <string>
 
-#include "webrtc/base/gunit.h"
-#include "webrtc/base/helpers.h"
-#include "webrtc/base/ssladapter.h"
+#include "base/gunit.h"
+#include "base/helpers.h"
+#include "base/ssladapter.h"
 
 namespace rtc {
 

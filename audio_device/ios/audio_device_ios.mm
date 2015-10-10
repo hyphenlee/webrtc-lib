@@ -15,13 +15,13 @@
 #import <AVFoundation/AVFoundation.h>
 #import <Foundation/Foundation.h>
 
-#include "webrtc/modules/audio_device/ios/audio_device_ios.h"
+#include "audio_device/ios/audio_device_ios.h"
 
-#include "webrtc/base/atomicops.h"
-#include "webrtc/base/checks.h"
-#include "webrtc/base/logging.h"
-#include "webrtc/modules/audio_device/fine_audio_buffer.h"
-#include "webrtc/modules/utility/interface/helpers_ios.h"
+#include "base/atomicops.h"
+#include "base/checks.h"
+#include "base/logging.h"
+#include "audio_device/fine_audio_buffer.h"
+#include "utility/interface/helpers_ios.h"
 
 namespace webrtc {
 

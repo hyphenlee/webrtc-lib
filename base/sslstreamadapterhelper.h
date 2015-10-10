@@ -14,10 +14,10 @@
 #include <string>
 #include <vector>
 
-#include "webrtc/base/buffer.h"
-#include "webrtc/base/stream.h"
-#include "webrtc/base/sslidentity.h"
-#include "webrtc/base/sslstreamadapter.h"
+#include "base/buffer.h"
+#include "base/stream.h"
+#include "base/sslidentity.h"
+#include "base/sslstreamadapter.h"
 
 namespace rtc {
 

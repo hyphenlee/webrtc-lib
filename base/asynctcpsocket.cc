@@ -8,13 +8,13 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/asynctcpsocket.h"
+#include "base/asynctcpsocket.h"
 
 #include <string.h>
 
-#include "webrtc/base/byteorder.h"
-#include "webrtc/base/common.h"
-#include "webrtc/base/logging.h"
+#include "base/byteorder.h"
+#include "base/common.h"
+#include "base/logging.h"
 
 #if defined(WEBRTC_POSIX)
 #include <errno.h>
