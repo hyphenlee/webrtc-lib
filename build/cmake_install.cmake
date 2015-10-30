@@ -33,7 +33,6 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/Users/lihaifeng/work/audio-module/build/system_wrappers/cmake_install.cmake")
   include("/Users/lihaifeng/work/audio-module/build/common_audio/cmake_install.cmake")
   include("/Users/lihaifeng/work/audio-module/build/audio_processing/cmake_install.cmake")
-  include("/Users/lihaifeng/work/audio-module/build/audio_device/cmake_install.cmake")
   include("/Users/lihaifeng/work/audio-module/build/test/cmake_install.cmake")
 
 endif()

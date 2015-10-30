@@ -86,14 +86,57 @@ SET(COMMON_AUDIO_SRC
   "window_generator.cc"
   "window_generator.h"
   "signal_processing/complex_fft.c"
-  "fir_filter_sse.cc"
-  "resampler/sinc_resampler_sse.cc"
-  "signal_processing/complex_bit_reverse.c"
-  "signal_processing/complex_bit_reverse.c"
-  "signal_processing/filter_ar_fast_q12.c"
-  "signal_processing/spl_sqrt_floor.c"
-  
+
   )
+if(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
+  if(IOS)
+    # ADD_DEFINITIONS(-DWEBRTC_DETECT_NEON)
+    SET(COMMON_AUDIO_SRC
+      ${COMMON_AUDIO_SRC}
+      # "fir_filter_neon.cc"
+      # "resampler/sinc_resampler_neon.cc"
+      # "signal_processing/cross_correlation_neon.c"
+      # "signal_processing/downsample_fast_neon.c"
+      # "signal_processing/min_max_operations_neon.c"
+      # "signal_processing/complex_bit_reverse_arm.S"
+      # "signal_processing/spl_sqrt_floor_arm.S"
+      "signal_processing/complex_bit_reverse.c"
+      "signal_processing/spl_sqrt_floor.c"
+      "signal_processing/filter_ar_fast_q12_armv7.S"
+      "fir_filter_sse.cc"
+      "resampler/sinc_resampler_sse.cc"
+      )
+
+  else()
+    SET(COMMON_AUDIO_SRC
+      ${COMMON_AUDIO_SRC}
+      "signal_processing/complex_bit_reverse.c"
+      "signal_processing/filter_ar_fast_q12.c"
+      "signal_processing/spl_sqrt_floor.c"
+      "fir_filter_sse.cc"
+      "resampler/sinc_resampler_sse.cc"
+      )
+
+  endif()
+elseif(ANDROID)
+  message("common audio:build for android")
+  SET(COMMON_AUDIO_SRC
+    ${COMMON_AUDIO_SRC}
+    "fir_filter_neon.cc"
+    "resampler/sinc_resampler_neon.cc"
+    "signal_processing/cross_correlation_neon.c"
+    "signal_processing/downsample_fast_neon.c"
+    "signal_processing/min_max_operations_neon.c"
+    # "signal_processing/complex_bit_reverse_arm.S"
+    # "signal_processing/spl_sqrt_floor_arm.S"
+    "signal_processing/complex_bit_reverse.c"
+    "signal_processing/spl_sqrt_floor.c"
+    "signal_processing/filter_ar_fast_q12_armv7.S"
+    )
+  ADD_DEFINITIONS(-DWEBRTC_DETECT_NEON)
+  # SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -mfpu=neon")
+  # SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -mfpu=neon")
+endif()
 
 ADD_LIBRARY(CommonAudio ${COMMON_AUDIO_SRC})
 target_link_libraries(CommonAudio COMMON BASE SystemWrapper)

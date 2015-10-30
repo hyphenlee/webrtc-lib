@@ -33,7 +33,7 @@
 @ Registers touched:  r1, r2
 
 #include "system_wrappers/interface/asm_defines.h"
-
+#error "error test for arm"
 GLOBAL_FUNCTION WebRtcSpl_SqrtFloor
 .align  2
 DEFINE_FUNCTION WebRtcSpl_SqrtFloor

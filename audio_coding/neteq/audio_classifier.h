@@ -13,8 +13,8 @@
 
 extern "C" {
 #include "celt.h"
-#include "analysis.h"
-#include "opus_private.h"
+/* #include "analysis.h" */
+/* #include "opus_private.h" */
 }
 
 #include "base/scoped_ptr.h"

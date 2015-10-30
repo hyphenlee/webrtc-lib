@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{23B1C1F3-04B4-4CB8-B23B-B6CFA0B92796}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>BASE</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Z:\work\audio-module\win_build\base\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">BASE.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">BASE</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Z:\work\audio-module\win_build\base\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">BASE.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">BASE</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Z:\work\audio-module\win_build\base\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">BASE.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">BASE</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Z:\work\audio-module\win_build\base\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">BASE.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">BASE</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -std=c++11 -msse2 -g %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>WEBRTC_POSI;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WEBRTC_POSI;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -std=c++11 -msse2 -g %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>WEBRTC_POSI;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WEBRTC_POSI;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -std=c++11 -msse2 -g %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>WEBRTC_POSI;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WEBRTC_POSI;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -std=c++11 -msse2 -g %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>WEBRTC_POSI;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WEBRTC_POSI;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="Z:\work\audio-module\base\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule Z:/work/audio-module/base/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HZ:/work/audio-module -BZ:/work/audio-module/win_build --check-stamp-file Z:\work\audio-module\win_build\base\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Z:/work/audio-module/base/CMakeLists.txt;Z:\work\audio-module\base\CMakeLists.txt;Z:\work\audio-module\base\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Z:\work\audio-module\win_build\base\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule Z:/work/audio-module/base/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HZ:/work/audio-module -BZ:/work/audio-module/win_build --check-stamp-file Z:\work\audio-module\win_build\base\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Z:/work/audio-module/base/CMakeLists.txt;Z:\work\audio-module\base\CMakeLists.txt;Z:\work\audio-module\base\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Z:\work\audio-module\win_build\base\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule Z:/work/audio-module/base/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HZ:/work/audio-module -BZ:/work/audio-module/win_build --check-stamp-file Z:\work\audio-module\win_build\base\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Z:/work/audio-module/base/CMakeLists.txt;Z:\work\audio-module\base\CMakeLists.txt;Z:\work\audio-module\base\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Z:\work\audio-module\win_build\base\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule Z:/work/audio-module/base/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HZ:/work/audio-module -BZ:/work/audio-module/win_build --check-stamp-file Z:\work\audio-module\win_build\base\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Z:/work/audio-module/base/CMakeLists.txt;Z:\work\audio-module\base\CMakeLists.txt;Z:\work\audio-module\base\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Z:\work\audio-module\win_build\base\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Z:\work\audio-module\base\atomicops.h" />
+    <ClInclude Include="Z:\work\audio-module\base\bitbuffer.h" />
+    <ClInclude Include="Z:\work\audio-module\base\buffer.h" />
+    <ClInclude Include="Z:\work\audio-module\base\bufferqueue.h" />
+    <ClInclude Include="Z:\work\audio-module\base\bytebuffer.h" />
+    <ClInclude Include="Z:\work\audio-module\base\byteorder.h" />
+    <ClInclude Include="Z:\work\audio-module\base\checks.h" />
+    <ClInclude Include="Z:\work\audio-module\base\criticalsection.h" />
+    <ClInclude Include="Z:\work\audio-module\base\event.h" />
+    <ClInclude Include="Z:\work\audio-module\base\event_tracer.h" />
+    <ClInclude Include="Z:\work\audio-module\base\exp_filter.h" />
+    <ClInclude Include="Z:\work\audio-module\base\md5.h" />
+    <ClInclude Include="Z:\work\audio-module\base\md5digest.h" />
+    <ClInclude Include="Z:\work\audio-module\base\platform_file.h" />
+    <ClInclude Include="Z:\work\audio-module\base\platform_thread.h" />
+    <ClInclude Include="Z:\work\audio-module\base\safe_conversions.h" />
+    <ClInclude Include="Z:\work\audio-module\base\safe_conversions_impl.h" />
+    <ClInclude Include="Z:\work\audio-module\base\scoped_ptr.h" />
+    <ClInclude Include="Z:\work\audio-module\base\stringencode.h" />
+    <ClInclude Include="Z:\work\audio-module\base\stringutils.h" />
+    <ClInclude Include="Z:\work\audio-module\base\systeminfo.h" />
+    <ClInclude Include="Z:\work\audio-module\base\template_util.h" />
+    <ClInclude Include="Z:\work\audio-module\base\thread_annotations.h" />
+    <ClInclude Include="Z:\work\audio-module\base\thread_checker.h" />
+    <ClInclude Include="Z:\work\audio-module\base\thread_checker_impl.h" />
+    <ClInclude Include="Z:\work\audio-module\base\timeutils.h" />
+    <ClInclude Include="Z:\work\audio-module\base\trace_event.h" />
+    <ClInclude Include="Z:\work\audio-module\base\basictypes.h" />
+    <ClInclude Include="Z:\work\audio-module\base\constructormagic.h" />
+    <ClInclude Include="Z:\work\audio-module\base\logging.h" />
+    <ClInclude Include="Z:\work\audio-module\base\arraysize.h" />
+    <ClInclude Include="Z:\work\audio-module\base\asyncfile.h" />
+    <ClInclude Include="Z:\work\audio-module\base\asyncinvoker-inl.h" />
+    <ClInclude Include="Z:\work\audio-module\base\asyncinvoker.h" />
+    <ClInclude Include="Z:\work\audio-module\base\asyncpacketsocket.h" />
+    <ClInclude Include="Z:\work\audio-module\base\asyncresolverinterface.h" />
+    <ClInclude Include="Z:\work\audio-module\base\asyncsocket.h" />
+    <ClInclude Include="Z:\work\audio-module\base\asynctcpsocket.h" />
+    <ClInclude Include="Z:\work\audio-module\base\asyncudpsocket.h" />
+    <ClInclude Include="Z:\work\audio-module\base\autodetectproxy.h" />
+    <ClInclude Include="Z:\work\audio-module\base\base64.h" />
+    <ClInclude Include="Z:\work\audio-module\base\basicdefs.h" />
+    <ClInclude Include="Z:\work\audio-module\base\common.h" />
+    <ClInclude Include="Z:\work\audio-module\base\crc32.h" />
+    <ClInclude Include="Z:\work\audio-module\base\cryptstring.h" />
+    <ClInclude Include="Z:\work\audio-module\base\diskcache.h" />
+    <ClInclude Include="Z:\work\audio-module\base\filerotatingstream.h" />
+    <ClInclude Include="Z:\work\audio-module\base\fileutils.h" />
+    <ClInclude Include="Z:\work\audio-module\base\firewallsocketserver.h" />
+    <ClInclude Include="Z:\work\audio-module\base\flags.h" />
+    <ClInclude Include="Z:\work\audio-module\base\format_macros.h" />
+    <ClInclude Include="Z:\work\audio-module\base\gunit_prod.h" />
+    <ClInclude Include="Z:\work\audio-module\base\helpers.h" />
+    <ClInclude Include="Z:\work\audio-module\base\httpbase.h" />
+    <ClInclude Include="Z:\work\audio-module\base\httpclient.h" />
+    <ClInclude Include="Z:\work\audio-module\base\httpcommon-inl.h" />
+    <ClInclude Include="Z:\work\audio-module\base\httpcommon.h" />
+    <ClInclude Include="Z:\work\audio-module\base\httprequest.h" />
+    <ClInclude Include="Z:\work\audio-module\base\ipaddress.h" />
+    <ClInclude Include="Z:\work\audio-module\base\linked_ptr.h" />
+    <ClInclude Include="Z:\work\audio-module\base\mathutils.h" />
+    <ClInclude Include="Z:\work\audio-module\base\messagedigest.h" />
+    <ClInclude Include="Z:\work\audio-module\base\messagehandler.h" />
+    <ClInclude Include="Z:\work\audio-module\base\messagequeue.h" />
+    <ClInclude Include="Z:\work\audio-module\base\nethelpers.h" />
+    <ClInclude Include="Z:\work\audio-module\base\network.h" />
+    <ClInclude Include="Z:\work\audio-module\base\nullsocketserver.h" />
+    <ClInclude Include="Z:\work\audio-module\base\pathutils.h" />
+    <ClInclude Include="Z:\work\audio-module\base\physicalsocketserver.h" />
+    <ClInclude Include="Z:\work\audio-module\base\proxydetect.h" />
+    <ClInclude Include="Z:\work\audio-module\base\proxyinfo.h" />
+    <ClInclude Include="Z:\work\audio-module\base\ratelimiter.h" />
+    <ClInclude Include="Z:\work\audio-module\base\ratetracker.h" />
+    <ClInclude Include="Z:\work\audio-module\base\rtccertificate.h" />
+    <ClInclude Include="Z:\work\audio-module\base\scoped_autorelease_pool.h" />
+    <ClInclude Include="Z:\work\audio-module\base\sha1.h" />
+    <ClInclude Include="Z:\work\audio-module\base\sha1digest.h" />
+    <ClInclude Include="Z:\work\audio-module\base\signalthread.h" />
+    <ClInclude Include="Z:\work\audio-module\base\sigslot.h" />
+    <ClInclude Include="Z:\work\audio-module\base\sigslotrepeater.h" />
+    <ClInclude Include="Z:\work\audio-module\base\socket.h" />
+    <ClInclude Include="Z:\work\audio-module\base\socketadapters.h" />
+    <ClInclude Include="Z:\work\audio-module\base\socketaddress.h" />
+    <ClInclude Include="Z:\work\audio-module\base\socketaddresspair.h" />
+    <ClInclude Include="Z:\work\audio-module\base\socketfactory.h" />
+    <ClInclude Include="Z:\work\audio-module\base\socketpool.h" />
+    <ClInclude Include="Z:\work\audio-module\base\socketserver.h" />
+    <ClInclude Include="Z:\work\audio-module\base\socketstream.h" />
+    <ClInclude Include="Z:\work\audio-module\base\ssladapter.h" />
+    <ClInclude Include="Z:\work\audio-module\base\sslfingerprint.h" />
+    <ClInclude Include="Z:\work\audio-module\base\sslidentity.h" />
+    <ClInclude Include="Z:\work\audio-module\base\sslsocketfactory.h" />
+    <ClInclude Include="Z:\work\audio-module\base\sslstreamadapter.h" />
+    <ClInclude Include="Z:\work\audio-module\base\sslstreamadapterhelper.h" />
+    <ClInclude Include="Z:\work\audio-module\base\stream.h" />
+    <ClInclude Include="Z:\work\audio-module\base\task.h" />
+    <ClInclude Include="Z:\work\audio-module\base\taskparent.h" />
+    <ClInclude Include="Z:\work\audio-module\base\taskrunner.h" />
+    <ClInclude Include="Z:\work\audio-module\base\thread.h" />
+    <ClInclude Include="Z:\work\audio-module\base\timing.h" />
+    <ClInclude Include="Z:\work\audio-module\base\urlencode.h" />
+    <ClInclude Include="Z:\work\audio-module\base\worker.h" />
+    <ClInclude Include="Z:\work\audio-module\base\unixfilesystem.h" />
+    <ClInclude Include="Z:\work\audio-module\base\bandwidthsmoother.h" />
+    <ClInclude Include="Z:\work\audio-module\base\bind.h" />
+    <ClInclude Include="Z:\work\audio-module\base\callback.h" />
+    <ClInclude Include="Z:\work\audio-module\base\fileutils_mock.h" />
+    <ClInclude Include="Z:\work\audio-module\base\httpserver.h" />
+    <ClInclude Include="Z:\work\audio-module\base\json.h" />
+    <ClInclude Include="Z:\work\audio-module\base\logsinks.h" />
+    <ClInclude Include="Z:\work\audio-module\base\multipart.h" />
+    <ClInclude Include="Z:\work\audio-module\base\natserver.h" />
+    <ClInclude Include="Z:\work\audio-module\base\natsocketfactory.h" />
+    <ClInclude Include="Z:\work\audio-module\base\nattypes.h" />
+    <ClInclude Include="Z:\work\audio-module\base\optionsfile.h" />
+    <ClInclude Include="Z:\work\audio-module\base\profiler.h" />
+    <ClInclude Include="Z:\work\audio-module\base\proxyserver.h" />
+    <ClInclude Include="Z:\work\audio-module\base\refcount.h" />
+    <ClInclude Include="Z:\work\audio-module\base\referencecountedsingletonfactory.h" />
+    <ClInclude Include="Z:\work\audio-module\base\rollingaccumulator.h" />
+    <ClInclude Include="Z:\work\audio-module\base\scoped_ref_ptr.h" />
+    <ClInclude Include="Z:\work\audio-module\base\scopedptrcollection.h" />
+    <ClInclude Include="Z:\work\audio-module\base\sec_buffer.h" />
+    <ClInclude Include="Z:\work\audio-module\base\sharedexclusivelock.h" />
+    <ClInclude Include="Z:\work\audio-module\base\sslconfig.h" />
+    <ClInclude Include="Z:\work\audio-module\base\sslroots.h" />
+    <ClInclude Include="Z:\work\audio-module\base\testclient.h" />
+    <ClInclude Include="Z:\work\audio-module\base\transformadapter.h" />
+    <ClInclude Include="Z:\work\audio-module\base\versionparsing.h" />
+    <ClInclude Include="Z:\work\audio-module\base\virtualsocketserver.h" />
+    <ClInclude Include="Z:\work\audio-module\base\window.h" />
+    <ClInclude Include="Z:\work\audio-module\base\windowpicker.h" />
+    <ClInclude Include="Z:\work\audio-module\base\windowpickerfactory.h" />
+    <ClInclude Include="Z:\work\audio-module\base\latebindingsymboltable.h" />
+    <ClInclude Include="Z:\work\audio-module\base\posix.h" />
+    <ClInclude Include="Z:\work\audio-module\base\maccocoathreadhelper.h" />
+    <ClInclude Include="Z:\work\audio-module\base\macconversion.h" />
+    <ClInclude Include="Z:\work\audio-module\base\macutils.h" />
+    <ClCompile Include="Z:\work\audio-module\base\bitbuffer.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\buffer.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\bufferqueue.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\bytebuffer.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\checks.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\criticalsection.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\event.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\event_tracer.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\exp_filter.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\md5.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\md5digest.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\platform_file.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\platform_thread.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\stringencode.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\stringutils.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\systeminfo.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\thread_checker_impl.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\timeutils.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\logging.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\asyncfile.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\asyncinvoker.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\asyncpacketsocket.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\asyncresolverinterface.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\asyncsocket.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\asynctcpsocket.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\asyncudpsocket.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\autodetectproxy.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\base64.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\common.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\crc32.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\cryptstring.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\diskcache.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\filerotatingstream.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\fileutils.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\firewallsocketserver.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\flags.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\helpers.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\httpbase.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\httpclient.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\httpcommon.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\httprequest.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\iosfilesystem.mm"  />
+    <ClCompile Include="Z:\work\audio-module\base\ipaddress.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\messagedigest.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\messagehandler.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\messagequeue.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\nethelpers.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\network.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\pathutils.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\physicalsocketserver.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\proxydetect.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\proxyinfo.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\ratelimiter.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\ratetracker.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\rtccertificate.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\scoped_autorelease_pool.mm"  />
+    <ClCompile Include="Z:\work\audio-module\base\sha1.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\sha1digest.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\signalthread.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\sigslot.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\socketadapters.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\socketaddress.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\socketaddresspair.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\socketpool.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\socketstream.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\ssladapter.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\sslfingerprint.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\sslidentity.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\sslsocketfactory.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\sslstreamadapter.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\sslstreamadapterhelper.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\stream.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\task.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\taskparent.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\taskrunner.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\thread.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\timing.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\urlencode.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\worker.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\unixfilesystem.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\bandwidthsmoother.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\httpserver.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\json.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\logsinks.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\multipart.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\natserver.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\natsocketfactory.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\nattypes.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\optionsfile.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\profiler.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\proxyserver.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\sharedexclusivelock.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\testclient.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\transformadapter.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\versionparsing.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\virtualsocketserver.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\latebindingsymboltable.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\posix.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\maccocoathreadhelper.mm"  />
+    <ClCompile Include="Z:\work\audio-module\base\macconversion.cc"  />
+    <ClCompile Include="Z:\work\audio-module\base\macutils.cc"  />
+    <None Include="Z:\work\audio-module\base\bind.h.pump" />
+    <None Include="Z:\work\audio-module\base\callback.h.pump" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Z:/work/audio-module/win_build/ZERO_CHECK.vcxproj">
+      <Project>9748292D-BD89-49F0-971B-BBE9485FE765</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

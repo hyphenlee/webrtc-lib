@@ -99,7 +99,7 @@ SET(BASE_SRC
   "httpcommon.h"
   "httprequest.cc"
   "httprequest.h"
-  "iosfilesystem.mm"
+  #  "iosfilesystem.mm"
   "ipaddress.cc"
   "ipaddress.h"
   "linked_ptr.h"
@@ -129,8 +129,8 @@ SET(BASE_SRC
   "ratetracker.h"
   "rtccertificate.cc"
   "rtccertificate.h"
-  "scoped_autorelease_pool.h"
-  "scoped_autorelease_pool.mm"
+  # "scoped_autorelease_pool.h"
+  # "scoped_autorelease_pool.mm"
   "sha1.cc"
   "sha1.h"
   "sha1digest.cc"
@@ -243,80 +243,123 @@ SET(BASE_SRC
   "latebindingsymboltable.h.def"
   "posix.cc"
   "posix.h"
-  "maccocoathreadhelper.h"
-  "maccocoathreadhelper.mm"
-  "macconversion.cc"
-  "macconversion.h"
-  "macutils.cc"
-  "macutils.h"
+  # "maccocoathreadhelper.h"
+  # "maccocoathreadhelper.mm"
+  # "macconversion.cc"
+  # "macconversion.h"
+  # "macutils.cc"
+  # "macutils.h"
 
   )
 SET(LIBS  "")
-message(${CMAKE_SYSTEM_NAME})
 if(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
+  if(IOS)
+    message(STATUS "start build base for ios")
+    set(LIBS ${LIBS}
+      "CFNetwork"
+      "Foundation"
+      "Security"
+      "SystemConfiguration"
+      "UIKit"
+      # "ssl"
+      # "crypto"
+      )
+    SET(BASE_SRC
+      ${BASE_SRC}
+      "macconversion.cc"
+      "macconversion.h"
+      )
+    link_directories(${PROJECT_SOURCE_DIR}/libs/ios/openssl/lib)
+    include_directories(${PROJECT_SOURCE_DIR}/libs/ios/openssl/include)
+    set(CMAKE_LIBRARY_PATH "${CMAKE_LIBRARY_PATH} ${PROJECT_SOURCE_DIR}/libs/ios/openssl/include")
+    ADD_DEFINITIONS(-DCARBON_DEPRECATED=YES)
+    ADD_DEFINITIONS(-DWEBRTC_POSIX)
+    ADD_DEFINITIONS(-DWEBRTC_IOS)
+    ADD_DEFINITIONS(-DWEBRTC_MAC)
+    # ADD_DEFINITIONS(-DBSD)
+    
 
-  # find_library(ssl_library
-  #   NAMES ssl
-  #   HINTS "/usr/local/Cellar/openssl/1.0.2d_1/lib/"
-  #   )
-  # find_library(ssl_library2
-  #   NAMES crypto
-  #   HINTS "/usr/local/Cellar/openssl/1.0.2d_1/lib/"
-  #   )
-
-  # INCLUDE_DIRECTORIES(
-  # "/usr/local/Cellar/openssl/1.0.2d_1/include/")
-  INCLUDE_DIRECTORIES( "/usr/local/Cellar/jsoncpp/0.10.5/include/jsoncpp/")
-  INCLUDE_DIRECTORIES( "${PROJECT_SOURCE_DIR}/common_audio/signal_processing/include/")
-  
-  # LINK_DIRECTORIES( "/usr/local/Cellar/openssl/1.0.2d_1/lib/")
-  message("start build for darwin system")
-  set(LIBS ${LIBS}
-    "Cocoa"
-    "AppKit"
-    "ApplicationServices"
-    "Carbon"
-    "CoreFoundation"
-    "Foundation"
-    "IOKit"
-    "Security"
-    "SystemConfiguration"
-    "ssl"
-    "crypto"
-    "jsoncpp"
-    )
-  set(LIBRARYS "")
-  # find_library(ssl_lib "ssl")
-  message("${ssl_lib}")
-  message(${LIBS})
-  foreach(var ${LIBS})
-    message(item:${var})
-    FIND_LIBRARY(find${var} ${var})
-    message(full path:${find${var}})
-    if(${lib2} MATCHES "NOTFOUND")
-      message(error: "library not not found:${var}")
-    else()
-      set(LIBRARYS ${LIBRARYS} ${find${var}})
-    endif()
-  endforeach()
-  # set(LIBRARYS ${LIBRARYS} ${ssl_library} ${ssl_library2})
-  message(librarys: "${LIBRARYS}")
+  else()
+    # INCLUDE_DIRECTORIES(
+    # "/usr/local/Cellar/openssl/1.0.2d_1/include/")
+    # INCLUDE_DIRECTORIES( "/usr/local/Cellar/jsoncpp/0.10.5/include/jsoncpp/")
+    INCLUDE_DIRECTORIES( "${PROJECT_SOURCE_DIR}/common_audio/signal_processing/include/")
+    
+    # LINK_DIRECTORIES( "/usr/local/Cellar/openssl/1.0.2d_1/lib/")
+    message("start build for darwin system")
+    set(LIBS ${LIBS}
+      "Cocoa"
+      "AppKit"
+      "ApplicationServices"
+      "Carbon"
+      "CoreFoundation"
+      "Foundation"
+      "IOKit"
+      "Security"
+      "SystemConfiguration"
+      "ssl"
+      "crypto"
+      # "jsoncpp"
+      )
+    # set(LIBRARYS ${LIBRARYS} ${ssl_library} ${ssl_library2})
+    message(librarys: "${LIBRARYS}")
+    SET(BASE_SRC
+      ${BASE_SRC}
+      "macasyncsocket.cc"
+      "macasyncsocket.h"
+      "maccocoasocketserver.h"
+      "maccocoasocketserver.mm"
+      "macsocketserver.cc"
+      "macsocketserver.h"
+      "macwindowpicker.cc"
+      "macwindowpicker.h"
+      )
+    ADD_DEFINITIONS(-DWEBRTC_POSIX)
+    ADD_DEFINITIONS(-DWEBRTC_MAC)
+    ADD_DEFINITIONS(-DSSL_USE_OPENSSL=1)
+    # SET(CMAKE_CXX_FLAGS " -std=c++11 -msse2 ")
+    # SET(CMAKE_C_FLAGS " -msse2  ") 
+  endif()
+elseif(ANDROID)
+  message("build for android")
   SET(BASE_SRC
     ${BASE_SRC}
-    "macasyncsocket.cc"
-    "macasyncsocket.h"
-    "maccocoasocketserver.h"
-    "maccocoasocketserver.mm"
-    "macsocketserver.cc"
-    "macsocketserver.h"
-    "macwindowpicker.cc"
-    "macwindowpicker.h"
+    "ifaddrs-android.cc"
+    "ifaddrs-android.h"
     )
+  set(LIBS ${LIBS}
+    "log"
+    "GLESv2"
+    "c"
+    "dl"
+    "m"
+    "ssl"
+    "crypto"
+    )
+  include_directories(${PROJECT_SOURCE_DIR}/libs/openssl/include)
+  # include_directories(${PROJECT_SOURCE_DIR}/libs/jsoncpp/include)
+
+  ADD_DEFINITIONS(-DWEBRTC_ANDROID)
   ADD_DEFINITIONS(-DWEBRTC_POSIX)
-  ADD_DEFINITIONS(-DWEBRTC_MAC)
-  ADD_DEFINITIONS(-DSSL_USE_OPENSSL=1)
-  
+  ADD_DEFINITIONS(-DWEBRTC_LINUX)
 endif()
-message(librarys:${LIBRARYS})
+set(MYTEST "this is just a test")
+ADD_DEFINITIONS(-DSSL_USE_OPENSSL)
+ADD_DEFINITIONS(-DHAVE_OPENSSL_SSL_H)
+set(LIBRARYS "")
+# find_library(ssl_lib "ssl")
+#message("${ssl_lib}")
+message(${LIBS})
+foreach(var ${LIBS})
+  message(item:${var})
+  FIND_LIBRARY(find${var} ${var})
+  message(full path:${find${var}})
+  if(${lib2} MATCHES "NOTFOUND")
+    message(SEND_ERROR "library not not found:${var}")
+  else()
+    set(LIBRARYS ${LIBRARYS} ${find${var}})
+  endif()
+endforeach()
+
 ADD_LIBRARY(BASE ${BASE_SRC})
 TARGET_LINK_LIBRARIES(BASE ${LIBRARYS})

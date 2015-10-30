@@ -14,14 +14,17 @@
 # EXTERNAL cache entries
 ########################
 
-//Dependencies for the target
-AudioDevice_LIB_DEPENDS:STATIC=general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/AudioToolbox.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/CoreAudio.framework;general;CommonAudio;
+//Value Computed by CMake
+AudioModule_BINARY_DIR:STATIC=/Users/lihaifeng/work/audio-module/build
+
+//Value Computed by CMake
+AudioModule_SOURCE_DIR:STATIC=/Users/lihaifeng/work/audio-module
 
 //Dependencies for the target
 AudioProcessing_LIB_DEPENDS:STATIC=general;CommonAudio;general;SystemWrapper;
 
 //Dependencies for the target
-BASE_LIB_DEPENDS:STATIC=general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Cocoa.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/AppKit.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/ApplicationServices.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Carbon.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/CoreFoundation.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Foundation.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/IOKit.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Security.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/SystemConfiguration.framework;general;/usr/lib/libssl.dylib;general;/usr/lib/libcrypto.dylib;general;/usr/local/lib/libjsoncpp.dylib;
+BASE_LIB_DEPENDS:STATIC=general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Cocoa.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/AppKit.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/ApplicationServices.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Carbon.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/CoreFoundation.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Foundation.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/IOKit.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Security.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/SystemConfiguration.framework;general;/usr/lib/libssl.dylib;general;/usr/lib/libcrypto.dylib;
 
 //Path to a program.
 CMAKE_AR:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar
@@ -127,7 +130,7 @@ CMAKE_OSX_DEPLOYMENT_TARGET:STRING=
 CMAKE_OSX_SYSROOT:PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=main
+CMAKE_PROJECT_NAME:STATIC=AudioModule
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib
@@ -197,16 +200,10 @@ findAppKit:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.
 findApplicationServices:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/ApplicationServices.framework
 
 //Path to a library.
-findAudioToolbox:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/AudioToolbox.framework
-
-//Path to a library.
 findCarbon:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Carbon.framework
 
 //Path to a library.
 findCocoa:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Cocoa.framework
-
-//Path to a library.
-findCoreAudio:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/CoreAudio.framework
 
 //Path to a library.
 findCoreFoundation:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/CoreFoundation.framework
@@ -227,16 +224,7 @@ findSystemConfiguration:FILEPATH=/Applications/Xcode.app/Contents/Developer/Plat
 findcrypto:FILEPATH=/usr/lib/libcrypto.dylib
 
 //Path to a library.
-findjsoncpp:FILEPATH=/usr/local/lib/libjsoncpp.dylib
-
-//Path to a library.
 findssl:FILEPATH=/usr/lib/libssl.dylib
-
-//Value Computed by CMake
-main_BINARY_DIR:STATIC=/Users/lihaifeng/work/audio-module/build
-
-//Value Computed by CMake
-main_SOURCE_DIR:STATIC=/Users/lihaifeng/work/audio-module
 
 
 ########################
@@ -244,13 +232,11 @@ main_SOURCE_DIR:STATIC=/Users/lihaifeng/work/audio-module
 ########################
 
 //Stored Xcode object GUID
-ALL_BUILD_GUID_CMAKE:INTERNAL=9008C5E45A44453ABD1F8BE4
+ALL_BUILD_GUID_CMAKE:INTERNAL=26A98B0274BE40028CB521A9
 //Stored Xcode object GUID
-AudioDevice_GUID_CMAKE:INTERNAL=A0677C2913BF49759842FA5B
+AudioProcessing_GUID_CMAKE:INTERNAL=79AFA8C10B204D0EA74AA667
 //Stored Xcode object GUID
-AudioProcessing_GUID_CMAKE:INTERNAL=BB83EA568D9C4CBDB581C5B2
-//Stored Xcode object GUID
-BASE_GUID_CMAKE:INTERNAL=25F8E94D5B4B4AFBACFE6A53
+BASE_GUID_CMAKE:INTERNAL=72B12E81542E4D71A524B1F9
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
 //This is the directory where this CMakeCache.txt was created
@@ -327,7 +313,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=7
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -369,15 +355,15 @@ CMAKE_USE_RELATIVE_PATHS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Stored Xcode object GUID
-COMMON_GUID_CMAKE:INTERNAL=B227DAAD16FD495290AE955C
+COMMON_GUID_CMAKE:INTERNAL=E1C6B1D9087440478D8E4972
 //Stored Xcode object GUID
-CommonAudio_GUID_CMAKE:INTERNAL=EF7995D6C02D47D8AA083308
+CommonAudio_GUID_CMAKE:INTERNAL=647DD042DC9347EC8404A114
 //Stored Xcode object GUID
-PROJECT_main_GUID_CMAKE:INTERNAL=C56EE6525CFF4F4F8A7D43F7
+PROJECT_AudioModule_GUID_CMAKE:INTERNAL=7A1C3D28828B40D79CE2D1C4
 //Stored Xcode object GUID
-SystemWrapper_GUID_CMAKE:INTERNAL=65CFC40923C345CC81994B46
+SystemWrapper_GUID_CMAKE:INTERNAL=3E20E362712A4A6CB01603AB
 //Stored Xcode object GUID
-ZERO_CHECK_GUID_CMAKE:INTERNAL=29557D2B898548A090289281
+ZERO_CHECK_GUID_CMAKE:INTERNAL=40FB343327EF4E348835E9B3
 //Stored Xcode object GUID
-main_GUID_CMAKE:INTERNAL=ED3AA80B3CC64C4A965B14BA
+main_GUID_CMAKE:INTERNAL=76995FE2E6F64A8F9FBB9958
 

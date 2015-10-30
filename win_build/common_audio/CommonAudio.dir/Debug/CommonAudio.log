@@ -1,0 +1,480 @@
+﻿生成启动时间为 2015/10/13 17:11:15。
+     1>项目“Z:\work\audio-module\win_build\common_audio\CommonAudio.vcxproj”在节点 2 上(Build 个目标)。
+     1>CustomBuild:
+         Building Custom Rule Z:/work/audio-module/common_audio/CMakeLists.txt
+         CMake does not need to re-run because Z:\work\audio-module\win_build\common_audio\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"Z:\work\audio-module" /Zi /nologo /W1 /WX- /Od /Ob0 /Oy- /D WEBRTC_POSI /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"CommonAudio.dir\Debug\\" /Fd"CommonAudio.dir\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt  -std=c++11 -msse2 -g "Z:\work\audio-module\common_audio\audio_converter.cc" "Z:\work\audio-module\common_audio\audio_ring_buffer.cc" "Z:\work\audio-module\common_audio\audio_util.cc" "Z:\work\audio-module\common_audio\blocker.cc" "Z:\work\audio-module\common_audio\channel_buffer.cc" "Z:\work\audio-module\common_audio\fir_filter.cc" "Z:\work\audio-module\common_audio\lapped_transform.cc" "Z:\work\audio-module\common_audio\real_fourier.cc" "Z:\work\audio-module\common_audio\real_fourier_ooura.cc" "Z:\work\audio-module\common_audio\resampler\push_resampler.cc" "Z:\work\audio-module\common_audio\resampler\push_sinc_resampler.cc" "Z:\work\audio-module\common_audio\resampler\resampler.cc" "Z:\work\audio-module\common_audio\resampler\sinc_resampler.cc" "Z:\work\audio-module\common_audio\sparse_fir_filter.cc" "Z:\work\audio-module\common_audio\vad\vad.cc" "Z:\work\audio-module\common_audio\wav_file.cc" "Z:\work\audio-module\common_audio\wav_header.cc" "Z:\work\audio-module\common_audio\window_generator.cc" "Z:\work\audio-module\common_audio\fir_filter_sse.cc" "Z:\work\audio-module\common_audio\resampler\sinc_resampler_sse.cc"
+     1>cl : 命令行 warning D9002: 忽略未知选项“-std=c++11”
+     1>cl : 命令行 warning D9002: 忽略未知选项“-msse2”
+     1>cl : 命令行 warning D9002: 忽略未知选项“-g”
+         audio_converter.cc
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2253: “scoped_ptr_impl<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(302): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2253: “scoped_ptr<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(474): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2253: “scoped_ptr<BAAB::T [0],D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(609): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T[],D>”的引用
+     1>Z:\work\audio-module\common_audio/audio_converter.h(61): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\common_audio/audio_converter.h(61): error C2238: 意外的标记位于“;”之前
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\common_audio/channel_buffer.h(128): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T>”的引用
+                 with
+                 [
+                     T=int16_t []
+                 ]
+                 Z:\work\audio-module\common_audio/channel_buffer.h(162): 参见对正在编译的类 模板 实例化“webrtc::ChannelBuffer<T>”的引用
+                 with
+                 [
+                     T=int16_t
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(522): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\base/scoped_ptr.h(522): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\base/scoped_ptr.h(588): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+                 with
+                 [
+                     T=short,
+                     D=rtc::DefaultDeleter<short []>
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\common_audio/resampler/sinc_resampler.h(165): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\common_audio/resampler/sinc_resampler.h(165): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\common_audio/resampler/push_sinc_resampler.h(59): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T>”的引用
+                 with
+                 [
+                     T=webrtc::SincResampler
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(389): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\base/scoped_ptr.h(389): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\common_audio/resampler/push_sinc_resampler.h(71): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\common_audio/resampler/push_sinc_resampler.h(71): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\system_wrappers/interface/scoped_vector.h(57): error C2253: “ScopedVector<T>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\system_wrappers/interface/scoped_vector.h(153): 参见对正在编译的类 模板 实例化“webrtc::ScopedVector<T>”的引用
+     1>Z:\work\audio-module\system_wrappers/interface/scoped_vector.h(57): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\common_audio\audio_converter.cc(100): 参见对正在编译的类 模板 实例化“webrtc::ScopedVector<T>”的引用
+                 with
+                 [
+                     T=webrtc::PushSincResampler
+                 ]
+     1>Z:\work\audio-module\system_wrappers/interface/scoped_vector.h(57): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\system_wrappers/interface/scoped_vector.h(58): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\system_wrappers/interface/scoped_vector.h(58): error C2238: 意外的标记位于“;”之前
+         audio_ring_buffer.cc
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+         audio_util.cc
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2253: “scoped_ptr_impl<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(302): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2253: “scoped_ptr<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(474): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2253: “scoped_ptr<BAAB::T [0],D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(609): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T[],D>”的引用
+         blocker.cc
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2253: “scoped_ptr_impl<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(302): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2253: “scoped_ptr<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(474): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2253: “scoped_ptr<BAAB::T [0],D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(609): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T[],D>”的引用
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\common_audio/channel_buffer.h(128): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T>”的引用
+                 with
+                 [
+                     T=int16_t []
+                 ]
+                 Z:\work\audio-module\common_audio/channel_buffer.h(162): 参见对正在编译的类 模板 实例化“webrtc::ChannelBuffer<T>”的引用
+                 with
+                 [
+                     T=int16_t
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(522): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\base/scoped_ptr.h(522): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\base/scoped_ptr.h(588): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+                 with
+                 [
+                     T=short,
+                     D=rtc::DefaultDeleter<short []>
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2238: 意外的标记位于“;”之前
+         channel_buffer.cc
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2253: “scoped_ptr_impl<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(302): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2253: “scoped_ptr<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(474): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2253: “scoped_ptr<BAAB::T [0],D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(609): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T[],D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\common_audio/channel_buffer.h(128): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T>”的引用
+                 with
+                 [
+                     T=int16_t []
+                 ]
+                 Z:\work\audio-module\common_audio/channel_buffer.h(162): 参见对正在编译的类 模板 实例化“webrtc::ChannelBuffer<T>”的引用
+                 with
+                 [
+                     T=int16_t
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(522): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\base/scoped_ptr.h(522): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\base/scoped_ptr.h(588): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+                 with
+                 [
+                     T=short,
+                     D=rtc::DefaultDeleter<short []>
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2238: 意外的标记位于“;”之前
+         fir_filter.cc
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2253: “scoped_ptr_impl<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(302): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2253: “scoped_ptr<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(474): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2253: “scoped_ptr<BAAB::T [0],D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(609): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T[],D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\common_audio/fir_filter_neon.h(31): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+                 with
+                 [
+                     T=float [],
+                     D=webrtc::AlignedFreeDeleter
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(522): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\base/scoped_ptr.h(522): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\base/scoped_ptr.h(588): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+                 with
+                 [
+                     T=float,
+                     D=webrtc::AlignedFreeDeleter
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2238: 意外的标记位于“;”之前
+         lapped_transform.cc
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2253: “scoped_ptr_impl<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(302): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2253: “scoped_ptr<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(474): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2253: “scoped_ptr<BAAB::T [0],D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(609): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T[],D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\common_audio/channel_buffer.h(128): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T>”的引用
+                 with
+                 [
+                     T=int16_t []
+                 ]
+                 Z:\work\audio-module\common_audio/channel_buffer.h(162): 参见对正在编译的类 模板 实例化“webrtc::ChannelBuffer<T>”的引用
+                 with
+                 [
+                     T=int16_t
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(522): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\base/scoped_ptr.h(522): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\base/scoped_ptr.h(588): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+                 with
+                 [
+                     T=short,
+                     D=rtc::DefaultDeleter<short []>
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\common_audio/lapped_transform.h(113): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T>”的引用
+                 with
+                 [
+                     T=webrtc::RealFourier
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(389): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\base/scoped_ptr.h(389): error C2238: 意外的标记位于“;”之前
+         real_fourier.cc
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2253: “scoped_ptr_impl<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(302): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2253: “scoped_ptr<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(474): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2253: “scoped_ptr<BAAB::T [0],D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(609): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T[],D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\common_audio/real_fourier_ooura.h(38): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T>”的引用
+                 with
+                 [
+                     T=size_t []
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(522): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\base/scoped_ptr.h(522): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\base/scoped_ptr.h(588): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+                 with
+                 [
+                     T=unsigned int,
+                     D=rtc::DefaultDeleter<unsigned int []>
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\common_audio\real_fourier.cc(24): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T>”的引用
+                 with
+                 [
+                     T=webrtc::RealFourier
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(389): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\base/scoped_ptr.h(389): error C2238: 意外的标记位于“;”之前
+         real_fourier_ooura.cc
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2253: “scoped_ptr_impl<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(302): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2253: “scoped_ptr<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(474): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2253: “scoped_ptr<BAAB::T [0],D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(609): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T[],D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\common_audio/real_fourier_ooura.h(38): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T>”的引用
+                 with
+                 [
+                     T=size_t []
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(522): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\base/scoped_ptr.h(522): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\base/scoped_ptr.h(588): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+                 with
+                 [
+                     T=unsigned int,
+                     D=rtc::DefaultDeleter<unsigned int []>
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2238: 意外的标记位于“;”之前
+         push_resampler.cc
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2253: “scoped_ptr_impl<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(302): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2253: “scoped_ptr<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(474): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2253: “scoped_ptr<BAAB::T [0],D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(609): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T[],D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\common_audio/resampler/include/push_resampler.h(39): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T>”的引用
+                 with
+                 [
+                     T=webrtc::PushSincResampler
+                 ]
+                 Z:\work\audio-module\common_audio/resampler/include/push_resampler.h(48): 参见对正在编译的类 模板 实例化“webrtc::PushResampler<T>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(389): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\base/scoped_ptr.h(389): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\base/scoped_ptr.h(463): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+                 with
+                 [
+                     T=webrtc::PushSincResampler,
+                     D=rtc::DefaultDeleter<webrtc::PushSincResampler>
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2238: 意外的标记位于“;”之前
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\common_audio/resampler/sinc_resampler.h(140): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+                 with
+                 [
+                     T=float [],
+                     D=webrtc::AlignedFreeDeleter
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(522): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\base/scoped_ptr.h(522): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\common_audio/resampler/sinc_resampler.h(165): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\common_audio/resampler/sinc_resampler.h(165): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\common_audio/resampler/push_sinc_resampler.h(71): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\common_audio/resampler/push_sinc_resampler.h(71): error C2238: 意外的标记位于“;”之前
+         push_sinc_resampler.cc
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2253: “scoped_ptr_impl<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(302): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2253: “scoped_ptr<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(474): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2253: “scoped_ptr<BAAB::T [0],D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(609): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T[],D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\common_audio/resampler/sinc_resampler.h(140): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+                 with
+                 [
+                     T=float [],
+                     D=webrtc::AlignedFreeDeleter
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(522): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\base/scoped_ptr.h(522): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\base/scoped_ptr.h(588): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+                 with
+                 [
+                     T=float,
+                     D=webrtc::AlignedFreeDeleter
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\common_audio/resampler/sinc_resampler.h(165): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\common_audio/resampler/sinc_resampler.h(165): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\common_audio/resampler/push_sinc_resampler.h(59): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T>”的引用
+                 with
+                 [
+                     T=webrtc::SincResampler
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(389): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\base/scoped_ptr.h(389): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\common_audio/resampler/push_sinc_resampler.h(71): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\common_audio/resampler/push_sinc_resampler.h(71): error C2238: 意外的标记位于“;”之前
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+         resampler.cc
+     1>Z:\work\audio-module\common_audio\resampler\resampler.cc(43): error C2614: “webrtc::Resampler”: 非法的成员初始化:“Resampler”不是基或成员
+         sinc_resampler.cc
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2253: “scoped_ptr_impl<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(302): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2253: “scoped_ptr<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(474): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2253: “scoped_ptr<BAAB::T [0],D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(609): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T[],D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\common_audio/resampler/sinc_resampler.h(140): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+                 with
+                 [
+                     T=float [],
+                     D=webrtc::AlignedFreeDeleter
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(522): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\base/scoped_ptr.h(522): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\base/scoped_ptr.h(588): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+                 with
+                 [
+                     T=float,
+                     D=webrtc::AlignedFreeDeleter
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\common_audio/resampler/sinc_resampler.h(165): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\common_audio/resampler/sinc_resampler.h(165): error C2238: 意外的标记位于“;”之前
+         sparse_fir_filter.cc
+     1>Z:\work\audio-module\common_audio/sparse_fir_filter.h(47): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\common_audio/sparse_fir_filter.h(47): error C2238: 意外的标记位于“;”之前
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+         vad.cc
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2253: “scoped_ptr_impl<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(302): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2253: “scoped_ptr<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(474): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2253: “scoped_ptr<BAAB::T [0],D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(609): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T[],D>”的引用
+     1>Z:\work\audio-module\common_audio/vad/include/vad.h(32): error C2065: “default”: 未声明的标识符
+     1>Z:\work\audio-module\common_audio/vad/include/vad.h(32): error C2258: 非法的纯语法，必须为“= 0”
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\common_audio\vad\vad.cc(59): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T>”的引用
+                 with
+                 [
+                     T=webrtc::Vad
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(389): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\base/scoped_ptr.h(389): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\base/scoped_ptr.h(463): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+                 with
+                 [
+                     T=webrtc::Vad,
+                     D=rtc::DefaultDeleter<webrtc::Vad>
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2238: 意外的标记位于“;”之前
+         wav_file.cc
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\common_audio/wav_file.h(61): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\common_audio/wav_file.h(61): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\common_audio/wav_file.h(90): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\common_audio/wav_file.h(90): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2253: “scoped_ptr_impl<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(302): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2253: “scoped_ptr<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(474): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2253: “scoped_ptr<BAAB::T [0],D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(609): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T[],D>”的引用
+         wav_header.cc
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2253: “scoped_ptr_impl<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(302): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2253: “scoped_ptr<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(474): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2253: “scoped_ptr<BAAB::T [0],D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(609): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T[],D>”的引用
+         window_generator.cc
+     1>Z:\work\audio-module\common_audio/window_generator.h(27): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\common_audio/window_generator.h(27): error C2238: 意外的标记位于“;”之前
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+         fir_filter_sse.cc
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2253: “scoped_ptr_impl<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(302): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2253: “scoped_ptr<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(474): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2253: “scoped_ptr<BAAB::T [0],D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(609): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T[],D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\common_audio/fir_filter_sse.h(31): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+                 with
+                 [
+                     T=float [],
+                     D=webrtc::AlignedFreeDeleter
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(522): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\base/scoped_ptr.h(522): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\base/scoped_ptr.h(588): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+                 with
+                 [
+                     T=float,
+                     D=webrtc::AlignedFreeDeleter
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2238: 意外的标记位于“;”之前
+         sinc_resampler_sse.cc
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2253: “scoped_ptr_impl<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(302): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2253: “scoped_ptr<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(474): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2253: “scoped_ptr<BAAB::T [0],D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(609): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T[],D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\common_audio/resampler/sinc_resampler.h(140): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+                 with
+                 [
+                     T=float [],
+                     D=webrtc::AlignedFreeDeleter
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(522): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\base/scoped_ptr.h(522): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\base/scoped_ptr.h(588): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+                 with
+                 [
+                     T=float,
+                     D=webrtc::AlignedFreeDeleter
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\common_audio/resampler/sinc_resampler.h(165): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\common_audio/resampler/sinc_resampler.h(165): error C2238: 意外的标记位于“;”之前
+         正在生成代码...
+     1>已完成生成项目“Z:\work\audio-module\win_build\common_audio\CommonAudio.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:12.90

@@ -1,0 +1,1122 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\main\acm2\acm_codec_database.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\main\acm2\acm_receiver.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\main\acm2\acm_resampler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\main\acm2\audio_coding_module.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\main\acm2\audio_coding_module_impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\main\acm2\call_statistics.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\main\acm2\codec_manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\main\acm2\codec_owner.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\main\acm2\initial_delay_manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\main\acm2\nack.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\audio_decoder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\audio_encoder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\cng\audio_encoder_cng.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\cng\cng_helpfuns.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\cng\webrtc_cng.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\red\audio_encoder_copy_red.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\g711\audio_encoder_pcm.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\g711\g711.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\g711\g711_interface.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\g722\audio_decoder_g722.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\g722\audio_encoder_g722.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\g722\g722_decode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\g722\g722_encode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\g722\g722_interface.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\abs_quant.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\abs_quant_loop.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\audio_decoder_ilbc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\audio_encoder_ilbc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\augmented_cb_corr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\bw_expand.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\cb_construct.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\cb_mem_energy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\cb_mem_energy_augmentation.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\cb_mem_energy_calc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\cb_search.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\cb_search_core.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\cb_update_best_index.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\chebyshev.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\comp_corr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\constants.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\create_augmented_vec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\decode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\decode_residual.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\decoder_interpolate_lsf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\do_plc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\encode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\energy_inverse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\enh_upsample.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\enhancer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\enhancer_interface.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\filtered_cb_vecs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\frame_classify.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\gain_dequant.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\gain_quant.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\get_cd_vec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\get_lsp_poly.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\get_sync_seq.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\hp_input.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\hp_output.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\ilbc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\index_conv_dec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\index_conv_enc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\init_decode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\init_encode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\interpolate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\interpolate_samples.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\lpc_encode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\lsf_check.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\lsf_interpolate_to_poly_dec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\lsf_interpolate_to_poly_enc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\lsf_to_lsp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\lsf_to_poly.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\lsp_to_lsf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\my_corr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\nearest_neighbor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\pack_bits.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\poly_to_lsf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\poly_to_lsp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\refiner.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\simple_interpolate_lsf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\simple_lpc_analysis.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\simple_lsf_dequant.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\simple_lsf_quant.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\smooth.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\smooth_out_data.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\sort_sq.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\split_vq.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\state_construct.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\state_search.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\swap_bytes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\unpack_bits.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\vq3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\vq4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\window32_w32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\xcorr_coef.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\locked_bandwidth_info.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\arith_routines.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\arith_routines_hist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\arith_routines_logist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\audio_encoder_isac.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\bandwidth_estimator.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\crc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\decode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\decode_bwe.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\encode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\encode_lpc_swb.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\entropy_coding.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\fft.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\filter_functions.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\filterbank_tables.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\filterbanks.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\intialize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\isac.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\lattice.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\lpc_analysis.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\lpc_gain_swb_tables.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\lpc_shape_swb12_tables.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\lpc_shape_swb16_tables.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\lpc_tables.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\pitch_estimator.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\pitch_filter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\pitch_gain_tables.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\pitch_lag_tables.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\spectrum_ar_model_tables.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\transform.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\arith_routines.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\arith_routines_hist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\arith_routines_logist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\audio_encoder_isacfix.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\bandwidth_estimator.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\decode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\decode_bwe.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\decode_plc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\encode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\entropy_coding.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\fft.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\filterbank_tables.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\filterbanks.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\filters.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\initialize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\isacfix.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\lattice.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\lattice_c.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\lpc_masking_model.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\lpc_tables.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\pitch_estimator.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\pitch_estimator_c.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\pitch_filter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\pitch_filter_c.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\pitch_gain_tables.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\pitch_lag_tables.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\spectrum_ar_model_tables.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\transform.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\transform_tables.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\pcm16b\audio_decoder_pcm16b.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\pcm16b\audio_encoder_pcm16b.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\pcm16b\pcm16b.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\opus\audio_decoder_opus.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\opus\audio_encoder_opus.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\opus\opus_interface.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\accelerate.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\audio_decoder_impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\audio_multi_vector.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\audio_vector.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\background_noise.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\buffer_level_filter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\comfort_noise.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\decision_logic.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\decision_logic_fax.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\decision_logic_normal.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\decoder_database.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\delay_manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\delay_peak_detector.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\dsp_helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\dtmf_buffer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\dtmf_tone_generator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\expand.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\merge.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\neteq.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\neteq_impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\normal.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\packet_buffer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\payload_splitter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\post_decode_vad.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\preemptive_expand.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\random_vector.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\rtcp.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\statistics_calculator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\sync_buffer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\time_stretch.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\timestamp_scaler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\main\acm2\acm_codec_database.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\main\acm2\acm_common_defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\main\acm2\acm_receiver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\main\acm2\acm_resampler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\main\acm2\audio_coding_module_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\main\acm2\call_statistics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\main\acm2\codec_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\main\acm2\codec_owner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\main\acm2\initial_delay_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\main\acm2\nack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\main\interface\audio_coding_module.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\main\interface\audio_coding_module_typedefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\audio_decoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\audio_encoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\cng\cng_helpfuns.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\cng\include\audio_encoder_cng.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\cng\include\webrtc_cng.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\red\audio_encoder_copy_red.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\g711\g711.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\g711\include\audio_encoder_pcm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\g711\include\g711_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\g722\g722_enc_dec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\g722\include\audio_decoder_g722.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\g722\include\audio_encoder_g722.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\g722\include\g722_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\abs_quant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\abs_quant_loop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\augmented_cb_corr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\bw_expand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\cb_construct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\cb_mem_energy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\cb_mem_energy_augmentation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\cb_mem_energy_calc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\cb_search.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\cb_search_core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\cb_update_best_index.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\chebyshev.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\comp_corr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\constants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\create_augmented_vec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\decode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\decode_residual.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\decoder_interpolate_lsf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\do_plc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\encode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\energy_inverse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\enh_upsample.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\enhancer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\enhancer_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\filtered_cb_vecs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\frame_classify.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\gain_dequant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\gain_quant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\get_cd_vec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\get_lsp_poly.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\get_sync_seq.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\hp_input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\hp_output.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\interface\audio_decoder_ilbc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\interface\audio_encoder_ilbc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\index_conv_dec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\index_conv_enc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\init_decode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\init_encode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\interface\ilbc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\interpolate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\interpolate_samples.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\lpc_encode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\lsf_check.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\lsf_interpolate_to_poly_dec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\lsf_interpolate_to_poly_enc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\lsf_to_lsp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\lsf_to_poly.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\lsp_to_lsf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\my_corr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\nearest_neighbor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\pack_bits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\poly_to_lsf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\poly_to_lsp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\refiner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\simple_interpolate_lsf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\simple_lpc_analysis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\simple_lsf_dequant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\simple_lsf_quant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\smooth.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\smooth_out_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\sort_sq.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\split_vq.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\state_construct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\state_search.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\swap_bytes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\unpack_bits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\vq3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\vq4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\window32_w32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\xcorr_coef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\audio_encoder_isac_t.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\audio_encoder_isac_t_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\locked_bandwidth_info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\interface\audio_encoder_isac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\interface\isac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\arith_routines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\bandwidth_estimator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\codec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\crc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\encode_lpc_swb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\entropy_coding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\fft.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\filterbank_tables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\lpc_analysis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\lpc_gain_swb_tables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\lpc_shape_swb12_tables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\lpc_shape_swb16_tables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\lpc_tables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\os_specific_inline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\pitch_estimator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\pitch_gain_tables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\pitch_lag_tables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\spectrum_ar_model_tables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\structs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\interface\audio_encoder_isacfix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\interface\isacfix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\arith_routins.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\bandwidth_estimator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\codec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\entropy_coding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\fft.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\filterbank_tables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\lpc_masking_model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\lpc_tables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\pitch_estimator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\pitch_gain_tables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\pitch_lag_tables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\spectrum_ar_model_tables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\structs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\pcm16b\include\audio_decoder_pcm16b.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\pcm16b\include\audio_encoder_pcm16b.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\pcm16b\include\pcm16b.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\opus\interface\audio_decoder_opus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\opus\interface\audio_encoder_opus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\opus\interface\opus_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\opus\opus_inst.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\accelerate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\audio_decoder_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\audio_multi_vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\audio_vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\background_noise.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\buffer_level_filter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\comfort_noise.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\decision_logic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\decision_logic_fax.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\decision_logic_normal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\decoder_database.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\delay_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\delay_peak_detector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\dsp_helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\dtmf_buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\dtmf_tone_generator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\expand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\interface\neteq.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\merge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\neteq_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\normal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\packet_buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\payload_splitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\post_decode_vad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\preemptive_expand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\random_vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\rtcp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\statistics_calculator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\sync_buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\time_stretch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\timestamp_scaler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Z:\work\audio-module\audio_coding\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{40164A58-12EF-444D-AABB-AD3E40CEB796}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F3A20527-007F-49E3-A606-7BA8B0E18827}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

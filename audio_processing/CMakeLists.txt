@@ -115,12 +115,39 @@ SET(AUDIO_PROCESSING_SRC
   "ns/nsx_core.c"
   "ns/nsx_core.h"
   "ns/nsx_defines.h"
-
   "aecm/aecm_core_c.c"
-  "aec/aec_core_sse2.c"
-  "aec/aec_rdft_sse2.c"
   "ns/nsx_core_c.c"
   )
+
+SET(LIBS  "")
+if(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
+  if(IOS)
+    SET(AUDIO_PROCESSING_SRC
+      ${AUDIO_PROCESSING_SRC}
+      # "aec/aec_core_neon.c"
+      # "aec/aec_rdft_neon.c"
+      # "aecm/aecm_core_neon.c"
+      # "ns/nsx_core_neon.c"
+      "aec/aec_core_sse2.c"
+      "aec/aec_rdft_sse2.c"
+
+      )
+  else()
+    SET(AUDIO_PROCESSING_SRC
+      ${AUDIO_PROCESSING_SRC}
+      "aec/aec_core_sse2.c"
+      "aec/aec_rdft_sse2.c"
+      )
+  endif()
+elseif(ANDROID)
+  SET(AUDIO_PROCESSING_SRC
+    ${AUDIO_PROCESSING_SRC}
+    "aec/aec_core_neon.c"
+    "aec/aec_rdft_neon.c"
+    "aecm/aecm_core_neon.c"
+    "ns/nsx_core_neon.c"
+    )
+endif()
 add_definitions(-DWEBRTC_NS_FIXED)
 add_library(AudioProcessing SHARED ${AUDIO_PROCESSING_SRC})
 target_link_libraries(AudioProcessing CommonAudio SystemWrapper)

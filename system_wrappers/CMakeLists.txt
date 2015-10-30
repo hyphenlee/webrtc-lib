@@ -32,8 +32,9 @@ SET(WRAPPER_SRC
   "interface/trace.h"
   "interface/trace_event.h"
   "interface/utf_util_win.h"
+  "interface/asm_defines.h"
   "source/aligned_malloc.cc"
-  "source/atomic32_mac.cc"
+
   # "source/atomic32_win.cc"
   "source/clock.cc"
   "source/condition_variable.cc"
@@ -87,13 +88,52 @@ SET(WRAPPER_SRC
   "source/metrics_default.cc"
 
   )
+SET(LIBS  "")
 if(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
+  if(IOS)
+    ADD_DEFINITIONS(-DWEBRTC_THREAD_RR
+      -DWEBRTC_CLOCK_TYPE_REALTIME
+      -DWEBRTC_POSIX
+      -DWEBRTC_MAC
+      -DWEBRTC_IOS
+      )
+  else()
+    ADD_DEFINITIONS(-DWEBRTC_THREAD_RR
+      -DWEBRTC_CLOCK_TYPE_REALTIME
+      -DWEBRTC_POSIX
+      -DWEBRTC_MAC)
+    SET(WRAPPER_SRC
+      ${WRAPPER_SRC}
+      "source/atomic32_mac.cc")
+  endif()
+elseif(ANDROID)
+  message("system wrapper: build for android")
   ADD_DEFINITIONS(-DWEBRTC_THREAD_RR
     -DWEBRTC_CLOCK_TYPE_REALTIME
     -DWEBRTC_POSIX
-    -DWEBRTC_MAC)
+    -DWEBRTC_LINUX
+    -DWEBRTC_ANDROID)
+  #SET(LIBS ${LIBS} "cpufeatures")
+  SET(WRAPPER_SRC
+    ${WRAPPER_SRC}
+    "interface/logcat_trace_context.h"
+    "source/logcat_trace_context.cc"
+    "source/atomic32_posix.cc"
+    "source/cpu_features_android.c"
+    )
 endif()
+
+foreach(var ${LIBS})
+  message(item:${var})
+  FIND_LIBRARY(find${var} ${var})
+  message(full path:${find${var}})
+  if(${lib2} MATCHES "NOTFOUND")
+    message(SEND_ERROR "library not not found:${var}")
+  else()
+    set(LIBRARYS ${LIBRARYS} ${find${var}})
+  endif()
+endforeach()
 
 
 add_library(SystemWrapper ${WRAPPER_SRC})
-TARGET_LINK_LIBRARIES(SystemWrapper BASE COMMON)
+TARGET_LINK_LIBRARIES(SystemWrapper BASE COMMON ${LIBRARYS})

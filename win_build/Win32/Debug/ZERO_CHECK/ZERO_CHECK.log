@@ -1,0 +1,17 @@
+﻿生成启动时间为 2015/10/13 17:10:04。
+     1>项目“Z:\work\audio-module\win_build\ZERO_CHECK.vcxproj”在节点 2 上(Build 个目标)。
+     1>CustomBuild:
+         Checking Build System
+         CMake does not need to re-run because Z:/work/audio-module/win_build/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because Z:/work/audio-module/win_build/base/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because Z:/work/audio-module/win_build/system_wrappers/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because Z:/work/audio-module/win_build/common_audio/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because Z:/work/audio-module/win_build/audio_coding/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because Z:/work/audio-module/win_build/audio_processing/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because Z:/work/audio-module/win_build/audio_device/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because Z:/work/audio-module/win_build/test/CMakeFiles/generate.stamp is up-to-date.
+     1>已完成生成项目“Z:\work\audio-module\win_build\ZERO_CHECK.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:02.21

@@ -1031,7 +1031,7 @@ namespace boost {
   			RandomAccessIter curr = first;
   			do {
   				//ignore empties, but if the nextOffset would exceed the length or not match, exit; we've found the last matching character
-  				if(length(*curr) > char_offset && (length(*curr) <= (nextOffset + 1) || getchar((*curr), nextOffset) != getchar((*first), nextOffset))) {
+  				if(length(*curr) > char_offset && (length(*curr) <= (nextOffset + 1) || character((*curr), nextOffset) != character((*first), nextOffset))) {
   					done = true;
   					break;
   				}
@@ -1086,9 +1086,9 @@ namespace boost {
   		{
   			unsigned minSize = std::min(length(x), length(y));
   			for(unsigned u = fchar_offset; u < minSize; ++u) {
-  				if(getchar(x, u) < getchar(y, u))
+  				if(character(x, u) < character(y, u))
   					return true;
-  				else if(getchar(y, u) < getchar(x, u))
+  				else if(character(y, u) < character(x, u))
   					return false;
   			}
   			return length(x) < length(y);
@@ -1306,7 +1306,7 @@ namespace boost {
   				bin_sizes[0]++;
   			}
   			else
-  				bin_sizes[getchar((*current), char_offset) + 1]++;
+  				bin_sizes[character((*current), char_offset) + 1]++;
   		}
   		//Assign the bin positions
   		bin_cache[cache_offset] = first;
@@ -1323,7 +1323,7 @@ namespace boost {
   		for(RandomAccessIter current = *local_bin; current < nextbinstart; ++current) {
   			//empties belong in this bin
   			while(length(*current) > char_offset) {
-  				target_bin = bins + getchar((*current), char_offset);
+  				target_bin = bins + character((*current), char_offset);
   				iter_swap(current, (*target_bin)++);
   			}
   		}
@@ -1338,8 +1338,8 @@ namespace boost {
   			//Iterating over each element in this bin
   			for(RandomAccessIter current = *local_bin; current < nextbinstart; ++current) {
   				//Swapping elements in current into place until the correct element has been swapped in
-  				for(target_bin = bins + getchar((*current), char_offset);  target_bin != local_bin; 
-  					target_bin = bins + getchar((*current), char_offset))
+  				for(target_bin = bins + character((*current), char_offset);  target_bin != local_bin; 
+  					target_bin = bins + character((*current), char_offset))
   					iter_swap(current, (*target_bin)++);
   			}
   			*local_bin = nextbinstart;
@@ -1393,7 +1393,7 @@ namespace boost {
   				bin_sizes[0]++;
   			}
   			else
-  				bin_sizes[getchar((*current), char_offset) + 1]++;
+  				bin_sizes[character((*current), char_offset) + 1]++;
   		}
   		//Assign the bin positions
   		bin_cache[cache_offset] = first;
@@ -1410,7 +1410,7 @@ namespace boost {
   		for(RandomAccessIter current = *local_bin; current < nextbinstart; ++current) {
   			//empties belong in this bin
   			while(length(*current) > char_offset) {
-  				target_bin = bins + getchar((*current), char_offset);
+  				target_bin = bins + character((*current), char_offset);
   				iter_swap(current, (*target_bin)++);
   			}
   		}
@@ -1425,8 +1425,8 @@ namespace boost {
   			//Iterating over each element in this bin
   			for(RandomAccessIter current = *local_bin; current < nextbinstart; ++current) {
   				//Swapping elements in current into place until the correct element has been swapped in
-  				for(target_bin = bins + getchar((*current), char_offset);  target_bin != local_bin; 
-  					target_bin = bins + getchar((*current), char_offset))
+  				for(target_bin = bins + character((*current), char_offset);  target_bin != local_bin; 
+  					target_bin = bins + character((*current), char_offset))
   					iter_swap(current, (*target_bin)++);
   			}
   			*local_bin = nextbinstart;
@@ -1484,7 +1484,7 @@ namespace boost {
   				bin_sizes[bin_count]++;
   			}
   			else
-  				bin_sizes[max_bin - getchar((*current), char_offset)]++;
+  				bin_sizes[max_bin - character((*current), char_offset)]++;
   		}
   		//Assign the bin positions
   		bin_cache[cache_offset] = first;
@@ -1501,7 +1501,7 @@ namespace boost {
   		for(RandomAccessIter current = *local_bin; current < nextbinstart; ++current) {
   			//empties belong in this bin
   			while(length(*current) > char_offset) {
-  				target_bin = end_bin - getchar((*current), char_offset);
+  				target_bin = end_bin - character((*current), char_offset);
   				iter_swap(current, (*target_bin)++);
   			}
   		}
@@ -1517,8 +1517,8 @@ namespace boost {
   			//Iterating over each element in this bin
   			for(RandomAccessIter current = *local_bin; current < nextbinstart; ++current) {
   				//Swapping elements in current into place until the correct element has been swapped in
-  				for(target_bin = end_bin - getchar((*current), char_offset);  target_bin != local_bin; 
-  					target_bin = end_bin - getchar((*current), char_offset))
+  				for(target_bin = end_bin - character((*current), char_offset);  target_bin != local_bin; 
+  					target_bin = end_bin - character((*current), char_offset))
   					iter_swap(current, (*target_bin)++);
   			}
   			*local_bin = nextbinstart;
@@ -1643,7 +1643,7 @@ namespace boost {
   			if(++first == last)
   				return;
   		}
-  		detail::string_sort(first, last, getchar, length, *first, getchar((*first), 0));
+  		detail::string_sort(first, last, getchar, length, *first, character((*first), 0));
   	}
   }
 
@@ -1660,7 +1660,7 @@ namespace boost {
   			if(++first == last)
   				return;
   		}
-  		detail::string_sort(first, last, getchar, length, comp, *first, getchar((*first), 0));
+  		detail::string_sort(first, last, getchar, length, comp, *first, character((*first), 0));
   	}
   }
 
@@ -1680,7 +1680,7 @@ namespace boost {
   		}
   		//making last just after the end of the non-empty part of the array
   		++last;
-  		detail::reverse_string_sort(first, last, getchar, length, comp, *first, getchar((*first), 0));
+  		detail::reverse_string_sort(first, last, getchar, length, comp, *first, character((*first), 0));
   	}
   }
 }

@@ -652,6 +652,8 @@ static int ProcessNormal(Aec* aecpc,
       if (nearend[i] != out[i]) {
         printf("out data %3.3f",nearend[i]);
         memcpy(out[i], nearend[i], sizeof(nearend[i][0]) * nrOfSamples);
+      } else{
+          printf("not point to the same place");
       }
     }
 

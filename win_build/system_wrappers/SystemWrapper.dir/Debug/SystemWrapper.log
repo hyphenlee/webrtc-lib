@@ -1,0 +1,419 @@
+﻿生成启动时间为 2015/10/13 17:10:56。
+     1>项目“Z:\work\audio-module\win_build\system_wrappers\SystemWrapper.vcxproj”在节点 3 上(Build 个目标)。
+     1>CustomBuild:
+         Building Custom Rule Z:/work/audio-module/system_wrappers/CMakeLists.txt
+         CMake does not need to re-run because Z:\work\audio-module\win_build\system_wrappers\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"Z:\work\audio-module" /Zi /nologo /W1 /WX- /Od /Ob0 /Oy- /D WEBRTC_POSI /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"SystemWrapper.dir\Debug\\" /Fd"SystemWrapper.dir\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt  -std=c++11 -msse2 -g "Z:\work\audio-module\system_wrappers\source\aligned_malloc.cc" "Z:\work\audio-module\system_wrappers\source\atomic32_mac.cc" "Z:\work\audio-module\system_wrappers\source\clock.cc" "Z:\work\audio-module\system_wrappers\source\condition_variable.cc" "Z:\work\audio-module\system_wrappers\source\condition_variable_posix.cc" "Z:\work\audio-module\system_wrappers\source\cpu_features.cc" "Z:\work\audio-module\system_wrappers\source\cpu_info.cc" "Z:\work\audio-module\system_wrappers\source\critical_section.cc" "Z:\work\audio-module\system_wrappers\source\critical_section_posix.cc" "Z:\work\audio-module\system_wrappers\source\data_log_c.cc" "Z:\work\audio-module\system_wrappers\source\event.cc" "Z:\work\audio-module\system_wrappers\source\event_timer_posix.cc" "Z:\work\audio-module\system_wrappers\source\event_tracer.cc" "Z:\work\audio-module\system_wrappers\source\file_impl.cc" "Z:\work\audio-module\system_wrappers\source\logging.cc" "Z:\work\audio-module\system_wrappers\source\rtp_to_ntp.cc" "Z:\work\audio-module\system_wrappers\source\rw_lock.cc" "Z:\work\audio-module\system_wrappers\source\rw_lock_generic.cc" "Z:\work\audio-module\system_wrappers\source\rw_lock_posix.cc" "Z:\work\audio-module\system_wrappers\source\sleep.cc" "Z:\work\audio-module\system_wrappers\source\sort.cc" "Z:\work\audio-module\system_wrappers\source\thread.cc" "Z:\work\audio-module\system_wrappers\source\thread_posix.cc" "Z:\work\audio-module\system_wrappers\source\tick_util.cc" "Z:\work\audio-module\system_wrappers\source\timestamp_extrapolator.cc" "Z:\work\audio-module\system_wrappers\source\trace_impl.cc" "Z:\work\audio-module\system_wrappers\source\trace_posix.cc" "Z:\work\audio-module\system_wrappers\source\data_log_no_op.cc" "Z:\work\audio-module\system_wrappers\source\metrics_default.cc"
+     1>cl : 命令行 warning D9002: 忽略未知选项“-std=c++11”
+     1>cl : 命令行 warning D9002: 忽略未知选项“-msse2”
+     1>cl : 命令行 warning D9002: 忽略未知选项“-g”
+         aligned_malloc.cc
+         atomic32_mac.cc
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\common_types.h(311): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(311): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\common_types.h(726): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(726): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\system_wrappers/interface/atomic32.h(59): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\system_wrappers/interface/atomic32.h(59): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\system_wrappers\source\atomic32_mac.cc(14): fatal error C1083: 无法打开包括文件:“libkern/OSAtomic.h”: No such file or directory
+         clock.cc
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2253: “scoped_ptr_impl<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(302): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2253: “scoped_ptr<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(474): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2253: “scoped_ptr<BAAB::T [0],D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(609): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T[],D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\system_wrappers/interface/clock.h(79): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T>”的引用
+                 with
+                 [
+                     T=webrtc::RWLockWrapper
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(389): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\base/scoped_ptr.h(389): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\base/scoped_ptr.h(463): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+                 with
+                 [
+                     T=webrtc::RWLockWrapper,
+                     D=rtc::DefaultDeleter<webrtc::RWLockWrapper>
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2238: 意外的标记位于“;”之前
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(94): error C2146: 语法错误: 缺少“;”(在标识符“MMVERSION”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(94): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(102): error C2143: 语法错误 : 缺少“;”(在“*”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(102): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(112): error C2146: 语法错误: 缺少“;”(在标识符“ms”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(112): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(113): error C2146: 语法错误: 缺少“;”(在标识符“sample”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(113): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(114): error C2146: 语法错误: 缺少“;”(在标识符“cb”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(114): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(115): error C2146: 语法错误: 缺少“;”(在标识符“ticks”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(115): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(120): error C2146: 语法错误: 缺少“;”(在标识符“hour”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(120): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(121): error C2146: 语法错误: 缺少“;”(在标识符“min”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(121): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(122): error C2146: 语法错误: 缺少“;”(在标识符“sec”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(122): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(123): error C2146: 语法错误: 缺少“;”(在标识符“frame”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(123): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(124): error C2146: 语法错误: 缺少“;”(在标识符“fps”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(124): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(125): error C2146: 语法错误: 缺少“;”(在标识符“dummy”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(125): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(127): error C2146: 语法错误: 缺少“;”(在标识符“pad”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(127): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(134): error C2146: 语法错误: 缺少“;”(在标识符“songptrpos”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(134): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(137): error C2143: 语法错误 : 缺少“;”(在“*”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(137): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(137): error C2377: “FAR”: 重定义；typedef 不能由任何其他符号重载
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(102) : 参见“FAR”的声明
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(275): error C2065: “HDRVR”: 未声明的标识符
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(275): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(297): error C2146: 语法错误: 缺少“)”(在标识符“DRVCALLBACK”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(297): error C2146: 语法错误: 缺少“;”(在标识符“DRVCALLBACK”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(297): error C2059: 语法错误:“)”
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(297): error C2065: “HDRVR”: 未声明的标识符
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(297): error C2146: 语法错误: 缺少“)”(在标识符“hdrvr”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(297): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(299): error C2146: 语法错误: 缺少“;”(在标识符“FAR”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(299): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(299): error C2378: “DRVCALLBACK”: 重定义；符号不能由 typedef 重载
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(297) : 参见“DRVCALLBACK”的声明
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(299): error C2143: 语法错误 : 缺少“;”(在“*”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(299): error C2086: “int FAR”: 重定义
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(137) : 参见“FAR”的声明
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(301): error C2143: 语法错误 : 缺少“;”(在“*”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(301): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(301): error C2378: “DRVCALLBACK”: 重定义；符号不能由 typedef 重载
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(297) : 参见“DRVCALLBACK”的声明
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(49): error C2146: 语法错误: 缺少“;”(在标识符“MCIERROR”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(49): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(58): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(58): error C2143: 语法错误 : 缺少“;”(在“*”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(58): error C2371: “CALLBACK”: 重定义；不同的基类型
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\um\mmsyscom.h(297) : 参见“CALLBACK”的声明
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(58): error C2059: 语法错误:“)”
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(58): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(65): error C2146: 语法错误: 缺少“;”(在标识符“MCIERROR”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(65): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(66): error C2146: 语法错误: 缺少“;”(在标识符“WINAPI”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(66): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(66): error C2086: “int MCIERROR”: 重定义
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(49) : 参见“MCIERROR”的声明
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(66): error C2146: 语法错误: 缺少“;”(在标识符“mciSendCommandA”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(69): error C2061: 语法错误: 标识符“DWORD_PTR”
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(71): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(75): error C2146: 语法错误: 缺少“;”(在标识符“MCIERROR”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(75): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(75): error C2086: “int DECLSPEC_IMPORT”: 重定义
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(64) : 参见“DECLSPEC_IMPORT”的声明
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(76): error C2146: 语法错误: 缺少“;”(在标识符“WINAPI”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(76): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(76): error C2086: “int MCIERROR”: 重定义
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(49) : 参见“MCIERROR”的声明
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(76): error C2146: 语法错误: 缺少“;”(在标识符“mciSendCommandW”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(76): error C2086: “int WINAPI”: 重定义
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(66) : 参见“WINAPI”的声明
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(79): error C2061: 语法错误: 标识符“DWORD_PTR”
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(81): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(90): error C2146: 语法错误: 缺少“;”(在标识符“MCIERROR”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(90): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(90): error C2086: “int DECLSPEC_IMPORT”: 重定义
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(64) : 参见“DECLSPEC_IMPORT”的声明
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(91): error C2146: 语法错误: 缺少“;”(在标识符“WINAPI”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(91): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(91): error C2086: “int MCIERROR”: 重定义
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(49) : 参见“MCIERROR”的声明
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(91): error C2146: 语法错误: 缺少“;”(在标识符“mciSendStringA”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(91): error C2086: “int WINAPI”: 重定义
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(66) : 参见“WINAPI”的声明
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(92): error C2065: “LPCSTR”: 未声明的标识符
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(92): error C2146: 语法错误: 缺少“)”(在标识符“lpstrCommand”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(92): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(96): error C2059: 语法错误:“)”
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(100): error C2146: 语法错误: 缺少“;”(在标识符“MCIERROR”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(100): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(100): error C2086: “int DECLSPEC_IMPORT”: 重定义
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(64) : 参见“DECLSPEC_IMPORT”的声明
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(101): error C2146: 语法错误: 缺少“;”(在标识符“WINAPI”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(101): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(101): error C2086: “int MCIERROR”: 重定义
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(49) : 参见“MCIERROR”的声明
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(101): error C2146: 语法错误: 缺少“;”(在标识符“mciSendStringW”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(101): error C2086: “int WINAPI”: 重定义
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(66) : 参见“WINAPI”的声明
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(102): error C2065: “LPCWSTR”: 未声明的标识符
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(102): error C2146: 语法错误: 缺少“)”(在标识符“lpstrCommand”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(102): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(106): error C2059: 语法错误:“)”
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(115): error C2146: 语法错误: 缺少“;”(在标识符“MCIDEVICEID”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(115): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(115): error C2086: “int DECLSPEC_IMPORT”: 重定义
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(64) : 参见“DECLSPEC_IMPORT”的声明
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(116): error C2146: 语法错误: 缺少“;”(在标识符“mciGetDeviceIDA”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(116): error C2086: “int WINAPI”: 重定义
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(66) : 参见“WINAPI”的声明
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(117): error C2065: “LPCSTR”: 未声明的标识符
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(118): error C2146: 语法错误: 缺少“)”(在标识符“pszDevice”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(118): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(118): error C2059: 语法错误:“)”
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(122): error C2146: 语法错误: 缺少“;”(在标识符“MCIDEVICEID”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(122): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(122): error C2086: “int DECLSPEC_IMPORT”: 重定义
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(64) : 参见“DECLSPEC_IMPORT”的声明
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(123): error C2146: 语法错误: 缺少“;”(在标识符“mciGetDeviceIDW”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(123): error C2086: “int WINAPI”: 重定义
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(66) : 参见“WINAPI”的声明
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(124): error C2065: “LPCWSTR”: 未声明的标识符
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(125): error C2146: 语法错误: 缺少“)”(在标识符“pszDevice”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(125): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(125): error C2059: 语法错误:“)”
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(134): error C2146: 语法错误: 缺少“;”(在标识符“MCIDEVICEID”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(134): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(134): error C2086: “int DECLSPEC_IMPORT”: 重定义
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(64) : 参见“DECLSPEC_IMPORT”的声明
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(135): error C2146: 语法错误: 缺少“;”(在标识符“mciGetDeviceIDFromElementIDA”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(135): error C2086: “int WINAPI”: 重定义
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(66) : 参见“WINAPI”的声明
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(137): error C2061: 语法错误: 标识符“LPCSTR”
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(138): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(142): error C2146: 语法错误: 缺少“;”(在标识符“MCIDEVICEID”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(142): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(142): error C2086: “int DECLSPEC_IMPORT”: 重定义
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(64) : 参见“DECLSPEC_IMPORT”的声明
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(143): error C2146: 语法错误: 缺少“;”(在标识符“mciGetDeviceIDFromElementIDW”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(143): error C2086: “int WINAPI”: 重定义
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(66) : 参见“WINAPI”的声明
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(145): error C2061: 语法错误: 标识符“LPCWSTR”
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(146): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(155): error C2146: 语法错误: 缺少“;”(在标识符“BOOL”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(155): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(155): error C2086: “int DECLSPEC_IMPORT”: 重定义
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(64) : 参见“DECLSPEC_IMPORT”的声明
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(156): error C2146: 语法错误: 缺少“;”(在标识符“WINAPI”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(156): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(156): error C2146: 语法错误: 缺少“;”(在标识符“mciGetErrorStringA”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(156): error C2086: “int WINAPI”: 重定义
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(66) : 参见“WINAPI”的声明
+     1>C:\Program Files (x86)\Windows Kits\8.0\Include\um\mciapi.h(156): fatal error C1003: 错误计数超过 100；正在停止编译
+         condition_variable.cc
+         condition_variable_posix.cc
+     1>Z:\work\audio-module\system_wrappers/source/condition_variable_posix.h(14): fatal error C1083: 无法打开包括文件:“pthread.h”: No such file or directory
+         cpu_features.cc
+         cpu_info.cc
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+         critical_section.cc
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+         critical_section_posix.cc
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\common_types.h(311): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(311): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\common_types.h(726): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(726): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\system_wrappers/source/critical_section_posix.h(16): fatal error C1083: 无法打开包括文件:“pthread.h”: No such file or directory
+         data_log_c.cc
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2253: “scoped_ptr_impl<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(302): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2253: “scoped_ptr<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(474): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2253: “scoped_ptr<BAAB::T [0],D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(609): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T[],D>”的引用
+     1>Z:\work\audio-module\common_types.h(311): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(311): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\common_types.h(726): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(726): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\system_wrappers/interface/data_log_impl.h(144): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T>”的引用
+                 with
+                 [
+                     T=webrtc::CriticalSectionWrapper
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(389): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\base/scoped_ptr.h(389): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\base/scoped_ptr.h(463): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+                 with
+                 [
+                     T=webrtc::CriticalSectionWrapper,
+                     D=rtc::DefaultDeleter<webrtc::CriticalSectionWrapper>
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2238: 意外的标记位于“;”之前
+         event.cc
+     1>Z:\work\audio-module\base/event.h(14): fatal error C1083: 无法打开包括文件:“pthread.h”: No such file or directory
+         event_timer_posix.cc
+     1>Z:\work\audio-module\system_wrappers/source/event_timer_posix.h(16): fatal error C1083: 无法打开包括文件:“pthread.h”: No such file or directory
+         event_tracer.cc
+         file_impl.cc
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2253: “scoped_ptr_impl<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(302): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2253: “scoped_ptr<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(474): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2253: “scoped_ptr<BAAB::T [0],D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(609): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T[],D>”的引用
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\common_types.h(311): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(311): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\common_types.h(726): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(726): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\system_wrappers/source/file_impl.h(55): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T>”的引用
+                 with
+                 [
+                     T=webrtc::RWLockWrapper
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(389): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\base/scoped_ptr.h(389): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\base/scoped_ptr.h(463): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+                 with
+                 [
+                     T=webrtc::RWLockWrapper,
+                     D=rtc::DefaultDeleter<webrtc::RWLockWrapper>
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2238: 意外的标记位于“;”之前
+         logging.cc
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\common_types.h(311): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(311): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\common_types.h(726): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(726): error C3861: “strcasecmp”: 找不到标识符
+         rtp_to_ntp.cc
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2253: “scoped_ptr_impl<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(302): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2253: “scoped_ptr<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(474): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2253: “scoped_ptr<BAAB::T [0],D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(609): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T[],D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\system_wrappers/interface/clock.h(79): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T>”的引用
+                 with
+                 [
+                     T=webrtc::RWLockWrapper
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(389): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\base/scoped_ptr.h(389): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\base/scoped_ptr.h(463): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+                 with
+                 [
+                     T=webrtc::RWLockWrapper,
+                     D=rtc::DefaultDeleter<webrtc::RWLockWrapper>
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2238: 意外的标记位于“;”之前
+         rw_lock.cc
+         rw_lock_generic.cc
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\common_types.h(311): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(311): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\common_types.h(726): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(726): error C3861: “strcasecmp”: 找不到标识符
+         rw_lock_posix.cc
+     1>Z:\work\audio-module\system_wrappers/source/rw_lock_posix.h(17): fatal error C1083: 无法打开包括文件:“pthread.h”: No such file or directory
+         sleep.cc
+         正在生成代码...
+         正在编译...
+         sort.cc
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\common_types.h(311): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(311): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\common_types.h(726): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(726): error C3861: “strcasecmp”: 找不到标识符
+         thread.cc
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2253: “scoped_ptr_impl<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(302): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2253: “scoped_ptr<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(474): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2253: “scoped_ptr<BAAB::T [0],D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(609): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T[],D>”的引用
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\common_types.h(311): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(311): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\common_types.h(726): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(726): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\base/atomicops.h(47): error C3861: “__sync_add_and_fetch”: 找不到标识符
+     1>Z:\work\audio-module\base/atomicops.h(50): error C3861: “__sync_sub_and_fetch”: 找不到标识符
+     1>Z:\work\audio-module\base/atomicops.h(53): error C2065: “__ATOMIC_ACQUIRE”: 未声明的标识符
+     1>Z:\work\audio-module\base/atomicops.h(53): error C3861: “__atomic_load_n”: 找不到标识符
+     1>Z:\work\audio-module\base/atomicops.h(56): error C2065: “__ATOMIC_RELEASE”: 未声明的标识符
+     1>Z:\work\audio-module\base/atomicops.h(56): error C3861: “__atomic_store_n”: 找不到标识符
+     1>Z:\work\audio-module\base/atomicops.h(59): error C3861: “__sync_val_compare_and_swap”: 找不到标识符
+     1>Z:\work\audio-module\base/criticalsection.h(28): fatal error C1083: 无法打开包括文件:“pthread.h”: No such file or directory
+         thread_posix.cc
+     1>Z:\work\audio-module\base/event.h(14): fatal error C1083: 无法打开包括文件:“pthread.h”: No such file or directory
+         tick_util.cc
+         timestamp_extrapolator.cc
+         trace_impl.cc
+     1>Z:\work\audio-module\base/atomicops.h(47): error C3861: “__sync_add_and_fetch”: 找不到标识符
+     1>Z:\work\audio-module\base/atomicops.h(50): error C3861: “__sync_sub_and_fetch”: 找不到标识符
+     1>Z:\work\audio-module\base/atomicops.h(53): error C2065: “__ATOMIC_ACQUIRE”: 未声明的标识符
+     1>Z:\work\audio-module\base/atomicops.h(53): error C3861: “__atomic_load_n”: 找不到标识符
+     1>Z:\work\audio-module\base/atomicops.h(56): error C2065: “__ATOMIC_RELEASE”: 未声明的标识符
+     1>Z:\work\audio-module\base/atomicops.h(56): error C3861: “__atomic_store_n”: 找不到标识符
+     1>Z:\work\audio-module\base/atomicops.h(59): error C3861: “__sync_val_compare_and_swap”: 找不到标识符
+     1>Z:\work\audio-module\base/criticalsection.h(28): fatal error C1083: 无法打开包括文件:“pthread.h”: No such file or directory
+         trace_posix.cc
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\common_types.h(311): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(311): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\common_types.h(726): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(726): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\base/atomicops.h(47): error C3861: “__sync_add_and_fetch”: 找不到标识符
+     1>Z:\work\audio-module\base/atomicops.h(50): error C3861: “__sync_sub_and_fetch”: 找不到标识符
+     1>Z:\work\audio-module\base/atomicops.h(53): error C2065: “__ATOMIC_ACQUIRE”: 未声明的标识符
+     1>Z:\work\audio-module\base/atomicops.h(53): error C3861: “__atomic_load_n”: 找不到标识符
+     1>Z:\work\audio-module\base/atomicops.h(56): error C2065: “__ATOMIC_RELEASE”: 未声明的标识符
+     1>Z:\work\audio-module\base/atomicops.h(56): error C3861: “__atomic_store_n”: 找不到标识符
+     1>Z:\work\audio-module\base/atomicops.h(59): error C3861: “__sync_val_compare_and_swap”: 找不到标识符
+     1>Z:\work\audio-module\base/criticalsection.h(28): fatal error C1083: 无法打开包括文件:“pthread.h”: No such file or directory
+         data_log_no_op.cc
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2253: “scoped_ptr_impl<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(302): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2253: “scoped_ptr<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(474): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2253: “scoped_ptr<BAAB::T [0],D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(609): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T[],D>”的引用
+     1>Z:\work\audio-module\common_types.h(311): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(311): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\common_types.h(726): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(726): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\system_wrappers/interface/data_log_impl.h(144): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T>”的引用
+                 with
+                 [
+                     T=webrtc::CriticalSectionWrapper
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(389): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\base/scoped_ptr.h(389): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\base/scoped_ptr.h(463): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+                 with
+                 [
+                     T=webrtc::CriticalSectionWrapper,
+                     D=rtc::DefaultDeleter<webrtc::CriticalSectionWrapper>
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2238: 意外的标记位于“;”之前
+         metrics_default.cc
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\common_types.h(311): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(311): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\common_types.h(726): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(726): error C3861: “strcasecmp”: 找不到标识符
+         正在生成代码...
+     1>已完成生成项目“Z:\work\audio-module\win_build\system_wrappers\SystemWrapper.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:18.08

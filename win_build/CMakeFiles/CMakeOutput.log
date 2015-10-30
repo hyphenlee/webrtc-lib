@@ -1,0 +1,328 @@
+The system is: Windows - 6.2 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+0
+Microsoft(R) 生成引擎版本 4.0.30319.33440
+[Microsoft .NET Framework 版本 4.0.30319.34014]
+版权所有 (C) Microsoft Corporation。保留所有权利。
+
+生成启动时间为 2015/10/13 17:04:38。
+节点 1 上的项目“Z:\work\audio-module\win_build\CMakeFiles\3.2.3\CompilerIdC\CompilerIdC.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“Debug\”。
+InitializeBuildStatus:
+  正在创建“Debug\CompilerIdC.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> Z:\work\audio-module\win_build\CMakeFiles\3.2.3\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\cl.exe
+FinalizeBuildStatus:
+  正在删除文件“Debug\CompilerIdC.unsuccessfulbuild”。
+  正在对“Debug\CompilerIdC.lastbuildstate”执行 Touch 任务。
+已完成生成项目“Z:\work\audio-module\win_build\CMakeFiles\3.2.3\CompilerIdC\CompilerIdC.vcxproj”(默认目标)的操作。
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:01.70
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "Z:/work/audio-module/win_build/CMakeFiles/3.2.3/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+0
+Microsoft(R) 生成引擎版本 4.0.30319.33440
+[Microsoft .NET Framework 版本 4.0.30319.34014]
+版权所有 (C) Microsoft Corporation。保留所有权利。
+
+生成启动时间为 2015/10/13 17:04:40。
+节点 1 上的项目“Z:\work\audio-module\win_build\CMakeFiles\3.2.3\CompilerIdCXX\CompilerIdCXX.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“Debug\”。
+InitializeBuildStatus:
+  正在创建“Debug\CompilerIdCXX.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> Z:\work\audio-module\win_build\CMakeFiles\3.2.3\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\cl.exe
+FinalizeBuildStatus:
+  正在删除文件“Debug\CompilerIdCXX.unsuccessfulbuild”。
+  正在对“Debug\CompilerIdCXX.lastbuildstate”执行 Touch 任务。
+已完成生成项目“Z:\work\audio-module\win_build\CMakeFiles\3.2.3\CompilerIdCXX\CompilerIdCXX.vcxproj”(默认目标)的操作。
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:01.08
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "Z:/work/audio-module/win_build/CMakeFiles/3.2.3/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: Z:/work/audio-module/win_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTryCompileExec3114231757.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=11.0"
+Microsoft(R) 生成引擎版本 4.0.30319.33440
+[Microsoft .NET Framework 版本 4.0.30319.34014]
+版权所有 (C) Microsoft Corporation。保留所有权利。
+
+生成启动时间为 2015/10/13 17:04:42。
+节点 1 上的项目“Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\cmTryCompileExec3114231757.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTryCompileExec3114231757.dir\Debug\”。
+  正在创建目录“Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\Debug\”。
+InitializeBuildStatus:
+  正在创建“cmTryCompileExec3114231757.dir\Debug\cmTryCompileExec3114231757.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec3114231757.dir\Debug\\" /Fd"cmTryCompileExec3114231757.dir\Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:queue "Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\testCCompiler.c"
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 17.00.50727.1 版版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec3114231757.dir\Debug\\" /Fd"cmTryCompileExec3114231757.dir\Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:queue "Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\testCCompiler.c"
+  testCCompiler.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3114231757.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"Z:/work/audio-module/win_build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3114231757.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Z:/work/audio-module/win_build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3114231757.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec3114231757.dir\Debug\testCCompiler.obj
+  cmTryCompileExec3114231757.vcxproj -> Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3114231757.exe
+FinalizeBuildStatus:
+  正在删除文件“cmTryCompileExec3114231757.dir\Debug\cmTryCompileExec3114231757.unsuccessfulbuild”。
+  正在对“cmTryCompileExec3114231757.dir\Debug\cmTryCompileExec3114231757.lastbuildstate”执行 Touch 任务。
+已完成生成项目“Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\cmTryCompileExec3114231757.vcxproj”(默认目标)的操作。
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:01.29
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: Z:/work/audio-module/win_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTryCompileExec2942511643.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=11.0"
+Microsoft(R) 生成引擎版本 4.0.30319.33440
+[Microsoft .NET Framework 版本 4.0.30319.34014]
+版权所有 (C) Microsoft Corporation。保留所有权利。
+
+生成启动时间为 2015/10/13 17:04:43。
+节点 1 上的项目“Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\cmTryCompileExec2942511643.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTryCompileExec2942511643.dir\Debug\”。
+  正在创建目录“Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\Debug\”。
+InitializeBuildStatus:
+  正在创建“cmTryCompileExec2942511643.dir\Debug\cmTryCompileExec2942511643.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec2942511643.dir\Debug\\" /Fd"cmTryCompileExec2942511643.dir\Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCCompilerABI.c"
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 17.00.50727.1 版版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec2942511643.dir\Debug\\" /Fd"cmTryCompileExec2942511643.dir\Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCCompilerABI.c"
+  CMakeCCompilerABI.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2942511643.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"Z:/work/audio-module/win_build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2942511643.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Z:/work/audio-module/win_build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2942511643.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec2942511643.dir\Debug\CMakeCCompilerABI.obj
+  cmTryCompileExec2942511643.vcxproj -> Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2942511643.exe
+FinalizeBuildStatus:
+  正在删除文件“cmTryCompileExec2942511643.dir\Debug\cmTryCompileExec2942511643.unsuccessfulbuild”。
+  正在对“cmTryCompileExec2942511643.dir\Debug\cmTryCompileExec2942511643.lastbuildstate”执行 Touch 任务。
+已完成生成项目“Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\cmTryCompileExec2942511643.vcxproj”(默认目标)的操作。
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:01.05
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: Z:/work/audio-module/win_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTryCompileExec4271858317.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=11.0"
+Microsoft(R) 生成引擎版本 4.0.30319.33440
+[Microsoft .NET Framework 版本 4.0.30319.34014]
+版权所有 (C) Microsoft Corporation。保留所有权利。
+
+生成启动时间为 2015/10/13 17:04:45。
+节点 1 上的项目“Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\cmTryCompileExec4271858317.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTryCompileExec4271858317.dir\Debug\”。
+  正在创建目录“Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\Debug\”。
+InitializeBuildStatus:
+  正在创建“cmTryCompileExec4271858317.dir\Debug\cmTryCompileExec4271858317.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec4271858317.dir\Debug\\" /Fd"cmTryCompileExec4271858317.dir\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:queue "Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 17.00.50727.1 版版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec4271858317.dir\Debug\\" /Fd"cmTryCompileExec4271858317.dir\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:queue "Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  testCXXCompiler.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec4271858317.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"Z:/work/audio-module/win_build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec4271858317.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Z:/work/audio-module/win_build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec4271858317.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec4271858317.dir\Debug\testCXXCompiler.obj
+  cmTryCompileExec4271858317.vcxproj -> Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec4271858317.exe
+FinalizeBuildStatus:
+  正在删除文件“cmTryCompileExec4271858317.dir\Debug\cmTryCompileExec4271858317.unsuccessfulbuild”。
+  正在对“cmTryCompileExec4271858317.dir\Debug\cmTryCompileExec4271858317.lastbuildstate”执行 Touch 任务。
+已完成生成项目“Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\cmTryCompileExec4271858317.vcxproj”(默认目标)的操作。
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:01.10
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: Z:/work/audio-module/win_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTryCompileExec1659484334.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=11.0"
+Microsoft(R) 生成引擎版本 4.0.30319.33440
+[Microsoft .NET Framework 版本 4.0.30319.34014]
+版权所有 (C) Microsoft Corporation。保留所有权利。
+
+生成启动时间为 2015/10/13 17:04:46。
+节点 1 上的项目“Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\cmTryCompileExec1659484334.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTryCompileExec1659484334.dir\Debug\”。
+  正在创建目录“Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\Debug\”。
+InitializeBuildStatus:
+  正在创建“cmTryCompileExec1659484334.dir\Debug\cmTryCompileExec1659484334.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec1659484334.dir\Debug\\" /Fd"cmTryCompileExec1659484334.dir\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCXXCompilerABI.cpp"
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 17.00.50727.1 版版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec1659484334.dir\Debug\\" /Fd"cmTryCompileExec1659484334.dir\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCXXCompilerABI.cpp"
+  CMakeCXXCompilerABI.cpp
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1659484334.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"Z:/work/audio-module/win_build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1659484334.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Z:/work/audio-module/win_build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1659484334.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec1659484334.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTryCompileExec1659484334.vcxproj -> Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1659484334.exe
+FinalizeBuildStatus:
+  正在删除文件“cmTryCompileExec1659484334.dir\Debug\cmTryCompileExec1659484334.unsuccessfulbuild”。
+  正在对“cmTryCompileExec1659484334.dir\Debug\cmTryCompileExec1659484334.lastbuildstate”执行 Touch 任务。
+已完成生成项目“Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\cmTryCompileExec1659484334.vcxproj”(默认目标)的操作。
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:01.06
+
+
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: Z:/work/audio-module/win_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTryCompileExec3988586359.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=11.0"
+Microsoft(R) 生成引擎版本 4.0.30319.33440
+[Microsoft .NET Framework 版本 4.0.30319.34014]
+版权所有 (C) Microsoft Corporation。保留所有权利。
+
+生成启动时间为 2015/10/13 17:04:48。
+节点 1 上的项目“Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\cmTryCompileExec3988586359.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTryCompileExec3988586359.dir\Debug\”。
+  正在创建目录“Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\Debug\”。
+InitializeBuildStatus:
+  正在创建“cmTryCompileExec3988586359.dir\Debug\cmTryCompileExec3988586359.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3988586359.dir\Debug\\" /Fd"cmTryCompileExec3988586359.dir\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:queue "Z:\work\audio-module\win_build\CMakeFiles\feature_tests.cxx"
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 17.00.50727.1 版版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3988586359.dir\Debug\\" /Fd"cmTryCompileExec3988586359.dir\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:queue "Z:\work\audio-module\win_build\CMakeFiles\feature_tests.cxx"
+  feature_tests.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3988586359.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"Z:/work/audio-module/win_build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3988586359.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Z:/work/audio-module/win_build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3988586359.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec3988586359.dir\Debug\feature_tests.obj
+  cmTryCompileExec3988586359.vcxproj -> Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3988586359.exe
+FinalizeBuildStatus:
+  正在删除文件“cmTryCompileExec3988586359.dir\Debug\cmTryCompileExec3988586359.unsuccessfulbuild”。
+  正在对“cmTryCompileExec3988586359.dir\Debug\cmTryCompileExec3988586359.lastbuildstate”执行 Touch 任务。
+已完成生成项目“Z:\work\audio-module\win_build\CMakeFiles\CMakeTmp\cmTryCompileExec3988586359.vcxproj”(默认目标)的操作。
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:00.99
+
+
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates

@@ -1,0 +1,10 @@
+Z:/work/audio-module/win_build/audio_device/CMakeFiles/AudioDevice.dir
+Z:/work/audio-module/win_build/test/CMakeFiles/main.dir
+Z:/work/audio-module/win_build/CMakeFiles/ALL_BUILD.dir
+Z:/work/audio-module/win_build/common_audio/CMakeFiles/CommonAudio.dir
+Z:/work/audio-module/win_build/system_wrappers/CMakeFiles/SystemWrapper.dir
+Z:/work/audio-module/win_build/base/CMakeFiles/BASE.dir
+Z:/work/audio-module/win_build/CMakeFiles/ZERO_CHECK.dir
+Z:/work/audio-module/win_build/audio_coding/CMakeFiles/AudioCoding.dir
+Z:/work/audio-module/win_build/audio_processing/CMakeFiles/AudioProcessing.dir
+Z:/work/audio-module/win_build/CMakeFiles/COMMON.dir

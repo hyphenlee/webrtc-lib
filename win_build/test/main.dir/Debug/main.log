@@ -1,0 +1,19 @@
+﻿生成启动时间为 2015/10/13 17:12:05。
+     1>项目“Z:\work\audio-module\win_build\test\main.vcxproj”在节点 4 上(Build 个目标)。
+     1>CustomBuild:
+         Building Custom Rule Z:/work/audio-module/test/CMakeLists.txt
+         CMake does not need to re-run because Z:\work\audio-module\win_build\test\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"Z:\work\audio-module" /I"Z:\work\audio-module\audio_device\include" /I"Z:\work\audio-module\audio_device" /Zi /nologo /W1 /WX- /Od /Ob0 /Oy- /D WEBRTC_POSI /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"main.dir\Debug\\" /Fd"main.dir\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt  -std=c++11 -msse2 -g "Z:\work\audio-module\test\main.cpp"
+     1>cl : 命令行 warning D9002: 忽略未知选项“-std=c++11”
+     1>cl : 命令行 warning D9002: 忽略未知选项“-msse2”
+     1>cl : 命令行 warning D9002: 忽略未知选项“-g”
+         main.cpp
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\interface/module.h(76): error C2065: “default”: 未声明的标识符
+     1>Z:\work\audio-module\interface/module.h(76): error C2258: 非法的纯语法，必须为“= 0”
+     1>已完成生成项目“Z:\work\audio-module\win_build\test\main.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.77

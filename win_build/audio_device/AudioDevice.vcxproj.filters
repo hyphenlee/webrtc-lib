@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Z:\work\audio-module\audio_device\audio_device_buffer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_device\audio_device_generic.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_device\dummy\audio_device_dummy.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_device\dummy\file_audio_device.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_device\fine_audio_buffer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_device\audio_device_impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_device\mac\audio_device_mac.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_device\mac\audio_mixer_manager_mac.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_device\mac\portaudio\pa_ringbuffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_device\dummy\file_audio_device_factory.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Z:\work\audio-module\audio_device\audio_device_buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_device\audio_device_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_device\audio_device_generic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_device\dummy\audio_device_dummy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_device\dummy\file_audio_device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_device\fine_audio_buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_device\include\audio_device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_device\include\audio_device_defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_device\audio_device_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_device\mac\audio_device_mac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_device\mac\audio_mixer_manager_mac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_device\mac\portaudio\pa_memorybarrier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_device\mac\portaudio\pa_ringbuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_device\dummy\file_audio_device_factory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Z:\work\audio-module\audio_device\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{40164A58-12EF-444D-AABB-AD3E40CEB796}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F3A20527-007F-49E3-A606-7BA8B0E18827}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

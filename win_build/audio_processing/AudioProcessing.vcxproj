@@ -1,0 +1,536 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{57F80EDC-7918-4F4D-A32A-B17B92AE476C}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>AudioProcessing</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Z:\work\audio-module\win_build\bin\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AudioProcessing.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AudioProcessing</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Z:\work\audio-module\win_build\bin\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AudioProcessing.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AudioProcessing</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Z:\work\audio-module\win_build\bin\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">AudioProcessing.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">AudioProcessing</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Z:\work\audio-module\win_build\bin\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">AudioProcessing.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">AudioProcessing</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -std=c++11 -msse2 -g %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>WEBRTC_POSI;_DEBUG;WEBRTC_NS_FIXED;CMAKE_INTDIR="Debug";AudioProcessing_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WEBRTC_POSI;_DEBUG;WEBRTC_NS_FIXED;CMAKE_INTDIR=\"Debug\";AudioProcessing_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\common_audio\Debug\CommonAudio.lib;..\system_wrappers\Debug\SystemWrapper.lib;..\Debug\COMMON.lib;..\base\Debug\BASE.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>Z:/work/audio-module/win_build/audio_processing/Debug/AudioProcessing.lib</ImportLibrary>
+      <ProgramDataBaseFile>Z:/work/audio-module/win_build/bin/Debug/AudioProcessing.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -std=c++11 -msse2 -g %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>WEBRTC_POSI;NDEBUG;WEBRTC_NS_FIXED;CMAKE_INTDIR="Release";AudioProcessing_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WEBRTC_POSI;NDEBUG;WEBRTC_NS_FIXED;CMAKE_INTDIR=\"Release\";AudioProcessing_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\common_audio\Release\CommonAudio.lib;..\system_wrappers\Release\SystemWrapper.lib;..\Release\COMMON.lib;..\base\Release\BASE.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>Z:/work/audio-module/win_build/audio_processing/Release/AudioProcessing.lib</ImportLibrary>
+      <ProgramDataBaseFile>Z:/work/audio-module/win_build/bin/Release/AudioProcessing.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -std=c++11 -msse2 -g %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>WEBRTC_POSI;NDEBUG;WEBRTC_NS_FIXED;CMAKE_INTDIR="MinSizeRel";AudioProcessing_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WEBRTC_POSI;NDEBUG;WEBRTC_NS_FIXED;CMAKE_INTDIR=\"MinSizeRel\";AudioProcessing_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\common_audio\MinSizeRel\CommonAudio.lib;..\system_wrappers\MinSizeRel\SystemWrapper.lib;..\MinSizeRel\COMMON.lib;..\base\MinSizeRel\BASE.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>Z:/work/audio-module/win_build/audio_processing/MinSizeRel/AudioProcessing.lib</ImportLibrary>
+      <ProgramDataBaseFile>Z:/work/audio-module/win_build/bin/MinSizeRel/AudioProcessing.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -std=c++11 -msse2 -g %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>WEBRTC_POSI;NDEBUG;WEBRTC_NS_FIXED;CMAKE_INTDIR="RelWithDebInfo";AudioProcessing_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WEBRTC_POSI;NDEBUG;WEBRTC_NS_FIXED;CMAKE_INTDIR=\"RelWithDebInfo\";AudioProcessing_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\common_audio\RelWithDebInfo\CommonAudio.lib;..\system_wrappers\RelWithDebInfo\SystemWrapper.lib;..\RelWithDebInfo\COMMON.lib;..\base\RelWithDebInfo\BASE.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>Z:/work/audio-module/win_build/audio_processing/RelWithDebInfo/AudioProcessing.lib</ImportLibrary>
+      <ProgramDataBaseFile>Z:/work/audio-module/win_build/bin/RelWithDebInfo/AudioProcessing.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="Z:\work\audio-module\audio_processing\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule Z:/work/audio-module/audio_processing/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HZ:/work/audio-module -BZ:/work/audio-module/win_build --check-stamp-file Z:\work\audio-module\win_build\audio_processing\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Z:/work/audio-module/audio_processing/CMakeLists.txt;Z:\work\audio-module\audio_processing\CMakeLists.txt;Z:\work\audio-module\audio_processing\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Z:\work\audio-module\win_build\audio_processing\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule Z:/work/audio-module/audio_processing/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HZ:/work/audio-module -BZ:/work/audio-module/win_build --check-stamp-file Z:\work\audio-module\win_build\audio_processing\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Z:/work/audio-module/audio_processing/CMakeLists.txt;Z:\work\audio-module\audio_processing\CMakeLists.txt;Z:\work\audio-module\audio_processing\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Z:\work\audio-module\win_build\audio_processing\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule Z:/work/audio-module/audio_processing/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HZ:/work/audio-module -BZ:/work/audio-module/win_build --check-stamp-file Z:\work\audio-module\win_build\audio_processing\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Z:/work/audio-module/audio_processing/CMakeLists.txt;Z:\work\audio-module\audio_processing\CMakeLists.txt;Z:\work\audio-module\audio_processing\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Z:\work\audio-module\win_build\audio_processing\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule Z:/work/audio-module/audio_processing/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HZ:/work/audio-module -BZ:/work/audio-module/win_build --check-stamp-file Z:\work\audio-module\win_build\audio_processing\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Z:/work/audio-module/audio_processing/CMakeLists.txt;Z:\work\audio-module\audio_processing\CMakeLists.txt;Z:\work\audio-module\audio_processing\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Z:\work\audio-module\win_build\audio_processing\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\aec\aec_core.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\aec\aec_core_internal.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\aec\aec_rdft.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\aec\aec_resampler.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\aec\echo_cancellation_internal.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\aec\include\echo_cancellation.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\aecm\aecm_core.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\aecm\include\echo_control_mobile.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\agc\agc.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\agc\agc_manager_direct.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\agc\gain_map_internal.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\agc\histogram.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\agc\legacy\analog_agc.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\agc\legacy\digital_agc.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\agc\legacy\gain_control.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\agc\utility.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\audio_buffer.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\audio_processing_impl.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\beamformer\beamformer.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\beamformer\complex_matrix.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\beamformer\covariance_matrix_generator.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\beamformer\matrix.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\beamformer\nonlinear_beamformer.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\common.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\echo_cancellation_impl.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\echo_control_mobile_impl.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\gain_control_impl.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\high_pass_filter_impl.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\include\audio_processing.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\intelligibility\intelligibility_enhancer.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\intelligibility\intelligibility_utils.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\level_estimator_impl.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\logging\aec_logging.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\logging\aec_logging_file_handling.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\noise_suppression_impl.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\processing_component.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\rms_level.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\splitting_filter.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\three_band_filter_bank.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\transient\common.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\transient\daubechies_8_wavelet_coeffs.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\transient\dyadic_decimator.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\transient\moving_moments.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\transient\transient_detector.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\transient\transient_suppressor.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\transient\wpd_node.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\transient\wpd_tree.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\typing_detection.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\utility\delay_estimator.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\utility\delay_estimator_internal.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\utility\delay_estimator_wrapper.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\vad\common.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\vad\gmm.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\vad\noise_gmm_tables.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\vad\pitch_based_vad.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\vad\pitch_internal.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\vad\pole_zero_filter.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\vad\standalone_vad.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\vad\vad_audio_proc.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\vad\vad_audio_proc_internal.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\vad\vad_circular_buffer.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\vad\voice_activity_detector.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\vad\voice_gmm_tables.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\voice_detection_impl.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\ns\include\noise_suppression_x.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\ns\nsx_core.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_processing\ns\nsx_defines.h" />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\aec\aec_core.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\aec\aec_rdft.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\aec\aec_resampler.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\aec\echo_cancellation.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\aecm\aecm_core.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\aecm\echo_control_mobile.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\agc\agc.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\agc\agc_manager_direct.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\agc\histogram.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\agc\legacy\analog_agc.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\agc\legacy\digital_agc.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\agc\utility.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\audio_buffer.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\audio_processing_impl.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\beamformer\covariance_matrix_generator.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\beamformer\nonlinear_beamformer.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\echo_cancellation_impl.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\echo_control_mobile_impl.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\gain_control_impl.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\high_pass_filter_impl.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\intelligibility\intelligibility_enhancer.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\intelligibility\intelligibility_utils.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\level_estimator_impl.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\logging\aec_logging_file_handling.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\noise_suppression_impl.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\processing_component.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\rms_level.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\splitting_filter.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\three_band_filter_bank.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\transient\moving_moments.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\transient\transient_detector.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\transient\transient_suppressor.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\transient\wpd_node.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\transient\wpd_tree.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\typing_detection.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\utility\delay_estimator.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\utility\delay_estimator_wrapper.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\vad\gmm.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\vad\pitch_based_vad.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\vad\pitch_internal.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\vad\pole_zero_filter.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\vad\standalone_vad.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\vad\vad_audio_proc.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\vad\vad_circular_buffer.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\vad\voice_activity_detector.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\voice_detection_impl.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_processing\ns\noise_suppression_x.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\ns\nsx_core.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\aecm\aecm_core_c.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\aec\aec_core_sse2.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\aec\aec_rdft_sse2.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\ns\nsx_core_c.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Z:/work/audio-module/win_build/base/BASE.vcxproj">
+      <Project>23B1C1F3-04B4-4CB8-B23B-B6CFA0B92796</Project>
+    </ProjectReference>
+    <ProjectReference Include="Z:/work/audio-module/win_build/COMMON.vcxproj">
+      <Project>4DD0F72E-62C6-4F05-ACA9-62843CEDF07A</Project>
+    </ProjectReference>
+    <ProjectReference Include="Z:/work/audio-module/win_build/common_audio/CommonAudio.vcxproj">
+      <Project>8FA5AB5C-1376-49CA-A5CD-A5891CAFADFC</Project>
+    </ProjectReference>
+    <ProjectReference Include="Z:/work/audio-module/win_build/system_wrappers/SystemWrapper.vcxproj">
+      <Project>A445BAC5-849B-4F3A-B936-00FE2C807708</Project>
+    </ProjectReference>
+    <ProjectReference Include="Z:/work/audio-module/win_build/ZERO_CHECK.vcxproj">
+      <Project>9748292D-BD89-49F0-971B-BBE9485FE765</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\aec\aec_core.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\aec\aec_rdft.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\aec\aec_resampler.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\aec\echo_cancellation.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\aecm\aecm_core.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\aecm\echo_control_mobile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\agc\agc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\agc\agc_manager_direct.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\agc\histogram.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\agc\legacy\analog_agc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\agc\legacy\digital_agc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\agc\utility.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\audio_buffer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\audio_processing_impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\beamformer\covariance_matrix_generator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\beamformer\nonlinear_beamformer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\echo_cancellation_impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\echo_control_mobile_impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\gain_control_impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\high_pass_filter_impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\intelligibility\intelligibility_enhancer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\intelligibility\intelligibility_utils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\level_estimator_impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\logging\aec_logging_file_handling.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\noise_suppression_impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\processing_component.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\rms_level.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\splitting_filter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\three_band_filter_bank.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\transient\moving_moments.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\transient\transient_detector.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\transient\transient_suppressor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\transient\wpd_node.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\transient\wpd_tree.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\typing_detection.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\utility\delay_estimator.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\utility\delay_estimator_wrapper.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\vad\gmm.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\vad\pitch_based_vad.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\vad\pitch_internal.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\vad\pole_zero_filter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\vad\standalone_vad.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\vad\vad_audio_proc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\vad\vad_circular_buffer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\vad\voice_activity_detector.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\voice_detection_impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\ns\noise_suppression_x.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\ns\nsx_core.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\aecm\aecm_core_c.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\aec\aec_core_sse2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\aec\aec_rdft_sse2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_processing\ns\nsx_core_c.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\aec\aec_core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\aec\aec_core_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\aec\aec_rdft.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\aec\aec_resampler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\aec\echo_cancellation_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\aec\include\echo_cancellation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\aecm\aecm_core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\aecm\include\echo_control_mobile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\agc\agc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\agc\agc_manager_direct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\agc\gain_map_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\agc\histogram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\agc\legacy\analog_agc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\agc\legacy\digital_agc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\agc\legacy\gain_control.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\agc\utility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\audio_buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\audio_processing_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\beamformer\beamformer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\beamformer\complex_matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\beamformer\covariance_matrix_generator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\beamformer\matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\beamformer\nonlinear_beamformer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\echo_cancellation_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\echo_control_mobile_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\gain_control_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\high_pass_filter_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\include\audio_processing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\intelligibility\intelligibility_enhancer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\intelligibility\intelligibility_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\level_estimator_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\logging\aec_logging.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\logging\aec_logging_file_handling.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\noise_suppression_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\processing_component.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\rms_level.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\splitting_filter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\three_band_filter_bank.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\transient\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\transient\daubechies_8_wavelet_coeffs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\transient\dyadic_decimator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\transient\moving_moments.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\transient\transient_detector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\transient\transient_suppressor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\transient\wpd_node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\transient\wpd_tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\typing_detection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\utility\delay_estimator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\utility\delay_estimator_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\utility\delay_estimator_wrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\vad\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\vad\gmm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\vad\noise_gmm_tables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\vad\pitch_based_vad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\vad\pitch_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\vad\pole_zero_filter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\vad\standalone_vad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\vad\vad_audio_proc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\vad\vad_audio_proc_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\vad\vad_circular_buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\vad\voice_activity_detector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\vad\voice_gmm_tables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\voice_detection_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\ns\include\noise_suppression_x.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\ns\nsx_core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\work\audio-module\audio_processing\ns\nsx_defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Z:\work\audio-module\audio_processing\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{40164A58-12EF-444D-AABB-AD3E40CEB796}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F3A20527-007F-49E3-A606-7BA8B0E18827}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

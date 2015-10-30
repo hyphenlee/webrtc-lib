@@ -1,0 +1,184 @@
+﻿生成启动时间为 2015/10/13 17:11:28。
+     1>项目“Z:\work\audio-module\win_build\audio_device\AudioDevice.vcxproj”在节点 3 上(Build 个目标)。
+     1>CustomBuild:
+         Building Custom Rule Z:/work/audio-module/audio_device/CMakeLists.txt
+         CMake does not need to re-run because Z:\work\audio-module\win_build\audio_device\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"Z:\work\audio-module" /Zi /nologo /W1 /WX- /Od /Ob0 /Oy- /D WEBRTC_POSI /D _DEBUG /D WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"AudioDevice.dir\Debug\\" /Fd"AudioDevice.dir\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt  -std=c++11 -msse2 -g "Z:\work\audio-module\audio_device\audio_device_buffer.cc" "Z:\work\audio-module\audio_device\audio_device_generic.cc" "Z:\work\audio-module\audio_device\dummy\audio_device_dummy.cc" "Z:\work\audio-module\audio_device\dummy\file_audio_device.cc" "Z:\work\audio-module\audio_device\fine_audio_buffer.cc" "Z:\work\audio-module\audio_device\audio_device_impl.cc" "Z:\work\audio-module\audio_device\mac\audio_device_mac.cc" "Z:\work\audio-module\audio_device\mac\audio_mixer_manager_mac.cc" "Z:\work\audio-module\audio_device\dummy\file_audio_device_factory.cc"
+     1>cl : 命令行 warning D9002: 忽略未知选项“-std=c++11”
+     1>cl : 命令行 warning D9002: 忽略未知选项“-msse2”
+     1>cl : 命令行 warning D9002: 忽略未知选项“-g”
+         audio_device_buffer.cc
+     1>Z:\work\audio-module\interface/module.h(76): error C2065: “default”: 未声明的标识符
+     1>Z:\work\audio-module\interface/module.h(76): error C2258: 非法的纯语法，必须为“= 0”
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\common_types.h(311): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(311): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\common_types.h(726): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(726): error C3861: “strcasecmp”: 找不到标识符
+         audio_device_generic.cc
+     1>Z:\work\audio-module\interface/module.h(76): error C2065: “default”: 未声明的标识符
+     1>Z:\work\audio-module\interface/module.h(76): error C2258: 非法的纯语法，必须为“= 0”
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\common_types.h(311): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(311): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\common_types.h(726): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(726): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\base/atomicops.h(47): error C3861: “__sync_add_and_fetch”: 找不到标识符
+     1>Z:\work\audio-module\base/atomicops.h(50): error C3861: “__sync_sub_and_fetch”: 找不到标识符
+     1>Z:\work\audio-module\base/atomicops.h(53): error C2065: “__ATOMIC_ACQUIRE”: 未声明的标识符
+     1>Z:\work\audio-module\base/atomicops.h(53): error C3861: “__atomic_load_n”: 找不到标识符
+     1>Z:\work\audio-module\base/atomicops.h(56): error C2065: “__ATOMIC_RELEASE”: 未声明的标识符
+     1>Z:\work\audio-module\base/atomicops.h(56): error C3861: “__atomic_store_n”: 找不到标识符
+     1>Z:\work\audio-module\base/atomicops.h(59): error C3861: “__sync_val_compare_and_swap”: 找不到标识符
+     1>Z:\work\audio-module\base/criticalsection.h(28): fatal error C1083: 无法打开包括文件:“pthread.h”: No such file or directory
+         audio_device_dummy.cc
+     1>Z:\work\audio-module\interface/module.h(76): error C2065: “default”: 未声明的标识符
+     1>Z:\work\audio-module\interface/module.h(76): error C2258: 非法的纯语法，必须为“= 0”
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\common_types.h(311): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(311): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\common_types.h(726): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(726): error C3861: “strcasecmp”: 找不到标识符
+         file_audio_device.cc
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\interface/module.h(76): error C2065: “default”: 未声明的标识符
+     1>Z:\work\audio-module\interface/module.h(76): error C2258: 非法的纯语法，必须为“= 0”
+     1>Z:\work\audio-module\common_types.h(311): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(311): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\common_types.h(726): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(726): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2253: “scoped_ptr_impl<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(302): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2253: “scoped_ptr<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(474): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2253: “scoped_ptr<BAAB::T [0],D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(609): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T[],D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\system_wrappers/interface/clock.h(79): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T>”的引用
+                 with
+                 [
+                     T=webrtc::RWLockWrapper
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(389): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\base/scoped_ptr.h(389): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\base/scoped_ptr.h(463): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+                 with
+                 [
+                     T=webrtc::RWLockWrapper,
+                     D=rtc::DefaultDeleter<webrtc::RWLockWrapper>
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2238: 意外的标记位于“;”之前
+         fine_audio_buffer.cc
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2253: “scoped_ptr_impl<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(302): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2253: “scoped_ptr<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(474): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2253: “scoped_ptr<BAAB::T [0],D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(609): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T[],D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\audio_device/fine_audio_buffer.h(89): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T>”的引用
+                 with
+                 [
+                     T=int8_t []
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(522): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\base/scoped_ptr.h(522): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\base/scoped_ptr.h(588): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+                 with
+                 [
+                     T=signed char,
+                     D=rtc::DefaultDeleter<signed char []>
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2238: 意外的标记位于“;”之前
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\base/atomicops.h(47): error C3861: “__sync_add_and_fetch”: 找不到标识符
+     1>Z:\work\audio-module\base/atomicops.h(50): error C3861: “__sync_sub_and_fetch”: 找不到标识符
+     1>Z:\work\audio-module\base/atomicops.h(53): error C2065: “__ATOMIC_ACQUIRE”: 未声明的标识符
+     1>Z:\work\audio-module\base/atomicops.h(53): error C3861: “__atomic_load_n”: 找不到标识符
+     1>Z:\work\audio-module\base/atomicops.h(56): error C2065: “__ATOMIC_RELEASE”: 未声明的标识符
+     1>Z:\work\audio-module\base/atomicops.h(56): error C3861: “__atomic_store_n”: 找不到标识符
+     1>Z:\work\audio-module\base/atomicops.h(59): error C3861: “__sync_val_compare_and_swap”: 找不到标识符
+     1>Z:\work\audio-module\base/criticalsection.h(28): fatal error C1083: 无法打开包括文件:“pthread.h”: No such file or directory
+         audio_device_impl.cc
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2253: “scoped_ptr_impl<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(302): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2253: “scoped_ptr<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(474): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2253: “scoped_ptr<BAAB::T [0],D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(609): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T[],D>”的引用
+     1>Z:\work\audio-module\interface/module.h(76): error C2065: “default”: 未声明的标识符
+     1>Z:\work\audio-module\interface/module.h(76): error C2258: 非法的纯语法，必须为“= 0”
+     1>Z:\work\audio-module\common_types.h(311): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(311): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\common_types.h(726): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(726): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\system_wrappers/interface/atomic32.h(59): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\system_wrappers/interface/atomic32.h(59): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\audio_device\audio_device_impl.cc(21): fatal error C1083: 无法打开包括文件:“audio_device_wave_win.h”: No such file or directory
+         audio_device_mac.cc
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2253: “scoped_ptr_impl<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(302): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2253: “scoped_ptr<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(474): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2253: “scoped_ptr<BAAB::T [0],D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(609): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T[],D>”的引用
+     1>Z:\work\audio-module\interface/module.h(76): error C2065: “default”: 未声明的标识符
+     1>Z:\work\audio-module\interface/module.h(76): error C2258: 非法的纯语法，必须为“= 0”
+     1>Z:\work\audio-module\common_types.h(311): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(311): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\common_types.h(726): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(726): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\audio_device/mac/audio_mixer_manager_mac.h(18): fatal error C1083: 无法打开包括文件:“CoreAudio/CoreAudio.h”: No such file or directory
+         audio_mixer_manager_mac.cc
+     1>Z:\work\audio-module\interface/module.h(76): error C2065: “default”: 未声明的标识符
+     1>Z:\work\audio-module\interface/module.h(76): error C2258: 非法的纯语法，必须为“= 0”
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\common_types.h(311): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(311): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\common_types.h(726): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(726): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\audio_device/mac/audio_mixer_manager_mac.h(18): fatal error C1083: 无法打开包括文件:“CoreAudio/CoreAudio.h”: No such file or directory
+         file_audio_device_factory.cc
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>Z:\work\audio-module\common_types.h(311): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(311): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\common_types.h(726): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>Z:\work\audio-module\common_types.h(726): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\interface/module.h(76): error C2065: “default”: 未声明的标识符
+     1>Z:\work\audio-module\interface/module.h(76): error C2258: 非法的纯语法，必须为“= 0”
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2253: “scoped_ptr_impl<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(302): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2253: “scoped_ptr<T,D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(474): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T,D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(521): error C2253: “scoped_ptr<BAAB::T [0],D>”: 纯说明符或抽象重写说明符只允许在虚函数上使用
+                 Z:\work\audio-module\base/scoped_ptr.h(609): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T[],D>”的引用
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\system_wrappers/interface/clock.h(79): 参见对正在编译的类 模板 实例化“rtc::scoped_ptr<T>”的引用
+                 with
+                 [
+                     T=webrtc::RWLockWrapper
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(388): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(389): error C2059: 语法错误:“;”
+     1>Z:\work\audio-module\base/scoped_ptr.h(389): error C2238: 意外的标记位于“;”之前
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2059: 语法错误:“;”
+                 Z:\work\audio-module\base/scoped_ptr.h(463): 参见对正在编译的类 模板 实例化“rtc::internal::scoped_ptr_impl<T,D>”的引用
+                 with
+                 [
+                     T=webrtc::RWLockWrapper,
+                     D=rtc::DefaultDeleter<webrtc::RWLockWrapper>
+                 ]
+     1>Z:\work\audio-module\base/scoped_ptr.h(301): error C2238: 意外的标记位于“;”之前
+         正在生成代码...
+     1>已完成生成项目“Z:\work\audio-module\win_build\audio_device\AudioDevice.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:10.85

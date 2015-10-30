@@ -1,5 +1,4 @@
 /Users/lihaifeng/work/audio-module/build/system_wrappers/CMakeFiles/SystemWrapper.dir
-/Users/lihaifeng/work/audio-module/build/audio_device/CMakeFiles/AudioDevice.dir
 /Users/lihaifeng/work/audio-module/build/test/CMakeFiles/main.dir
 /Users/lihaifeng/work/audio-module/build/CMakeFiles/ALL_BUILD.dir
 /Users/lihaifeng/work/audio-module/build/common_audio/CMakeFiles/CommonAudio.dir

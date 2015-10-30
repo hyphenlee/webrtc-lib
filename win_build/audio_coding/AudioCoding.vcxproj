@@ -1,0 +1,1351 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{A6C5CBDD-92C1-4AB6-B9C6-B8094E64354E}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>AudioCoding</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Z:\work\audio-module\win_build\audio_coding\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AudioCoding.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AudioCoding</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Z:\work\audio-module\win_build\audio_coding\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AudioCoding.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AudioCoding</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Z:\work\audio-module\win_build\audio_coding\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">AudioCoding.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">AudioCoding</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Z:\work\audio-module\win_build\audio_coding\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">AudioCoding.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">AudioCoding</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -std=c++11 -msse2 -g %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;Z:\work\audio-module\audio_coding\codecs\cng\include;Z:\work\audio-module\audio_coding\codecs\red;Z:\work\audio-module\audio_coding\codecs\g711\include;Z:\work\audio-module\audio_coding\codecs\g722\include;Z:\work\audio-module\audio_coding\codecs\ilbc\interface;Z:\work\audio-module\audio_coding\codecs\isac\main\interface;Z:\work\audio-module\audio_coding\libcelt;Z:\work\audio-module\audio_coding\codecs\isac\fix\interface;Z:\work\audio-module\audio_coding\codecs\pcm16b\include;Z:\work\audio-module\common_audio\signal_processing\include;C:\Users\lihaifeng\Desktop\opusfile-0.6-win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>WEBRTC_POSI;_DEBUG;WEBRTC_LINUX;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WEBRTC_POSI;_DEBUG;WEBRTC_LINUX;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;Z:\work\audio-module\audio_coding\codecs\cng\include;Z:\work\audio-module\audio_coding\codecs\red;Z:\work\audio-module\audio_coding\codecs\g711\include;Z:\work\audio-module\audio_coding\codecs\g722\include;Z:\work\audio-module\audio_coding\codecs\ilbc\interface;Z:\work\audio-module\audio_coding\codecs\isac\main\interface;Z:\work\audio-module\audio_coding\libcelt;Z:\work\audio-module\audio_coding\codecs\isac\fix\interface;Z:\work\audio-module\audio_coding\codecs\pcm16b\include;Z:\work\audio-module\common_audio\signal_processing\include;C:\Users\lihaifeng\Desktop\opusfile-0.6-win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;Z:\work\audio-module\audio_coding\codecs\cng\include;Z:\work\audio-module\audio_coding\codecs\red;Z:\work\audio-module\audio_coding\codecs\g711\include;Z:\work\audio-module\audio_coding\codecs\g722\include;Z:\work\audio-module\audio_coding\codecs\ilbc\interface;Z:\work\audio-module\audio_coding\codecs\isac\main\interface;Z:\work\audio-module\audio_coding\libcelt;Z:\work\audio-module\audio_coding\codecs\isac\fix\interface;Z:\work\audio-module\audio_coding\codecs\pcm16b\include;Z:\work\audio-module\common_audio\signal_processing\include;C:\Users\lihaifeng\Desktop\opusfile-0.6-win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -std=c++11 -msse2 -g %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;Z:\work\audio-module\audio_coding\codecs\cng\include;Z:\work\audio-module\audio_coding\codecs\red;Z:\work\audio-module\audio_coding\codecs\g711\include;Z:\work\audio-module\audio_coding\codecs\g722\include;Z:\work\audio-module\audio_coding\codecs\ilbc\interface;Z:\work\audio-module\audio_coding\codecs\isac\main\interface;Z:\work\audio-module\audio_coding\libcelt;Z:\work\audio-module\audio_coding\codecs\isac\fix\interface;Z:\work\audio-module\audio_coding\codecs\pcm16b\include;Z:\work\audio-module\common_audio\signal_processing\include;C:\Users\lihaifeng\Desktop\opusfile-0.6-win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>WEBRTC_POSI;NDEBUG;WEBRTC_LINUX;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WEBRTC_POSI;NDEBUG;WEBRTC_LINUX;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;Z:\work\audio-module\audio_coding\codecs\cng\include;Z:\work\audio-module\audio_coding\codecs\red;Z:\work\audio-module\audio_coding\codecs\g711\include;Z:\work\audio-module\audio_coding\codecs\g722\include;Z:\work\audio-module\audio_coding\codecs\ilbc\interface;Z:\work\audio-module\audio_coding\codecs\isac\main\interface;Z:\work\audio-module\audio_coding\libcelt;Z:\work\audio-module\audio_coding\codecs\isac\fix\interface;Z:\work\audio-module\audio_coding\codecs\pcm16b\include;Z:\work\audio-module\common_audio\signal_processing\include;C:\Users\lihaifeng\Desktop\opusfile-0.6-win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;Z:\work\audio-module\audio_coding\codecs\cng\include;Z:\work\audio-module\audio_coding\codecs\red;Z:\work\audio-module\audio_coding\codecs\g711\include;Z:\work\audio-module\audio_coding\codecs\g722\include;Z:\work\audio-module\audio_coding\codecs\ilbc\interface;Z:\work\audio-module\audio_coding\codecs\isac\main\interface;Z:\work\audio-module\audio_coding\libcelt;Z:\work\audio-module\audio_coding\codecs\isac\fix\interface;Z:\work\audio-module\audio_coding\codecs\pcm16b\include;Z:\work\audio-module\common_audio\signal_processing\include;C:\Users\lihaifeng\Desktop\opusfile-0.6-win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -std=c++11 -msse2 -g %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;Z:\work\audio-module\audio_coding\codecs\cng\include;Z:\work\audio-module\audio_coding\codecs\red;Z:\work\audio-module\audio_coding\codecs\g711\include;Z:\work\audio-module\audio_coding\codecs\g722\include;Z:\work\audio-module\audio_coding\codecs\ilbc\interface;Z:\work\audio-module\audio_coding\codecs\isac\main\interface;Z:\work\audio-module\audio_coding\libcelt;Z:\work\audio-module\audio_coding\codecs\isac\fix\interface;Z:\work\audio-module\audio_coding\codecs\pcm16b\include;Z:\work\audio-module\common_audio\signal_processing\include;C:\Users\lihaifeng\Desktop\opusfile-0.6-win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>WEBRTC_POSI;NDEBUG;WEBRTC_LINUX;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WEBRTC_POSI;NDEBUG;WEBRTC_LINUX;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;Z:\work\audio-module\audio_coding\codecs\cng\include;Z:\work\audio-module\audio_coding\codecs\red;Z:\work\audio-module\audio_coding\codecs\g711\include;Z:\work\audio-module\audio_coding\codecs\g722\include;Z:\work\audio-module\audio_coding\codecs\ilbc\interface;Z:\work\audio-module\audio_coding\codecs\isac\main\interface;Z:\work\audio-module\audio_coding\libcelt;Z:\work\audio-module\audio_coding\codecs\isac\fix\interface;Z:\work\audio-module\audio_coding\codecs\pcm16b\include;Z:\work\audio-module\common_audio\signal_processing\include;C:\Users\lihaifeng\Desktop\opusfile-0.6-win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;Z:\work\audio-module\audio_coding\codecs\cng\include;Z:\work\audio-module\audio_coding\codecs\red;Z:\work\audio-module\audio_coding\codecs\g711\include;Z:\work\audio-module\audio_coding\codecs\g722\include;Z:\work\audio-module\audio_coding\codecs\ilbc\interface;Z:\work\audio-module\audio_coding\codecs\isac\main\interface;Z:\work\audio-module\audio_coding\libcelt;Z:\work\audio-module\audio_coding\codecs\isac\fix\interface;Z:\work\audio-module\audio_coding\codecs\pcm16b\include;Z:\work\audio-module\common_audio\signal_processing\include;C:\Users\lihaifeng\Desktop\opusfile-0.6-win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -std=c++11 -msse2 -g %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;Z:\work\audio-module\audio_coding\codecs\cng\include;Z:\work\audio-module\audio_coding\codecs\red;Z:\work\audio-module\audio_coding\codecs\g711\include;Z:\work\audio-module\audio_coding\codecs\g722\include;Z:\work\audio-module\audio_coding\codecs\ilbc\interface;Z:\work\audio-module\audio_coding\codecs\isac\main\interface;Z:\work\audio-module\audio_coding\libcelt;Z:\work\audio-module\audio_coding\codecs\isac\fix\interface;Z:\work\audio-module\audio_coding\codecs\pcm16b\include;Z:\work\audio-module\common_audio\signal_processing\include;C:\Users\lihaifeng\Desktop\opusfile-0.6-win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>WEBRTC_POSI;NDEBUG;WEBRTC_LINUX;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WEBRTC_POSI;NDEBUG;WEBRTC_LINUX;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;Z:\work\audio-module\audio_coding\codecs\cng\include;Z:\work\audio-module\audio_coding\codecs\red;Z:\work\audio-module\audio_coding\codecs\g711\include;Z:\work\audio-module\audio_coding\codecs\g722\include;Z:\work\audio-module\audio_coding\codecs\ilbc\interface;Z:\work\audio-module\audio_coding\codecs\isac\main\interface;Z:\work\audio-module\audio_coding\libcelt;Z:\work\audio-module\audio_coding\codecs\isac\fix\interface;Z:\work\audio-module\audio_coding\codecs\pcm16b\include;Z:\work\audio-module\common_audio\signal_processing\include;C:\Users\lihaifeng\Desktop\opusfile-0.6-win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>Z:\work\audio-module;Z:\work\audio-module\audio_coding\codecs\cng\include;Z:\work\audio-module\audio_coding\codecs\red;Z:\work\audio-module\audio_coding\codecs\g711\include;Z:\work\audio-module\audio_coding\codecs\g722\include;Z:\work\audio-module\audio_coding\codecs\ilbc\interface;Z:\work\audio-module\audio_coding\codecs\isac\main\interface;Z:\work\audio-module\audio_coding\libcelt;Z:\work\audio-module\audio_coding\codecs\isac\fix\interface;Z:\work\audio-module\audio_coding\codecs\pcm16b\include;Z:\work\audio-module\common_audio\signal_processing\include;C:\Users\lihaifeng\Desktop\opusfile-0.6-win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="Z:\work\audio-module\audio_coding\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule Z:/work/audio-module/audio_coding/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HZ:/work/audio-module -BZ:/work/audio-module/win_build --check-stamp-file Z:\work\audio-module\win_build\audio_coding\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Z:/work/audio-module/audio_coding/CMakeLists.txt;Z:\work\audio-module\audio_coding\CMakeLists.txt;Z:\work\audio-module\audio_coding\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Z:\work\audio-module\win_build\audio_coding\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule Z:/work/audio-module/audio_coding/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HZ:/work/audio-module -BZ:/work/audio-module/win_build --check-stamp-file Z:\work\audio-module\win_build\audio_coding\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Z:/work/audio-module/audio_coding/CMakeLists.txt;Z:\work\audio-module\audio_coding\CMakeLists.txt;Z:\work\audio-module\audio_coding\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Z:\work\audio-module\win_build\audio_coding\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule Z:/work/audio-module/audio_coding/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HZ:/work/audio-module -BZ:/work/audio-module/win_build --check-stamp-file Z:\work\audio-module\win_build\audio_coding\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Z:/work/audio-module/audio_coding/CMakeLists.txt;Z:\work\audio-module\audio_coding\CMakeLists.txt;Z:\work\audio-module\audio_coding\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Z:\work\audio-module\win_build\audio_coding\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule Z:/work/audio-module/audio_coding/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HZ:/work/audio-module -BZ:/work/audio-module/win_build --check-stamp-file Z:\work\audio-module\win_build\audio_coding\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Z:/work/audio-module/audio_coding/CMakeLists.txt;Z:\work\audio-module\audio_coding\CMakeLists.txt;Z:\work\audio-module\audio_coding\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Z:\work\audio-module\win_build\audio_coding\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Z:\work\audio-module\audio_coding\main\acm2\acm_codec_database.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\main\acm2\acm_common_defs.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\main\acm2\acm_receiver.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\main\acm2\acm_resampler.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\main\acm2\audio_coding_module_impl.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\main\acm2\call_statistics.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\main\acm2\codec_manager.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\main\acm2\codec_owner.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\main\acm2\initial_delay_manager.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\main\acm2\nack.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\main\interface\audio_coding_module.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\main\interface\audio_coding_module_typedefs.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\audio_decoder.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\audio_encoder.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\cng\cng_helpfuns.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\cng\include\audio_encoder_cng.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\cng\include\webrtc_cng.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\red\audio_encoder_copy_red.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\g711\g711.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\g711\include\audio_encoder_pcm.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\g711\include\g711_interface.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\g722\g722_enc_dec.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\g722\include\audio_decoder_g722.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\g722\include\audio_encoder_g722.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\g722\include\g722_interface.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\abs_quant.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\abs_quant_loop.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\augmented_cb_corr.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\bw_expand.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\cb_construct.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\cb_mem_energy.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\cb_mem_energy_augmentation.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\cb_mem_energy_calc.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\cb_search.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\cb_search_core.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\cb_update_best_index.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\chebyshev.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\comp_corr.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\constants.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\create_augmented_vec.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\decode.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\decode_residual.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\decoder_interpolate_lsf.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\defines.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\do_plc.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\encode.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\energy_inverse.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\enh_upsample.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\enhancer.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\enhancer_interface.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\filtered_cb_vecs.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\frame_classify.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\gain_dequant.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\gain_quant.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\get_cd_vec.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\get_lsp_poly.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\get_sync_seq.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\hp_input.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\hp_output.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\interface\audio_decoder_ilbc.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\interface\audio_encoder_ilbc.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\index_conv_dec.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\index_conv_enc.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\init_decode.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\init_encode.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\interface\ilbc.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\interpolate.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\interpolate_samples.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\lpc_encode.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\lsf_check.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\lsf_interpolate_to_poly_dec.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\lsf_interpolate_to_poly_enc.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\lsf_to_lsp.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\lsf_to_poly.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\lsp_to_lsf.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\my_corr.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\nearest_neighbor.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\pack_bits.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\poly_to_lsf.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\poly_to_lsp.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\refiner.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\simple_interpolate_lsf.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\simple_lpc_analysis.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\simple_lsf_dequant.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\simple_lsf_quant.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\smooth.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\smooth_out_data.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\sort_sq.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\split_vq.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\state_construct.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\state_search.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\swap_bytes.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\unpack_bits.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\vq3.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\vq4.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\window32_w32.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\ilbc\xcorr_coef.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\audio_encoder_isac_t.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\audio_encoder_isac_t_impl.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\locked_bandwidth_info.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\interface\audio_encoder_isac.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\interface\isac.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\arith_routines.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\bandwidth_estimator.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\codec.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\crc.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\encode_lpc_swb.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\entropy_coding.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\fft.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\filterbank_tables.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\lpc_analysis.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\lpc_gain_swb_tables.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\lpc_shape_swb12_tables.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\lpc_shape_swb16_tables.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\lpc_tables.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\os_specific_inline.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\pitch_estimator.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\pitch_gain_tables.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\pitch_lag_tables.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\settings.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\spectrum_ar_model_tables.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\structs.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\interface\audio_encoder_isacfix.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\interface\isacfix.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\arith_routins.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\bandwidth_estimator.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\codec.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\entropy_coding.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\fft.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\filterbank_tables.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\lpc_masking_model.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\lpc_tables.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\pitch_estimator.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\pitch_gain_tables.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\pitch_lag_tables.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\settings.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\spectrum_ar_model_tables.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\structs.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\pcm16b\include\audio_decoder_pcm16b.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\pcm16b\include\audio_encoder_pcm16b.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\pcm16b\include\pcm16b.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\opus\interface\audio_decoder_opus.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\opus\interface\audio_encoder_opus.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\opus\interface\opus_interface.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\codecs\opus\opus_inst.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\accelerate.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\audio_decoder_impl.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\audio_multi_vector.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\audio_vector.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\background_noise.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\buffer_level_filter.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\comfort_noise.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\decision_logic.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\decision_logic_fax.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\decision_logic_normal.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\decoder_database.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\defines.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\delay_manager.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\delay_peak_detector.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\dsp_helper.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\dtmf_buffer.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\dtmf_tone_generator.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\expand.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\interface\neteq.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\merge.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\neteq_impl.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\normal.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\packet_buffer.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\payload_splitter.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\post_decode_vad.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\preemptive_expand.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\random_vector.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\rtcp.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\statistics_calculator.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\sync_buffer.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\time_stretch.h" />
+    <ClInclude Include="Z:\work\audio-module\audio_coding\neteq\timestamp_scaler.h" />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\main\acm2\acm_codec_database.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\main\acm2\acm_receiver.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\main\acm2\acm_resampler.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\main\acm2\audio_coding_module.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\main\acm2\audio_coding_module_impl.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\main\acm2\call_statistics.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\main\acm2\codec_manager.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\main\acm2\codec_owner.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\main\acm2\initial_delay_manager.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\main\acm2\nack.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\audio_decoder.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\audio_encoder.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\cng\audio_encoder_cng.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\cng\cng_helpfuns.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\cng\webrtc_cng.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\red\audio_encoder_copy_red.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\g711\audio_encoder_pcm.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\g711\g711.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\g711\g711_interface.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\g722\audio_decoder_g722.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\g722\audio_encoder_g722.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\g722\g722_decode.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\g722\g722_encode.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\g722\g722_interface.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\abs_quant.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\abs_quant_loop.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\audio_decoder_ilbc.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\audio_encoder_ilbc.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\augmented_cb_corr.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\bw_expand.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\cb_construct.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\cb_mem_energy.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\cb_mem_energy_augmentation.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\cb_mem_energy_calc.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\cb_search.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\cb_search_core.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\cb_update_best_index.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\chebyshev.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\comp_corr.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\constants.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\create_augmented_vec.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\decode.c" >
+      <ObjectFileName>$(IntDir)/codecs/ilbc/decode.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\decode_residual.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\decoder_interpolate_lsf.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\do_plc.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\encode.c" >
+      <ObjectFileName>$(IntDir)/codecs/ilbc/encode.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\energy_inverse.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\enh_upsample.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\enhancer.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\enhancer_interface.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\filtered_cb_vecs.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\frame_classify.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\gain_dequant.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\gain_quant.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\get_cd_vec.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\get_lsp_poly.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\get_sync_seq.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\hp_input.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\hp_output.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\ilbc.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\index_conv_dec.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\index_conv_enc.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\init_decode.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\init_encode.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\interpolate.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\interpolate_samples.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\lpc_encode.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\lsf_check.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\lsf_interpolate_to_poly_dec.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\lsf_interpolate_to_poly_enc.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\lsf_to_lsp.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\lsf_to_poly.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\lsp_to_lsf.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\my_corr.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\nearest_neighbor.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\pack_bits.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\poly_to_lsf.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\poly_to_lsp.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\refiner.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\simple_interpolate_lsf.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\simple_lpc_analysis.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\simple_lsf_dequant.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\simple_lsf_quant.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\smooth.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\smooth_out_data.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\sort_sq.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\split_vq.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\state_construct.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\state_search.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\swap_bytes.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\unpack_bits.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\vq3.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\vq4.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\window32_w32.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\ilbc\xcorr_coef.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\locked_bandwidth_info.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\arith_routines.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/main/source/arith_routines.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\arith_routines_hist.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/main/source/arith_routines_hist.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\arith_routines_logist.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/main/source/arith_routines_logist.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\audio_encoder_isac.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\bandwidth_estimator.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/main/source/bandwidth_estimator.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\crc.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\decode.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/main/source/decode.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\decode_bwe.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/main/source/decode_bwe.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\encode.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/main/source/encode.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\encode_lpc_swb.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\entropy_coding.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/main/source/entropy_coding.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\fft.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/main/source/fft.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\filter_functions.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\filterbank_tables.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/main/source/filterbank_tables.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\filterbanks.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/main/source/filterbanks.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\intialize.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\isac.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\lattice.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/main/source/lattice.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\lpc_analysis.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\lpc_gain_swb_tables.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\lpc_shape_swb12_tables.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\lpc_shape_swb16_tables.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\lpc_tables.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/main/source/lpc_tables.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\pitch_estimator.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/main/source/pitch_estimator.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\pitch_filter.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/main/source/pitch_filter.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\pitch_gain_tables.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/main/source/pitch_gain_tables.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\pitch_lag_tables.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/main/source/pitch_lag_tables.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\spectrum_ar_model_tables.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/main/source/spectrum_ar_model_tables.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\main\source\transform.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/main/source/transform.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\arith_routines.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/fix/source/arith_routines.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\arith_routines_hist.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/fix/source/arith_routines_hist.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\arith_routines_logist.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/fix/source/arith_routines_logist.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\audio_encoder_isacfix.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\bandwidth_estimator.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/fix/source/bandwidth_estimator.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\decode.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/fix/source/decode.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\decode_bwe.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/fix/source/decode_bwe.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\decode_plc.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\encode.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/fix/source/encode.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\entropy_coding.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/fix/source/entropy_coding.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\fft.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/fix/source/fft.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\filterbank_tables.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/fix/source/filterbank_tables.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\filterbanks.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/fix/source/filterbanks.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\filters.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\initialize.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\isacfix.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\lattice.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/fix/source/lattice.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\lattice_c.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\lpc_masking_model.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\lpc_tables.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/fix/source/lpc_tables.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\pitch_estimator.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/fix/source/pitch_estimator.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\pitch_estimator_c.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\pitch_filter.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/fix/source/pitch_filter.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\pitch_filter_c.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\pitch_gain_tables.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/fix/source/pitch_gain_tables.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\pitch_lag_tables.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/fix/source/pitch_lag_tables.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\spectrum_ar_model_tables.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/fix/source/spectrum_ar_model_tables.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\transform.c" >
+      <ObjectFileName>$(IntDir)/codecs/isac/fix/source/transform.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\isac\fix\source\transform_tables.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\pcm16b\audio_decoder_pcm16b.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\pcm16b\audio_encoder_pcm16b.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\pcm16b\pcm16b.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\opus\audio_decoder_opus.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\opus\audio_encoder_opus.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\codecs\opus\opus_interface.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\accelerate.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\audio_decoder_impl.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\audio_multi_vector.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\audio_vector.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\background_noise.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\buffer_level_filter.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\comfort_noise.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\decision_logic.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\decision_logic_fax.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\decision_logic_normal.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\decoder_database.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\delay_manager.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\delay_peak_detector.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\dsp_helper.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\dtmf_buffer.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\dtmf_tone_generator.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\expand.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\merge.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\neteq.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\neteq_impl.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\normal.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\packet_buffer.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\payload_splitter.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\post_decode_vad.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\preemptive_expand.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\random_vector.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\rtcp.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\statistics_calculator.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\sync_buffer.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\time_stretch.cc"  />
+    <ClCompile Include="Z:\work\audio-module\audio_coding\neteq\timestamp_scaler.cc"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Z:/work/audio-module/win_build/base/BASE.vcxproj">
+      <Project>23B1C1F3-04B4-4CB8-B23B-B6CFA0B92796</Project>
+    </ProjectReference>
+    <ProjectReference Include="Z:/work/audio-module/win_build/COMMON.vcxproj">
+      <Project>4DD0F72E-62C6-4F05-ACA9-62843CEDF07A</Project>
+    </ProjectReference>
+    <ProjectReference Include="Z:/work/audio-module/win_build/common_audio/CommonAudio.vcxproj">
+      <Project>8FA5AB5C-1376-49CA-A5CD-A5891CAFADFC</Project>
+    </ProjectReference>
+    <ProjectReference Include="Z:/work/audio-module/win_build/system_wrappers/SystemWrapper.vcxproj">
+      <Project>A445BAC5-849B-4F3A-B936-00FE2C807708</Project>
+    </ProjectReference>
+    <ProjectReference Include="Z:/work/audio-module/win_build/ZERO_CHECK.vcxproj">
+      <Project>9748292D-BD89-49F0-971B-BBE9485FE765</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

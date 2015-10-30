@@ -1,0 +1,86 @@
+﻿生成启动时间为 2015/10/13 17:11:28。
+     1>项目“Z:\work\audio-module\win_build\audio_processing\AudioProcessing.vcxproj”在节点 2 上(Build 个目标)。
+     1>CustomBuild:
+         Building Custom Rule Z:/work/audio-module/audio_processing/CMakeLists.txt
+         CMake does not need to re-run because Z:\work\audio-module\win_build\audio_processing\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"Z:\work\audio-module" /Zi /nologo /W1 /WX- /Od /Ob0 /Oy- /D WEBRTC_POSI /D _DEBUG /D WEBRTC_NS_FIXED /D "CMAKE_INTDIR=\"Debug\"" /D AudioProcessing_EXPORTS /D _WINDLL /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"AudioProcessing.dir\Debug\\" /Fd"AudioProcessing.dir\Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt  -std=c++11 -msse2 -g "Z:\work\audio-module\audio_processing\aec\aec_core.c" "Z:\work\audio-module\audio_processing\aec\aec_rdft.c" "Z:\work\audio-module\audio_processing\aec\aec_resampler.c" "Z:\work\audio-module\audio_processing\aec\echo_cancellation.c" "Z:\work\audio-module\audio_processing\aecm\aecm_core.c" "Z:\work\audio-module\audio_processing\aecm\echo_control_mobile.c" "Z:\work\audio-module\audio_processing\agc\legacy\analog_agc.c" "Z:\work\audio-module\audio_processing\agc\legacy\digital_agc.c" "Z:\work\audio-module\audio_processing\utility\delay_estimator.c" "Z:\work\audio-module\audio_processing\utility\delay_estimator_wrapper.c" "Z:\work\audio-module\audio_processing\ns\noise_suppression_x.c" "Z:\work\audio-module\audio_processing\ns\nsx_core.c" "Z:\work\audio-module\audio_processing\aecm\aecm_core_c.c" "Z:\work\audio-module\audio_processing\aec\aec_core_sse2.c" "Z:\work\audio-module\audio_processing\aec\aec_rdft_sse2.c" "Z:\work\audio-module\audio_processing\ns\nsx_core_c.c"
+     1>cl : 命令行 warning D9002: 忽略未知选项“-std=c++11”
+     1>cl : 命令行 warning D9002: 忽略未知选项“-msse2”
+     1>cl : 命令行 warning D9002: 忽略未知选项“-g”
+         aec_core.c
+     1>Z:\work\audio-module\audio_processing\aec\aec_core.c(1208): error C2143: 语法错误 : 缺少“;”(在“类型”的前面)
+     1>Z:\work\audio-module\audio_processing\aec\aec_core.c(1235): error C2065: “xf_ptr”: 未声明的标识符
+     1>Z:\work\audio-module\audio_processing\aec\aec_core.c(1243): error C2065: “xf_ptr”: 未声明的标识符
+     1>Z:\work\audio-module\audio_processing\aec\aec_core.c(1243): error C2109: 下标要求数组或指针类型
+     1>Z:\work\audio-module\audio_processing\aec\aec_core.c(1244): error C2065: “xf_ptr”: 未声明的标识符
+     1>Z:\work\audio-module\audio_processing\aec\aec_core.c(1244): error C2109: 下标要求数组或指针类型
+     1>Z:\work\audio-module\audio_processing\aec\aec_core.c(1311): error C2065: “xf_ptr”: 未声明的标识符
+     1>Z:\work\audio-module\audio_processing\aec\aec_core.c(1311): warning C4022: “memcpy”: 指针与实参 2 不匹配
+     1>Z:\work\audio-module\audio_processing\aec\aec_core.c(1314): error C2065: “xf_ptr”: 未声明的标识符
+     1>Z:\work\audio-module\audio_processing\aec\aec_core.c(1314): error C2109: 下标要求数组或指针类型
+     1>Z:\work\audio-module\audio_processing\aec\aec_core.c(1315): warning C4022: “memcpy”: 指针与实参 2 不匹配
+     1>Z:\work\audio-module\audio_processing\aec\aec_core.c(1315): error C2198: “memcpy”: 用于调用的参数太少
+     1>Z:\work\audio-module\audio_processing\aec\aec_core.c(1374): error C2065: “xf_ptr”: 未声明的标识符
+     1>Z:\work\audio-module\audio_processing\aec\aec_core.c(1390): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>Z:\work\audio-module\audio_processing\aec\aec_core.c(1390): error C2371: “WebRtcAec_CreateAec”: 重定义；不同的基类型
+                 Z:\work\audio-module\audio_processing/aec/aec_core.h(56) : 参见“WebRtcAec_CreateAec”的声明
+     1>Z:\work\audio-module\audio_processing\aec\aec_core.c(1501): warning C4133: “return”: 从“AecCore *”到“int *”的类型不兼容
+     1>Z:\work\audio-module\audio_processing\aec\aec_core.c(1795): error C2143: 语法错误 : 缺少“;”(在“类型”的前面)
+     1>Z:\work\audio-module\audio_processing\aec\aec_core.c(1796): error C2143: 语法错误 : 缺少“;”(在“类型”的前面)
+     1>Z:\work\audio-module\audio_processing\aec\aec_core.c(1798): error C2065: “moved_elements”: 未声明的标识符
+     1>Z:\work\audio-module\audio_processing\aec\aec_core.c(1802): error C2143: 语法错误 : 缺少“;”(在“类型”的前面)
+     1>Z:\work\audio-module\audio_processing\aec\aec_core.c(1803): error C2143: 语法错误 : 缺少“;”(在“类型”的前面)
+     1>Z:\work\audio-module\audio_processing\aec\aec_core.c(1805): error C2143: 语法错误 : 缺少“;”(在“类型”的前面)
+     1>Z:\work\audio-module\audio_processing\aec\aec_core.c(1807): error C2065: “moved_elements”: 未声明的标识符
+     1>Z:\work\audio-module\audio_processing\aec\aec_core.c(1809): error C2065: “moved_elements”: 未声明的标识符
+     1>Z:\work\audio-module\audio_processing\aec\aec_core.c(1810): error C2065: “moved_elements”: 未声明的标识符
+     1>Z:\work\audio-module\audio_processing\aec\aec_core.c(1816): error C2065: “far_near_buffer_diff”: 未声明的标识符
+     1>Z:\work\audio-module\audio_processing\aec\aec_core.c(1817): error C2065: “far_near_buffer_diff”: 未声明的标识符
+         aec_rdft.c
+         aec_resampler.c
+         echo_cancellation.c
+         aecm_core.c
+         echo_control_mobile.c
+         analog_agc.c
+         digital_agc.c
+         delay_estimator.c
+         delay_estimator_wrapper.c
+         noise_suppression_x.c
+         nsx_core.c
+     1>Z:\work\audio-module\audio_processing\ns\nsx_core.c(1561): error C2143: 语法错误 : 缺少“;”(在“类型”的前面)
+     1>Z:\work\audio-module\audio_processing\ns\nsx_core.c(1562): error C2143: 语法错误 : 缺少“;”(在“类型”的前面)
+     1>Z:\work\audio-module\audio_processing\ns\nsx_core.c(1563): error C2275: “size_t”: 将此类型用作表达式非法
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\crtdefs.h(430) : 参见“size_t”的声明
+     1>Z:\work\audio-module\audio_processing\ns\nsx_core.c(1563): error C2146: 语法错误: 缺少“;”(在标识符“num_high_bands”的前面)
+     1>Z:\work\audio-module\audio_processing\ns\nsx_core.c(1563): error C2065: “num_high_bands”: 未声明的标识符
+     1>Z:\work\audio-module\audio_processing\ns\nsx_core.c(1565): error C2065: “speechFrameHB”: 未声明的标识符
+     1>Z:\work\audio-module\audio_processing\ns\nsx_core.c(1565): warning C4047: “=”:“int”与“const short *const *”的间接级别不同
+     1>Z:\work\audio-module\audio_processing\ns\nsx_core.c(1566): error C2065: “outFrameHB”: 未声明的标识符
+     1>Z:\work\audio-module\audio_processing\ns\nsx_core.c(1566): warning C4047: “=”:“int”与“short *const *”的间接级别不同
+     1>Z:\work\audio-module\audio_processing\ns\nsx_core.c(1567): error C2065: “num_high_bands”: 未声明的标识符
+     1>Z:\work\audio-module\audio_processing\ns\nsx_core.c(1579): error C2065: “num_high_bands”: 未声明的标识符
+     1>Z:\work\audio-module\audio_processing\ns\nsx_core.c(1583): error C2065: “speechFrameHB”: 未声明的标识符
+     1>Z:\work\audio-module\audio_processing\ns\nsx_core.c(1583): error C2109: 下标要求数组或指针类型
+     1>Z:\work\audio-module\audio_processing\ns\nsx_core.c(1584): warning C4022: “memcpy”: 指针与实参 2 不匹配
+     1>Z:\work\audio-module\audio_processing\ns\nsx_core.c(1584): error C2198: “memcpy”: 用于调用的参数太少
+     1>Z:\work\audio-module\audio_processing\ns\nsx_core.c(1586): error C2065: “outFrameHB”: 未声明的标识符
+     1>Z:\work\audio-module\audio_processing\ns\nsx_core.c(1586): error C2109: 下标要求数组或指针类型
+     1>Z:\work\audio-module\audio_processing\ns\nsx_core.c(2042): error C2065: “num_high_bands”: 未声明的标识符
+     1>Z:\work\audio-module\audio_processing\ns\nsx_core.c(2046): error C2065: “speechFrameHB”: 未声明的标识符
+     1>Z:\work\audio-module\audio_processing\ns\nsx_core.c(2046): error C2109: 下标要求数组或指针类型
+     1>Z:\work\audio-module\audio_processing\ns\nsx_core.c(2046): warning C4022: “memcpy”: 指针与实参 2 不匹配
+     1>Z:\work\audio-module\audio_processing\ns\nsx_core.c(2046): error C2198: “memcpy”: 用于调用的参数太少
+     1>Z:\work\audio-module\audio_processing\ns\nsx_core.c(2105): error C2065: “num_high_bands”: 未声明的标识符
+     1>Z:\work\audio-module\audio_processing\ns\nsx_core.c(2107): error C2065: “outFrameHB”: 未声明的标识符
+     1>Z:\work\audio-module\audio_processing\ns\nsx_core.c(2107): error C2109: 下标要求数组或指针类型
+         aecm_core_c.c
+         aec_core_sse2.c
+         aec_rdft_sse2.c
+         nsx_core_c.c
+         正在生成代码...
+     1>已完成生成项目“Z:\work\audio-module\win_build\audio_processing\AudioProcessing.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:03.77

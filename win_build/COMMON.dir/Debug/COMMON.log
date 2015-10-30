@@ -1,0 +1,30 @@
+﻿生成启动时间为 2015/10/13 17:10:10。
+     1>项目“Z:\work\audio-module\win_build\COMMON.vcxproj”在节点 3 上(Build 个目标)。
+     1>CustomBuild:
+         Building Custom Rule Z:/work/audio-module/CMakeLists.txt
+         CMake does not need to re-run because Z:\work\audio-module\win_build\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"Z:\work\audio-module" /Zi /nologo /W1 /WX- /Od /Ob0 /Oy- /D WEBRTC_POSI /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"COMMON.dir\Debug\\" /Fd"COMMON.dir\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt  -std=c++11 -msse2 -g "Z:\work\audio-module\common_types.cc" "Z:\work\audio-module\config.cc"
+     1>cl : 命令行 warning D9002: 忽略未知选项“-std=c++11”
+     1>cl : 命令行 warning D9002: 忽略未知选项“-msse2”
+     1>cl : 命令行 warning D9002: 忽略未知选项“-g”
+         common_types.cc
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>z:\work\audio-module\common_types.h(311): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>z:\work\audio-module\common_types.h(311): error C3861: “strcasecmp”: 找不到标识符
+     1>z:\work\audio-module\common_types.h(726): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>z:\work\audio-module\common_types.h(726): error C3861: “strcasecmp”: 找不到标识符
+         config.cc
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>z:\work\audio-module\common_types.h(311): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>z:\work\audio-module\common_types.h(311): error C3861: “strcasecmp”: 找不到标识符
+     1>z:\work\audio-module\common_types.h(726): error C2039: “strcasecmp”: 不是“`global namespace'”的成员
+     1>z:\work\audio-module\common_types.h(726): error C3861: “strcasecmp”: 找不到标识符
+     1>Z:\work\audio-module\config.cc(63): error C2761: “webrtc::VideoStream::~VideoStream(void)”: 不允许成员函数重新声明
+     1>Z:\work\audio-module\config.cc(63): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+         正在生成代码...
+     1>已完成生成项目“Z:\work\audio-module\win_build\COMMON.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:04.02
