@@ -136,14 +136,16 @@ static void ScaleErrorSignalNEON(AecCore* aec, float ef[2][PART_LEN1]) {
     const float32x4_t ef_re_base = vld1q_f32(&ef[0][i]);
     const float32x4_t ef_im_base = vld1q_f32(&ef[1][i]);
     const float32x4_t xPowPlus = vaddq_f32(xPow, k1e_10f);
-    float32x4_t ef_re = vdivq_f32(ef_re_base, xPowPlus);
-    float32x4_t ef_im = vdivq_f32(ef_im_base, xPowPlus);
+//    float32x4_t ef_re = vdivq_f32(ef_re_base, xPowPlus);
+      float32x4_t ef_re = ef_re_base/ xPowPlus;
+      float32x4_t ef_im= ef_im_base/ xPowPlus;
     const float32x4_t ef_re2 = vmulq_f32(ef_re, ef_re);
     const float32x4_t ef_sum2 = vmlaq_f32(ef_re2, ef_im, ef_im);
-    const float32x4_t absEf = vsqrtq_f32(ef_sum2);
+      //const float32x4_t absEf =  (float32x4_t) __builtin_neon_vsqrtq_v((int8x16_t)ef_sum2, 41);
+      const float32x4_t absEf ={sqrt(ef_sum2[0]),sqrt(ef_sum2[1]),sqrt(ef_sum2[2]),sqrt(ef_sum2[3])};
     const uint32x4_t bigger = vcgtq_f32(absEf, kThresh);
     const float32x4_t absEfPlus = vaddq_f32(absEf, k1e_10f);
-    const float32x4_t absEfInv = vdivq_f32(kThresh, absEfPlus);
+      const float32x4_t absEfInv = kThresh/ absEfPlus;
     uint32x4_t ef_re_if = vreinterpretq_u32_f32(vmulq_f32(ef_re, absEfInv));
     uint32x4_t ef_im_if = vreinterpretq_u32_f32(vmulq_f32(ef_im, absEfInv));
     uint32x4_t ef_re_u32 = vandq_u32(vmvnq_u32(bigger),
@@ -707,9 +709,9 @@ static void SubbandCoherenceNEON(AecCore* aec,
       float32x4_t vec_cohde = vmulq_f32(vec_sde.val[0], vec_sde.val[0]);
       float32x4_t vec_cohxd = vmulq_f32(vec_sxd.val[0], vec_sxd.val[0]);
       vec_cohde = vmlaq_f32(vec_cohde, vec_sde.val[1], vec_sde.val[1]);
-      vec_cohde = vdivq_f32(vec_cohde, vec_sdse);
+      vec_cohde = vec_cohde/ vec_sdse;
       vec_cohxd = vmlaq_f32(vec_cohxd, vec_sxd.val[1], vec_sxd.val[1]);
-      vec_cohxd = vdivq_f32(vec_cohxd, vec_sdsx);
+      vec_cohxd = vec_cohxd/ vec_sdsx;
 
       vst1q_f32(&cohde[i], vec_cohde);
       vst1q_f32(&cohxd[i], vec_cohxd);

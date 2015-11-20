@@ -93,20 +93,20 @@ if(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
     # ADD_DEFINITIONS(-DWEBRTC_DETECT_NEON)
     SET(COMMON_AUDIO_SRC
       ${COMMON_AUDIO_SRC}
-      # "fir_filter_neon.cc"
-      # "resampler/sinc_resampler_neon.cc"
-      # "signal_processing/cross_correlation_neon.c"
-      # "signal_processing/downsample_fast_neon.c"
-      # "signal_processing/min_max_operations_neon.c"
-      # "signal_processing/complex_bit_reverse_arm.S"
-      # "signal_processing/spl_sqrt_floor_arm.S"
+      "fir_filter_neon.cc"
+      "resampler/sinc_resampler_neon.cc"
+      "signal_processing/cross_correlation_neon.c"
+      "signal_processing/downsample_fast_neon.c"
+      "signal_processing/min_max_operations_neon.c"
+      "signal_processing/complex_bit_reverse_arm.S"
+      "signal_processing/spl_sqrt_floor_arm.S"
       "signal_processing/complex_bit_reverse.c"
       "signal_processing/spl_sqrt_floor.c"
       "signal_processing/filter_ar_fast_q12_armv7.S"
-      "fir_filter_sse.cc"
-      "resampler/sinc_resampler_sse.cc"
+      # "fir_filter_sse.cc"
+      # "resampler/sinc_resampler_sse.cc"
       )
-
+  ADD_DEFINITIONS(-DWEBRTC_DETECT_NEON)
   else()
     SET(COMMON_AUDIO_SRC
       ${COMMON_AUDIO_SRC}
@@ -127,8 +127,8 @@ elseif(ANDROID)
     "signal_processing/cross_correlation_neon.c"
     "signal_processing/downsample_fast_neon.c"
     "signal_processing/min_max_operations_neon.c"
-    # "signal_processing/complex_bit_reverse_arm.S"
-    # "signal_processing/spl_sqrt_floor_arm.S"
+    "signal_processing/complex_bit_reverse_arm.S"
+    "signal_processing/spl_sqrt_floor_arm.S"
     "signal_processing/complex_bit_reverse.c"
     "signal_processing/spl_sqrt_floor.c"
     "signal_processing/filter_ar_fast_q12_armv7.S"
