@@ -9,4 +9,4 @@ mkdir build
 cd build
 cmake -DCMAKE_TOOLCHAIN_FILE=../android.toolchain.cmake -DANDROID_NDK=~/.ndk -DCMAKE_BUILD_TYPE=Release \
       -DANDROID_ABI="armeabi-v7a with NEON" -DANDROID_NATIVE_API_LEVEL=android-17  ..
-cmake --build .
+#cmake --build .

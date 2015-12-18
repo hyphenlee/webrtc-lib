@@ -93,9 +93,15 @@ if(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
   if(IOS)
     ADD_DEFINITIONS(-DWEBRTC_THREAD_RR
       -DWEBRTC_CLOCK_TYPE_REALTIME
+      
       -DWEBRTC_POSIX
       -DWEBRTC_MAC
       -DWEBRTC_IOS
+      )
+    SET(WRAPPER_SRC
+      ${WRAPPER_SRC}
+      "source/cpu_features_ios.c"
+      "source/atomic32_mac.cc"
       )
   else()
     ADD_DEFINITIONS(-DWEBRTC_THREAD_RR
@@ -135,5 +141,5 @@ foreach(var ${LIBS})
 endforeach()
 
 
-add_library(SystemWrapper ${WRAPPER_SRC})
+add_library(SystemWrapper STATIC ${WRAPPER_SRC})
 TARGET_LINK_LIBRARIES(SystemWrapper BASE COMMON ${LIBRARYS})

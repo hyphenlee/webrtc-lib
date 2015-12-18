@@ -17,7 +17,7 @@
 #include "base/checks.h"
 #include "base/logging.h"
 #include "base/scoped_ptr.h"
-#include "modules/utility/interface/helpers_ios.h"
+#include "utility/interface/helpers_ios.h"
 
 namespace webrtc {
 namespace ios {

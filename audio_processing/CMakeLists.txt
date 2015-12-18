@@ -122,18 +122,27 @@ SET(AUDIO_PROCESSING_SRC
 SET(LIBS  "")
 if(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
   if(IOS)
-    SET(AUDIO_PROCESSING_SRC
-      ${AUDIO_PROCESSING_SRC}
-      "aec/aec_core_neon.c"
-      "aec/aec_rdft_neon.c"
-      "aecm/aecm_core_neon.c"
-      "ns/nsx_core_neon.c"
-      # "aec/aec_core_sse2.c"
-      # "aec/aec_rdft_sse2.c"
-      )
-    add_definitions(-DWEBRTC_ARCH_ARM64)
-    # add_definitions(-DUSE_ARM_NEON_GCC=1)
-    ADD_DEFINITIONS(-DWEBRTC_DETECT_NEON)
+    if(${IOS_PLATFORM} STREQUAL OS)
+      message("handle for real device")
+      SET(AUDIO_PROCESSING_SRC
+        ${AUDIO_PROCESSING_SRC}
+        "aec/aec_core_neon.c"
+        "aec/aec_rdft_neon.c"
+        "aecm/aecm_core_neon.c"
+        "ns/nsx_core_neon.c"
+        # "aec/aec_core_sse2.c"
+        # "aec/aec_rdft_sse2.c"
+        )
+      add_definitions(-DWEBRTC_ARCH_ARM64)
+      # add_definitions(-DUSE_ARM_NEON_GCC=1)
+      ADD_DEFINITIONS(-DWEBRTC_DETECT_NEON)
+    else()
+      SET(AUDIO_PROCESSING_SRC
+        ${AUDIO_PROCESSING_SRC}
+        "aec/aec_core_sse2.c"
+        "aec/aec_rdft_sse2.c"
+        )
+    endif()
   else()
     SET(AUDIO_PROCESSING_SRC
       ${AUDIO_PROCESSING_SRC}

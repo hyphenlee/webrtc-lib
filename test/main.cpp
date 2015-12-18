@@ -9,65 +9,68 @@
 #include "interface/module_common_types.h"
 #include "audio_processing/ns/include/noise_suppression_x.h"
 #include "audio_processing/agc/legacy/gain_control.h"
+#include "system_wrappers/interface/cpu_info.h"
 
 #include<fstream>
 using namespace webrtc;
 using namespace std;
 int main(){
 
-  // ///// aec test
-  char * farEndData;
-  char * nearEndData;
+  int cores = CpuInfo::DetectNumberOfCores();
+  cout<<"cores:"<<cores<<endl;
+  // // ///// aec test
+  // char * farEndData;
+  // char * nearEndData;
 
-  char fromPeer[]="../../far.pcm";
+  // char fromPeer[]="../../far.pcm";
 
-  ifstream in (fromPeer, ios::in|ios::binary|ios::ate);  
-  int size_far = in.tellg();
-  cout<<"far end size:"<<size_far<<endl;
-  in.seekg (0, ios::beg);  
-  farEndData = new char [size_far];
+  // ifstream in (fromPeer, ios::in|ios::binary|ios::ate);  
+  // int size_far = in.tellg();
+  // cout<<"far end size:"<<size_far<<endl;
+  // in.seekg (0, ios::beg);  
+  // farEndData = new char [size_far];
     
-  in.read (farEndData, size_far);
-  in.close();
+  // in.read (farEndData, size_far);
+  // in.close();
     
-  char toPeer[]="../../local.pcm";
-  ifstream in2 (toPeer, ios::in|ios::binary|ios::ate);  
-  int size_near = in2.tellg();
-  cout<<"near end size:"<<size_near<<endl;
-  in2.seekg (0, ios::beg);
-  nearEndData= new char [size_near];
-  in2.read (nearEndData
-            , size_near);
-  in2.close();
-  int size= size_far>size_near?size_near:size_far;
+  // char toPeer[]="../../local.pcm";
+  // ifstream in2 (toPeer, ios::in|ios::binary|ios::ate);  
+  // int size_near = in2.tellg();
+  // cout<<"near end size:"<<size_near<<endl;
+  // in2.seekg (0, ios::beg);
+  // nearEndData= new char [size_near];
+  // in2.read (nearEndData
+  //           , size_near);
+  // in2.close();
+  // int size= size_far>size_near?size_near:size_far;
     
-  //    float*farend,*nearend;
-  short *output;
-  int sample_size=size/2;
-  output=new short[sample_size];
+  // //    float*farend,*nearend;
+  // short *output;
+  // int sample_size=size/2;
+  // output=new short[sample_size];
     
-  //////////aecm test
-  void *aecmInst;
-  aecmInst = WebRtcAecm_Create();
-  int sample = 16000;
-  WebRtcAecm_Init(aecmInst, sample);
+  // //////////aecm test
+  // void *aecmInst;
+  // aecmInst = WebRtcAecm_Create();
+  // int sample = 16000;
+  // WebRtcAecm_Init(aecmInst, sample);
 
-  int count = 0;
-  short*ptr_farend=(short*)farEndData;
-  short*ptr_nearend=(short*)nearEndData;
-  short*ptr_output=output;
-  int block_size=160;
-  while (count<sample_size) {
-    // WebRtcAecm_BufferFarend(aecmInst,ptr_farend,block_size);
-    WebRtcAecm_BufferFarend(aecmInst,NULL,block_size);
-    WebRtcAecm_Process(aecmInst, ptr_nearend, NULL,ptr_output, block_size,40);
-    count+=block_size;
-    ptr_farend+=block_size;
-    ptr_nearend+=block_size;
-    ptr_output+=block_size;
-  }
-  WebRtcAecm_Free(aecmInst);
-  //////////aecm test end
+  // int count = 0;
+  // short*ptr_farend=(short*)farEndData;
+  // short*ptr_nearend=(short*)nearEndData;
+  // short*ptr_output=output;
+  // int block_size=160;
+  // while (count<sample_size) {
+  //   // WebRtcAecm_BufferFarend(aecmInst,ptr_farend,block_size);
+  //   WebRtcAecm_BufferFarend(aecmInst,NULL,block_size);
+  //   WebRtcAecm_Process(aecmInst, ptr_nearend, NULL,ptr_output, block_size,40);
+  //   count+=block_size;
+  //   ptr_farend+=block_size;
+  //   ptr_nearend+=block_size;
+  //   ptr_output+=block_size;
+  // }
+  // WebRtcAecm_Free(aecmInst);
+  // //////////aecm test end
     
     
     
@@ -270,14 +273,14 @@ int main(){
   //   output_ptr+=block_size;
   // }
   // ////////////////agc test end
-  char outputPath[]="../../output.pcm";
-  ofstream outfile (outputPath, ios::out|ios::binary);
-  outfile.write((char*)output, size);
-  outfile.close();
+  // char outputPath[]="../../output.pcm";
+  // ofstream outfile (outputPath, ios::out|ios::binary);
+  // outfile.write((char*)output, size);
+  // outfile.close();
 
-  delete farEndData;
-  delete nearEndData;
-  delete output;
+  // delete farEndData;
+  // delete nearEndData;
+  // delete output;
   /////////////audio processing test end
   return 0;
 }

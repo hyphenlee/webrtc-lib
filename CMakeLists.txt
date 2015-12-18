@@ -16,9 +16,14 @@ SET(CMAKE_SKIP_BUILD_RPATH  TRUE)
 # SET(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/out")
 # SET(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 if(IOS)
-  SET(CMAKE_CXX_FLAGS " -std=c++11 -mfpu=neon  ${CMAKE_CXX_FLAGS} ")
+  SET(CMAKE_CXX_FLAGS " -std=c++11 -fobjc-arc -mfpu=neon  ${CMAKE_CXX_FLAGS} ")
+  set(LIB_PATH_PREFIX "${CMAKE_SOURCE_DIR}/libs/ios")
+  ADD_DEFINITIONS(-DWEBRTC_POSIX)
+  ADD_DEFINITIONS(-DWEBRTC_IOS)
+  ADD_DEFINITIONS(-DWEBRTC_MAC)
+
   # set( CMAKE_CXX_FLAGS_RELEASE   "${CMAKE_CXX_FLAGS_RELEASE} -std=c++11 -mfpu=neon")
-  SET(CMAKE_C_FLAGS " ${CMAKE_C_FLAGS}")
+  SET(CMAKE_C_FLAGS "-fobjc-arc ${CMAKE_C_FLAGS}")
 elseif(ANDROID)
   SET(CMAKE_CXX_FLAGS " -std=c++11 -mfpu=neon -v ${CMAKE_CXX_FLAGS} ")
   # set( CMAKE_CXX_FLAGS_RELEASE   "${CMAKE_CXX_FLAGS_RELEASE} -std=c++11 -mfpu=neon")
@@ -40,8 +45,8 @@ INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR})
 
 SET(COMMON_SRC
   audio_receive_stream.h
-  # audio_send_stream.h
-  # call.h
+  audio_send_stream.h
+  call.h
   common.h
   common_types.cc
   common_types.h
@@ -52,12 +57,12 @@ SET(COMMON_SRC
   stream.h
   transport.h
   typedefs.h
-  # video_decoder.h
-  # video_encoder.h
-  # video_frame.h
-  # video_receiver_stream.h
-  # video_renderer.h
-  # video_send_stream.h
+  video_decoder.h
+  video_encoder.h
+  video_frame.h
+  video_receive_stream.h
+  video_renderer.h
+  video_send_stream.h
   interface/module.h
   interface/module_common_types.h
   jsoncpp.cpp
@@ -66,9 +71,14 @@ add_library(COMMON  ${COMMON_SRC})
 ADD_SUBDIRECTORY(base)
 ADD_SUBDIRECTORY(system_wrappers)
 ADD_SUBDIRECTORY(common_audio)
-# ADD_SUBDIRECTORY(audio_coding)
+ADD_SUBDIRECTORY(common_video)
+ADD_SUBDIRECTORY(video_coding)
+ADD_SUBDIRECTORY(audio_coding)
 ADD_SUBDIRECTORY(audio_processing)
-#ADD_SUBDIRECTORY(audio_device)
+ADD_SUBDIRECTORY(audio_device)
+ADD_SUBDIRECTORY(video_capture)
+ADD_SUBDIRECTORY(video_render)
+
 # ADD_SUBDIRECTORY(test)
 
 # set(CMAKE_BUILD_TYPE "Debug")

@@ -16,6 +16,7 @@ SET(UTILITY_SRC
   "source/jvm_android.cc"
   "source/process_thread_impl.cc"
   "source/process_thread_impl.h"
+  "source/helpers_ios.mm"
   )
 
 add_library(UTILITY ${UTILITY_SRC})

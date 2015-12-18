@@ -99,7 +99,7 @@ SET(BASE_SRC
   "httpcommon.h"
   "httprequest.cc"
   "httprequest.h"
-  #  "iosfilesystem.mm"
+  "iosfilesystem.mm"
   "ipaddress.cc"
   "ipaddress.h"
   "linked_ptr.h"
@@ -129,7 +129,7 @@ SET(BASE_SRC
   "ratetracker.h"
   "rtccertificate.cc"
   "rtccertificate.h"
-  # "scoped_autorelease_pool.h"
+  "scoped_autorelease_pool.h"
   # "scoped_autorelease_pool.mm"
   "sha1.cc"
   "sha1.h"
@@ -245,8 +245,8 @@ SET(BASE_SRC
   "posix.h"
   # "maccocoathreadhelper.h"
   # "maccocoathreadhelper.mm"
-  # "macconversion.cc"
-  # "macconversion.h"
+  "macconversion.cc"
+  "macconversion.h"
   # "macutils.cc"
   # "macutils.h"
 
@@ -280,8 +280,7 @@ if(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
     
 
   else()
-    # INCLUDE_DIRECTORIES(
-    # "/usr/local/Cellar/openssl/1.0.2d_1/include/")
+    INCLUDE_DIRECTORIES( "/usr/local/Cellar/openssl/1.0.2d_1/include/")
     # INCLUDE_DIRECTORIES( "/usr/local/Cellar/jsoncpp/0.10.5/include/jsoncpp/")
     INCLUDE_DIRECTORIES( "${PROJECT_SOURCE_DIR}/common_audio/signal_processing/include/")
     
@@ -317,8 +316,6 @@ if(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
     ADD_DEFINITIONS(-DWEBRTC_POSIX)
     ADD_DEFINITIONS(-DWEBRTC_MAC)
     ADD_DEFINITIONS(-DSSL_USE_OPENSSL=1)
-    # SET(CMAKE_CXX_FLAGS " -std=c++11 -msse2 ")
-    # SET(CMAKE_C_FLAGS " -msse2  ") 
   endif()
 elseif(ANDROID)
   message("build for android")
@@ -337,13 +334,10 @@ elseif(ANDROID)
     "crypto"
     )
   include_directories(${PROJECT_SOURCE_DIR}/libs/openssl/include)
-  # include_directories(${PROJECT_SOURCE_DIR}/libs/jsoncpp/include)
-
   ADD_DEFINITIONS(-DWEBRTC_ANDROID)
   ADD_DEFINITIONS(-DWEBRTC_POSIX)
   ADD_DEFINITIONS(-DWEBRTC_LINUX)
 endif()
-set(MYTEST "this is just a test")
 ADD_DEFINITIONS(-DSSL_USE_OPENSSL)
 ADD_DEFINITIONS(-DHAVE_OPENSSL_SSL_H)
 set(LIBRARYS "")
@@ -361,5 +355,10 @@ foreach(var ${LIBS})
   endif()
 endforeach()
 
-ADD_LIBRARY(BASE ${BASE_SRC})
+if(IOS)
+  set(LIBRARYS ${LIBRARYS} ssl crypto)
+endif()
+
+ADD_LIBRARY(BASE  ${BASE_SRC})
+
 TARGET_LINK_LIBRARIES(BASE ${LIBRARYS})
