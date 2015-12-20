@@ -40,7 +40,6 @@ static NSArray *camera_presets = @[AVCaptureSessionPreset352x288,
 
 VideoCaptureModule::DeviceInfo* VideoCaptureImpl::CreateDeviceInfo(
     const int32_t device_id) {
-    std::cout<<" create ios device info"<<std::endl;
   return new DeviceInfoIos(device_id);
 }
 
@@ -83,7 +82,6 @@ int32_t DeviceInfoIos::Init() {
 }
 
 uint32_t DeviceInfoIos::NumberOfDevices() {
-        std::cout<<"get device number"<<std::endl;
   return [DeviceInfoIosObjC captureDeviceCount];
 }
 

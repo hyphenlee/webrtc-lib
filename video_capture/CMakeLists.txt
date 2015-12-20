@@ -9,8 +9,8 @@ SET(VIDEO_CAPTURE_SRC
   "video_capture_factory.cc"
   "video_capture_impl.cc"
   "video_capture_impl.h"
-  "external/device_info_external.cc"
-  "external/video_capture_external.cc"
+  # "external/device_info_external.cc"
+  # "external/video_capture_external.cc"
 
   )
 SET(LIBS  "")

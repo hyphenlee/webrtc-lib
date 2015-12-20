@@ -27,7 +27,6 @@ VideoCaptureModule* VideoCaptureFactory::Create(const int32_t id,
 
 VideoCaptureModule::DeviceInfo* VideoCaptureFactory::CreateDeviceInfo(
     const int32_t id) {
-        std::cout<<"factory: create ios device info"<<std::endl;
   return videocapturemodule::VideoCaptureImpl::CreateDeviceInfo(id);
 }
 
