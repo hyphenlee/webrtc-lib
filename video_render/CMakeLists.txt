@@ -1,11 +1,13 @@
 SET(VIDEO_RENDER_SRC
   "external/video_render_external_impl.cc"
   "external/video_render_external_impl.h"
+  "video_render_internal_impl.cc"
+  #"video_render_internal.h"
   "i_video_render.h"
   "include/video_render.h"
   "include/video_render_defines.h"
   "video_render_impl.h"
-  "video_render_impl.cc"
+  # "video_render_impl.cc"
   )
 SET(LIBS  "")
 if(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
