@@ -460,7 +460,6 @@ int32_t AudioDeviceBuffer::DeliverRecordedData()
     int32_t res(0);
     uint32_t newMicLevel(0);
     uint32_t totalDelayMS = _playDelayMS +_recDelayMS;
-    printf("call recorded data is available from deliver recorded data");
     res = _ptrCbAudioTransport->RecordedDataIsAvailable(&_recBuffer[0],
                                                         _recSamples,
                                                         _recBytesPerSample,

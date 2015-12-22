@@ -65,9 +65,6 @@
     };                              \
 }
 
-int AudioDeviceTest2(int a){
-    return a+10;
-}
 namespace webrtc
 {
 
@@ -75,10 +72,6 @@ AudioDeviceModule* CreateAudioDeviceModule(
     int32_t id, AudioDeviceModule::AudioLayer audioLayer) {
   return AudioDeviceModuleImpl::Create(id, audioLayer);
 }
-    int AudioDeviceTest(int a)
-    {
-return a+20;
-    }
 // ============================================================================
 //                                   Static methods
 // ============================================================================
