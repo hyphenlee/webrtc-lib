@@ -88,10 +88,10 @@ using namespace webrtc::videocapturemodule;
                selector:@selector(onVideoError:)
                    name:AVCaptureSessionRuntimeErrorNotification
                  object:_captureSession];
-    [notify addObserver:self
-               selector:@selector(deviceOrientationDidChange:)
-                   name:UIDeviceOrientationDidChangeNotification
-                 object:nil];
+    // [notify addObserver:self
+    //            selector:@selector(deviceOrientationDidChange:)
+    //                name:UIDeviceOrientationDidChangeNotification
+    //              object:nil];
   }
 
   return self;
@@ -233,8 +233,9 @@ using namespace webrtc::videocapturemodule;
   }
 
   _connection = [currentOutput connectionWithMediaType:AVMediaTypeVideo];
-  [self setRelativeVideoOrientation];
-
+  // [self setRelativeVideoOrientation];
+      _connection.videoOrientation =
+          AVCaptureVideoOrientationLandscapeLeft;
   // finished configuring, commit settings to AVCaptureSession.
   [_captureSession commitConfiguration];
 
