@@ -8,4 +8,8 @@ Function avaiable:
 - AEC
 - NS
 - AGC
+- Audio device
+- Video device
+- Video render on ios
+- H264 encode/decode on ios
 

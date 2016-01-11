@@ -106,7 +106,8 @@ if(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
         "signal_processing/spl_sqrt_floor_arm.S"
         "signal_processing/complex_bit_reverse.c"
         "signal_processing/spl_sqrt_floor.c"
-        "signal_processing/filter_ar_fast_q12_armv7.S"
+        # "signal_processing/filter_ar_fast_q12_armv7.S"
+        "signal_processing/filter_ar_fast_q12.c"
         # "fir_filter_sse.cc"
         # "resampler/sinc_resampler_sse.cc"
         )
