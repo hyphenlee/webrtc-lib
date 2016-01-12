@@ -1,10 +1,10 @@
-# webrtc-lib
-Extract some audio processing module from webrtc as a library.
-Support Platform:
-- OSX 
+# webrtc-lib  
+Extract some audio processing module from webrtc as a library.  
+Support Platform:  
+- osx
 - ios 
 - android
-Function avaiable:
+Function avaiable:  
 - AEC
 - NS
 - AGC

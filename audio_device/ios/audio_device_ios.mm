@@ -22,6 +22,7 @@
 #include "base/logging.h"
 #include "audio_device/fine_audio_buffer.h"
 #include "utility/interface/helpers_ios.h"
+#include<iostream>
 
 namespace webrtc {
 
@@ -40,7 +41,7 @@ namespace webrtc {
 // will be set to this value as well to avoid resampling the the audio unit's
 // format converter. Note that, some devices, e.g. BT headsets, only supports
 // 8000Hz as native sample rate.
-const double kPreferredSampleRate = 48000.0;
+const double kPreferredSampleRate = 16000.0;
 // Use a hardware I/O buffer size (unit is in seconds) that matches the 10ms
 // size used by WebRTC. The exact actual size will differ between devices.
 // Example: using 48kHz on iPhone 6 results in a native buffer size of
@@ -119,6 +120,8 @@ static void ActivateAudioSession(AVAudioSession* session, bool activate) {
     // session (e.g. phone call) has higher priority than ours.
     error = nil;
     success = [session setActive:YES error:&error];
+    double rate = session.sampleRate;
+
     RTC_DCHECK(CheckAndLogError(success, error));
     RTC_CHECK(session.isInputAvailable) << "No input path is available!";
     // Ensure that category and mode are actually activated.
