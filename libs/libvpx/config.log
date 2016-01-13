@@ -1,0 +1,76 @@
+# ./configure 
+Configuring selected codecs
+  enabling vp8_encoder
+  enabling vp8_decoder
+  enabling vp9_encoder
+  enabling vp9_decoder
+Configuring for target 'x86_64-darwin15-gcc'
+  enabling x86_64
+check_cpp
+BEGIN /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.c
+     1	#if !defined(__ILP32__) || !defined(__x86_64__)
+     2	#error "not x32"
+     3	#endif
+END /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.c
+gcc -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.11 -E -o /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.o /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.c
+/var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.c:2:2: error: "not x32"
+#error "not x32"
+ ^
+1 error generated.
+  enabling runtime_cpu_detect
+check_cflags -mmmx
+check_cc -Werror -mmmx
+BEGIN /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.c
+     1	int x;
+END /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.c
+gcc -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.11 -m64 -Werror -mmmx -c -o /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.o /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.c
+  enabling mmx
+check_cflags -msse
+check_cc -Werror -msse
+BEGIN /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.c
+     1	int x;
+END /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.c
+gcc -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.11 -m64 -Werror -msse -c -o /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.o /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.c
+  enabling sse
+check_cflags -msse2
+check_cc -Werror -msse2
+BEGIN /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.c
+     1	int x;
+END /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.c
+gcc -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.11 -m64 -Werror -msse2 -c -o /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.o /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.c
+  enabling sse2
+check_cflags -msse3
+check_cc -Werror -msse3
+BEGIN /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.c
+     1	int x;
+END /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.c
+gcc -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.11 -m64 -Werror -msse3 -c -o /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.o /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.c
+  enabling sse3
+check_cflags -mssse3
+check_cc -Werror -mssse3
+BEGIN /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.c
+     1	int x;
+END /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.c
+gcc -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.11 -m64 -Werror -mssse3 -c -o /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.o /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.c
+  enabling ssse3
+check_cflags -msse4
+check_cc -Werror -msse4
+BEGIN /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.c
+     1	int x;
+END /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.c
+gcc -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.11 -m64 -Werror -msse4 -c -o /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.o /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.c
+  enabling sse4_1
+check_cflags -mavx
+check_cc -Werror -mavx
+BEGIN /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.c
+     1	int x;
+END /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.c
+gcc -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.11 -m64 -Werror -mavx -c -o /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.o /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.c
+  enabling avx
+check_cflags -mavx2
+check_cc -Werror -mavx2
+BEGIN /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.c
+     1	int x;
+END /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.c
+gcc -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.11 -m64 -Werror -mavx2 -c -o /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.o /var/folders/dm/8tz2fb1x1l96rccfkhl_bkrr0000gn/T//vpx-conf-21347-3374.c
+  enabling avx2
