@@ -13,7 +13,7 @@
 #ifndef WEBRTC_MODULES_VIDEO_CODING_CODECS_VP8_INCLUDE_VP8_H_
 #define WEBRTC_MODULES_VIDEO_CODING_CODECS_VP8_INCLUDE_VP8_H_
 
-#include "video_coding/codecs/interface/video_codec_interface.h"
+#include "video_coding/include/video_codec_interface.h"
 
 namespace webrtc {
 

@@ -14,7 +14,7 @@
 
 #include "base/checks.h"
 #include "common_video/libyuv/include/webrtc_libyuv.h"
-#include "video_coding/codecs/interface/video_codec_interface.h"
+#include "video_coding/include/video_codec_interface.h"
 #include "video_coding/main/source/encoded_frame.h"
 #include "video_coding/main/source/video_coding_impl.h"
 #include "video_coding/utility/include/quality_scaler.h"

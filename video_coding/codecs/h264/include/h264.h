@@ -23,13 +23,14 @@
 
 #endif  // defined(WEBRTC_IOS) || defined(WEBRTC_MAC)
 
-#include "video_coding/codecs/interface/video_codec_interface.h"
+#include "video_coding/include/video_codec_interface.h"
 
 namespace webrtc {
 
 class H264Encoder : public VideoEncoder {
  public:
   static H264Encoder* Create();
+  // If H.264 is supported (any implementation).
   static bool IsSupported();
 
   ~H264Encoder() override {}

@@ -11,7 +11,7 @@
 #ifndef WEBRTC_MODULES_VIDEO_CODING_GENERIC_ENCODER_H_
 #define WEBRTC_MODULES_VIDEO_CODING_GENERIC_ENCODER_H_
 
-#include "video_coding/codecs/interface/video_codec_interface.h"
+#include "video_coding/include/video_codec_interface.h"
 #include "video_coding/main/interface/video_coding_defines.h"
 
 #include <stdio.h>

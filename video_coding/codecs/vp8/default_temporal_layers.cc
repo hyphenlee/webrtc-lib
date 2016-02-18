@@ -14,7 +14,7 @@
 #include <string.h>
 
 #include "interface/module_common_types.h"
-#include "video_coding/codecs/interface/video_codec_interface.h"
+#include "video_coding/include/video_codec_interface.h"
 #include "video_coding/codecs/vp8/include/vp8_common_types.h"
 
 #include "vpx/vpx_encoder.h"

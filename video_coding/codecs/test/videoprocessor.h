@@ -15,7 +15,7 @@
 
 #include "common_video/libyuv/include/scaler.h"
 #include "common_video/libyuv/include/webrtc_libyuv.h"
-#include "video_coding/codecs/interface/video_codec_interface.h"
+#include "video_coding/include/video_codec_interface.h"
 #include "video_coding/codecs/test/packet_manipulator.h"
 #include "video_coding/codecs/test/stats.h"
 #include "system_wrappers/interface/tick_util.h"

@@ -11,7 +11,7 @@
 #include <vector>
 
 #include "testing/gmock/include/gmock/gmock.h"
-#include "video_coding/codecs/interface/video_codec_interface.h"
+#include "video_coding/include/video_codec_interface.h"
 #include "video_coding/codecs/vp8/simulcast_encoder_adapter.h"
 #include "video_coding/codecs/vp8/simulcast_unittest.h"
 #include "video_coding/codecs/vp8/vp8_factory.h"

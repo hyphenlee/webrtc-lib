@@ -12,7 +12,7 @@
 
 #include "testing/gtest/include/gtest/gtest.h"
 
-#include "video_coding/codecs/interface/video_codec_interface.h"
+#include "video_coding/include/video_codec_interface.h"
 #include "video_coding/codecs/test/packet_manipulator.h"
 #include "video_coding/codecs/test/videoprocessor.h"
 #include "video_coding/codecs/vp8/include/vp8.h"

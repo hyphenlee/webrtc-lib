@@ -16,7 +16,7 @@
 #include "common_types.h"
 #include "common_video/interface/video_image.h"
 #include "interface/module_common_types.h"
-#include "video_coding/codecs/interface/video_codec_interface.h"
+#include "video_coding/include/video_codec_interface.h"
 #include "video_coding/main/interface/video_coding_defines.h"
 
 namespace webrtc

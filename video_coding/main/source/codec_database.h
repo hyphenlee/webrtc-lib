@@ -14,7 +14,7 @@
 #include <map>
 
 #include "base/scoped_ptr.h"
-#include "video_coding/codecs/interface/video_codec_interface.h"
+#include "video_coding/include/video_codec_interface.h"
 #include "video_coding/main/interface/video_coding.h"
 #include "video_coding/main/source/generic_decoder.h"
 #include "video_coding/main/source/generic_encoder.h"

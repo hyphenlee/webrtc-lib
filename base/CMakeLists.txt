@@ -252,8 +252,8 @@ SET(BASE_SRC
 
   )
 SET(LIBS  "")
-if(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
-  if(IOS)
+IF(APPLE)
+  IF(IOS)
     message(STATUS "start build base for ios")
     set(LIBS ${LIBS}
       "CFNetwork"

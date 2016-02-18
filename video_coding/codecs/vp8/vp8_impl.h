@@ -23,7 +23,7 @@
 #include "vpx/vp8dx.h"
 
 #include "common_video/interface/i420_buffer_pool.h"
-#include "video_coding/codecs/interface/video_codec_interface.h"
+#include "video_coding/include/video_codec_interface.h"
 #include "video_coding/codecs/vp8/include/vp8.h"
 #include "video_coding/codecs/vp8/reference_picture_selection.h"
 #include "video_coding/utility/include/frame_dropper.h"

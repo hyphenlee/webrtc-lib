@@ -12,7 +12,7 @@
 #define WEBRTC_MODULES_VIDEO_CODING_GENERIC_DECODER_H_
 
 #include "interface/module_common_types.h"
-#include "video_coding/codecs/interface/video_codec_interface.h"
+#include "video_coding/include/video_codec_interface.h"
 #include "video_coding/main/source/encoded_frame.h"
 #include "video_coding/main/source/timestamp_map.h"
 #include "video_coding/main/source/timing.h"

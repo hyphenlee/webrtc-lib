@@ -23,6 +23,21 @@
             'h264_objc.mm',
           ],
         }],
+        ['rtc_use_h264==1', {
+          'defines': [
+            'WEBRTC_THIRD_PARTY_H264',
+          ],
+          'dependencies': [
+            '<(DEPTH)/third_party/ffmpeg/ffmpeg.gyp:ffmpeg',
+            '<(DEPTH)/third_party/openh264/openh264.gyp:openh264_encoder',
+          ],
+          'sources': [
+            'h264_decoder_impl.cc',
+            'h264_decoder_impl.h',
+            'h264_encoder_impl.cc',
+            'h264_encoder_impl.h',
+          ],
+        }],
       ],
       'sources': [
         'h264.cc',
@@ -42,6 +57,7 @@
           'link_settings': {
             'xcode_settings': {
               'OTHER_LDFLAGS': [
+                '-framework CoreFoundation',
                 '-framework CoreMedia',
                 '-framework CoreVideo',
                 '-framework VideoToolbox',

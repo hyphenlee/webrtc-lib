@@ -50,8 +50,7 @@ set(AUDIO_DEVICE_SRC
   )
 message("start process audio device")
 add_definitions(-DWEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE)
-if(CMAKE_SYSTEM_NAME STREQUAL "Darwin")
-  message("darwin system")
+if(APPLE)
   if(IOS)
     message("handle for ios")
     set(AUDIO_DEVICE_SRC

@@ -88,7 +88,7 @@ SET(COMMON_AUDIO_SRC
   "signal_processing/complex_fft.c"
 
   )
-if(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
+if(APPLE)
   if(IOS)
     # ADD_DEFINITIONS(-DWEBRTC_DETECT_NEON)
     message("handle for ios")
@@ -120,9 +120,7 @@ if(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
         "signal_processing/filter_ar_fast_q12.c"
         "fir_filter_sse.cc"
         "resampler/sinc_resampler_sse.cc"
-        
         )
-      
     endif()
   else()
     SET(COMMON_AUDIO_SRC
@@ -133,7 +131,6 @@ if(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
       "fir_filter_sse.cc"
       "resampler/sinc_resampler_sse.cc"
       )
-
   endif()
 elseif(ANDROID)
   message("common audio:build for android")

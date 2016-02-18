@@ -14,7 +14,7 @@ SET(VIDEO_CAPTURE_SRC
 
   )
 SET(LIBS  "")
-if(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
+if(APPLE)
   if(IOS)
     message(STATUS "start build base for ios")
     set(LIBS ${LIBS}
@@ -37,7 +37,7 @@ if(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
   else()
     # LINK_DIRECTORIES( "/usr/local/Cellar/openssl/1.0.2d_1/lib/")
     message("start build for darwin system")
-    set(LIBS ${LIBS}
+    Set(LIBS ${LIBS}
       "CoreVideo"
       "QTKit"
       )

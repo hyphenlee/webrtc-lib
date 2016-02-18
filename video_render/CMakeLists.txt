@@ -10,7 +10,7 @@ SET(VIDEO_RENDER_SRC
   # "video_render_impl.cc"
   )
 SET(LIBS  "")
-if(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
+if(APPLE)
   if(IOS)
     message(STATUS "start build base for ios")
     set(LIBS ${LIBS}
@@ -33,12 +33,25 @@ if(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
   else()
     message("start build for darwin system")
     set(LIBS ${LIBS}
+      "CoreVideo"
+      "QTKit"
       )
     # set(LIBRARYS ${LIBRARYS} ${ssl_library} ${ssl_library2})
     message(librarys: "${LIBRARYS}")
     SET(VIDEO_RENDER_SRC
       ${VIDEO_RENDER_SRC}
-
+      "mac/cocoa_full_screen_window.h"
+      "mac/cocoa_full_screen_window.mm"
+      "mac/cocoa_render_view.h"
+      "mac/cocoa_render_view.mm"
+      "mac/video_render_agl.cc"
+      "mac/video_render_agl.h"
+      "mac/video_render_mac_carbon_impl.cc"
+      "mac/video_render_mac_carbon_impl.h"
+      "mac/video_render_mac_cocoa_impl.h"
+      "mac/video_render_mac_cocoa_impl.mm"
+      "mac/video_render_nsopengl.h"
+      "mac/video_render_nsopengl.mm"
       )
 
   endif()

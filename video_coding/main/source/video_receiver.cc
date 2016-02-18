@@ -11,7 +11,7 @@
 #include "base/checks.h"
 #include "common_types.h"
 #include "common_video/libyuv/include/webrtc_libyuv.h"
-#include "video_coding/codecs/interface/video_codec_interface.h"
+#include "video_coding/include/video_codec_interface.h"
 #include "video_coding/main/source/encoded_frame.h"
 #include "video_coding/main/source/jitter_buffer.h"
 #include "video_coding/main/source/packet.h"

@@ -87,37 +87,65 @@ SET(VIDEO_CODING_SRC
   "codecs/h264/h264.cc"
   "codecs/h264/include/h264.h"
 
-  "codecs/h264/h264_video_toolbox_decoder.cc"
-  "codecs/h264/h264_video_toolbox_decoder.h"
-  "codecs/h264/h264_video_toolbox_encoder.cc"
-  "codecs/h264/h264_video_toolbox_encoder.h"
-  "codecs/h264/h264_video_toolbox_nalu.cc"
-  "codecs/h264/h264_video_toolbox_nalu.h"
-  "codecs/h264/h264_objc.mm"
-
   )
 include_directories(
   "${LIB_PATH_PREFIX}/libyuv/include"
   ${CMAKE_SOURCE_DIR}/libs/libvpx
   )
-set(LIBS ${LIBS}
-  VideoToolbox
-  CoreVideo
-  CoreMedia
-  )
+link_directories("${LIB_PATH_PREFIX}/libyuv/")
 set(LIBRARYS "")
-foreach(var ${LIBS})
+if(IOS)
+  SET(VIDEO_CODING_SRC
+    ${VIDEO_CODING_SRC}
+    "codecs/h264/h264_video_toolbox_decoder.cc"
+    "codecs/h264/h264_video_toolbox_decoder.h"
+    "codecs/h264/h264_video_toolbox_encoder.cc"
+    "codecs/h264/h264_video_toolbox_encoder.h"
+    "codecs/h264/h264_video_toolbox_nalu.cc"
+    "codecs/h264/h264_video_toolbox_nalu.h"
+    "codecs/h264/h264_objc.mm"
+    )
+  set(LIBS ${LIBS}
+    VideoToolbox
+    CoreVideo
+    CoreMedia
+    CoreFoundation
+    )  
+elseif(APPLE)
+  SET(VIDEO_CODING_SRC
+    ${VIDEO_CODING_SRC}
+    "codecs/h264/h264_decoder_impl.cc"
+    "codecs/h264/h264_decoder_impl.h"
+    "codecs/h264/h264_encoder_impl.cc"
+    "codecs/h264/h264_encoder_impl.h"
+    )
+  find_library(FFMPEG_LIB NAMES libavutil.a )
+  find_library(OPENH264_LIB NAMES libopenh264.a)
+  add_definitions(-DWEBRTC_THIRD_PARTY_H264)
+  find_path( FFMPEG_INCLUDE_DIR libavutil/samplefmt.h )
+  find_path( OPENH264_INCLUDE_DIR wels/codec_api.h)
+  include_directories(
+    ${FFMPEG_INCLUDE_DIR}
+    ${OPENH264_INCLUDE_DIR}
+    )
+  message(openh264: ${OPENH264_INCLUDE_DIR})
+  set(LIBRARYS ${LIBRARYS}
+    ${FFMPEG_LIB}
+    ${OPENH264_LIB}
+    )
+endif()
+
+
+Foreach(var ${LIBS})
   message(item:${var})
   FIND_LIBRARY(find${var} ${var})
   message(full path:${find${var}})
   if(${lib2} MATCHES "NOTFOUND")
-    message(error: "library not not found:${var}")
+    Message(error: "library not not found:${var}")
   else()
     set(LIBRARYS ${LIBRARYS} ${find${var}})
   endif()
-endforeach()
-
-link_directories("${LIB_PATH_PREFIX}/libyuv/")
+Endforeach()
 
 set(LIBRARYS ${LIBRARYS} COMMON_VIDEO SYSTEM_WRAPPER yuv)
 add_definitions(
