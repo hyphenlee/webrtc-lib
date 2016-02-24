@@ -93,6 +93,7 @@ include_directories(
   ${CMAKE_SOURCE_DIR}/libs/libvpx
   )
 link_directories("${LIB_PATH_PREFIX}/libyuv/")
+
 set(LIBRARYS "")
 if(IOS)
   SET(VIDEO_CODING_SRC
@@ -119,19 +120,25 @@ elseif(APPLE)
     "codecs/h264/h264_encoder_impl.cc"
     "codecs/h264/h264_encoder_impl.h"
     )
-  find_library(FFMPEG_LIB NAMES libavutil.a )
-  find_library(OPENH264_LIB NAMES libopenh264.a)
+  # find_library(FFMPEG_LIB NAMES libavutil.a )
+  # find_library(OPENH264_LIB NAMES libopenh264.a)
   add_definitions(-DWEBRTC_THIRD_PARTY_H264)
-  find_path( FFMPEG_INCLUDE_DIR libavutil/samplefmt.h )
-  find_path( OPENH264_INCLUDE_DIR wels/codec_api.h)
-  include_directories(
-    ${FFMPEG_INCLUDE_DIR}
-    ${OPENH264_INCLUDE_DIR}
-    )
-  message(openh264: ${OPENH264_INCLUDE_DIR})
+  link_directories("${LIB_PATH_PREFIX}/openh264")
+  include_directories("${LIB_PATH_PREFIX}/openh264/include")
+    link_directories("${LIB_PATH_PREFIX}/ffmpeg/lib")
+  include_directories("${LIB_PATH_PREFIX}/ffmpeg/include")
+  # find_path( FFMPEG_INCLUDE_DIR libavutil/samplefmt.h )
+  # find_path( OPENH264_INCLUDE_DIR wels/codec_api.h)
+  # include_directories(
+  #   ${FFMPEG_INCLUDE_DIR}
+  #   ${OPENH264_INCLUDE_DIR}
+  #   )
+  # message(openh264: ${OPENH264_INCLUDE_DIR})
   set(LIBRARYS ${LIBRARYS}
-    ${FFMPEG_LIB}
-    ${OPENH264_LIB}
+    "libavutil.a"
+    "libopenh264.a"
+    "libavcodec.a"
+    "libavformat.a"
     )
 endif()
 

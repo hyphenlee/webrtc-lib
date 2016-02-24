@@ -217,9 +217,5 @@ class AudioDeviceModule : public RefCountedModule {
 
 AudioDeviceModule* CreateAudioDeviceModule(
     int32_t id, AudioDeviceModule::AudioLayer audioLayer);
-
-    int AudioDeviceTest(int a);
 }  // namespace webrtc
-
-    int AudioDeviceTest2(int a);
 #endif  // MODULES_AUDIO_DEVICE_INCLUDE_AUDIO_DEVICE_H_
