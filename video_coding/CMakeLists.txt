@@ -122,6 +122,7 @@ elseif(APPLE)
     )
   # find_library(FFMPEG_LIB NAMES libavutil.a )
   # find_library(OPENH264_LIB NAMES libopenh264.a)
+  
   add_definitions(-DWEBRTC_THIRD_PARTY_H264)
   link_directories("${LIB_PATH_PREFIX}/openh264")
   include_directories("${LIB_PATH_PREFIX}/openh264/include")

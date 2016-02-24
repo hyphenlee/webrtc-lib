@@ -280,10 +280,10 @@ IF(APPLE)
     
 
   else()
-    INCLUDE_DIRECTORIES( "/usr/local/Cellar/openssl/1.0.2d_1/include/")
+    # INCLUDE_DIRECTORIES( "/usr/local/Cellar/openssl/1.0.2d_1/include/")
     # INCLUDE_DIRECTORIES( "/usr/local/Cellar/jsoncpp/0.10.5/include/jsoncpp/")
     INCLUDE_DIRECTORIES( "${PROJECT_SOURCE_DIR}/common_audio/signal_processing/include/")
-    
+    include_directories("${LIB_PATH_PREFIX}/openssl/include")
     # LINK_DIRECTORIES( "/usr/local/Cellar/openssl/1.0.2d_1/lib/")
     message("start build for darwin system")
     set(LIBS ${LIBS}
