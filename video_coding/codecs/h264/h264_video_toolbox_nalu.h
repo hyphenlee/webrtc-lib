@@ -19,7 +19,7 @@
 #include <CoreMedia/CoreMedia.h>
 
 #include "base/buffer.h"
-#include "include/module_common_types.h"
+#include "interface/module_common_types.h"
 
 namespace webrtc {
 

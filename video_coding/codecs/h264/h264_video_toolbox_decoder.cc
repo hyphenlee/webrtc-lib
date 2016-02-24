@@ -16,7 +16,7 @@
 #include "libyuv/convert.h"
 #include "base/checks.h"
 #include "base/logging.h"
-#include "common_video/include/video_frame_buffer.h"
+#include "common_video/interface/video_frame_buffer.h"
 #include "video_coding/codecs/h264/h264_video_toolbox_nalu.h"
 #include "video_frame.h"
 
